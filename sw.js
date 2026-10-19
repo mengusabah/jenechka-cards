@@ -1,5 +1,5 @@
 /* Bump this version whenever any app-shell file changes. */
-const VERSION = '2026.10.19.5';
+const VERSION = '2026.10.19.6';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = `jenechka-cards-shell:${encodeURIComponent(SCOPE)}:`;
 const CACHE_NAME = `${CACHE_PREFIX}${VERSION}`;
@@ -10,11 +10,13 @@ const ASSET_URLS = [
   'app.js',
   'data.js',
   'study.js',
+  'welcome.js',
   'manifest.webmanifest',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'icons/maskable-512.png',
   'icons/apple-touch-icon.png',
+  'icons/welcome-mascot.png',
 ].map(path => new URL(path, SCOPE).href);
 const ASSETS = new Set(ASSET_URLS);
 

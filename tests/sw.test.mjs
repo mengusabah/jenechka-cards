@@ -81,7 +81,7 @@ test('precache and offline navigation work from the GitHub Pages subdirectory', 
   const sw = worker();
   await sw.dispatch('install');
   assert.equal(sw.skipped, 0, 'install must not replace an active worker');
-  assert.equal(sw.fetched.length, 10);
+  assert.equal(sw.fetched.length, 12);
   assert.ok(sw.fetched.every(({ url, cache }) => url.startsWith(scope) && cache === 'reload'));
   sw.offline = true;
   const before = sw.fetched.length;
@@ -91,7 +91,7 @@ test('precache and offline navigation work from the GitHub Pages subdirectory', 
     assert.equal(await response.text(), `release:${scope}index.html`);
   }
   for (const path of [
-    'styles.css', 'app.js', 'data.js', 'study.js',
+    'styles.css', 'app.js', 'data.js', 'study.js', 'welcome.js', 'icons/welcome-mascot.png',
     'icons/icon-192.png', 'icons/icon-512.png',
     'icons/maskable-512.png', 'icons/apple-touch-icon.png',
   ]) {

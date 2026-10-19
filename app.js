@@ -1,5 +1,8 @@
 import { openDeckStore, createId, parseBackup, makeBackup, mergeDecks, MAX_BACKUP_BYTES, LIMITS } from './data.js';
 import { createStudySession, rateStudyCard } from './study.js';
+import { setupWelcome } from './welcome.js';
+
+const welcome = setupWelcome();
 
 const $ = (id) => document.getElementById(id);
 const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({
@@ -379,9 +382,11 @@ try {
   storage = await openDeckStore();
   decks = copy(storage.decks);
   render();
+  welcome.ready();
   navigator.storage?.persisted?.().then((value) => { persistent = value; updateAppStatus(); }).catch(() => {});
   setupOffline();
 } catch (error) {
+  welcome.cancel();
   $('app').setAttribute('aria-busy', 'false');
   $('app').innerHTML = `<h1>Your decks could not be opened</h1><p>${esc(error.message)}</p><p>Close other Jenechka Cards tabs and reopen the app. Do not clear website data unless you have a backup.</p>`;
 }

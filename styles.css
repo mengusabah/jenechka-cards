@@ -95,3 +95,24 @@ p,small{color:#696b82}
 select{font:inherit;font-size:16px;width:100%;min-height:48px;padding:13px;border:1px solid #e4e4ef;background:#fcfcff;border-radius:12px;color:#25253c}
 select:focus{outline:2px solid #7668df;outline-offset:2px}
 .custom-language{margin-top:12px}
+
+/* A brief greeting on a first visit or after a long break. */
+.welcome{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:#f0edf8;padding:calc(24px + env(safe-area-inset-top,0px)) calc(24px + env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) calc(24px + env(safe-area-inset-left,0px));opacity:1;transition:opacity .45s ease;overflow:hidden;outline:none}
+.welcome-content{text-align:center;max-width:100%;transform:translateY(0);transition:transform .45s ease,opacity .45s ease}
+.welcome-character{position:relative;width:clamp(180px,55vw,264px);max-width:55dvh;margin:0 auto 18px;isolation:isolate}
+.welcome-character::after{content:"";position:absolute;z-index:-1;left:28%;right:28%;bottom:1%;height:10px;border-radius:50%;background:#7668df20;filter:blur(7px)}
+.welcome-character img{display:block;width:100%;height:auto;transform-origin:50% 85%}
+.welcome h2{margin:0;color:#37304e;font-size:clamp(26px,7vw,34px);font-weight:800;letter-spacing:-1px}
+.welcome h2 span{color:#7668df}
+.welcome p{margin:9px 0 0;font-size:14px;color:#777088}
+.welcome-visible body{overflow:hidden}
+.welcome-visible #app{opacity:0;transform:translateY(10px);transition:opacity .45s ease,transform .45s ease}
+.welcome-visible #update-banner,.welcome-visible #notice{visibility:hidden}
+.welcome-visible .welcome-character img{animation:welcome-hello 1.7s cubic-bezier(.22,.65,.3,1) both}
+.welcome-visible .welcome h2,.welcome-visible .welcome p{animation:welcome-caption .55s .2s ease both}
+.welcome-leaving #app{opacity:1;transform:translateY(0)}
+.welcome-leaving .welcome{opacity:0;pointer-events:none}
+.welcome-leaving .welcome-content{opacity:0;transform:translateY(-10px) scale(.97)}
+@keyframes welcome-hello{0%{opacity:0;transform:translateY(18px) scale(.88) rotate(-5deg)}22%{opacity:1;transform:translateY(-3px) scale(1.03) rotate(2deg)}44%{transform:translateY(0) scale(1) rotate(-1.5deg)}68%{transform:translateY(-7px) scale(1) rotate(1.5deg)}100%{opacity:1;transform:translateY(0) scale(1) rotate(0)}}
+@keyframes welcome-caption{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.welcome,.welcome-content,.welcome-visible #app{transition:none}.welcome-visible .welcome-character img,.welcome-visible .welcome h2,.welcome-visible .welcome p{animation:none}}

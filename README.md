@@ -8,6 +8,10 @@ Both language menus include English, Turkish, German, Spanish, French, Italian, 
 
 Live site: <https://mengusabah.github.io/jenechka-cards/>
 
+## A small welcome
+
+The chibi mascot greets you on your first visit and after at least 12 hours away. Its gentle entrance fades into the app automatically in about two seconds, with no buttons to press. Reduced-motion preferences bypass it. Returning to a tab after a short break does not replay it. The greeting works offline and never changes your decks.
+
 ## Install on iPhone
 
 1. Open the site in Safari. If you already have words saved there, use **App & Backups → Download backup** first.
