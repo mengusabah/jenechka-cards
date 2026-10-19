@@ -10,6 +10,36 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Jenechka Cards">
     <title>Jenechka Cards</title>
+    <style>
+      html,body{margin:0;background:#f0edf8;color:#25253c;font:16px system-ui}
+      [hidden]{display:none!important}
+      html.booting,html.booting body{background:#f0edf8}
+      .booting #app,.booting #update-banner,.booting #notice{visibility:hidden}
+      .boot-fallback{max-width:420px;margin:20vh auto;padding:24px;text-align:center}
+    </style>
+    <script>
+      // Establish the first paint before styles, modules, or the mascot arrive.
+      (() => {
+        const root = document.documentElement;
+        root.classList.add('booting');
+        let deadline;
+        window.jenechkaBoot = {
+          finish() {
+            clearTimeout(deadline);
+            root.classList.remove('booting');
+            const fallback = document.getElementById('boot-fallback');
+            if (fallback) fallback.hidden = true;
+          }
+        };
+        // A failed module request must not leave an empty launch screen forever.
+        deadline = setTimeout(() => {
+          window.jenechkaBoot.finish();
+          const fallback = document.getElementById('boot-fallback');
+          if (fallback) fallback.hidden = false;
+        }, 8000);
+      })();
+    </script>
+    <link rel="preload" href="./icons/welcome-mascot.png" as="image" fetchpriority="high">
     <link rel="manifest" href="./manifest.webmanifest">
     <link rel="icon" href="./icons/favicon-64.png" type="image/png" sizes="64x64">
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" sizes="180x180">
@@ -28,7 +58,11 @@
       <span id="update-message">An update is ready.</span>
       <button class="btn primary" id="apply-update">Update app</button>
     </div>
-    <main id="app" aria-busy="true"><p role="status">Loading your decks…</p></main>
+    <main id="app" aria-busy="true"></main>
+    <section id="boot-fallback" class="boot-fallback" role="status" hidden>
+      <h1>Jenechka Cards</h1><p>Opening is taking longer than expected.</p>
+      <a class="btn primary" href="./">Try again</a>
+    </section>
     <div id="notice" class="notice" role="status" aria-live="polite" hidden></div>
     <noscript><p class="panel">Enable JavaScript to create and study your flashcards.</p></noscript>
   </body>

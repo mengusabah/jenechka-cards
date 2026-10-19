@@ -6,7 +6,13 @@ const FAILSAFE_DURATION = 3500;
 const ACTIVE_INTERVAL = 60 * 1000;
 
 export function setupWelcome() {
-  const noop = { ready() {}, cancel() {} };
+  let bootFinished = false;
+  function finishBoot() {
+    if (bootFinished) return;
+    bootFinished = true;
+    if (typeof window !== 'undefined') window.jenechkaBoot?.finish?.();
+  }
+  const noop = { ready: finishBoot, cancel() {} };
   if (typeof document === 'undefined') return noop;
   const overlay = document.getElementById('welcome');
   const image = document.getElementById('welcome-image');
@@ -50,6 +56,7 @@ export function setupWelcome() {
     if (visible) app.inert = previousInert;
     visible = false;
     leaving = false;
+    if (appReady) finishBoot();
     if (restore && document.visibilityState !== 'hidden') {
       const target = previousFocus?.isConnected && previousFocus !== document.body && !previousFocus.inert
         ? previousFocus
@@ -85,6 +92,7 @@ export function setupWelcome() {
     root.classList.add('welcome-visible');
     visible = true;
     shownAt = Date.now();
+    finishBoot();
     overlay.focus({ preventScroll: true });
     scheduleExit();
   }
@@ -178,6 +186,7 @@ export function setupWelcome() {
   return {
     ready() {
       appReady = true;
+      if (!pending || visible) finishBoot();
       scheduleExit();
     },
     cancel() {

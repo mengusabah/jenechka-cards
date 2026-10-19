@@ -389,4 +389,5 @@ try {
   welcome.cancel();
   $('app').setAttribute('aria-busy', 'false');
   $('app').innerHTML = `<h1>Your decks could not be opened</h1><p>${esc(error.message)}</p><p>Close other Jenechka Cards tabs and reopen the app. Do not clear website data unless you have a backup.</p>`;
+  window.jenechkaBoot?.finish();
 }

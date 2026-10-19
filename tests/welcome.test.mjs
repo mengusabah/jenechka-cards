@@ -43,6 +43,8 @@ function fixture(options = {}) {
   document.body = element();
   document.activeElement = options.priorFocus ? priorFocus : document.body;
   const classes = new Set();
+  const bootCalls = [];
+  if (options.boot) classes.add('booting');
   document.documentElement = { classList: {
     add: (...names) => names.forEach((name) => classes.add(name)),
     remove: (...names) => names.forEach((name) => classes.delete(name)),
@@ -65,6 +67,10 @@ function fixture(options = {}) {
       },
     },
   });
+  if (options.boot) window.jenechkaBoot = { finish() {
+    bootCalls.push({ overlayHidden: overlay.hidden, welcomeVisible: classes.has('welcome-visible') });
+    classes.delete('booting');
+  } };
   if (options.storageGetterThrows) Object.defineProperty(window, 'localStorage', { get() { throw new Error('Storage disabled'); } });
   const setTimeout = (callback, delay) => {
     const id = ++nextTimer;
@@ -90,7 +96,7 @@ function fixture(options = {}) {
     document.visibilityState = state;
     document.fire('visibilitychange');
   }
-  return { setup, advance, visibility, document, window, app, overlay, image, heading, priorFocus, motion, classes, records, writes, timers, now: () => now };
+  return { setup, advance, visibility, document, window, app, overlay, image, heading, priorFocus, motion, classes, records, writes, timers, bootCalls, now: () => now };
 }
 
 test('first visit shows, focuses the overlay, and waits for ready before its 450ms exit', () => {
@@ -356,4 +362,82 @@ test('missing optional welcome markup makes setup a harmless no-op', () => {
   welcome.cancel();
   assert.equal(f.timers.size, 0);
   assert.equal(f.writes.length, 0);
+});
+
+test('boot stays closed while a ready app waits for the welcome image and opens under the visible overlay', () => {
+  const f = fixture({ boot: true, imageComplete: false });
+  const welcome = f.setup();
+  welcome.ready();
+  f.advance(400);
+  assert.ok(f.classes.has('booting'));
+  assert.equal(f.bootCalls.length, 0);
+  f.image.fire('load');
+  assert.equal(f.classes.has('booting'), false);
+  assert.deepEqual(f.bootCalls, [{ overlayHidden: false, welcomeVisible: true }]);
+  f.advance(2150);
+  assert.equal(f.overlay.hidden, true);
+  f.visibility('hidden');
+  f.advance(TWO_HOURS);
+  f.visibility('visible');
+  f.image.fire('load');
+  assert.equal(f.overlay.hidden, false);
+  assert.equal(f.classes.has('booting'), false);
+  assert.equal(f.bootCalls.length, 1);
+  welcome.cancel();
+});
+
+test('a cached welcome image can replace boot before the app is ready without revealing the app', () => {
+  const f = fixture({ boot: true });
+  const welcome = f.setup();
+  assert.equal(f.classes.has('booting'), false);
+  assert.deepEqual(f.bootCalls, [{ overlayHidden: false, welcomeVisible: true }]);
+  assert.equal(f.app.inert, true);
+  f.advance(1800);
+  assert.equal(f.classes.has('welcome-leaving'), false);
+  welcome.ready();
+  assert.ok(f.classes.has('welcome-leaving'));
+  assert.equal(f.bootCalls.length, 1);
+  welcome.cancel();
+});
+
+test('without a welcome, boot remains until the app is ready', () => {
+  for (const options of [
+    { records: new Map([[KEY, String(START)]]) },
+    { reducedMotion: true },
+    { missing: 'welcome-image' },
+  ]) {
+    const f = fixture({ ...options, boot: true });
+    const welcome = f.setup();
+    assert.ok(f.classes.has('booting'));
+    assert.equal(f.bootCalls.length, 0);
+    welcome.ready();
+    assert.equal(f.classes.has('booting'), false);
+    assert.deepEqual(f.bootCalls, [{ overlayHidden: true, welcomeVisible: false }]);
+    welcome.ready();
+    assert.equal(f.bootCalls.length, 1);
+    welcome.cancel();
+  }
+});
+
+test('image failures, cancel, and the failsafe release boot only once the app is ready', () => {
+  for (const outcome of ['error', 'cancel', 'timeout', 'interaction']) {
+    for (const readyFirst of [false, true]) {
+      const f = fixture({ boot: true, imageComplete: false });
+      const welcome = f.setup();
+      if (readyFirst) welcome.ready();
+      assert.ok(f.classes.has('booting'));
+      if (outcome === 'error') f.image.fire('error');
+      else if (outcome === 'cancel') welcome.cancel();
+      else if (outcome === 'interaction') f.document.fire('pointerdown');
+      else f.advance(3500);
+      assert.equal(f.classes.has('booting'), !readyFirst);
+      assert.equal(f.bootCalls.length, readyFirst ? 1 : 0);
+      welcome.ready();
+      assert.equal(f.classes.has('booting'), false);
+      assert.deepEqual(f.bootCalls, [{ overlayHidden: true, welcomeVisible: false }]);
+      f.image.fire('load');
+      assert.equal(f.overlay.hidden, true);
+      welcome.cancel();
+    }
+  }
 });
