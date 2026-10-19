@@ -1,0 +1,12 @@
+Created with the built-in image generation tool. The approved chibi draft was the edit reference.
+
+Use case: style-transfer / precise palette edit.
+Input image 1 is the EDIT TARGET: the already approved simple anime chibi mascot for Jenechka Cards.
+Preserve this exact character design, identity, pose, facial expression, head and body proportions, green eyes, wavy hair silhouette, tiny hands resting on a rounded card, and the large white uppercase J. Preserve the calm, sweet, modern, simple flat 2D chibi style. Do not add any detail.
+Make ONLY these coordinated changes:
+1. Add a completely opaque, flat, full-bleed very pale lavender background, approximately #F0EDF8. It must fill the entire square edge to edge; NOT transparent, NOT black, NOT a checkerboard. No border, corners or mockup.
+2. Recolor the front rounded J card to the app's actual richer medium-deep purple #7668DF, with an optional single simple shadow tone #6553CA. Retain its clean bold white/ivory uppercase J, same letter size and shape.
+3. Recolor the sweater to the same #7668DF purple family, with minimal simple shading, visually cohesive with the card.
+4. Very gently cool and mute the hair to a warm ash-dark-blonde/taupe blonde so it harmonizes with the purple; preserve its broad simple hair shapes. Keep light warm skin, subtle peach cheek blush and soft gray-green eyes. Use clean muted brown/plum contours.
+Composition: one centered character on one square canvas. The complete silhouette including hair and card must fit comfortably with approximately 12% clear background margin at the four edges. Do not crop any element.
+Avoid extra hair strands, extra shadows, hatching, tiny details, gradients, textures, realistic rendering, 3D, sparkles, hearts, doodles, jewelry, additional objects, text other than J, logos, watermarks. This is a clean mobile app icon candidate.
