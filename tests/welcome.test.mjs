@@ -5,7 +5,7 @@ import vm from 'node:vm';
 
 const source = await readFile(new URL('../welcome.js', import.meta.url), 'utf8');
 const KEY = 'jenechka-cards-last-active-v1';
-const HALF_DAY = 12 * 60 * 60 * 1000;
+const TWO_HOURS = 2 * 60 * 60 * 1000;
 const START = 1_800_000_000_000;
 
 class Events {
@@ -144,8 +144,8 @@ test('the independent 3500ms failsafe restores the app even if initialization ne
   welcome.cancel();
 });
 
-test('recent activity suppresses welcome and the 12-hour boundary allows it', () => {
-  for (const [elapsed, shouldShow] of [[HALF_DAY - 1, false], [HALF_DAY, true]]) {
+test('recent activity suppresses welcome and the 2-hour boundary allows it', () => {
+  for (const [elapsed, shouldShow] of [[TWO_HOURS - 1, false], [TWO_HOURS, true]]) {
     const f = fixture({ records: new Map([[KEY, String(START - elapsed)]]) });
     const welcome = f.setup();
     assert.equal(!f.overlay.hidden, shouldShow);
@@ -155,7 +155,7 @@ test('recent activity suppresses welcome and the 12-hour boundary allows it', ()
 });
 
 test('hidden startup waits until visible, then compares the old timestamp before writing', () => {
-  const records = new Map([[KEY, String(START - HALF_DAY)]]);
+  const records = new Map([[KEY, String(START - TWO_HOURS)]]);
   const f = fixture({ records, hidden: true });
   const welcome = f.setup();
   welcome.ready();
@@ -176,11 +176,11 @@ test('short tab returns stay quiet, a long absence plays again, and hiding relea
   assert.equal(f.overlay.hidden, true);
   assert.equal(f.app.inert, false);
   assert.equal(f.timers.size, 0);
-  f.advance(HALF_DAY - 1);
+  f.advance(TWO_HOURS - 1);
   f.visibility('visible');
   assert.equal(f.overlay.hidden, true);
   f.visibility('hidden');
-  f.advance(HALF_DAY);
+  f.advance(TWO_HOURS);
   f.visibility('visible');
   assert.equal(f.overlay.hidden, false);
   f.advance(2150);
@@ -193,7 +193,7 @@ test('shared storage suppresses repeated welcomes across tabs and tracks a still
   const first = fixture({ records });
   const welcome = first.setup();
   welcome.ready();
-  first.advance(HALF_DAY + 500);
+  first.advance(TWO_HOURS + 500);
   assert.ok(Number(records.get(KEY)) >= first.now() - 60_000);
   const second = fixture({ records, now: first.now() });
   const otherWelcome = second.setup();
@@ -207,7 +207,7 @@ test('a long-hidden tab closing does not overwrite the last active timestamp', (
   const welcome = f.setup();
   f.visibility('hidden');
   const hiddenAt = f.records.get(KEY);
-  f.advance(HALF_DAY);
+  f.advance(TWO_HOURS);
   f.window.fire('pagehide');
   assert.equal(f.records.get(KEY), hiddenAt);
   f.document.visibilityState = 'visible';
@@ -323,7 +323,7 @@ test('storage failures are silent, use in-memory timing, and never alter card da
 });
 
 test('invalid and future timestamps cannot suppress welcome indefinitely and are repaired', () => {
-  for (const value of ['bad', '-5', 'Infinity', '', String(START + HALF_DAY)]) {
+  for (const value of ['bad', '-5', 'Infinity', '', String(START + TWO_HOURS)]) {
     const f = fixture({ records: new Map([[KEY, value]]) });
     const welcome = f.setup();
     assert.equal(f.overlay.hidden, false);
@@ -342,7 +342,7 @@ test('cancel cleans up all timers and listeners and prevents later resumes from 
   for (const target of [f.document, f.window, f.image, f.overlay, f.motion]) {
     assert.ok([...target.listeners.values()].every((callbacks) => callbacks.size === 0));
   }
-  f.advance(HALF_DAY);
+  f.advance(TWO_HOURS);
   f.visibility('visible');
   welcome.ready();
   assert.equal(f.overlay.hidden, true);

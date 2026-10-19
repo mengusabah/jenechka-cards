@@ -1,5 +1,5 @@
 const LAST_ACTIVE_KEY = 'jenechka-cards-last-active-v1';
-const RETURN_AFTER = 12 * 60 * 60 * 1000;
+const RETURN_AFTER = 2 * 60 * 60 * 1000;
 const WELCOME_DURATION = 1700;
 const EXIT_DURATION = 450;
 const FAILSAFE_DURATION = 3500;
