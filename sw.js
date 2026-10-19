@@ -1,5 +1,5 @@
 /* Bump this version whenever any app-shell file changes. */
-const VERSION = '2026.10.19.7';
+const VERSION = '2026.10.19.8';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = `jenechka-cards-shell:${encodeURIComponent(SCOPE)}:`;
 const CACHE_NAME = `${CACHE_PREFIX}${VERSION}`;
@@ -12,6 +12,7 @@ const ASSET_URLS = [
   'study.js',
   'welcome.js',
   'manifest.webmanifest',
+  'icons/favicon-64.png',
   'icons/icon-192.png',
   'icons/icon-512.png',
   'icons/maskable-512.png',
