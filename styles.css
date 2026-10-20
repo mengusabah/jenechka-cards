@@ -125,12 +125,37 @@ select:focus{outline:2px solid #7668df;outline-offset:2px}
 details.panel summary{cursor:pointer;font-weight:750;min-height:32px;line-height:1.6}
 @media(min-width:540px){.library-sections .btn{text-align:center;font-size:14px;padding:12px}}
 
+/* One entry point for adding all words or building a smaller deck. */
+.deck-add-dialog{position:fixed;inset:auto 0 0;margin:0 auto;padding:0;width:100%;max-width:540px;max-height:calc(100% - 16px);max-height:calc(100dvh - env(safe-area-inset-top,0px) - 16px);border:0;border-radius:28px 28px 0 0;background:#faf9fe;color:#30293f;box-shadow:0 -12px 60px #281b4830;overflow:auto;overscroll-behavior:contain}
+.deck-add-dialog::backdrop{background:#20192e66;backdrop-filter:blur(5px);-webkit-backdrop-filter:blur(5px)}
+.deck-add-dialog[open]{animation:deck-add-enter .22s cubic-bezier(.22,.8,.25,1) both}
+.deck-add-sheet{padding:12px 22px calc(16px + env(safe-area-inset-bottom,0px))}
+.deck-add-handle{display:block;width:36px;height:4px;border-radius:99px;background:#d8d2e3;margin:0 auto 22px}
+.deck-add-heading{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:24px}
+.deck-add-heading>div{min-width:0}
+.deck-add-heading h2{font-size:24px;letter-spacing:-.7px;line-height:1.2;margin:0 0 8px;outline:none}
+.deck-add-heading p{font-size:13px;line-height:1.5;margin:0;color:#7a718b;overflow-wrap:anywhere}
+.deck-add-close{display:grid;place-items:center;flex:none;width:44px;height:44px;border:0;border-radius:50%;background:#eeebf4;color:#80768e;margin:-5px -5px 0 0}
+.deck-add-close svg{width:20px;height:20px}
+.deck-add-options{display:grid;gap:11px}
+.deck-add-option{display:flex;align-items:center;gap:14px;min-height:94px;width:100%;padding:18px 16px;border:1px solid #e8e2f1;border-radius:20px;background:white;color:#352d46;text-align:left;transition:background .16s,border-color .16s,transform .16s}
+.deck-add-icon{display:grid;place-items:center;flex:none;width:48px;height:48px;border-radius:15px;background:#eee8fc;color:#7151b0}
+.deck-add-icon svg{width:25px;height:25px}
+.deck-add-copy{display:block;min-width:0;flex:1}
+.deck-add-copy strong{display:block;font-size:16px;font-weight:750;line-height:1.4;overflow-wrap:anywhere}
+.deck-add-copy>span{display:block;font-size:12px;line-height:1.5;margin-top:4px;color:#82768e;overflow-wrap:anywhere}
+.deck-add-arrow{display:flex;flex:none;color:#a397b4}.deck-add-arrow svg{width:16px;height:16px}
+.deck-add-option:disabled{opacity:.55}
+.deck-add-option:active:not(:disabled){transform:scale(.985);background:#f3eefc}
+.deck-add-error{font-size:13px;color:#a53e53;background:#fceef1;border-radius:12px;padding:12px 14px;margin:14px 0 0}
+.deck-add-back{display:block;width:100%;min-height:48px;margin:15px 0 0;padding:12px;border:0;border-radius:14px;background:transparent;color:#796989;font-size:14px;font-weight:650}
+@keyframes deck-add-enter{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+@media(hover:hover){.deck-add-option:hover:not(:disabled){border-color:#b6a3d8;background:#f7f3ff}.deck-add-close:hover:not(:disabled),.deck-add-back:hover:not(:disabled){background:#e9e3f2}}
+@media(min-width:600px){.deck-add-dialog{inset:0;margin:auto;width:calc(100% - 48px);max-width:480px;border-radius:28px;max-height:calc(100dvh - 48px);box-shadow:0 24px 90px #20133440}.deck-add-sheet{padding:30px 28px 20px}.deck-add-handle{display:none}.deck-add-heading{margin-bottom:26px}}
+@media(max-width:360px){.deck-add-sheet{padding-right:16px;padding-left:16px}.deck-add-option{gap:11px;padding:15px 12px}.deck-add-icon{width:42px;height:42px;border-radius:13px}.deck-add-copy strong{font-size:15px}.deck-add-heading h2{font-size:22px}}
+@media(prefers-reduced-motion:reduce){.deck-add-dialog[open]{animation:none}.deck-add-option{transition:none}}
+
 /* Build a manageable deck from any library selection. */
-.subset-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 28px}
-.subset-option{min-width:0;text-align:left;border:1px solid #ddd7f4;border-radius:18px;background:#f0edfc;color:#3e345e;padding:17px}
-.subset-symbol{display:block;font-size:24px;color:#6553ca;margin-bottom:9px}
-.subset-option strong,.subset-option small{display:block;line-height:1.45}
-.subset-option strong{font-size:16px}.subset-option small{font-size:12px;margin-top:4px}
 .deck-builder{position:relative;min-width:0}
 .builder-modes{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;border-radius:17px;background:#eae7f3;margin:22px 0 18px}
 .builder-modes .btn{background:transparent;padding:12px 8px;font-size:14px;color:#69627c}
@@ -164,7 +189,7 @@ details.panel summary{cursor:pointer;font-weight:750;min-height:32px;line-height
 .builder-save{position:sticky;bottom:0;z-index:5;display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px -8px 0;padding:16px 8px calc(14px + env(safe-area-inset-bottom,0px));background:#f7f8fcf5;border-top:1px solid #ddd7ec;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
 .builder-save strong,.builder-save small{display:block}.builder-save strong{color:#4d3e7a;font-size:17px}.builder-save small{font-size:12px}.builder-save .btn{min-width:150px}
 .building-deck ~ .notice{bottom:calc(100px + env(safe-area-inset-bottom,0px))}
-@media(max-width:360px){.subset-actions{gap:8px}.subset-option{padding:13px}.builder-word-row{gap:10px;padding:13px 12px}.builder-column-labels.has-checkboxes{padding-left:46px}.builder-save .btn{min-width:135px}}
+@media(max-width:360px){.builder-word-row{gap:10px;padding:13px 12px}.builder-column-labels.has-checkboxes{padding-left:46px}.builder-save .btn{min-width:135px}}
 @media(prefers-reduced-motion:reduce){.builder-word-row{transition:none}}
 
 /* A brief greeting on a first visit or after a long break. */

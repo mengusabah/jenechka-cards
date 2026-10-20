@@ -1,5 +1,5 @@
 /* Bump this version whenever any app-shell file changes. */
-const VERSION = '2026.10.21.4';
+const VERSION = '2026.10.21.5';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = `jenechka-cards-shell:${encodeURIComponent(SCOPE)}:`;
 const CACHE_NAME = `${CACHE_PREFIX}${VERSION}`;
@@ -13,6 +13,7 @@ const ASSET_URLS = [
   'prebuilt.js',
   'preview.js',
   'deck-builder.js',
+  'deck-add-dialog.js',
   'study.js',
   'welcome.js',
   'manifest.webmanifest',

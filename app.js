@@ -5,6 +5,7 @@ import { LANGUAGES, languageByName } from './languages.js';
 import { createLibraryLoader, definitions, buildTemplate, hasImported, importTemplate, importTemplateSelection, prebuiltTargets, PREBUILT_LANGUAGES } from './prebuilt.js';
 import { setupPreviewSlider } from './preview.js';
 import { createSelectionState, setupDeckBuilder } from './deck-builder.js';
+import { openDeckAddDialog } from './deck-add-dialog.js';
 
 const welcome = setupWelcome();
 
@@ -23,6 +24,7 @@ let offlineReady = false, offlineError = '', registration, installPrompt, reload
 let persistent = false;
 let destroyPreview = () => {};
 let selectionState;
+let closeDeckAddDialog = () => {};
 const installed = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 const isEditing = () => ['create', 'edit'].includes(page);
 const blankCard = () => ({ id: createId(), front: '', back: '' });
@@ -82,6 +84,8 @@ function languageValue(id) {
 }
 
 function render() {
+  closeDeckAddDialog();
+  closeDeckAddDialog = () => {};
   destroyPreview();
   destroyPreview = () => {};
   $('app').setAttribute('aria-busy', String(busy));
@@ -206,14 +210,9 @@ function renderPrebuilt() {
 function renderPrebuiltPreview() {
   if (!library || !previewDefinition) return go('prebuilt');
   const template = buildTemplate(library, previewDefinition);
-  const imported = hasImported(decks, template);
   shell(template.name, `<p>Translations in <strong>${esc(template.sourceName)}</strong> · Learning <strong>${esc(template.targetName)}</strong></p>
     <div class="panel"><span class="status-pill">${template.cards.length} cards</span>
       ${template.estimatedCount ? `<span class="status-pill">${template.estimatedCount === template.cards.length ? 'Estimated level' : 'Includes estimated levels'}</span>` : ''}
-    </div>
-    <div class="subset-actions" role="group" aria-label="Create a deck with fewer words">
-      <button class="subset-option" data-build-prebuilt="random" ${!template.cards.length ? 'disabled' : ''}><span class="subset-symbol" aria-hidden="true">⇄</span><strong>Random words</strong><small>You choose how many</small></button>
-      <button class="subset-option" data-build-prebuilt="manual" ${!template.cards.length ? 'disabled' : ''}><span class="subset-symbol" aria-hidden="true">✓</span><strong>Choose words</strong><small>Pick your favorites</small></button>
     </div>
     <section class="preview-slider" aria-labelledby="preview-title" aria-roledescription="carousel">
       <h2 id="preview-title">A look inside</h2>
@@ -226,13 +225,38 @@ function renderPrebuiltPreview() {
       </div>
       <input class="preview-range" data-preview-range type="range" min="1" value="1" step="1" aria-label="Preview page" aria-controls="preview-slider-viewport">
     </section>
-    <div class="panel stack"><button class="btn primary full" data-import-prebuilt ${imported || !template.cards.length || storage.backend === 'memory' ? 'disabled' : ''}>${imported ? 'Already in My Decks' : 'Add to My Decks'}</button>
+    <div class="panel stack"><button class="btn primary full" data-add-prebuilt aria-haspopup="dialog" ${!template.cards.length || storage.backend === 'memory' ? 'disabled' : ''}>Add to My Decks</button>
       <button class="btn outline full" data-go="prebuilt">Browse more decks</button></div>`, 'prebuilt');
   destroyPreview = setupPreviewSlider(document.querySelector('.preview-slider'), template.cards, card => `
     <div class="vocabulary-row" role="listitem">
       <div><strong lang="${template.targetCode}" dir="auto">${esc(card.back)}</strong><small>${[posLabel(card.pos), template.kind === 'cefr' ? card.estimated ? 'Estimated level' : 'Source-listed level' : ''].filter(Boolean).map(esc).join(' · ')}</small></div>
       <div><span lang="${template.sourceCode}" dir="auto">${esc(card.front)}</span></div>
     </div>`);
+}
+
+function showPrebuiltAddChoices() {
+  if (!library || !previewDefinition || busy) return;
+  const template = buildTemplate(library, previewDefinition);
+  closeDeckAddDialog();
+  clearTimeout(noticeTimer);
+  $('notice').hidden = true;
+  closeDeckAddDialog = openDeckAddDialog({
+    template,
+    alreadyImported: hasImported(decks, template),
+    async onAll() {
+      const next = [...decks, importTemplate(template, decks)];
+      if (!await saveDecks(next)) throw new Error($('notice').textContent || 'Unable to save this deck. Please try again.');
+      selectionState = null;
+      go('decks');
+      notify(`Added ${template.cards.length} editable cards. Saved on this device.`);
+      return true;
+    },
+    onChoose(mode) {
+      if (selectionState?.templateId !== template.templateId) selectionState = createSelectionState(template, mode);
+      else { selectionState.mode = mode; selectionState.page = 0; }
+      go('prebuilt-builder');
+    },
+  });
 }
 
 function renderPrebuiltBuilder() {
@@ -409,8 +433,10 @@ $('app').addEventListener('click', async (event) => {
   try {
     if (action.go) {
       if (!mayLeave()) return;
+      const returnToChoices = page === 'prebuilt-builder' && action.go === 'prebuilt-preview';
       if (action.go === 'create') { draft = blankDeck(); dirty = false; }
       go(action.go);
+      if (returnToChoices) showPrebuiltAddChoices();
       if (action.go === 'prebuilt' && !library && !libraryLoading) refreshLibrary();
     } else if ('swapLanguages' in action) {
       [librarySource, libraryTarget] = [libraryTarget, librarySource];
@@ -423,15 +449,8 @@ $('app').addEventListener('click', async (event) => {
     } else if (action.previewPrebuilt && library) {
       previewDefinition = definitions(library.catalog).find(item => item.id === action.previewPrebuilt);
       if (previewDefinition) go('prebuilt-preview');
-    } else if (action.buildPrebuilt && library && previewDefinition) {
-      const template = buildTemplate(library, previewDefinition);
-      if (selectionState?.templateId !== template.templateId) selectionState = createSelectionState(template, action.buildPrebuilt);
-      else { selectionState.mode = action.buildPrebuilt; selectionState.page = 0; }
-      go('prebuilt-builder');
-    } else if ('importPrebuilt' in action && library && previewDefinition) {
-      const template = buildTemplate(library, previewDefinition);
-      const next = [...decks, importTemplate(template, decks)];
-      if (await saveDecks(next)) { go('decks'); notify(`Added ${template.cards.length} editable cards. Saved on this device.`); }
+    } else if ('addPrebuilt' in action) {
+      showPrebuiltAddChoices();
     } else if ('cancel' in action) {
       if (mayLeave()) { dirty = false; go('decks'); }
     } else if ('add' in action) {
