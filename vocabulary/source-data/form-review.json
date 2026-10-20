@@ -1,0 +1,135 @@
+{
+  "version": 1,
+  "methodology": "Targeted model-assisted review of concrete source-form problems. Replacements must be literal attested alternatives in the same source translation table; otherwise the form is omitted. This is not a native-speaker audit of the entire dictionary.",
+  "rules": [
+    {
+      "conceptId": "bulk-e8dfbc2bf7ebcd49199161fa",
+      "language": "tr",
+      "sourceText": "tanner",
+      "replacement": {
+        "text": "tabak",
+        "tags": [],
+        "sourceLanguage": "Turkish"
+      },
+      "reason": "The selected text tanner is not the Turkish vessel sense; use its exact attested tabak alternative.",
+      "evidence": {
+        "headword": "dish",
+        "meaning": "vessel for holding/serving food",
+        "pos": "noun",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/d/di/dish.jsonl",
+        "sha256": "06ebe827cac085e67dc381751ecaf26c8931106069b624961006b925c4fee6f4"
+      }
+    },
+    {
+      "conceptId": "bulk-68a9ca01adf31566a5d1024d",
+      "language": "tr",
+      "sourceText": "et",
+      "replacement": null,
+      "reason": "Turkish et denotes meat, not the edible plant/vegetable sense. No reliable alternative is present in this table.",
+      "evidence": {
+        "headword": "vegetable",
+        "meaning": "edible part of such a plant",
+        "pos": "noun",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/v/ve/vegetable.jsonl",
+        "sha256": "32abb4d5f01402ae92c86f0d06419934bc6511af87920e3bdb1b4ad19f15ad40"
+      }
+    },
+    {
+      "conceptId": "bulk-acc7e432ecb2f15bec8f0632",
+      "language": "tr",
+      "sourceText": "geri ödemek",
+      "replacement": null,
+      "reason": "The Turkish infinitive geri ödemek does not match the noun meaning an amount of money returned.",
+      "evidence": {
+        "headword": "refund",
+        "meaning": "amount of money returned",
+        "pos": "noun",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/r/re/refund.jsonl",
+        "sha256": "69340622dd4934e211ebe1093aed4a15092433cfed326fd95b5b3ea5cb86d285"
+      }
+    },
+    {
+      "conceptId": "bulk-1801adc8ccc2bb682f6f1776",
+      "language": "tr",
+      "sourceText": "öyretmək",
+      "replacement": null,
+      "reason": "The source form öyretmək is not standard Turkish spelling; do not manufacture a corrected translation.",
+      "evidence": {
+        "headword": "train",
+        "meaning": "to teach a task",
+        "pos": "verb",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/t/tr/train.jsonl",
+        "sha256": "60b57c08347a3b1d5f1be77d2c430088497c4efea68df4662e37e898c9ff4e70"
+      }
+    },
+    {
+      "conceptId": "bulk-812c7f0929e026130796a683",
+      "language": "tr",
+      "sourceText": "yapmak",
+      "replacement": {
+        "text": "pişirmek",
+        "tags": [],
+        "sourceLanguage": "Turkish"
+      },
+      "reason": "Prefer the attested food-specific verb pişirmek over generic yapmak.",
+      "evidence": {
+        "headword": "cook",
+        "meaning": "to prepare food for eating",
+        "pos": "verb",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/c/co/cook.jsonl",
+        "sha256": "c5063eef3bb64cef48993f600c1e7aec559f98e77135df08035d8f78a7f5cc1b"
+      }
+    },
+    {
+      "conceptId": "bulk-32ac7ac54bf1986cc9192b1c",
+      "language": "tr",
+      "sourceText": "bostan",
+      "replacement": null,
+      "reason": "Neither selected bostan nor alternate bağ reliably expresses the general fruit-or-nut-tree orchard sense in contemporary Turkish.",
+      "evidence": {
+        "headword": "orchard",
+        "meaning": "land for cultivation of fruit or nut trees",
+        "pos": "noun",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/o/or/orchard.jsonl",
+        "sha256": "2cb8d20976bb6065f25bf1c2765277da0ed497826922f6ab186f2ce988039203"
+      }
+    },
+    {
+      "conceptId": "bulk-3fe94f39e4d5e79cfd3592f7",
+      "language": "tr",
+      "sourceText": "kıptı",
+      "replacement": {
+        "text": "makas",
+        "tags": [],
+        "sourceLanguage": "Turkish"
+      },
+      "reason": "Prefer the attested standard modern cutting-tool word makas over the older alternatives.",
+      "evidence": {
+        "headword": "scissors",
+        "meaning": "tool used for cutting",
+        "pos": "noun",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/s/sc/scissors.jsonl",
+        "sha256": "844e9287cccc8616458267a0434f43761e599a6d96997c744b827db72dc092e5"
+      }
+    },
+    {
+      "conceptId": "bulk-abe5f9525d7995faabe4d9ca",
+      "language": "tr",
+      "sourceText": "albalı",
+      "replacement": {
+        "text": "kiraz",
+        "tags": [],
+        "sourceLanguage": "Turkish",
+        "sourceQualifier": "sweet"
+      },
+      "reason": "Prefer the attested common sweet-cherry term kiraz; the source qualifier is retained in the evidence.",
+      "evidence": {
+        "headword": "cherry",
+        "meaning": "fruit",
+        "pos": "noun",
+        "sourceUrl": "https://kaikki.org/dictionary/English/meaning/c/ch/cherry.jsonl",
+        "sha256": "0c5e0881097dda1419cd3473f51c6d897ec8a6cb49ed26d1ad3dcd66e2c8a9c4"
+      }
+    }
+  ]
+}

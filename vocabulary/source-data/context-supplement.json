@@ -1,0 +1,2355 @@
+{
+  "methodology": "Individual-sense review: model-assisted semantic curation by the coding assistant. Each assignment was selected using the exact English Wiktionary translation heading and part of speech in expanded-lexicon.json, with practical relevance to the named activity. Candidate headwords were only used for discovery; homonymous meanings were inspected separately and only the listed concept IDs receive these categories. Headword, meaning and POS are reproduced unchanged for provenance and validation. All selected concepts have a Turkish form and at least eight language forms in the source; no translation or missing form was invented. Shared actions receive multiple categories only where their exact sense is useful in each activity. Existing source attribution, license and per-concept evidence remain in expanded-lexicon.json. This is dictionary-derived semantic classification, not native-speaker review, proficiency grading or verification of every translation.",
+  "assignments": [
+    {
+      "conceptId": "bulk-c424f4b711cdb27a5c552856",
+      "categories": [
+        "airport"
+      ],
+      "headword": "aircraft",
+      "meaning": "machine capable of atmospheric flight",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-2e3b01370e0020add7df2bc2",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "answer",
+      "meaning": "to make a reply or response to",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-59b6a47450672b98d62d2a28",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "ant",
+      "meaning": "insect",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a366bd48b66deb206a7b58cb",
+      "categories": [
+        "office",
+        "everyday"
+      ],
+      "headword": "appointment",
+      "meaning": "arrangement for a meeting; an engagement",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-03a3321737545955d1ace4ba",
+      "categories": [
+        "airport"
+      ],
+      "headword": "arrival",
+      "meaning": "act of arriving",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-8dd28819551a87e49f863fbe",
+      "categories": [
+        "airport",
+        "everyday"
+      ],
+      "headword": "arrive",
+      "meaning": "to reach",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-05003d650ffe7c3d67ba702e",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "ask",
+      "meaning": "request an answer",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-4a75a138e13cf2b02536fde8",
+      "categories": [
+        "dining"
+      ],
+      "headword": "bake",
+      "meaning": "to cook in an oven",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-c542dc1c0add8cc4cd12c6fe",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "bargain",
+      "meaning": "intransitive: to make a bargain",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-8a1afa301b87730176014970",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "bargain",
+      "meaning": "item bought at a low price",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a7773a25fadbb24b65b1ed39",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "bark",
+      "meaning": "exterior covering of a tree",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e8630f3335f4a7478839f511",
+      "categories": [
+        "gardening",
+        "shopping",
+        "everyday"
+      ],
+      "headword": "basket",
+      "meaning": "container",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-898d4a7663a5c9ab8688cf41",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "bee",
+      "meaning": "insect",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-9800bba0c8329995b5597849",
+      "categories": [
+        "dining"
+      ],
+      "headword": "beef",
+      "meaning": "meat",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c4577b0bdb81f00c2a35d683",
+      "categories": [
+        "dining"
+      ],
+      "headword": "beer",
+      "meaning": "alcoholic drink made of malt",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-63cc1eaef45d81f8b2e9d1a4",
+      "categories": [
+        "dining",
+        "shopping",
+        "office",
+        "everyday"
+      ],
+      "headword": "bill",
+      "meaning": "invoice",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-7c131d9960937f915dad9feb",
+      "categories": [
+        "dining"
+      ],
+      "headword": "bitter",
+      "meaning": "having an acrid taste",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-a8cd9720de626a291dac2b1f",
+      "categories": [
+        "school"
+      ],
+      "headword": "blackboard",
+      "meaning": "a surface that can be written upon with chalk",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-61fe5d59312b96d6fd618f5f",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "blossom",
+      "meaning": "flowers on trees",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-996eebaaafd13d581088d326",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "blossom",
+      "meaning": "have or open into blossoms",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-8cc217088756390d18ecac25",
+      "categories": [
+        "dining"
+      ],
+      "headword": "boil",
+      "meaning": "(intransitive) begin to turn into a gas",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-1266bde9548af7e736603815",
+      "categories": [
+        "dining"
+      ],
+      "headword": "boil",
+      "meaning": "(transitive) heat (a liquid) until it begins to turn into a gas",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-924d307ada2bd18073bb84c6",
+      "categories": [
+        "dining"
+      ],
+      "headword": "boil",
+      "meaning": "cook in boiling water",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-d3c962ccaa855404389b5dcb",
+      "categories": [
+        "office"
+      ],
+      "headword": "boss",
+      "meaning": "person in charge",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-162fbfa1d83ba47397c1eb1c",
+      "categories": [
+        "dining",
+        "everyday"
+      ],
+      "headword": "bottle",
+      "meaning": "container",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c54eb9bff8a78e05a90cf728",
+      "categories": [
+        "dining"
+      ],
+      "headword": "bowl",
+      "meaning": "container for food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-d2df8db929f22c796ac82cb1",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "branch",
+      "meaning": "woody part of a tree arising from the trunk",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-22d3a67dd0d1bf151ecd55d1",
+      "categories": [
+        "dining",
+        "everyday"
+      ],
+      "headword": "breakfast",
+      "meaning": "first meal of the day",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-5023a24dacfd1d71b80a76eb",
+      "categories": [
+        "dining"
+      ],
+      "headword": "breakfast",
+      "meaning": "to eat the morning meal",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-44900eed97cdd65d269225e5",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "bucket",
+      "meaning": "container",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-5690012325aa29563f2e0528",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "bud",
+      "meaning": "newly formed leaf or flower that has not yet unfolded",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ff12ddbc02f362b3cae15b36",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "bury",
+      "meaning": "to place in the ground",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-3be7a0eaac000206771d9cad",
+      "categories": [
+        "dining"
+      ],
+      "headword": "butter",
+      "meaning": "soft foodstuff made from milk",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-fe9bab6e3772a56e28db237e",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "butterfly",
+      "meaning": "insect",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-5716ae7817579d55f76edec8",
+      "categories": [
+        "dining"
+      ],
+      "headword": "cake",
+      "meaning": "type of sweet dessert",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-96f763964bb59ba7ab0e0fce",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "calculate",
+      "meaning": "(transitive) to determine the value or solution of sth.",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-54bcf6ee3d66f83b289af0f3",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "calculator",
+      "meaning": "electronic device that performs mathematical calculations",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-f8597f3cca490b4b920d7850",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "calendar",
+      "meaning": "means to determine the date",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-b1de550db4ff4260e9cc768d",
+      "categories": [
+        "office",
+        "everyday"
+      ],
+      "headword": "call",
+      "meaning": "to contact by telephone",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-3fd45009ab07873ed483aa80",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "can",
+      "meaning": "a container used to carry and dispense water for plants",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-2a3d675732f96700d2650e28",
+      "categories": [
+        "airport",
+        "office",
+        "everyday"
+      ],
+      "headword": "cancel",
+      "meaning": "invalidate, annul",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-e90eb795b2a8a5c480247467",
+      "categories": [
+        "gardening",
+        "airport",
+        "shopping",
+        "everyday"
+      ],
+      "headword": "carry",
+      "meaning": "to transport by lifting",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-6669feb9b658c420d96eead2",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "cashier",
+      "meaning": "one who works at a till or receives payments",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c9b20028f61a4cb49ba13ac5",
+      "categories": [
+        "dining",
+        "shopping",
+        "airport",
+        "everyday"
+      ],
+      "headword": "change",
+      "meaning": "balance returned after a purchase",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-17efaf15ef81e419d5bac9f1",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "checkout",
+      "meaning": "supermarket checkout position",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-56ef2e9287673342bba47222",
+      "categories": [
+        "dining"
+      ],
+      "headword": "chef",
+      "meaning": "head cook of an establishment such as a restaurant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-45f561affae48171bf0d8afb",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "cherry",
+      "meaning": "tree",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-55f6f567fd9bf435fa438885",
+      "categories": [
+        "dining"
+      ],
+      "headword": "chew",
+      "meaning": "to crush food with teeth prior to swallowing",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-e91e72ffa22e7a91f3521e98",
+      "categories": [
+        "dining"
+      ],
+      "headword": "chicken",
+      "meaning": "meat",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-2f91962d93bb2634f302302a",
+      "categories": [
+        "school"
+      ],
+      "headword": "classroom",
+      "meaning": "room in a school",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-8c25232c83539790a72eac9e",
+      "categories": [
+        "gardening",
+        "dining",
+        "office",
+        "everyday"
+      ],
+      "headword": "clean",
+      "meaning": "(transitive) to remove dirt from a place or object",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-6e0a95ee1a60c91c14866488",
+      "categories": [
+        "office"
+      ],
+      "headword": "colleague",
+      "meaning": "fellow member of a profession",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a5e5298c5fd95cee1f1fd8a3",
+      "categories": [
+        "office"
+      ],
+      "headword": "contract",
+      "meaning": "agreement that is legally binding",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-1d8eaf075c0eed1cde59685a",
+      "categories": [
+        "dining"
+      ],
+      "headword": "cook",
+      "meaning": "person who prepares food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-62f103c3353ebb11ba1429bc",
+      "categories": [
+        "dining"
+      ],
+      "headword": "cook",
+      "meaning": "to be cooked",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-367a1cfcf55305ac32cc41e2",
+      "categories": [
+        "dining"
+      ],
+      "headword": "cookie",
+      "meaning": "small, flat baked good — see also biscuit",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-73d8d1dc09366225f6672552",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "copy",
+      "meaning": "result of copying",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-cf2468e6d967e378cff54fe1",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "cover",
+      "meaning": "to conceal or protect",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-90bb434f26a4f9569494243f",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "cucumber",
+      "meaning": "plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-8cb05fd0e2321b5279faa4f3",
+      "categories": [
+        "dining"
+      ],
+      "headword": "cup",
+      "meaning": "drinking vessel",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-d095e0760eadb8752e0df362",
+      "categories": [
+        "shopping",
+        "airport"
+      ],
+      "headword": "currency",
+      "meaning": "money or other item used to facilitate transactions",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e3af8fab9fb76ae0bd110d2c",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "deadline",
+      "meaning": "date on or before which something must be completed",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-7271ddb6b3df5772cee1ebf7",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "deep",
+      "meaning": "having its bottom far down",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-bd97df141591bee51a61b132",
+      "categories": [
+        "airport"
+      ],
+      "headword": "delay",
+      "meaning": "period of time before an event occurs; act of delaying",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-9273fc6a33d240a52cb33ec6",
+      "categories": [
+        "airport"
+      ],
+      "headword": "departure",
+      "meaning": "the act of departing",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-aac5985073ddb0ec02268fbf",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "desk",
+      "meaning": "table for writing and reading",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-850b7f63e43581ed655c1b66",
+      "categories": [
+        "dining"
+      ],
+      "headword": "dessert",
+      "meaning": "sweet confection served as the last course of a meal",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-7172bbc432ed75f72c1da761",
+      "categories": [
+        "school"
+      ],
+      "headword": "dictionary",
+      "meaning": "reference work of words and their meanings",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-60eb527930560f5fec03e50b",
+      "categories": [
+        "dining"
+      ],
+      "headword": "dinner",
+      "meaning": "evening meal",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-31ea4d570ed36b1901a7812d",
+      "categories": [
+        "dining",
+        "everyday"
+      ],
+      "headword": "dirty",
+      "meaning": "covered with or containing dirt",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-291329d61c49a746f9723db3",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "discount",
+      "meaning": "reduction in price",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-432008c1e188d785864dae1d",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "discuss",
+      "meaning": "to converse or debate concerning a particular topic",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-c2c3d687f36ebc3028d7e343",
+      "categories": [
+        "dining"
+      ],
+      "headword": "dish",
+      "meaning": "specific type of food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-1a39dbe9a652aed1d56a8a4f",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "drain",
+      "meaning": "conduit for liquids",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-9021875a43a208ca877cb52d",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "drought",
+      "meaning": "period of unusually low rain fall",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-4c1c617b025972a5f83fed54",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "dry",
+      "meaning": "to become dry",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-cfe88936528f88e95f864d01",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "dry",
+      "meaning": "to make dry",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-6b192a0deade81049d5a66ec",
+      "categories": [
+        "airport",
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "early",
+      "meaning": "at a time before expected",
+      "pos": "adv"
+    },
+    {
+      "conceptId": "bulk-466d30ae108bec93ff61251b",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "earth",
+      "meaning": "soil",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3eff5df8235e9b9bbbef843c",
+      "categories": [
+        "office",
+        "everyday"
+      ],
+      "headword": "email",
+      "meaning": "message sent through email",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-b49d5b290c42ba1cf2e926a3",
+      "categories": [
+        "office"
+      ],
+      "headword": "employee",
+      "meaning": "person who provides labor to a company or another person",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-fd7387661a6f4ac86ecc5253",
+      "categories": [
+        "office"
+      ],
+      "headword": "employer",
+      "meaning": "person or entity which employs others",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-b7b612ec7238df8d83b995e6",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "empty",
+      "meaning": "to make empty",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-5aaf3a55a3d2963dc8fb5ce7",
+      "categories": [
+        "airport",
+        "shopping",
+        "office",
+        "everyday"
+      ],
+      "headword": "entrance",
+      "meaning": "place of entering",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-25276d39d3ea0b1ed781efa1",
+      "categories": [
+        "school"
+      ],
+      "headword": "examination",
+      "meaning": "formal test",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ee8a5f802adce19c04cc0710",
+      "categories": [
+        "airport",
+        "shopping",
+        "office",
+        "everyday"
+      ],
+      "headword": "exit",
+      "meaning": "passage or opening through which one can go from inside a place to the outside",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ee05b96399cb08c542194aaa",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "explain",
+      "meaning": "to make intelligible",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-ac6ebfcff1cfce7b9fcaab75",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "fence",
+      "meaning": "barrier",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-748c7c646743e20c4b17e256",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "fence",
+      "meaning": "to enclose by building a fence",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-3216d542eb86be7974147fc6",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "file",
+      "meaning": "collection of papers",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-8904dd211d9de090020d9da3",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "file",
+      "meaning": "computing: aggregation of data",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-374d4f58ced6df56285af471",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "fill",
+      "meaning": "add contents to, so it is full",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-ae0513decbb7bba8a4f4f858",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "finish",
+      "meaning": "to complete",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-c80a9aeab5629cacfe9095b2",
+      "categories": [
+        "dining"
+      ],
+      "headword": "fish",
+      "meaning": "flesh of fish as food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-cea3667903d1e797e6ff6ce6",
+      "categories": [
+        "airport"
+      ],
+      "headword": "flight",
+      "meaning": "journey made by an aircraft",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-32e00312a11e977fbcfa5d1a",
+      "categories": [
+        "dining"
+      ],
+      "headword": "flour",
+      "meaning": "ground cereal grains or other foodstuff",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-6b6c0fa4a2c1a7d79244dbec",
+      "categories": [
+        "airport"
+      ],
+      "headword": "fly",
+      "meaning": "to travel through air",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-5c4a0566086a38bfa5bc5139",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "folder",
+      "meaning": "container of computer files",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-0b7586dc933f523338ef0ca4",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "folder",
+      "meaning": "organizer",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c1155a67106ee87d23bcd67d",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "forget",
+      "meaning": "to lose remembrance of",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-a0247916ac6a7fa550bf6d4d",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "fork",
+      "meaning": "pronged tool",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-0ce52e465ecca3fbf18794ef",
+      "categories": [
+        "dining"
+      ],
+      "headword": "freezer",
+      "meaning": "part of a refrigerator",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-1db774e9e546b64affead450",
+      "categories": [
+        "dining",
+        "everyday"
+      ],
+      "headword": "fresh",
+      "meaning": "newly produced or obtained",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-dd11aa287c082af698a79db2",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "frost",
+      "meaning": "cover of minute ice crystals",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-f0da21241aa459c8a98c63dd",
+      "categories": [
+        "dining"
+      ],
+      "headword": "fry",
+      "meaning": "to cook (something) in hot fat or oil",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-fc57ddcd0d00a1f30317f9ec",
+      "categories": [
+        "dining"
+      ],
+      "headword": "full",
+      "meaning": "satisfied, in relation to eating",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-81c738ecb524c87be75a08e6",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "garlic",
+      "meaning": "plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-fbb2acaafb9ff23e214f0fa4",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "gate",
+      "meaning": "door-like structure outside",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-28bce5dd6ee291c079ec22ba",
+      "categories": [
+        "dining"
+      ],
+      "headword": "glass",
+      "meaning": "drinking vessel — see also cup, chalice, goblet",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a39bbed2af5f1a5873a6f382",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "glove",
+      "meaning": "item of clothing",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-4b81366e3d407a47756bff88",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "goods",
+      "meaning": "that which is produced, traded, bought or sold",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3f824ab59676e85aab66727b",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "grass",
+      "meaning": "ground cover plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-5400ecd30daca4473056f768",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "greenhouse",
+      "meaning": "building in which plants are grown more quickly than outside",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-6c5fe6f8c47a25b02ff288f9",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "harvest",
+      "meaning": "process of gathering the ripened crop",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-40e3da4c6ff9031e9801ff1f",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "hedge",
+      "meaning": "thicket of bushes planted in a row",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c30824bb7e056f5ba9c0933a",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "help",
+      "meaning": "transitive: provide assistance to (someone or something)",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-0832bd920bca3e4c81860430",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "herb",
+      "meaning": "plant used to flavour food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-dfdddf0d2339c91db34a54c1",
+      "categories": [
+        "dining"
+      ],
+      "headword": "honey",
+      "meaning": "sweet substance produced by bees",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3da93c694f480234a363dcbe",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "insect",
+      "meaning": "arthropod of class Insecta",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-576caa6946146fd9d0676113",
+      "categories": [
+        "dining"
+      ],
+      "headword": "jam",
+      "meaning": "sweet mixture of fruit boiled with sugar",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-d22a5e1847b8a2c190b11a3c",
+      "categories": [
+        "dining"
+      ],
+      "headword": "juice",
+      "meaning": "beverage made of juice",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-0d5777bb83d2f6f86669971b",
+      "categories": [
+        "airport"
+      ],
+      "headword": "land",
+      "meaning": "to descend to a surface, especially from the air",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-17e585d3c9285c9de9f897b4",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "laptop",
+      "meaning": "computing: a laptop computer",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-346b8facd0fb311228ff8269",
+      "categories": [
+        "airport",
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "late",
+      "meaning": "past a designated time",
+      "pos": "adv"
+    },
+    {
+      "conceptId": "bulk-ae45788c7078c5ab196809e1",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "lawn",
+      "meaning": "ground covered with grass",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-f4bb0dd9c4d0ac444fe6e302",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "leaf",
+      "meaning": "part of a plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-4c44157940de8463a050fa93",
+      "categories": [
+        "school"
+      ],
+      "headword": "lesson",
+      "meaning": "section of learning or teaching",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a16c3aad30fea4d50f5e6300",
+      "categories": [
+        "school"
+      ],
+      "headword": "letter",
+      "meaning": "a symbol in an alphabet",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-788b6c51fcdf06b3a1c4be21",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "lettuce",
+      "meaning": "an edible plant, Lactuca",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-88ba346ffda06595cc0b5172",
+      "categories": [
+        "school"
+      ],
+      "headword": "library",
+      "meaning": "institution which holds books, etc.",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a4039b83cccd5524fe79ef29",
+      "categories": [
+        "dining",
+        "office",
+        "everyday"
+      ],
+      "headword": "lunch",
+      "meaning": "meal around midday",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-9a9579b80871a8de40b4d8de",
+      "categories": [
+        "office"
+      ],
+      "headword": "manager",
+      "meaning": "person whose job is to manage something",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e53f65ef41b9496ef60fbf8f",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "manure",
+      "meaning": "excrement",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-20b27e007c2cf90e9d6c1ffc",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "message",
+      "meaning": "communication, concept or information conveyed",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a6b48a41f1cfdea1187ecf03",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "mint",
+      "meaning": "plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-b7cd1fb2d9dba27dc62f01a6",
+      "categories": [
+        "dining"
+      ],
+      "headword": "mix",
+      "meaning": "stir two or more substances together",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-35041bd15e0b32be9a2052b7",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "moist",
+      "meaning": "characterized by the presence of moisture; slightly wet",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-aa00ebf4d175444c6957b3b8",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "moss",
+      "meaning": "plants of the division Bryophyta",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-6e7fccca1237b47d8d95a4da",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "mouse",
+      "meaning": "computing: input device",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e26b864df081607dbd6ab9fe",
+      "categories": [
+        "dining"
+      ],
+      "headword": "mug",
+      "meaning": "large cup",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-98d70b74edd235dbcd62b486",
+      "categories": [
+        "dining"
+      ],
+      "headword": "napkin",
+      "meaning": "serviette",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-10f1f776ec9754dcbd5e7972",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "net",
+      "meaning": "mesh of string, cord or rope",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-92f5e16ee7c7e3e81a4a7c9b",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "notebook",
+      "meaning": "empty book able to be used for notes",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-32c1eebf9f091c38568588a7",
+      "categories": [
+        "dining"
+      ],
+      "headword": "oil",
+      "meaning": "liquid fat",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-138134d0771bab09ced34d2c",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "onion",
+      "meaning": "Allium cepa",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-046cc30cd5090fc1fa312fe7",
+      "categories": [
+        "dining"
+      ],
+      "headword": "oven",
+      "meaning": "chamber used for baking or heating",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a8944a6d00523c58a08fda72",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "page",
+      "meaning": "one side of a leaf of a book",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-139506b9929ac50ea1a823b6",
+      "categories": [
+        "dining"
+      ],
+      "headword": "pan",
+      "meaning": "flat vessel used for cooking — see also frying pan",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a9b9cd46e87cd6094b45a162",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "paper",
+      "meaning": "sheet material",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a49fab170c7d072a457cc2d6",
+      "categories": [
+        "airport"
+      ],
+      "headword": "passenger",
+      "meaning": "one who rides or travels in a vehicle",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3e9b3817356bd9b87958b190",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "path",
+      "meaning": "a trail for the use of, or worn by, pedestrians",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-681936b7e84e1611d7a6499e",
+      "categories": [
+        "shopping",
+        "everyday"
+      ],
+      "headword": "payment",
+      "meaning": "the act of paying",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-f308f92fdea6b3a9ebe0247a",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pea",
+      "meaning": "plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-78aca011c7d51489c0094ad6",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "peach",
+      "meaning": "tree",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c03cf04e9540c503991c9219",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pear",
+      "meaning": "tree",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-582a14cf466fe58ca99e68ee",
+      "categories": [
+        "dining"
+      ],
+      "headword": "peel",
+      "meaning": "to remove skin",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-ea32df77ac1ded8f83c517f8",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "pen",
+      "meaning": "writing tool",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-88a1ede8eb04926a807da7b4",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "pencil",
+      "meaning": "graphite writing-instrument",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-49712b0f7708167d5a5d8a31",
+      "categories": [
+        "dining"
+      ],
+      "headword": "pepper",
+      "meaning": "spice",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-6d04f2bac2b589214cc55684",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pick",
+      "meaning": "pickaxe",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-14de75e2ff64feaac38d4d13",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pick",
+      "meaning": "to remove a fruit or plant for consumption",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-9181dbd72147d40aba6aaaab",
+      "categories": [
+        "airport"
+      ],
+      "headword": "pilot",
+      "meaning": "controller of aircraft",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-61731ba993b603ce013f715b",
+      "categories": [
+        "airport"
+      ],
+      "headword": "plane",
+      "meaning": "airplane",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-baf7da78852950b404451605",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "plum",
+      "meaning": "tree",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ce68173ef9924a2177313ef3",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pole",
+      "meaning": "long and slender object for construction or support",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-832d170781a93c5fbcc21f37",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pond",
+      "meaning": "small lake",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-c50f9a295761450bfa3b7e3e",
+      "categories": [
+        "dining"
+      ],
+      "headword": "pot",
+      "meaning": "vessel for cooking or storing food etc.",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-bf32f16abe84267837434421",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "pour",
+      "meaning": "to cause to flow in a stream",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-6c1621cfb382374d82abe8e0",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "price",
+      "meaning": "cost required to gain possession of something",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-63ce8f9c260e0b07e3d3b54e",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "print",
+      "meaning": "to produce a copy of a text or image on a surface, especially by machine",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-7d27cde4590fc01e270031cc",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "printer",
+      "meaning": "computing: device used to print text or images",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-6c70a08985b41d40a81100f2",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "product",
+      "meaning": "commodity for sale",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-5528bb6d6d8b628fa7146dc1",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "project",
+      "meaning": "planned endeavor",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-18e98278b946327a41a2f90b",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "pull",
+      "meaning": "transitive: apply force to (something) so it comes towards one",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-ece4e02e97a61e7d40cd6682",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "pumpkin",
+      "meaning": "plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-462a4e471b6ff37419711698",
+      "categories": [
+        "airport",
+        "shopping",
+        "everyday"
+      ],
+      "headword": "queue",
+      "meaning": "line of people",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-aa968578bb350307eb5fb7f8",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "receipt",
+      "meaning": "written acknowledgement",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-fe5a46d18f1d3a73813b2810",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "remember",
+      "meaning": "to recall from one's memory",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-48a6b302e77a7664c660486b",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "repeat",
+      "meaning": "do or say again",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-0a7bb28de28467ba00952b88",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "report",
+      "meaning": "information describing events",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-d2e256fc129c757a59cda3d8",
+      "categories": [
+        "dining",
+        "airport"
+      ],
+      "headword": "reservation",
+      "meaning": "arrangement by which something is secured in advance",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-7a4a50b16e7f614402fdae7a",
+      "categories": [
+        "shopping",
+        "everyday"
+      ],
+      "headword": "return",
+      "meaning": "to give something back to its original holder or owner",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-eb2ff719f9172dcc5a732b7c",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "root",
+      "meaning": "part of a plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-31a801e999ea170072079b4b",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "rope",
+      "meaning": "thick, strong string",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-627435eca721ac8240cd0508",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "rose",
+      "meaning": "flower",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-98cee0209e5b89189f06ef76",
+      "categories": [
+        "school"
+      ],
+      "headword": "ruler",
+      "meaning": "measuring or drawing device",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-47c1c3796aea3bdcc3e99fb9",
+      "categories": [
+        "airport"
+      ],
+      "headword": "runway",
+      "meaning": "(aviation) strip for airplanes to land on or take off from",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-b29892eeb851808eda4e5aa2",
+      "categories": [
+        "dining"
+      ],
+      "headword": "salad",
+      "meaning": "food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-1053b220058b358d9bb97c13",
+      "categories": [
+        "office"
+      ],
+      "headword": "salary",
+      "meaning": "fixed amount of money paid on monthly or annual basis",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-261e32978faca53be1184885",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "sale",
+      "meaning": "exchange of goods or services for currency or credit",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-1a915cc79730c57e2677bfe2",
+      "categories": [
+        "dining"
+      ],
+      "headword": "salty",
+      "meaning": "tasting of salt",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-4b14d6068316df853ad67096",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "sand",
+      "meaning": "finely ground rock",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ad2d79c166d2fb30c72a7912",
+      "categories": [
+        "dining"
+      ],
+      "headword": "saucer",
+      "meaning": "small dish",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-866c197b5bbceef56e5fd34a",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "save",
+      "meaning": "computing: to write a file to a storage medium",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-004f24b1722c3687f39b48f8",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "screen",
+      "meaning": "viewing area of electronic output device",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-25f5b21633630e69ffee0f16",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "seedling",
+      "meaning": "young plant grown from seed",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e4c15da15d7d99174322349a",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "sell",
+      "meaning": "to agree to transfer goods or provide services for payment",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-19a3a72165ecbeedcefb4998",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "send",
+      "meaning": "make something go somewhere",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-3bb2b07d73e35f4f06d18c9a",
+      "categories": [
+        "dining"
+      ],
+      "headword": "serve",
+      "meaning": "to bring food to",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-f2b75969b8e08ad29885fa06",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "shade",
+      "meaning": "darkness where light is blocked",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-583b5ce7096a11753c74b81e",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "shallow",
+      "meaning": "having little depth and significantly less deep than wide",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-0888b3294fa21826d1efd879",
+      "categories": [
+        "office",
+        "everyday"
+      ],
+      "headword": "sign",
+      "meaning": "to write one's signature on a document",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-ce886eee022f65a9c13bc53f",
+      "categories": [
+        "office",
+        "everyday"
+      ],
+      "headword": "signature",
+      "meaning": "person’s autograph name",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-0bd348b654bf9c0b58c00148",
+      "categories": [
+        "dining"
+      ],
+      "headword": "slice",
+      "meaning": "thin, broad piece cut off",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-4c6dea4caa70a66e9e18fd41",
+      "categories": [
+        "dining"
+      ],
+      "headword": "slice",
+      "meaning": "to cut into slices",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-aa305c22b5df5e6bcd913b95",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "snail",
+      "meaning": "any animal of the class Gastropoda having a shell",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-81d92405650f143d8805fdfd",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "soil",
+      "meaning": "mineral or organic material serving as a natural medium for the growth of land plants",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-842dd92634452db2d36b188c",
+      "categories": [
+        "dining"
+      ],
+      "headword": "sour",
+      "meaning": "having an acidic, sharp or tangy taste",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-d4f813ccfb975f5b27b3e0ce",
+      "categories": [
+        "dining"
+      ],
+      "headword": "spicy",
+      "meaning": "tangy or pungent",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-8409e2466af1cee15ae8aa67",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "spinach",
+      "meaning": "a particular edible plant, Spinacia oleracea",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-59b1351081cc038f84760c00",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "spray",
+      "meaning": "to project a liquid in a disperse manner",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-fa8d932a4234507b819bceb2",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "sprout",
+      "meaning": "new growth on a plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-8ea464d253b9f0ec8810d0e4",
+      "categories": [
+        "dining"
+      ],
+      "headword": "stale",
+      "meaning": "having lost its freshness",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-b8e5046972b7cba8d7f2279d",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "start",
+      "meaning": "to begin",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-1542f6631fd97636e208557d",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "stem",
+      "meaning": "botany: above-ground stalk of a vascular plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3f160811ff36f09f9bf128d1",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "stick",
+      "meaning": "long piece of wood",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-7a5a549d91c54395d5b3d7cd",
+      "categories": [
+        "dining"
+      ],
+      "headword": "stove",
+      "meaning": "device for heating food",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ff1c7d9b90c22454985ed929",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "strawberry",
+      "meaning": "plant of the genus Fragaria",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-ef91b3a25152ddce0d1f732c",
+      "categories": [
+        "school"
+      ],
+      "headword": "study",
+      "meaning": "to revise/review materials",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-6ef8a1ae30f6bf83d2b55dc1",
+      "categories": [
+        "airport"
+      ],
+      "headword": "suitcase",
+      "meaning": "large piece of luggage",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-eb460956c271e3d6145d531b",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "sunflower",
+      "meaning": "flower",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3ba4817207470792a47b05e4",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "sunlight",
+      "meaning": "electromagnetic radiation given off by the sun",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-bbeb37289e4f3712810e68f5",
+      "categories": [
+        "office",
+        "school"
+      ],
+      "headword": "task",
+      "meaning": "piece of work done as part of one’s duties",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-93b30272abce2b0c6d5e90f8",
+      "categories": [
+        "dining"
+      ],
+      "headword": "taste",
+      "meaning": "to sample the flavor of something",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-49e6f994be3652a097e94bd6",
+      "categories": [
+        "airport",
+        "everyday"
+      ],
+      "headword": "taxi",
+      "meaning": "vehicle available for public hire",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-a64f843576e044cd3dd049a3",
+      "categories": [
+        "school"
+      ],
+      "headword": "teach",
+      "meaning": "to pass on knowledge",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-f32b77fc2687138745877269",
+      "categories": [
+        "airport"
+      ],
+      "headword": "terminal",
+      "meaning": "airport building",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-230e7bf9196e117205d7ac7b",
+      "categories": [
+        "shopping"
+      ],
+      "headword": "till",
+      "meaning": "cash register",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-b2d07e2b1525aef1c0a9cab5",
+      "categories": [
+        "dining"
+      ],
+      "headword": "tip",
+      "meaning": "small amount of money left for a servant as a token of appreciation",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-dbe84113c8deb69d64502eda",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "tomato",
+      "meaning": "tomato plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-393b52dc04f4605892783455",
+      "categories": [
+        "gardening",
+        "everyday"
+      ],
+      "headword": "tool",
+      "meaning": "mechanical device intended to make a task easier",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-726f6a416384edf3c5e753b9",
+      "categories": [
+        "school"
+      ],
+      "headword": "translate",
+      "meaning": "to change spoken words or written text from one language to another",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-8351cc840be25240dd86bd72",
+      "categories": [
+        "dining"
+      ],
+      "headword": "tray",
+      "meaning": "object on which things are carried",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e76996a474c27b5484c44a97",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "tulip",
+      "meaning": "plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3779cbe18f77cdf7da91faa3",
+      "categories": [
+        "office",
+        "school",
+        "everyday"
+      ],
+      "headword": "understand",
+      "meaning": "to grasp the meaning of",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-5325096122170ce4bd851be7",
+      "categories": [
+        "dining"
+      ],
+      "headword": "vinegar",
+      "meaning": "condiment",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-3ac4a824d58f2b2743b0c820",
+      "categories": [
+        "airport"
+      ],
+      "headword": "visa",
+      "meaning": "permit to enter a country",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-9a33a3721621209fa58f238b",
+      "categories": [
+        "airport",
+        "shopping",
+        "dining",
+        "everyday"
+      ],
+      "headword": "wait",
+      "meaning": "delay until some event",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-2da9c4157da35029e018f6bb",
+      "categories": [
+        "dining"
+      ],
+      "headword": "waiter",
+      "meaning": "a server in a restaurant or similar",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-afa08b882d71cd78cdd33620",
+      "categories": [
+        "shopping",
+        "everyday"
+      ],
+      "headword": "wallet",
+      "meaning": "case for keeping money",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-e5a7fcdd58ea81e789e9c4c6",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "wash",
+      "meaning": "to clean with water — see also deterge",
+      "pos": "verb"
+    },
+    {
+      "conceptId": "bulk-c8640e6de047c275bf8f894e",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "weed",
+      "meaning": "unwanted plant",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-30f091cb6e9e10eefaef6010",
+      "categories": [
+        "gardening",
+        "dining",
+        "everyday"
+      ],
+      "headword": "wet",
+      "meaning": "of an object: covered with or impregnated with liquid",
+      "pos": "adj"
+    },
+    {
+      "conceptId": "bulk-2fcc3f04e5f89049cf1c52de",
+      "categories": [
+        "dining"
+      ],
+      "headword": "wine",
+      "meaning": "alcoholic beverage made from grapes — see also port wine, chianti",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-1f5eed0f4252ae2da3dc7767",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "wire",
+      "meaning": "thin thread of metal",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-4e467b01a1d876099d5d3fbc",
+      "categories": [
+        "gardening"
+      ],
+      "headword": "worm",
+      "meaning": "animal",
+      "pos": "noun"
+    },
+    {
+      "conceptId": "bulk-d600b2ec50f7a886b91a434f",
+      "categories": [
+        "dining"
+      ],
+      "headword": "yogurt",
+      "meaning": "a milk-based product thickened by a bacterium-aided curdling process",
+      "pos": "noun"
+    }
+  ]
+}

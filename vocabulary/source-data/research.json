@@ -1,0 +1,837 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-20",
+  "scope": "Research and integration record for the thirteen supported target languages. Every integrated source below exists in a local source-data file. Current catalogue/report counts, rather than this document, describe generated card coverage.",
+  "policy": [
+    "Use redistributable primary-source lexical material and retain source identities, licences, attribution, source annotations and pinned input provenance.",
+    "No proprietary application decks are used. At the user’s request, original model-assisted editorial translations and modern usage corrections supplement the open dictionaries; these are explicitly distinguished from source-attested alternatives.",
+    "Classifications must describe the target language. Verified source labels and defensible research-derived estimates must be distinguished explicitly; estimates need recorded methodology and must never be presented as verified labels. Do not transfer English levels to translations, invert Russian levels into English, convert general-frequency ranks alone to CEFR, or equate HSK/JLPT/TOPIK with CEFR.",
+    "A CEFR-labelled corpus is not itself a word-level classification. A defensible, transparently labelled estimation method may use graded-corpus evidence, subject to compatible source licences. Broad semantic topics and comparative dictionary concepts are not CEFR curricula.",
+    "Excluded or unverified candidates are not imported. Noncommercial restrictions are incompatible with this project's required commercial redistribution scope.",
+    "Source row, sense and form counts are not unique-word counts. Imported source classifications do not imply official certification or native-speaker review of every resulting card."
+  ],
+  "sourceFiles": [
+    {
+      "path": "vocabulary/source-data/lexicon.json",
+      "sources": [
+        {
+          "id": "wiktionary-kaikki",
+          "url": "https://kaikki.org/dictionary/English/index.html",
+          "license": "CC-BY-SA-4.0"
+        }
+      ]
+    },
+    {
+      "path": "vocabulary/source-data/expanded-lexicon.json",
+      "sources": [
+        {
+          "id": "wiktionary-kaikki-expanded",
+          "url": "https://kaikki.org/dictionary/English/index.html",
+          "license": "CC-BY-SA-4.0"
+        }
+      ]
+    },
+    {
+      "path": "vocabulary/source-data/frequency.json",
+      "sources": [
+        {
+          "id": "frequencywords",
+          "url": "https://github.com/hermitdave/FrequencyWords/tree/525f9b560de45753a5ea01069454e72e9aa541c6",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    },
+    {
+      "path": "vocabulary/source-data/cefr.json",
+      "sources": [
+        {
+          "id": "cefrj",
+          "url": "https://www.cefr-j.org/download.html",
+          "license": "CEFR-J attribution permission; research, educational and commercial use permitted"
+        },
+        {
+          "id": "smartool",
+          "url": "https://github.com/smartool/data-rus-eng",
+          "license": "CC-BY-4.0"
+        }
+      ]
+    },
+    {
+      "path": "vocabulary/source-data/levels.json",
+      "sources": [
+        {
+          "id": "octanove",
+          "url": "https://github.com/openlanguageprofiles/olp-en-cefrj",
+          "license": "CC-BY-SA-4.0"
+        }
+      ]
+    },
+    {
+      "path": "vocabulary/source-data/european.json",
+      "sources": [
+        {
+          "id": "ids",
+          "url": "https://ids.clld.org/",
+          "license": "CC-BY-4.0"
+        },
+        {
+          "id": "kaikki-spanish-ids-validation",
+          "url": "https://kaikki.org/dictionary/Spanish/index.html",
+          "license": "CC-BY-SA-4.0"
+        }
+      ]
+    },
+    {
+      "path": "vocabulary/source-data/asian.json",
+      "sources": [
+        {
+          "id": "cc-cedict",
+          "url": "https://www.mdbg.net/chinese/dictionary?page=cedict",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "id": "jmdict",
+          "url": "https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "id": "wiktionary-korean",
+          "url": "https://kaikki.org/dictionary/Korean/index.html",
+          "license": "CC-BY-SA-4.0"
+        },
+        {
+          "id": "wiktionary-arabic",
+          "url": "https://kaikki.org/dictionary/Arabic/index.html",
+          "license": "CC-BY-SA-4.0"
+        }
+      ]
+    }
+  ],
+  "languageFindings": [
+    {
+      "language": "en",
+      "name": "English",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "source-classifications-integrated",
+        "levels": [
+          "A1",
+          "A2",
+          "B1",
+          "B2",
+          "C1",
+          "C2"
+        ],
+        "sourceIds": [
+          "cefrj",
+          "octanove"
+        ],
+        "inputFiles": [
+          "vocabulary/source-data/cefr.json",
+          "vocabulary/source-data/levels.json"
+        ],
+        "finding": "CEFR-J 1.6 supplies English A1-B2 headword/POS classifications; Octanove 1.0 supplies the publisher's C1/C2 supplement. Exact English lemma/POS matches only. These are source-assigned lexical classifications, not official CEFR certification or independent validation of every dictionary sense."
+      },
+      "excludedCandidateIds": [
+        "kelly",
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept."
+      ]
+    },
+    {
+      "language": "tr",
+      "name": "Turkish",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated."
+      ]
+    },
+    {
+      "language": "de",
+      "name": "German",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "daflex",
+        "goethe-a1",
+        "gervlpro",
+        "universalcefr",
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept."
+      ]
+    },
+    {
+      "language": "es",
+      "name": "Spanish",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids",
+        "kaikki-spanish-ids-validation"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "elelex",
+        "universalcefr",
+        "community-cefr-vocabulary",
+        "cervantes-pcic"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept.",
+        "IDS Spanish spellings require an exact ordinary Spanish Wiktionary headword match; phonetic transcription is not converted to orthography."
+      ]
+    },
+    {
+      "language": "fr",
+      "name": "French",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "flelex",
+        "universalcefr",
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept."
+      ]
+    },
+    {
+      "language": "it",
+      "name": "Italian",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "kelly",
+        "profilo-italiano",
+        "universalcefr",
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept."
+      ]
+    },
+    {
+      "language": "ru",
+      "name": "Russian",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "smartool"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/cefr.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "source-classifications-integrated-partial",
+        "levels": [
+          "A1",
+          "A2",
+          "B1",
+          "B2"
+        ],
+        "missingLevels": [
+          "C1",
+          "C2"
+        ],
+        "sourceIds": [
+          "smartool"
+        ],
+        "inputFiles": [
+          "vocabulary/source-data/cefr.json"
+        ],
+        "finding": "SMARTool supplies teacher-selected Russian vocabulary with English glosses and source A1-B2 labels. Conflicting/incomplete or annotated artefact rows are excluded; stress normalization preserves ё/й. No C1/C2 classification is supplied."
+      },
+      "excludedCandidateIds": [
+        "kelly"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "SMARTool English glosses describe Russian senses; Russian level labels are never reversed into English levels. IDS Russian phonemic transcriptions are excluded."
+      ]
+    },
+    {
+      "language": "pt",
+      "name": "Portuguese",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "camoes-ple",
+        "universalcefr",
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept."
+      ]
+    },
+    {
+      "language": "zh",
+      "name": "Chinese",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "cc-cedict"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/asian.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "kelly"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "The additional native-language dictionary supplies English definitions. Identical gloss text alone does not establish equivalence with another dictionary sense.",
+        "CC-CEDICT supplies simplified Chinese, pinyin and glosses, with unknown POS retained. No HSK-to-CEFR conversion is used."
+      ]
+    },
+    {
+      "language": "ja",
+      "name": "Japanese",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "jmdict"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/asian.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "The additional native-language dictionary supplies English definitions. Identical gloss text alone does not establish equivalence with another dictionary sense.",
+        "JMdict spelling/reading and sense restrictions are respected; common-priority codes select additional entries without assigning frequency ranks or JLPT/CEFR levels."
+      ]
+    },
+    {
+      "language": "ko",
+      "name": "Korean",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "wiktionary-korean"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/asian.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "community-cefr-vocabulary"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "The additional native-language dictionary supplies English definitions. Identical gloss text alone does not establish equivalence with another dictionary sense.",
+        "Only actual Korean dictionary senses and source tags are used; no TOPIK-to-CEFR conversion is used."
+      ]
+    },
+    {
+      "language": "ar",
+      "name": "Arabic",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "wiktionary-arabic"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/asian.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "kelly",
+        "arabic-vocabulary-profile-a1"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "The additional native-language dictionary supplies English definitions. Identical gloss text alone does not establish equivalence with another dictionary sense.",
+        "Available canonical vocalization is retained. Frequency matching removes vowel marks/tatweel but preserves hamza; this is spelling matching, not lemmatization."
+      ]
+    },
+    {
+      "language": "nl",
+      "name": "Dutch",
+      "lexicalSourceIds": [
+        "wiktionary-kaikki",
+        "wiktionary-kaikki-expanded",
+        "ids"
+      ],
+      "inputFiles": [
+        "vocabulary/source-data/lexicon.json",
+        "vocabulary/source-data/expanded-lexicon.json",
+        "vocabulary/source-data/european.json"
+      ],
+      "frequency": {
+        "sourceId": "frequencywords",
+        "inputFile": "vocabulary/source-data/frequency.json",
+        "method": "Match this target language's own original token ranks; retain gaps and report partial coverage. No rank is converted to CEFR."
+      },
+      "cefr": {
+        "status": "not-integrated",
+        "levels": [],
+        "sourceIds": [],
+        "finding": "No verified, commercially redistributable target-language lexical CEFR classification has been incorporated. This is a finding about the reviewed inputs, not a claim that no such resource exists."
+      },
+      "excludedCandidateIds": [
+        "nt2lex",
+        "universalcefr"
+      ],
+      "limitations": [
+        "Aligned translation-table coverage varies by meaning and language; a missing form is not generated.",
+        "IDS contributes source concept/chapter categories, not CEFR classifications; one eligible source form is selected per concept."
+      ]
+    }
+  ],
+  "excludedCandidates": [
+    {
+      "id": "flelex",
+      "name": "FLELex",
+      "languages": [
+        "fr"
+      ],
+      "url": "https://cental.uclouvain.be/cefrlex/flelex/download/",
+      "license": "CC-BY-NC-SA-4.0",
+      "reason": "The download is restricted to noncommercial use. Its main tables describe receptive vocabulary distributions in graded materials; they are not substituted for verified dictionary-sense classifications."
+    },
+    {
+      "id": "elelex",
+      "name": "ELELex",
+      "languages": [
+        "es"
+      ],
+      "url": "https://cental.uclouvain.be/cefrlex/elelex/download/",
+      "license": "CC-BY-NC-SA-4.0",
+      "reason": "The Spanish graded-material frequency tables are restricted to noncommercial use. No CEFR label is generated from the distributions."
+    },
+    {
+      "id": "nt2lex",
+      "name": "NT2Lex",
+      "languages": [
+        "nl"
+      ],
+      "url": "https://cental.uclouvain.be/cefrlex/nt2lex/download/",
+      "license": "CC-BY-NC-SA-4.0",
+      "reason": "Dutch lemma/POS and sense-enriched graded-material frequency tables are restricted to noncommercial use."
+    },
+    {
+      "id": "daflex",
+      "name": "DAFlex",
+      "languages": [
+        "de"
+      ],
+      "url": "https://cental.uclouvain.be/cefrlex/daflex/",
+      "license": "Commercial redistribution permission not verified for the reviewed download",
+      "reason": "The project describes German lemma/POS frequency distributions across graded textbooks/readers. No permitted word-level classification has been incorporated; do not infer levels from these distributions."
+    },
+    {
+      "id": "kelly",
+      "name": "KELLY lists on the project author's University of Leeds page",
+      "languages": [
+        "en",
+        "it",
+        "ru",
+        "zh",
+        "ar"
+      ],
+      "url": "https://ssharoff.github.io/kelly/",
+      "license": "CC-BY-NC-SA-2.0",
+      "reason": "The published frequency/CEFR vocabulary lists are noncommercial. Their availability for download does not provide the required commercial redistribution permission."
+    },
+    {
+      "id": "arabic-vocabulary-profile-a1",
+      "name": "Arabic Vocabulary Profile A1 dataset",
+      "languages": [
+        "ar"
+      ],
+      "url": "https://github.com/LailaFamiliar/A1-AVP-dataset",
+      "license": "No explicit open commercial redistribution grant verified in reviewed repository documentation",
+      "reason": "Expert-reviewed A1 lexical material is a relevant candidate, but attribution alone does not establish redistribution permission. Excluded pending clear licence permission."
+    },
+    {
+      "id": "profilo-italiano",
+      "name": "Profilo della lingua italiana: lexical lists A1-B2",
+      "languages": [
+        "it"
+      ],
+      "url": "https://www.unistrapg.it/profilo_lingua_italiana/site/liste_lessicali_a1.html",
+      "evidenceUrls": [
+        "https://www.unistrapg.it/profilo_lingua_italiana/site/index.html",
+        "https://www.unistrapg.it/profilo_lingua_italiana/site/guida4.html"
+      ],
+      "license": "No explicit open commercial redistribution grant verified on reviewed primary pages",
+      "reason": "The institution describes expert/teacher validation and cumulative lexical lists. This is relevant target-language lexical evidence, but public access to the book/CD-derived lists does not establish permission to redistribute an adapted dataset. Not imported."
+    },
+    {
+      "id": "camoes-ple",
+      "name": "Referencial Camões PLE (2017)",
+      "languages": [
+        "pt"
+      ],
+      "url": "https://www.instituto-camoes.pt/images/REFERENCIAL_ebook.pdf",
+      "evidenceUrls": [
+        "https://www.instituto-camoes.pt/index.php?Itemid=2966"
+      ],
+      "license": "All rights reserved notice on PDF page 2; no open commercial redistribution grant verified",
+      "reason": "The official expert-validated reference provides communicative inventories across A1-C2 and free access. It is not a ready lexical sense dataset, and the reviewed publication reserves rights. Its pedagogical uses are not treated as an open redistribution licence."
+    },
+    {
+      "id": "goethe-a1",
+      "name": "Goethe-Zertifikat A1: Start Deutsch 1 Wortliste",
+      "languages": [
+        "de"
+      ],
+      "url": "https://www.goethe.de/pro/relaunch/prf/de/A1_SD1_Wortliste_02.pdf",
+      "license": "No open commercial redistribution grant verified in the reviewed official PDF",
+      "reason": "A genuine target-language A1 exam vocabulary list selected for communicative needs. Public PDF availability does not establish the required redistribution permission; it is not copied through third-party mirrors."
+    },
+    {
+      "id": "gervlpro",
+      "name": "GerVLPro (Michael, Hülsing and Horbach, LREC 2026)",
+      "languages": [
+        "de"
+      ],
+      "url": "https://aclanthology.org/2026.lrec-1.935/",
+      "evidenceUrls": [
+        "https://aclanthology.org/2026.lrec-1.935.pdf",
+        "https://github.com/noahmanu/gervlpro"
+      ],
+      "license": "No explicit redistribution licence: GitHub API license=null, no licence file in the complete reviewed repository tree, and no grant in README or TSV.",
+      "reason": "Potentially suitable as explicitly Estimated productive-vocabulary classifications: source CEFR-labelled learner texts and normalized per-level shares provide evidence beyond general frequency rank. Integration is blocked by unverified redistribution rights, not by automatic methodology. No dataset has been saved into project inputs.",
+      "reviewedRevision": "78aef6ae81f146bf47ec2d660c6146efdccd99d8",
+      "reviewedFile": {
+        "url": "https://raw.githubusercontent.com/noahmanu/gervlpro/78aef6ae81f146bf47ec2d660c6146efdccd99d8/GerVLPro/GerVLPro.tsv",
+        "bytes": 1088423,
+        "sha256": "4d422061b6695ec1cb69e7f873e1849841930ba8b8e3bc7bb960cc3efb12f1f5",
+        "rows": 4015,
+        "lemmaColumn": "lemmas_stanza",
+        "posColumn": "pos_stanza",
+        "levelColumn": "first_level_above_12_percent"
+      },
+      "methodology": "Manual lexical validity filtering follows extraction from graded German learner corpora. The released preferred classification is the first CEFR level whose normalized within-level frequency share reaches 12 percent. It is a research-derived estimate of productive lexical development, not expert verification of each sense. Other occurrence-level columns must not silently replace the preferred classification."
+    },
+    {
+      "id": "universalcefr",
+      "name": "UniversalCEFR data directory",
+      "languages": [
+        "de",
+        "fr",
+        "es",
+        "it",
+        "pt",
+        "nl"
+      ],
+      "url": "https://github.com/UniversalCEFR/universalcefr-data-directory",
+      "license": "Varies by original corpus; some NC, some permissive",
+      "reason": "The reviewed resources attach CEFR labels to learner/reference texts, paragraphs or sentences. They do not supply verified word/sense-level classifications. Even a permissively licensed corpus does not justify transferring its text level to every word."
+    },
+    {
+      "id": "community-cefr-vocabulary",
+      "name": "Talhakasikci/cefr-vocabulary-dataset",
+      "languages": [
+        "en",
+        "tr",
+        "de",
+        "es",
+        "fr",
+        "it",
+        "pt",
+        "ja",
+        "ko"
+      ],
+      "url": "https://github.com/Talhakasikci/cefr-vocabulary-dataset/blob/main/README.md",
+      "license": "README permits personal and educational projects; no verified open commercial redistribution grant",
+      "reason": "The publisher explicitly describes automatic/semi-automatic compilation and potentially incorrect labels. Target-language classification provenance and commercial redistribution rights are insufficient for this integration."
+    },
+    {
+      "id": "cervantes-pcic",
+      "name": "Plan curricular del Instituto Cervantes",
+      "languages": [
+        "es"
+      ],
+      "url": "https://cvc.cervantes.es/ensenanza/biblioteca_ele/plan_curricular/",
+      "license": "Not verified",
+      "reason": "Official reference-level inventories are a relevant lead, but the primary site redirected to its maintenance page during this review. No open redistribution licence or usable source snapshot was verified; not imported."
+    }
+  ],
+  "maintenance": {
+    "jmdict": {
+      "licenseUrl": "https://www.edrdg.org/edrdg/licence.html",
+      "documentationUrl": "https://www.edrdg.org/jmdict/edict_doc.html",
+      "requirement": "EDRDG section 4 requires a regular source update procedure and gives monthly updates for WWW dictionary servers as an example. Documentation and licence links must remain available with attribution.",
+      "procedure": "Periodically check upstream JMdict; run scripts/fetch-asian-vocabulary.py --refresh; review source and selection changes; rebuild the vocabulary; run relevant checks; distribute the reviewed update. No schedule or publication is created by this research record."
+    }
+  },
+  "consideredAlternatives": [
+    {
+      "id": "wordfreq",
+      "name": "wordfreq",
+      "url": "https://github.com/rspeer/wordfreq/blob/master/README.md",
+      "license": "Data: CC-BY-SA-4.0; software: Apache-2.0",
+      "status": "Permitted alternative corpus; not selected in this integration",
+      "reason": "Its normalized combined-corpus word ranks differ from the retained raw FrequencyWords token positions. Chinese enumeration includes Oversimplified Chinese representations rather than display-ready orthography, requiring normalization-aware dictionary matching. It is not a CEFR classification and must not silently replace or renumber current ranks."
+    }
+  ],
+  "additionalEuropeanCefrReview": {
+    "reviewedOn": "2026-10-20",
+    "languages": [
+      "de",
+      "fr",
+      "es",
+      "it",
+      "pt",
+      "nl"
+    ],
+    "requirements": [
+      "Explicit permission for commercial redistribution and adaptation",
+      "Actual target-language lexical classifications, or defensible lexical estimates clearly distinguished from verified labels",
+      "No CEFR mapping based only on general-frequency rank",
+      "No copied proprietary application decks"
+    ],
+    "outcome": "No additional dataset satisfying the licensing and provenance requirements was verified in this bounded primary-source search. GerVLPro was re-evaluated as a potentially suitable Estimated source, but its available repository has no verified redistribution licence. No additional level file or extraction script was created.",
+    "searchedCandidates": [
+      "daflex",
+      "flelex",
+      "elelex",
+      "nt2lex",
+      "kelly",
+      "profilo-italiano",
+      "camoes-ple",
+      "goethe-a1",
+      "gervlpro",
+      "universalcefr",
+      "community-cefr-vocabulary",
+      "cervantes-pcic"
+    ],
+    "nextEvidenceNeeded": "A source-specific open redistribution grant for an existing lexical list or defensible estimated classification, or another compatible target-language source. An unverified candidate must not be presented as unavailable worldwide or as a completed CEFR deck."
+  },
+  "semanticReview": {
+    "supplements": [
+      {
+        "path": "vocabulary/source-data/topic-supplement.json",
+        "exactConceptAssignments": 783,
+        "methodology": "Individual sense review by the coding assistant (model-assisted semantic curation), not human or native-speaker review. Each assignment was selected by inspecting an exact English dictionary translation heading, part of speech, and competing senses. Categories use the existing project taxonomy. No headword-wide or automatic keyword-based category assignment is applied. Dictionary translations are unchanged; no additional translation or CEFR label is inferred. Parent sense topics are not used as evidence for these assignments because some source translation tables are nested under unrelated parent glosses."
+      },
+      {
+        "path": "vocabulary/source-data/context-supplement.json",
+        "exactConceptAssignments": 247,
+        "methodology": "Individual-sense review: model-assisted semantic curation by the coding assistant. Each assignment was selected using the exact English Wiktionary translation heading and part of speech in expanded-lexicon.json, with practical relevance to the named activity. Candidate headwords were only used for discovery; homonymous meanings were inspected separately and only the listed concept IDs receive these categories. Headword, meaning and POS are reproduced unchanged for provenance and validation. All selected concepts have a Turkish form and at least eight language forms in the source; no translation or missing form was invented. Shared actions receive multiple categories only where their exact sense is useful in each activity. Existing source attribution, license and per-concept evidence remain in expanded-lexicon.json. This is dictionary-derived semantic classification, not native-speaker review, proficiency grading or verification of every translation."
+      }
+    ],
+    "automaticTopicGuard": "Raw Kaikki parent-sense topics are propagated only when the exact normalized translation-table heading matches a parent sense gloss; nesting alone has proven unreliable. Other assignments require individual-sense review.",
+    "targetedFormReview": "vocabulary/source-data/form-review.json",
+    "formReviewPolicy": "Use an attested alternative in the same source table or omit the mismatched form; do not generate a new translation."
+  },
+  "qualityRevision": {
+    "date": "2026-10-20",
+    "scope": "All primary native forms in the 13-language input inventory receive systematic checks; flagged candidates are individually reviewed. This is not independent native-speaker certification of every meaning.",
+    "files": [
+      "quality-west.json",
+      "quality-romance-ru.json",
+      "quality-asian.json",
+      "topic-expansion-reviewed.json",
+      "editorial.json",
+      "cefr-anchor-guards.json",
+      "cefr-reviewed-asian.json",
+      "cefr-reviewed-romance-ru.json",
+      "frequency-preferences-west.json",
+      "frequency-preferences-romance-ru.json",
+      "frequency-preferences-asian.json"
+    ],
+    "parentheses": "Remove round/fullwidth/square-bracket annotations from both prebuilt study faces. Preserve raw input snapshots, sense metadata and source attribution. Custom saved decks are not rewritten.",
+    "levels": "Retain published English/Russian assignments; fill all other target entries with visibly estimated native-language study bands. Native frequency is only one feature alongside meaning/domain, POS, register, lexical complexity, positive anchor guards and individually reviewed native-sense overrides. No rank-only labels, English level transfer or HSK/JLPT/TOPIK equivalence.",
+    "frameworkReference": "https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors",
+    "frequency": "Pin reviewed ordinary target senses before choosing a translation language; missing translations cannot fall back to another homonymous sense. Omit unsupported grammatical tokens without filling lower ranks. Original corpus ranks remain unchanged.",
+    "editorial": "Original modern, core and advanced vocabulary with one explicit meaning and 13 translations. Language-specific choices are reviewed separately; all editorial CEFR labels remain estimates."
+  }
+}

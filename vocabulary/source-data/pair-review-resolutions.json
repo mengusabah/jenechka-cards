@@ -1,0 +1,4273 @@
+{
+  "decisions": [
+    {
+      "language": "tr",
+      "conceptId": "bulk-080da9a3eb2d0ba33a0bf6d2",
+      "replacementText": "giysiler",
+      "reason": "The English plural clothes denotes garments collectively; use the natural Turkish plural."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0a83b0d8884ffd3529a02b81",
+      "replacementText": "rica etmek",
+      "reason": "The exact sense is making a request, distinct from asking a question or wishing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0ce52e465ecca3fbf18794ef",
+      "replacementText": "buzluk",
+      "reason": "This sense is the freezer compartment of a refrigerator, not a standalone freezer."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0e061529eba7453be194916d",
+      "replacementText": "çatışmak",
+      "reason": "The sense is engagement in conflict, not contradiction; retain the verb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1a09ecf5ae1fe5c70f0dec35",
+      "replacementText": "kurmak",
+      "reason": "Setting something up for use is kurmak, broader than software-only yüklemek."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1c127dd05dfad026b5c43ae6",
+      "replacementText": "yoksullar",
+      "reason": "The sense denotes poor people collectively, requiring a plural noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1d5d63f210b7dc2bbed119f3",
+      "replacementText": "hafif tempolu koşu",
+      "reason": "Natural specific Turkish for jogging as exercise."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1e1a318afdb7c8a186a2f507",
+      "replacementText": "tırmanarak ilerlemek",
+      "reason": "The sense involves physical scrambling using limbs, not simply hurrying."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2613964f91c01a410997914a",
+      "replacementText": "yavaş",
+      "reason": "Natural modern adjective for slow-moving; avoid archaic aheste and weight ambiguity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-27fcb7e5168eca6eaab4c76c",
+      "replacementText": "iskambil kâğıdı",
+      "reason": "Conventional Turkish name for an individual playing card."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-29bd09063f784754d8980176",
+      "replacementText": "kötü bir şekilde",
+      "reason": "The manner adverb badly is not urgent; ordinary Turkish phrasing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2dfdbe4ccda8a109c2997a54",
+      "replacementText": "döşeme",
+      "reason": "The structural horizontal floor is a döşeme, not the numbered storey kat."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-35419b5708d04dbb5b5306c8",
+      "replacementText": "hayal kurmak",
+      "reason": "The hopeful/wishing sense, distinct from sleeping dreams."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-366859c499ccabc67b644e45",
+      "replacementText": "hala, teyze veya yenge",
+      "reason": "The shared sense explicitly includes both parental sides and sisters-in-law."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4392b87e789dfcce472a73aa",
+      "replacementText": "zeytin yeşili",
+      "reason": "The color must be distinguished from the olive fruit."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4d52044863a98c1ffa9ba29c",
+      "replacementText": "ağrı",
+      "reason": "The ordinary noun for an ache rather than generic suffering."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6af03e7a42934eb77465aa18",
+      "replacementText": "değişim hızı",
+      "reason": "Preserve the physical rate-of-change sense, not price or fee."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7a98e872ff16c23acd0f9d8b",
+      "replacementText": "alttan alta",
+      "reason": "Natural adverbial phrase for subtle action; correct the original misspelling."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7ef49ac056613448b6faa466",
+      "replacementText": "sözlü çevirmen",
+      "reason": "Natural clear profession label, distinct from written translation and software interpreters."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-85c07f425f20dc26d996c0fb",
+      "replacementText": "âdet",
+      "reason": "The customary repeated act sense remains an everyday word when correctly spelled."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8a6aab4e31ec0ceb408f3c14",
+      "replacementText": "araba kullanmak",
+      "reason": "The exact sense involves operating the vehicle, not being its passenger."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9449f99bf464c14720b98d0d",
+      "replacementText": "inşaatçı",
+      "reason": "Modern Turkish occupational noun; avoids the invented calque yapı kurucu."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-951ae3d56b13f5e3ea43f90a",
+      "replacementText": "amca, dayı veya enişte",
+      "reason": "The shared sense explicitly includes both parental sides and brothers-in-law."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9c0ab0a44a1d802104cfd363",
+      "replacementText": "göç",
+      "reason": "Migration of residence is göç, not merely moving a house."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9c81eff6f858d74a4c95bf0d",
+      "replacementText": "gerekçe",
+      "reason": "Natural Turkish for a reason supporting a proposition, distinct from quarrel."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9d5948b1a7256a35ae932ded",
+      "replacementText": "güzergâh",
+      "reason": "A course for aircraft or ships rather than an airline company."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a0f3ede989c1fed5aef1245d",
+      "replacementText": "reşitlik",
+      "reason": "The civil adulthood sense is a noun, not the adjective adult."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a5d4d53906f2e1ce81ca55ca",
+      "replacementText": "üzümsü meyve",
+      "reason": "Preserve the small succulent fruit class; generic fruit is too broad and forest fruit is too narrow."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-af986aa0ba061689b1e4ca05",
+      "replacementText": "koyu kırmızı",
+      "reason": "Crimson is a deep red, not the purplish redbud shade erguvan."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c54eb9bff8a78e05a90cf728",
+      "replacementText": "kâse",
+      "reason": "Natural modern food container term with standard Turkish spelling."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c7e34461e70f3fe784a8378b",
+      "replacementText": "evcil",
+      "reason": "The exact not-wild sense is domestication rather than solely a docile temperament."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c883a859b599760742b7d01a",
+      "replacementText": "paramedik",
+      "reason": "The specific modern profession, rather than a broad emergency health worker."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ca0791c9778a19943cc7db88",
+      "replacementText": "sıkılmış",
+      "reason": "Natural adjective for bored; retain the state rather than a nominalized person."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cd4df951b81cee67d38166db",
+      "replacementText": "topluluk",
+      "reason": "The gloss covers both residential and religious communities, so avoid narrowing to only a commune."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d3502b94ae295e736bd732dd",
+      "replacementText": "kilidi açmak",
+      "reason": "Make the unlocking sense explicit without explanatory parentheses."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d40a5ddb559fdf9c06e99ffc",
+      "replacementText": "kare",
+      "reason": "The grid-square sense, distinct from an area in general."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d605c141c5a0d9c99f713e7b",
+      "replacementText": "duyuru yapma",
+      "reason": "The gloss denotes the act of announcing, not only the resulting notice."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e20494df90e304c2df098e2e",
+      "replacementText": "insani",
+      "reason": "Natural adjective for human attributes, not the adverb insanca."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e3af8fab9fb76ae0bd110d2c",
+      "replacementText": "son tarih",
+      "reason": "A deadline need not involve submitting an object, so retain the broader term."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e51e7f703ed9b81d4d582c60",
+      "replacementText": "yuvarlanmış",
+      "reason": "Explicit mathematical rounded-off sense rather than geometrically round."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-eb235b7fef6e513c8761a2c6",
+      "replacementText": "yazılı eser",
+      "reason": "The authored product sense, confirmed by escrito and произведение, not the profession of writing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-eb4d7b216736a33d2e7f886b",
+      "replacementText": "acıma",
+      "reason": "The exact pity/sorrow-for-suffering sense, not liking or affinity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f124b3f7196bc2aae89237cd",
+      "replacementText": "mola",
+      "reason": "A journey interruption need not be a change of transport."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f8e31ab1a2a94755ca77f5d9",
+      "replacementText": "minicik",
+      "reason": "Natural emphatic smallness adjective."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fd662a6cb74d4ff153d0cf74",
+      "replacementText": "iri karides",
+      "reason": "Preserve the large-shrimp distinction in this prawn sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-feb52fb1ca22f49a4badeb18",
+      "replacementText": "toplamak",
+      "reason": "Use the ordinary gathering verb for this sense; not joining an activity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0108a281d259283fd33ccc35",
+      "replacementText": "ıstırap",
+      "reason": "Standard spelling for extreme suffering; ızdırap is nonstandard."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0587505cb3428769349ae082",
+      "replacementText": "söz",
+      "reason": "The everyday spoken item sense is not restricted to a technical linguistic utterance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-07cca893f41cc2cedae42177",
+      "replacementText": "zarara yol açmak",
+      "reason": "The sense explicitly concerns causing injury, not the vague verbs take or give."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-08b1237a9f4767f7a8639282",
+      "replacementText": "adın baş harfleri",
+      "reason": "The exact sense concerns the initials of a personal name, not any initial letters."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0d19ba9c46ba3d969d77407c",
+      "replacementText": "yerden yere vurmak",
+      "reason": "Natural idiom for strongly criticizing someone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-10ed64dbe4602a76483c96cf",
+      "replacementText": "arife",
+      "reason": "The day-before-event sense is broader than evening alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-11f5a45d801b3f4fbff41af8",
+      "replacementText": "ortasında",
+      "reason": "Natural surrounded-by spatial/prepositional meaning."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-238bc9523fda6a2d55c61cd8",
+      "replacementText": "dayanmak",
+      "reason": "Supporting a load without breaking means bearing or withstanding it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2bd7753005cf290d48e46a82",
+      "replacementText": "umutsuz",
+      "reason": "The specified downcast-in-spirit sense, not moral baseness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-32ddb7f1c19b379f90d06efb",
+      "replacementText": "tanışıklık",
+      "reason": "The noun state of being acquainted, not the adjective aşina."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-39dd22ea7c278cf9058c5361",
+      "replacementText": "boğma tutuşu",
+      "reason": "The wrestling hold sense, not generic pressing down."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3df74878964ddc2a0ad3a933",
+      "replacementText": "parça parça bilgi toplamak",
+      "reason": "Preserve the figurative gathering-information verb sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3e005e83deb0c333ccb3b159",
+      "replacementText": "yıpranmış",
+      "reason": "Natural adjective for worn out, not an infinitive."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-434101cc27ac14dfd389cde5",
+      "replacementText": "araştırmak",
+      "reason": "The exploring/investigating verb sense rather than merely searching for an object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-49f3346bd8e8027935886628",
+      "replacementText": "öz",
+      "reason": "The central essential part is a noun, not the adjective ana."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4c1146fa9eff7cea8bfb9bb7",
+      "replacementText": "saldırgan",
+      "reason": "Modern adjective expressing the violent/destructive sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-51882c5e0a653fe69aab2b57",
+      "replacementText": "belirsiz tanımlık",
+      "reason": "Current Turkish grammar term replacing obsolete harfitarif."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-53d40f52b72de97971c212f2",
+      "replacementText": "basmakalıp söz",
+      "reason": "A truism is a statement, not just any cliché quality."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5c538b8bcecb7d220f3cac1e",
+      "replacementText": "mantıksal gerektirme",
+      "reason": "The exact logical connective implication is distinct from inference."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-62c479bb09b8c4d4b44b9a2d",
+      "replacementText": "sonuçlar",
+      "reason": "Consequences that follow, expressed as a noun rather than ardından."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-63f55d8f0cbe37d224eb169a",
+      "replacementText": "ara sıra çalışan",
+      "reason": "Irregular employment is not necessarily a temporary contract."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-66123ccae2f23f57c1454623",
+      "replacementText": "oluşturmak",
+      "reason": "Composition from constituent parts, not musical composition only."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-68606619f1f281cc8faf7b1c",
+      "replacementText": "ağaca çıkmaya zorlamak",
+      "reason": "The transitive chasing-animal-up-a-tree sense, not the noun tree."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6f384a7711bac2c871fdfe93",
+      "replacementText": "telaş",
+      "reason": "Natural noun for a rush or hurry."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-73779b1ebe0f62c9b1fe6304",
+      "replacementText": "tasarlamak",
+      "reason": "The mental construction/invention sense, distinct from combining physical parts."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-83fc8d7cd78b6495238032fd",
+      "replacementText": "iki yana yaslamak",
+      "reason": "The typographic justification operation, distinct from any alignment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-85f5ce9908b388dc77585d11",
+      "replacementText": "yardımsever",
+      "reason": "Natural everyday charitable/benevolent adjective."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-99aafc78a64707b3f50a1b10",
+      "replacementText": "hatırlama",
+      "reason": "Modern familiar noun for the act of remembering."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9aa4c913e1d6b435f4d79dfb",
+      "replacementText": "saldırgan",
+      "reason": "The savage/aggressive sense, not merely cruelty."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9cdefa88e3d9606d6694be2e",
+      "replacementText": "scooter",
+      "reason": "Current Turkish everyday loanword; the vehicle sense is clear from the concept."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a7f8a433852e61f28450181e",
+      "replacementText": "son vermek",
+      "reason": "Discontinuing a process means ending it, not pausing it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b325aaeea42a24e40584f78f",
+      "replacementText": "aşk dolu",
+      "reason": "The romantic loving inclination, not generic friendliness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b407170911610ad342205b17",
+      "replacementText": "su kanalı",
+      "reason": "Make the artificial waterway sense explicit and natural."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b5383bd74bafb30c31d71af7",
+      "replacementText": "oyalanmak",
+      "reason": "Natural verb for standing about without purpose."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bbbccbd0bc86b184970fc639",
+      "replacementText": "yer vermek",
+      "reason": "The transitive include/feature sense need not be a starring role."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c02139312c1f0299d91e7f0b",
+      "replacementText": "birkaç",
+      "reason": "Natural small-number quantifier rather than a mass amount."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0225f90b1ee2a074216ff7e",
+      "replacementText": "kendine özgü özellik",
+      "reason": "A distinctive behavior or way of thinking, not generic difference."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0819c951e7cc0aaf17d8a7c",
+      "replacementText": "tekneyle yolculuk etmek",
+      "reason": "The sense includes travel in a boat without requiring sails."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0c909153cb66e8d341c1523",
+      "replacementText": "dişi",
+      "reason": "The broad biological female noun, including the Spanish animal term hembra; not only a human woman."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c78b5f2c56149616d4f02c6c",
+      "replacementText": "ortaya çıkarmak",
+      "reason": "The evoke/educe sense, not simply obtaining an object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d1c857f0789f4aa7ac08d6fb",
+      "replacementText": "belirli tanımlık",
+      "reason": "Current Turkish grammar term replacing obsolete harfitarif."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d3965dd7aa4f02e4718f5b37",
+      "replacementText": "açıkça",
+      "reason": "A natural adverb, not the bare adjective bariz."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-da80d76a358d17e1fafed97a",
+      "replacementText": "acil bir durum var",
+      "reason": "Retain the full phrase rather than shortening it to an adjective or noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e055614192b1c39e3d7f9295",
+      "replacementText": "ayni",
+      "reason": "Standard term for payment or assistance in goods rather than cash."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e21821f12e778f20aaf2bc0b",
+      "replacementText": "yönlendirmek",
+      "reason": "The transitive guide-course sense, not generic management."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e3d51a41c4b25f433c7b2fb2",
+      "replacementText": "en önemli",
+      "reason": "Natural contemporary paramount/supreme priority term."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e7887a7afd5bab9e084da6cd",
+      "replacementText": "gedik",
+      "reason": "The opening caused by breaking or parting, rather than mere distance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e7dca1b96b96ad60b405f24a",
+      "replacementText": "temel ihtiyaç maddesi",
+      "reason": "The essential supply is an item, not the adjective başlıca."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ea8ae9ea37849f4a5e2bc34b",
+      "replacementText": "anlam vermek",
+      "reason": "The decipher/understand sense rather than being understandable."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ec3a1b0e3c8c71bb45b83eb6",
+      "replacementText": "anlamak",
+      "reason": "The specified come-to-understand meaning rather than exposing something."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f66e06940f0e6438ef805ea4",
+      "replacementText": "başının üzerinde",
+      "reason": "Natural spatial phrase with corrected spelling."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fa52c0ee8d9e6df10ead746b",
+      "replacementText": "acılaşmış",
+      "reason": "The exact rancid taste or smell sense, especially fats, distinct from generic staleness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0177e3623b5d17528c5ce396",
+      "replacementText": "süvari birliği",
+      "reason": "The collective cavalry-soldiers sense, not a lone mounted person."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-06da98dd4f2c78a929b1c961",
+      "replacementText": "ben tercih ederim",
+      "reason": "The exact idiomatic preference sense, not a literal request to hand something over."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-08a667efd115cc74fd478292",
+      "replacementText": "yazar",
+      "reason": "The general author sense, distinct from a musical composer."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-194d913a839a61026bdc60b9",
+      "replacementText": "nazım",
+      "reason": "The metrical poetic-form sense rather than a scripture verse or single line."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-230a868a5bd7ae4dd6ae92da",
+      "replacementText": "geniş",
+      "reason": "The broad roomy sense, not necessarily an airy pleasant atmosphere."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2580d9b83543d05be4a7999b",
+      "replacementText": "hepsi bu",
+      "reason": "Natural expression that nothing more remains to the issue."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-34b425603608ee065ae7d147",
+      "replacementText": "yapmaya değer",
+      "reason": "Worth the time or effort, rather than merely valuable."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-37e416aa1291a158baef17c0",
+      "replacementText": "çekicilik",
+      "reason": "The power of attraction is a noun, not a verb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3ea530999ef0c7d59ac6e96a",
+      "replacementText": "yavru balık",
+      "reason": "Natural phrase for young fish, not a human baby term."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3f218c76e251751b06cf2b96",
+      "replacementText": "başarılı",
+      "reason": "The specified success sense, not solely economic development."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-435e78b70b42f6bbddbebed5",
+      "replacementText": "uykululuk",
+      "reason": "The state of being sleepy, distinct from unconsciousness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-48f4df4b8f9c7a8c8b1886a8",
+      "replacementText": "peşinat",
+      "reason": "A payment toward the price, distinct from a reservation deposit."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-55d71aafe61354f63cc8b3d3",
+      "replacementText": "fotoğraf banyosu yapmak",
+      "reason": "Natural photographic developing verb phrase."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-66f261c0df54faa898de58db",
+      "replacementText": "transfer baskı",
+      "reason": "The transferable-design sense of transfer, not any design."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6734605866c5608464ff0d20",
+      "replacementText": "uğraşmak",
+      "reason": "Practising or engaging in an activity/profession, rather than merely starting it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-677361543c086940e6d88448",
+      "replacementText": "önerilere açık",
+      "reason": "The exact willing-to-consider-suggestions sense, not subordination."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-740ddaeca31619344c0370ae",
+      "replacementText": "kalıp yargı",
+      "reason": "Natural modern stereotype term, not a cliché utterance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7b1f3b88d1b887e48a1219da",
+      "replacementText": "hata",
+      "reason": "The fault sense may be software-related but is not confined to computing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7d22a2887830f629a5bd7093",
+      "replacementText": "bileği taşı",
+      "reason": "Standard everyday Turkish name for a sharpening stone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7dfb33dd2091087ca106133b",
+      "replacementText": "ahşap dübel",
+      "reason": "The wooden cylindrical fastening object, not a nail."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7efdd7d0646f7de78390622c",
+      "replacementText": "esnek",
+      "reason": "Natural adjective for adaptability and moldability."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-83732cd07c9adad237ede798",
+      "replacementText": "hızla dönmek",
+      "reason": "Retain the rapid-rotation sense explicitly."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-86d87cfe3c38eca27cd97e92",
+      "replacementText": "güvence altına almak",
+      "reason": "The securing-against-loss sense rather than only compensation after damage."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-88081d18e499cb2629cdbeb2",
+      "replacementText": "sert kabuklu yemiş",
+      "reason": "The nut class is broader than walnuts and distinct from fruit generically."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-904ee0e98cbb2fa6b13788c4",
+      "replacementText": "üstün yetenekli",
+      "reason": "The specific special-abilities sense rather than general competence."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-94242325e7262ac994eb9337",
+      "replacementText": "iz sürme",
+      "reason": "Unreliable mixed source table; Turkish form is separately excluded pending a sense split."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-977caa84fd7f2c410eccb9d7",
+      "replacementText": "giriş işlemi",
+      "reason": "Check-in includes hotels as well as flights; retain the broad process noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9b5811ad126ae53d3586c46d",
+      "replacementText": "hakem",
+      "reason": "An umpire arbitrates or decides, rather than merely mediating between parties."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9cbcf8aa0b9564b8216f2366",
+      "replacementText": "yarımkanatlı böcek",
+      "reason": "Preserve the specific Hemiptera sense using the standard compound spelling."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9e273b039a66839e8179d4d2",
+      "replacementText": "ikna etmeye çalışmak",
+      "reason": "The persuasion sense, without narrowing it to sexual seduction."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-afbd106cca67c38b97eb2083",
+      "replacementText": "meslek erbabı",
+      "reason": "Collective members of a skilled trade, not an expert witness or one worker."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b0d2501d6f45cd97ffdf096c",
+      "replacementText": "İngiliz polisi",
+      "reason": "The specifically British police-officer word, without Turkish derogatory slang."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b46dd44e4eb12abe7feddd2a",
+      "replacementText": "cebine koymak",
+      "reason": "The literal putting-into-pocket verb sense, not stealing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b6946b33e278666f8b4ef8dc",
+      "replacementText": "çığır açan",
+      "reason": "The adjectival breakthrough/major-progress sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bc6efb7e64ae5bd6d4130d95",
+      "replacementText": "tatma",
+      "reason": "The exact tasting/sampling act, not generic trying."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c5f0f5ec29d6d0ebacb8c3a2",
+      "replacementText": "hortum",
+      "reason": "The local spiraling wind column, not a large hurricane."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ca407a6ccefcd14b447606b1",
+      "replacementText": "sorun",
+      "reason": "The general difficulty sense, not a literal headache."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cb652aa8ae6721a2a3f6b9ac",
+      "replacementText": "yakıt sağlamak",
+      "reason": "The general supply-with-fuel verb, including contexts beyond filling a tank."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ce652650ae26686ba6119a49",
+      "replacementText": "şifre",
+      "reason": "Natural name for the lock combination, not a generic union."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d10948198e34a8a94eee7865",
+      "replacementText": "değişken bildirimi",
+      "reason": "Explicit programming variable-declaration sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d35acf046e56b192bcc1a1ef",
+      "replacementText": "hareket kabiliyeti",
+      "reason": "The ability to move, distinct from the amount of movement."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d8301e83a06c3b2ed257efb8",
+      "replacementText": "çıkar",
+      "reason": "The specified welfare/interest sense, not courage or concern as a problem."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-daf99be613b9b0efdd0e9a65",
+      "replacementText": "paketten çıkarmak",
+      "reason": "The removal-from-package sense, not generic emptying."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e005791b234f3aea64e7d518",
+      "replacementText": "gerekçe sunmak",
+      "reason": "Presenting an argument, without restricting to a legal defense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e1e0525014fdfaa604a5d588",
+      "replacementText": "tropik orman",
+      "reason": "Modern familiar Turkish for jungle rather than an obscure borrowed word."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e84757769cdbf7a17620c116",
+      "replacementText": "temkinli",
+      "reason": "The cautious-of-danger sense, not an infinitive or generic attentiveness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-edebde2f732b1c43769d0021",
+      "replacementText": "kafa bulmak",
+      "reason": "The playful teasing idiom, not necessarily harsh mockery."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f5b52bcd8ad4cb9f8711bf96",
+      "replacementText": "gökyüzü",
+      "reason": "Modern Turkish for the sky; archaic English welkin is separately modernized to sky."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f65f1e0b3a9d79eb19bdf18e",
+      "replacementText": "çekici",
+      "reason": "Attractive/sexy sense without incorrectly implying sexual arousal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fc1890a4c7009f0fd2723d9e",
+      "replacementText": "uzamsal",
+      "reason": "The adjective pertaining to space generally, not only dimensionality."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fdd974d32df6d8fade48fced",
+      "replacementText": "arındırmak",
+      "reason": "The transitive removal of impurities, not becoming clean oneself."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fe2e11bb630e4c970d1a7822",
+      "replacementText": "kişisel alan",
+      "reason": "The personal-freedom sense, not physical emptiness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-041230b405030bf326deb81f",
+      "replacementText": "yavru köpek",
+      "reason": "Modern familiar Turkish noun phrase for a puppy."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0bddba98d253661a0b0d2b89",
+      "replacementText": "karakter dizisi",
+      "reason": "The programming string sense is clearer than typography-oriented dizgi or a poetic line."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0f14582b0f6fd5a6c86ef796",
+      "replacementText": "izlenim vermek",
+      "reason": "The appearance/impression idiom, not physical arrival."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-11145e30fe1feded19cec02f",
+      "replacementText": "ölüm meleği",
+      "reason": "Personification of death without conflating it with the specific Turkic deity Erlik."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-256caf53f64f36517ed711d9",
+      "replacementText": "konuşma biçimi",
+      "reason": "The particular manner of speech, not one idiomatic phrase."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2bb3d5e939c32f2c3c3f40e6",
+      "replacementText": "hayal edilemez",
+      "reason": "The inability-to-imagine sense with corrected spelling."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2fa1e84806790bedbe3e7f08",
+      "replacementText": "sesli olarak",
+      "reason": "Audible speech does not necessarily have high volume."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3a38631cbdbfd13f13305a5d",
+      "replacementText": "kusurlu ürün",
+      "reason": "The colloquial defective-product sense, not the fruit or a bare adjective."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3d223539054744cf3c4ee14c",
+      "replacementText": "suskun",
+      "reason": "The silent/not-speaking person sense, without implying inability to speak."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-431b88997255d3d580cc16f8",
+      "replacementText": "netlik",
+      "reason": "The sharpness of outlines, distinct from a lexical definition."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4923e9ecfff8cd8cb51101eb",
+      "replacementText": "dolanım",
+      "reason": "The orbital-motion sense, distinguished from rotation about an axis."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4e42fb85ec618514cd3cfe32",
+      "replacementText": "ambar",
+      "reason": "The building sense shared with Scheune and амбар; storage rather than livestock housing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-50aa2cedcd65f7499bfb308f",
+      "replacementText": "engelleme",
+      "reason": "The act-of-frustrating sense, not the resulting emotion."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-555c2a7b6d361b9714f3a240",
+      "replacementText": "çatı mahyası",
+      "reason": "The roof ridge, not a mountain summit."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-58f65af66cb45a09f846d260",
+      "replacementText": "yargı",
+      "reason": "The resulting judgment or conclusion, not criticism alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5b1819b0f92a046480ed12bf",
+      "replacementText": "küçük dal",
+      "reason": "The small flower/berry branch sense rather than a new shoot."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5b8c48bbda47577e0ce4428e",
+      "replacementText": "sahte ürün",
+      "reason": "A counterfeit object; replaces corrupted source text with a concrete noun phrase."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6706be15c09df452d7d1d343",
+      "replacementText": "bozuk",
+      "reason": "The not-working equipment sense, not generic incorrectness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6c36984c79e68fe8a797257d",
+      "replacementText": "arayüz teması",
+      "reason": "Make the software appearance/skin sense explicit, not human skin."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6e039124cd65a84b773f01b1",
+      "replacementText": "devir",
+      "reason": "A revolution around an axis, distinct from orbital revolution."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-713f9267d328752211b5926f",
+      "replacementText": "iltihaplanma",
+      "reason": "Natural modern Turkish for the medical process."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-73b8316df326efd76e3e8905",
+      "replacementText": "depresyonda",
+      "reason": "The specified clinical depression state, not simply low mood."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-76de5d72ff8939a1be08aa01",
+      "replacementText": "evle ilgili",
+      "reason": "The relating-to-home adjective, distinct from domesticated animals."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-84607d7c2540ba70d81d8e4e",
+      "replacementText": "haklı çıkarma",
+      "reason": "The broad vindicating action, not limited to legal acquittal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-86bf924874aaee6cd8e74fbe",
+      "replacementText": "ürün",
+      "reason": "The yield obtained from harvesting, distinct from the act of harvest."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-87e22b9459dbb52161fadd0f",
+      "replacementText": "hayvan gübresi",
+      "reason": "The animal-manure sense rather than fertilizer in general."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8a1b1e12c7ba7c2adb3c3975",
+      "replacementText": "arazi",
+      "reason": "This estate sense specifies land under one ownership, not all property."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-97c099937eb367f9b4d24480",
+      "replacementText": "olsa da",
+      "reason": "The concessive although sense, not a negative conditional."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9aecf1bb46ea3e0674ea8ef2",
+      "replacementText": "yapan kişi",
+      "reason": "Natural noun phrase for the person performing an action."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9d15dfe331e8e8da88558fa6",
+      "replacementText": "fiilen",
+      "reason": "The entry is adverbial in fact/in practice, not the adjective fiilî."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9e61c03c1970a80246f85648",
+      "replacementText": "giderek daha fazla",
+      "reason": "The increasing amount/intensity adverbial sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a21dce9621f5ab58e75b0eb5",
+      "replacementText": "iddia edilen",
+      "reason": "Purported is claimed or alleged, not necessarily assumed as true."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a6b9518a695b7a215f90f39b",
+      "replacementText": "kaval",
+      "reason": "A pipe as a wind instrument rather than an ordinary whistle."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-aa805de7b22c41971b01c369",
+      "replacementText": "yetkinlik",
+      "reason": "Modern noun for proficiency, distinct from a driver's license."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b2a52e7da45f5b150ab4be3e",
+      "replacementText": "çekici",
+      "reason": "The attractive/appealing slang sense may apply to ideas or products as well as people."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b4669082494a1a4cbefa7b23",
+      "replacementText": "yönetici",
+      "reason": "The broad supervisory role, distinct from a film director."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bbb1a63c933e2e80e38ce040",
+      "replacementText": "çetrefilli",
+      "reason": "The figurative complicated/troublesome sense, not literal thorns."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-be87350b9ab5f873d549bfaa",
+      "replacementText": "zahmet",
+      "reason": "The effort/inconvenience sense of trouble."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bed3d28bd9f44f0da0c4b87b",
+      "replacementText": "kapsayıcı",
+      "reason": "The including-everything adjective, not the preposition dahil."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c08d5b42ca20e9576a4be597",
+      "replacementText": "hesap tablosu",
+      "reason": "The organized arithmetic calculation table, not a ruler."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c1eddfaa9ae3fae0d84de1de",
+      "replacementText": "gelin veya damat",
+      "reason": "A child's spouse can be either, not only a daughter-in-law."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ca9753b1bdbdb6c9cce3b08d",
+      "replacementText": "medeniyet",
+      "reason": "Modern widely used noun for civilization, replacing the obscure ekinç."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cf568ceb691545fbefc6fe2a",
+      "replacementText": "ilke",
+      "reason": "A general tenet is a principle, not necessarily a dogma."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d064d9ee975120d5c43a481c",
+      "replacementText": "duyum",
+      "reason": "The physical sensation noun, not a sensory faculty."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d3fecb7130697ce845366323",
+      "replacementText": "rahatça ilerlemek",
+      "reason": "The carefree ease of movement is essential, not speed alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e395cb3e71e01782af0f481b",
+      "replacementText": "ayak işi",
+      "reason": "Natural everyday Turkish for a small errand; a business trip would be misleading."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ee27bb85d1596ffcb81c3644",
+      "replacementText": "verim",
+      "reason": "The amount produced in this output/yield sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f45ca6af1c63a6b74f4e5d1a",
+      "replacementText": "durdurmak",
+      "reason": "The specified transitive sense, not intransitive stopping."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fc85897abbe14eefc69f1b2a",
+      "replacementText": "uzun süre",
+      "reason": "The duration sense of at length, distinct from detailed explanation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fd2ddcd28d23cd0499bbd0c9",
+      "replacementText": "fırtına çıkmak",
+      "reason": "The weather event requires more than ordinary wind."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1ab3be486b130378f0f171a7",
+      "replacementText": "cup ölçüsü",
+      "reason": "Retain the named cooking volume unit rather than generic ölçek or a vessel tas; a Turkish water glass has a different conventional size."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-043db5ca3f5103daed2538c6",
+      "replacementText": "ev işlerinden sorumlu kişi",
+      "reason": "The household-management/care role, not a generic administrator."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0aa0187f4ada7878d9f2946f",
+      "replacementText": "konuşma biçimi",
+      "reason": "The manner of speaking sense, distinct from a spoken utterance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-10b2f5d31f38c3fe721a66fc",
+      "replacementText": "acele etmek",
+      "reason": "The full hurry definition is intransitive speeding up one's own activity, not causing another object to accelerate."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-13f43f6913b98513595d29de",
+      "replacementText": "yükümlü olunan",
+      "reason": "The adjective describes an obligation imposed by one's office, not an officeholder."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-16ea9fcf76a634a5ad349824",
+      "replacementText": "hizmet ücreti",
+      "reason": "Professional service payment, distinct from a government levy."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1fb3ac50a48712eabddf85cb",
+      "replacementText": "gül pembesi",
+      "reason": "Name the color explicitly, not the flower."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-21c5bc3a8a82c4202e53f22f",
+      "replacementText": "ahlak suçu",
+      "reason": "Conventional label for the specified vice offenses, not prostitution alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-23e324609cd33c215a1147ce",
+      "replacementText": "parodi",
+      "reason": "The humorous imitation sense, distinct from airplane takeoff."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-26c60fc42d76bdcbfc91c5e6",
+      "replacementText": "beddua etmek",
+      "reason": "The specified invoking-supernatural-harm sense, not swearing generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2f2a09f3592caa85d66ef833",
+      "replacementText": "sayısız",
+      "reason": "The too-many-to-count adjective, not impossibility of calculation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-30fbfb499a30036f64e854c2",
+      "replacementText": "az bilinen",
+      "reason": "Arcane is known to few, not necessarily mysterious or drug-related."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-337425a3cdec2f4fe715ad34",
+      "replacementText": "gerçekleştirmek",
+      "reason": "The verb effect means bring about or implement, distinct from affect."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3b4da39782cfb6139197015f",
+      "replacementText": "numara yapmak",
+      "reason": "Natural colloquial verb for making a false show."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4046ee80881f165c701368e2",
+      "replacementText": "misyoner",
+      "reason": "The particular missionary sense, not specifically one of the twelve apostles."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4591ef14688782c369e1562f",
+      "replacementText": "kıç tarafında",
+      "reason": "Preserve the nautical stern-relative spatial sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4912449330eba76df079a4c1",
+      "replacementText": "tavuk kafesleri",
+      "reason": "The collection of hen cages, not nest boxes or electrical batteries."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4b1199227c3053e94a7f06a0",
+      "replacementText": "mış gibi yapmak",
+      "reason": "Natural Turkish pretending construction, not directly deceiving an object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4cf3acd3d5831d8b2e47f4b0",
+      "replacementText": "görüntü oluşturmak",
+      "reason": "The digital rendering sense rather than generic accomplishing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4e9b5c5b4c12da08842c00e6",
+      "replacementText": "zula",
+      "reason": "The concealed collection/stash sense, not merely a building used as storage."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-56c3a60b56b12bdc048c286d",
+      "replacementText": "ters",
+      "reason": "The adverse/perverse sense, distinct from mere unusualness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5b5d9f720fac29652cdd730e",
+      "replacementText": "acele etmek",
+      "reason": "Natural hurry-up expression, not a mechanical acceleration term."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5d6165539dd171f06df7560a",
+      "replacementText": "uyumlu",
+      "reason": "The easy/compliant personality sense, not only physical flexibility."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-60eed737015e50e4ffbe7458",
+      "replacementText": "o zaman",
+      "reason": "At that time may refer to future or past; not only formerly."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-61bd7b5710275d658e86c451",
+      "replacementText": "ölçüm cihazı",
+      "reason": "A generic measuring instrument need not be a counter."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-620c8d346603373b30440b1c",
+      "replacementText": "nezarethane",
+      "reason": "Preserve the specified short-term confinement sense rather than a long-term prison."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6a305854e8109383cad14fee",
+      "replacementText": "larenjit",
+      "reason": "The modern medical name, replacing obsolete yangı terminology."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-78a62055f4833e455ff3e656",
+      "replacementText": "hükûmetle ilgili",
+      "reason": "A relational adjective, not the noun government."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7b23dcffe931da6d35c18dc6",
+      "replacementText": "hedeflemek",
+      "reason": "Aspiring involves aiming toward an ambition rather than hoping passively."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7cafe7273552af59ec7f2082",
+      "replacementText": "takviye kuvvetler",
+      "reason": "The plural military reinforcement sense, not emergency help generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7e1cf30da48731ce6e3940e8",
+      "replacementText": "ödünç almak",
+      "reason": "Modern familiar linguistic borrowing expression rather than iktibas etmek."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-84c8186aef988c249e9ba373",
+      "replacementText": "etli kısım",
+      "reason": "Covers the edible flesh of both fruit and vegetables, not animal meat."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-84c89770410b0795b70b7865",
+      "replacementText": "karıncalanma",
+      "reason": "Natural Turkish for television/radar static, not an individual ant."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8544c7c6ae8cc3f8cd283674",
+      "replacementText": "destek talebi",
+      "reason": "Modern support-system ticket sense, not a literal admission ticket."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8578d97e8e1816acdf49b976",
+      "replacementText": "tutarlılık",
+      "reason": "The coherent quality sense, not simply completeness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-89fa7e23dcb521624a774a55",
+      "replacementText": "serbest bırakmak",
+      "reason": "Natural modern freeing/liberating verb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8a63a570b5e80c74885fc50d",
+      "replacementText": "sayı",
+      "reason": "Natural number/numeral term without restricting it to a single digit."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8b93419fe1d0ff20fcc2c46c",
+      "replacementText": "tanımlık",
+      "reason": "Modern Turkish grammar term replacing obsolete harfitarif."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8fcf2fca71e4eb4b0f0cca85",
+      "replacementText": "israf etmek",
+      "reason": "Squandering rather than spending resources ordinarily."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9947a63cf9a064d0bf052521",
+      "replacementText": "sana söylemiştim",
+      "reason": "Natural complete phrase matching the specified expression."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9ce5df6dbe04c983460399be",
+      "replacementText": "yatkınlık",
+      "reason": "The natural propensity to acquire a skill, distinct from an acquired ability."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9d108081b16ea8cd7f1f662d",
+      "replacementText": "bilgece öğüt",
+      "reason": "The specific piece-of-advice sense, not any wise saying."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9efab07575081bb9e5fb2deb",
+      "replacementText": "alkol bağımlılığı",
+      "reason": "Modern clear chronic-dependence term, distinct from acute poisoning."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a3ac5f075944892be185fde2",
+      "replacementText": "gül pembesi",
+      "reason": "Name the color explicitly, not the flower."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a3c0a1364d2e9540bce09ea2",
+      "replacementText": "hilekâr",
+      "reason": "The skilled-at-deception sense, not something that merely appears misleading."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a69f06a96a8bf58f5c134490",
+      "replacementText": "deli adam",
+      "reason": "Retain the explicitly male noun sense rather than generic illness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a7aca97198f1b50548ed8e60",
+      "replacementText": "hikâyeden çıkarılacak ders",
+      "reason": "Natural transparent wording for a story's moral lesson."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a89066367f41482a7cb99ab4",
+      "replacementText": "bölüm",
+      "reason": "The selected text/music section, not physical passage or transition."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a9ba78d0ae74dbe0ad600174",
+      "replacementText": "güncel olaylar",
+      "reason": "The current-events category is broader than individual news reports."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b12ccfd9b1eff6c36114b52d",
+      "replacementText": "görünürlük",
+      "reason": "The general degree of being visible, not solely meteorological distance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b301e675c6a0e01b3b52e419",
+      "replacementText": "yük arabası",
+      "reason": "The broad cargo-carrying wheeled vehicle sense, not specifically shopping or a wheelbarrow."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c559bd68ff9d2cf4758c0ef6",
+      "replacementText": "becerikli",
+      "reason": "Natural able-and-efficient adjective rather than raw capacity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ccf50fb2c4e896dbf271f4c2",
+      "replacementText": "razı olmak",
+      "reason": "The verb expressing willingness or consent."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cfe5053d79b4e36ff536acbf",
+      "replacementText": "harika",
+      "reason": "Natural excellent/appealing slang sense, not a literal reflective surface."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d0a882d69cd8297e14f1de31",
+      "replacementText": "sıfırın altına düşmek",
+      "reason": "Retain the exact temperature sense without an unnatural don yapmak construction."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d0b057057325153ca2a4cdc2",
+      "replacementText": "meyvenin çekirdekli kısmı",
+      "reason": "Natural transparent term for a fruit core, not the seeds alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dca71ddfe0ca7e0fb21edbc8",
+      "replacementText": "ana yol",
+      "reason": "A highway need not be a controlled-access motorway."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e0dbaf6ab8116cf191373e0a",
+      "replacementText": "Berliner",
+      "reason": "Use the distinct filled doughnut's established name; Alman pastası is a different cake."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ea538365bf35ea315957cb11",
+      "replacementText": "etki kaynağı",
+      "reason": "The source may be a person or thing, not necessarily a social-media influencer."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f52af84fca118e4c3f222030",
+      "replacementText": "hor görülme",
+      "reason": "The state of being despised requires a noun, not an infinitive."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fd5b442dea07f01a8f4797a9",
+      "replacementText": "hakaret içeren mesaj yazmak",
+      "reason": "The specific hostile online-message action."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fe50b8dea837a7fa8824db9d",
+      "replacementText": "bileşen",
+      "reason": "The constituent-of-a-mixture sense is broader than cooking ingredients."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-052631e24af5e65fdbb360c3",
+      "replacementText": "başıboş hayvan",
+      "reason": "The stray animal may be lost or wandering rather than permanently living on the street."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-107a4fee7bcf387a57039fb1",
+      "replacementText": "sırasında",
+      "reason": "During does not necessarily mean throughout the entire period."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1081c87be4e30faf4a3d7286",
+      "replacementText": "yararlanmak",
+      "reason": "Harnessing resources or power is putting them to use, not running."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1521d17a5289e1ee34154d0e",
+      "replacementText": "ergitme",
+      "reason": "Preserve the technical metallurgical extraction process rather than any melting."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-16f4dde3db17eba7e88c0bab",
+      "replacementText": "afacan",
+      "reason": "Natural small-child noun for this tyke sense, not a bandit."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-22a5e3bc1fe3f5b1d67fe323",
+      "replacementText": "bitişik",
+      "reason": "The connected-without-a-break adjacency sense, not the polite word please."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-251c9fe61c18cfaf9acf6509",
+      "replacementText": "sarılma",
+      "reason": "Natural affectionate embrace action noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-274c37eb8694478800b566cc",
+      "replacementText": "yumuşak",
+      "reason": "The soft/mild sense may describe things as well as temperament."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-282485526b903ec3c722712d",
+      "replacementText": "regl",
+      "reason": "Modern clear menstrual-period noun, avoiding confusion with a monthly adjective or a count."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2eb1a6d3881d741126fc5de8",
+      "replacementText": "doğruluk",
+      "reason": "Conformity to fact is truthfulness/correctness, not a concrete reality."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-302b49b963f87b3ae9cad31b",
+      "replacementText": "meşgul olmayan",
+      "reason": "Not currently occupied with a task does not imply unemployment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-38a4001b78fc82f015ce61d9",
+      "replacementText": "Tanrı'ya övgü",
+      "reason": "Retain religious praise rather than worship in general."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3b9252150707b709088d3e5a",
+      "replacementText": "iyi şanslar",
+      "reason": "Natural well-wishing expression not restricted to travel."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3cff2d7467f9ddc0cc933a5e",
+      "replacementText": "şarap",
+      "reason": "This wine sense includes fermented non-grape fruit or plant sources; generic alcohol is too broad."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-40083cdbd7b17e1137ce699f",
+      "replacementText": "konaklama ve ağırlama sektörü",
+      "reason": "The hospitality business includes food and service as well as lodging."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-40c4992575b9de5bfffe3a4d",
+      "replacementText": "özgürleştirme",
+      "reason": "The liberating action/state sense, replacing an unnecessary foreign calque."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-438b7e82f3991d22c1bc2f4e",
+      "replacementText": "yanlış yönlendirmek",
+      "reason": "The false-direction sense, not seduction."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4467aebc60d1f2cfc5f30abd",
+      "replacementText": "tahıl tanesi",
+      "reason": "One cereal seed rather than any small item."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4dfeb979624e03c58a7c3a5f",
+      "replacementText": "inziva yeri",
+      "reason": "The place of religious seclusion need not be an entire monastery."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-51790bdea947be67f63d679d",
+      "replacementText": "çıkış noktası",
+      "reason": "The starting point of thought, not an original object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5d1dc1c94e4eec4f4b4ff65b",
+      "replacementText": "bilgi bütünü",
+      "reason": "A collection/body of knowledge rather than an anatomical body."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-607805bf01324832c8d5665e",
+      "replacementText": "oyun eşyası",
+      "reason": "Make the video-game item context explicit in the study face."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-70096d273636466ad72b15ec",
+      "replacementText": "kullanışlılık",
+      "reason": "The useful/suitable quality, not luxury or comfort alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-703730d5f88ec6492366cccf",
+      "replacementText": "rahatsız etme",
+      "reason": "The act-of-irritating sense is not sufficiently specific to restrict it to skin or anger."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7054846a97c3ce38a0e74537",
+      "replacementText": "sarılma",
+      "reason": "Natural noun for the embracing act, not a lap."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7194f59098933d2ceedf6dc5",
+      "replacementText": "babadan gelen",
+      "reason": "Covers receipt or inheritance from one's father, not a fatherly manner."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-811bdc47672bd8f360d97bed",
+      "replacementText": "iş birlikçilik yapmak",
+      "reason": "The treasonous collaboration sense, distinct from ordinary cooperation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-83625b5a3e2fd76329e03305",
+      "replacementText": "izin vermek",
+      "reason": "The allow-to-happen sense is permission rather than merely creating an opportunity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-980f0d1a6f81d5df19553394",
+      "replacementText": "kavrayışı güçlü",
+      "reason": "Natural description of perceptive insight without an archaic idrak phrase."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a5c4c98bca7ba2aaf7b8d10b",
+      "replacementText": "dayanak",
+      "reason": "The basis of an argument, not authenticity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a8b9e76c3a4820ed0edee9cb",
+      "replacementText": "hatıra eşyası",
+      "reason": "A concrete keepsake, distinct from a memory."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-aae0c96fc3aab648e1acd2ec",
+      "replacementText": "klima sistemi",
+      "reason": "The equipment/system sense, distinct from the process of conditioning air."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bd3e91c4f324ae928df7f581",
+      "replacementText": "inceleme",
+      "reason": "The broad act of examining, not exclusively an academic test."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-be87f42494f518a27dfea539",
+      "replacementText": "yasa tasarısı",
+      "reason": "Modern noun for proposed legislation, not an invoice."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c7a52af5e4c10ad0def4c0a6",
+      "replacementText": "rehberlik",
+      "reason": "Advice/direction rather than religious guidance specifically."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c8446b2e8c483d2ea3f0e2c7",
+      "replacementText": "yalıtılmışlık",
+      "reason": "The state of isolation, not an infinitive pair."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cf861a0a87f2e3c9c6adc085",
+      "replacementText": "kurul",
+      "reason": "The gathered group of people rather than the discussion event itself."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d0404cd6f44ad0311ffd6bbb",
+      "replacementText": "dostum",
+      "reason": "Natural familiar male address without requiring close-friend slang."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d0c51fd58041ba0387501cb0",
+      "replacementText": "disk görüntüsü oluşturmak",
+      "reason": "The computing backup-image action, not merely displaying an image."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d6e78a038768baa0425560df",
+      "replacementText": "karık",
+      "reason": "The correct agricultural trench noun, not a wrinkle."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d9ec5ef8c050a8e7d755f276",
+      "replacementText": "kesme oluşturmak",
+      "reason": "The computing interrupt action, not stopping work generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dafe734a7fef6fbb86c9e2dc",
+      "replacementText": "kızarana kadar pişirmek",
+      "reason": "Browning need not use frying or caramelization; preserve the cooking result."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dde41a6daebd1af8ee313e76",
+      "replacementText": "en düşük nokta",
+      "reason": "The figurative lowest point rather than the geometric foot-point."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-df87546321f81551af662a93",
+      "replacementText": "yürütmeye yönelik",
+      "reason": "The execution-oriented adjective, not the noun execution."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e292b13976474602ba0ee65d",
+      "replacementText": "simge durumuna küçültmek",
+      "reason": "The window-minimize action is different from resizing its dimensions."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e7da1367a1c853f0c8940f39",
+      "replacementText": "kesintiye uğratmak",
+      "reason": "The transitive interruption of a process, not intransitive cessation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e889e66213d01b9de1a487e9",
+      "replacementText": "içini açmak",
+      "reason": "The sharing-in-confidence verb, rather than merely trusting."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-eb08aa64d35aa22a6f024ef1",
+      "replacementText": "onur ödülü",
+      "reason": "A concrete token of recognition rather than the emotion of pride."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ec0aee0d44e98a556b9c4593",
+      "replacementText": "yüz kızarması",
+      "reason": "The blushing action noun, not generic reddening or an infinitive."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ef1561dd128263efd578c5ba",
+      "replacementText": "kafile",
+      "reason": "A group of people, animals or vehicles moving together, broader than a caravan alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ef1a46130dc302e81db359c3",
+      "replacementText": "küçük çivi",
+      "reason": "The small-nail sense, not necessarily a thumbtack."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f4e811a6fc930141234a697b",
+      "replacementText": "gizlice araştırma",
+      "reason": "The investigative snooping act, not only visual surveillance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fa4f5d4109cab49f3b828ff0",
+      "replacementText": "kazıkla desteklemek",
+      "reason": "Natural verb phrase for supporting with stakes."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fb84a5cf4b51571d318e8718",
+      "replacementText": "fast food",
+      "reason": "Established current Turkish loan phrase; ready-made food alone is a broader category."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fe08865a6c502e0485b48d45",
+      "replacementText": "ilk sözü edilen",
+      "reason": "The first of two previously mentioned items, not simply first in time."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0363c510a7ec10bc289c94e2",
+      "replacementText": "af",
+      "reason": "The forgiveness-for-an-offense noun, not a conversational apology."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-05db09dc9c80d697a4b2d025",
+      "replacementText": "uygun giyinmiş",
+      "reason": "Sufficiently clothed for decency, not moral character generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0aa094a36b99bf7358bebebf",
+      "replacementText": "niyet etmek",
+      "reason": "The intend-to-do sense, not meaning a word or merely planning logistics."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0c1bc970967aed9013b0010c",
+      "replacementText": "dikey yönlendirme",
+      "reason": "The page/print orientation, not a person's portrait."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1aeeab5da20fa1a107d3b20b",
+      "replacementText": "hariç tutmak",
+      "reason": "The transitive exclude sense, distinct from a preposition."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1d8c23d07b88e6a0781b291a",
+      "replacementText": "çamaşır sıkma makinesi",
+      "reason": "The roller-operated laundry wringer, not a vise."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-22a8ab669f47747fd1612cb4",
+      "replacementText": "görüşürüz",
+      "reason": "Natural informal goodbye rather than a final farewell."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2c1833215816e80d0f96fd19",
+      "replacementText": "oyun alanı",
+      "reason": "Preserve the figurative playground sense instead of an experimental test object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-333de4b41f3098dc483dc72e",
+      "replacementText": "ölüm takıntılı",
+      "reason": "Natural transparent rendering of the death-obsessed sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-35bf090e1a35210d42333695",
+      "replacementText": "su birikintisi",
+      "reason": "A small body of standing water; the sense does not require a constructed pond."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4739c79a1eff195091205eda",
+      "replacementText": "gelmek",
+      "reason": "The arrive/appear sense, not becoming something."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4ddfae1754917ab772184bd9",
+      "replacementText": "doğrudan",
+      "reason": "The direct uninterrupted route sense; not only temporal continuity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6a9a6a2887dfcd044d9e0c94",
+      "replacementText": "esrarlı sigara",
+      "reason": "The marijuana cigarette sense, not a generic cigarette count."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6fb45aeacd584dd035cd5ceb",
+      "replacementText": "tedavi edilemez",
+      "reason": "Natural adjective preserving inability to cure."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7170003d753df0de151afe70",
+      "replacementText": "para",
+      "reason": "The ordinary meaning of the source money slang; do not introduce dated Turkish slang."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-726f23a67dc29336950491df",
+      "replacementText": "fabrika binası",
+      "reason": "The manufacturing building, not a building in general."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-86d0697c638ec77ff129505c",
+      "replacementText": "büyük tuvalet",
+      "reason": "Natural current euphemism for defecation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8f5175c7b7d1c9d939976337",
+      "replacementText": "kötü bir şey olacağı hissi",
+      "reason": "The anticipatory sense of evil, not simply knowing something intuitively."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-957d938aed46cb2bbf59de51",
+      "replacementText": "gelgitin yükselmesi",
+      "reason": "The rising tide sense, not flow generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9ec329fe0f728f081ca2e5ff",
+      "replacementText": "seks işçisi",
+      "reason": "Modern neutral occupational label replacing a derogatory word."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a3336d8907843100b11fff47",
+      "replacementText": "kirli çamaşırlar",
+      "reason": "The idiomatic compromising-information sense, not ordinary gossip."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a4c7745768cad67bf0f8d55a",
+      "replacementText": "buz parçası",
+      "reason": "The ice-lump sense does not require a cube."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b1516f2de226a1e5b3d3abc7",
+      "replacementText": "onları",
+      "reason": "The common object-pronoun equivalent, rather than a subject form or specifically to them."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b643d2d0d7b1db58f7aa02ba",
+      "replacementText": "el sanatı",
+      "reason": "The manual-skill craft sense, not an abstract profession alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b65835a46f312ebb2e12575f",
+      "replacementText": "röportaj",
+      "reason": "The journalism interview sense, distinct from a job interview."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b7ffaa4966b10e0542163fbc",
+      "replacementText": "küçük parça",
+      "reason": "A small fragment need not be a slice."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b91b023620f6a5eb17d52e12",
+      "replacementText": "sağlam bağlanmış",
+      "reason": "The properly secured sense, not general safety or certainty."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0a4fc21d2e9a98edc82c1b8",
+      "replacementText": "haklı çıkarmak",
+      "reason": "Providing justification rather than defending physically."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c2c773003fccbfc6570a1392",
+      "replacementText": "demiryolu makası",
+      "reason": "Make the railway switch context explicit, not a point in general."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c33b1067af6a55e3ae45a5a6",
+      "replacementText": "resmî talimat",
+      "reason": "The official command sense, not a general grant of authority."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-df56f1018e88df4547e49945",
+      "replacementText": "tartışmak",
+      "reason": "The participating-in-a-debate verb, not the noun negotiation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e0a26fcacef078daa203c07c",
+      "replacementText": "ülkenin iç kesimleri",
+      "reason": "The country's inland regions, not internal medicine or a ministry."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e7aad6f233552dad4f0ee2a5",
+      "replacementText": "gemiye baskın yapmak",
+      "reason": "Natural explanation of hostile boarding; not ordinary embarkation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f5dd6461f5ab0f871a3f1afb",
+      "replacementText": "nasıl istenirse",
+      "reason": "The freely-chosen-manner sense, not a contrastive however."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-00a95f1d437a3811b26a2f7f",
+      "replacementText": "katılmamak",
+      "reason": "Intentionally not attending, not accidentally missing or running away."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0127de899e944c569aa57832",
+      "replacementText": "balad",
+      "reason": "The narrative-poem form, distinct from a generic archaic word for verse."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0d34879f80d32fb584c0ed49",
+      "replacementText": "gece boyunca",
+      "reason": "The throughout-the-night sense, not merely at night."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0d453e0934a9335015193c35",
+      "replacementText": "yağcılık",
+      "reason": "Natural everyday noun for excessive ingratiating praise."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-10cfd0d3dddff1e5f641e9f7",
+      "replacementText": "geriye dönük değerlendirme",
+      "reason": "After-the-fact understanding rather than a bare foreign adjective."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-17468801325ab4e8d321b949",
+      "replacementText": "güvence",
+      "reason": "Something that secures or guarantees, not only active guarding."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-196289203238e3f278b0bbdc",
+      "replacementText": "kemiklerini ayıklamak",
+      "reason": "Removing bones in food preparation, not restricted to fish bones."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2515e775c083d90f545d3016",
+      "replacementText": "suçla ilgili",
+      "reason": "The relational adjective, distinct from a person who is a criminal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3cc6089d8bc8e42f19f9fad3",
+      "replacementText": "fundalık",
+      "reason": "The moor/heath landscape sense; not every instance is a peat bog."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-43658a66eeeaae8fc7349901",
+      "replacementText": "arka taraf",
+      "reason": "The animal's tail-end/hindquarters sense rather than the appendage itself."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4802046b04a658d332b510c8",
+      "replacementText": "iskambil rengi",
+      "reason": "Established card-game term for a suit, not just its emblem."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4966dc33ce73237727a4162f",
+      "replacementText": "yalnız",
+      "reason": "Being by oneself need not imply having nobody in one's life."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5802b5421f2c83c8667868b2",
+      "replacementText": "tesadüfi",
+      "reason": "A chance occurrence as an adjective, not an adverb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5e6225d09225ade098ce7803",
+      "replacementText": "revaklı koridor",
+      "reason": "The covered walk/colonnade, not the whole courtyard."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-64704bb7dd091c0452679b2e",
+      "replacementText": "kremayla pişirmek",
+      "reason": "The culinary creaming sense, not applying skin cream."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-69a6af64f8541781bbb74595",
+      "replacementText": "flört etme",
+      "reason": "The romantic courtship activity rather than scheduling appointments."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7d6b3ae8d74d450b054ef29a",
+      "replacementText": "ertelemek",
+      "reason": "Putting off an action, not merely lateness or delaying another person."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7eabf035d93d838df71769b0",
+      "replacementText": "ders alanı",
+      "reason": "The particular area of study, rather than any topic or a single lesson."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8a21d885c9b1f933655652b6",
+      "replacementText": "taş feda etmek",
+      "reason": "The precise chess sacrifice context, replacing corrupted text."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8e57a0b572b599b4d59f1ac5",
+      "replacementText": "seçilen şey",
+      "reason": "The selected item/result, not a possible option or the act of choosing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8fff572723c29d2830a5cb08",
+      "replacementText": "çekinmeyen",
+      "reason": "The unembarrassed sense need not be morally shameless."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-97727180e41da1577445c2e0",
+      "replacementText": "güçsüzlük",
+      "reason": "The general weak state, not thinness alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-99a5a9e832f03fd62f32ced2",
+      "replacementText": "insansever",
+      "reason": "This exact sense is love of humankind, not specifically charitable giving."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9b3a82cbfee3e752b76a911e",
+      "replacementText": "kilisenin ana bölümü",
+      "reason": "Transparent modern Turkish for the central body/nave, without an unexplained specialist loan."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9ecee4a0175ec21d97b45488",
+      "replacementText": "market koridoru",
+      "reason": "The supermarket passage, distinct from the shelving department reyon."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a4cc467f1088fb71020d7d71",
+      "replacementText": "gönül acısı",
+      "reason": "The emotional heartache, not physical heart pain."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a62c5d3ef2da6ed064c07f28",
+      "replacementText": "kalmak",
+      "reason": "Continuing in a state, preserving the intransitive verb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-aa19862a694fafbe24dc03ec",
+      "replacementText": "fantastik edebiyat",
+      "reason": "The specified literary genre, not a personal imagined scenario."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-aa33ab70ccc5a3ab60fd3f35",
+      "replacementText": "yelken tüyü",
+      "reason": "The sailing airflow yarn, verified in Boğaziçi University Sailing Team teaching material."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-abdc32999f4d2fe0e31bcbc6",
+      "replacementText": "dürüstlük",
+      "reason": "The truthful quality, distinct from general reliability."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b501fd0e3fca6ecc5c0b397d",
+      "replacementText": "koşum hayvanları takımı",
+      "reason": "A team of draught animals pulling together, not their harness equipment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b644ff364a54b47f8362ba63",
+      "replacementText": "ünsüz harf",
+      "reason": "The letter sense, distinct from the speech sound or silent adjective."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b64f34e0d17613b0aa68e2ee",
+      "replacementText": "yavru kedi",
+      "reason": "The age-based kitten sense, not just a diminutive cat."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b924b89c3075181dbe193c61",
+      "replacementText": "davranış kuralı",
+      "reason": "The conduct-governing precept rather than generic instruction."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-be4c8f30d338ebc79a1d7c5f",
+      "replacementText": "geçiş yüksekliği",
+      "reason": "Clearance beneath an object, not solely the height of an arch."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bf0b28d8ecf58ae9ec59237c",
+      "replacementText": "coşmak",
+      "reason": "The figurative elevated-spirits sense rather than religious attainment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c024e25b5324a305354d88b7",
+      "replacementText": "madde",
+      "reason": "The tangible substance constituting an object, not necessarily raw material."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c71634f4a2d9794f93c32f62",
+      "replacementText": "kararname",
+      "reason": "The modern decree/legal-order noun rather than an administrative circular."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d0958a73e4ca811632d69165",
+      "replacementText": "kuir",
+      "reason": "Current Turkish equivalent for queer sexual/gender identities; community slang is a narrower register."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dc905b37725c6c1e414f7081",
+      "replacementText": "sütsüz",
+      "reason": "The exact no-milk/no-whitener sense; sade coffee in Turkish can instead mean no sugar."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-de5518c099aac9e1a5c26d39",
+      "replacementText": "dar ve derin vadi",
+      "reason": "Preserve the deep narrow gorge shape rather than a valley generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-df44faae5dded00ac65cedf5",
+      "replacementText": "ayin",
+      "reason": "The explicitly religious ritual sense, not any secular ceremony."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e09817a71ef623f5c321c488",
+      "replacementText": "bilinçli seçim",
+      "reason": "The conscious volition sense, not an unexplained list of alternatives."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e0a589959a128b5dd14b4d2a",
+      "replacementText": "alçakgönüllü",
+      "reason": "The self-modesty sense, distinct from an object's plain appearance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e132a2bffc5cfccf62502db2",
+      "replacementText": "zıt anlamlı sözcük",
+      "reason": "Natural standard opposite-meaning word term with correct spacing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e52d0402b6405ac6f9f0bfdb",
+      "replacementText": "özel öğretmen",
+      "reason": "The individual tutoring role rather than a historical palace tutor."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f2dd64c3f9800528bf003f76",
+      "replacementText": "ilahi",
+      "reason": "The godlike/divine attribute, not solely sacredness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fc1fc20689b36a68e5c610af",
+      "replacementText": "sanı",
+      "reason": "The mathematically unproven but evidence-supported statement, distinct from an assumed premise."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fd9058c7028e1d3c0e5af59f",
+      "replacementText": "görmüş geçirmiş",
+      "reason": "Natural contemporary description of worldly experience."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0132622fd1eff94ce32aeb65",
+      "replacementText": "olsa da",
+      "reason": "Concessive conjunction although, rather than the discourse adverb nevertheless."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-01e8d600607d64f9c7206e7e",
+      "replacementText": "ortaya çıkış",
+      "reason": "Modern noun for emergence from concealment or into view."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-023324396b5d82e219021540",
+      "replacementText": "somutlaşmış hâli",
+      "reason": "Person or object embodying a quality, rather than any example of it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-02d8cb30a60e774a09f9ac5c",
+      "replacementText": "sokabilen",
+      "reason": "The explicit capacity-to-sting sense, not merely a burning sensation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-06106ad0fb779179d4a6aa93",
+      "replacementText": "eğilim",
+      "reason": "General tendency or inclination rather than a talent or skill."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0c9a1bed7289c1170b959e20",
+      "replacementText": "kalça",
+      "reason": "The everyday buttock noun; avoids an unnatural literal facial-cheek compound."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-13aaee43330838540b857407",
+      "replacementText": "nadir bulunan nesne",
+      "reason": "A rare object as a noun, not the adjective rare."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-165fb93c43cf741a6e89cec5",
+      "replacementText": "sır",
+      "reason": "The confidential information itself, not the quality of confidentiality."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1852f20b04bd3a96fd694ddd",
+      "replacementText": "çare",
+      "reason": "The remedy sense includes a treatment or application, not solely a medicine."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1b7c494668c155ac7c5bb083",
+      "replacementText": "kalın",
+      "reason": "Natural everyday adjective for a low-pitched voice or sound."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1c71ab0c17e6e67e80b75ce3",
+      "replacementText": "uygun adım yürümek",
+      "reason": "Marching uses regular strides; mere brisk walking is broader."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1de62752eb581153275d8dec",
+      "replacementText": "kapora",
+      "reason": "Initial deposit; the original meaning does not require an installment plan."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1e58804b3b21120025450423",
+      "replacementText": "sürüm yükseltmek",
+      "reason": "Replacing software with a later version, preserving upgrade specificity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-201632e2846a2f97ba25206f",
+      "replacementText": "tutum",
+      "reason": "An expressed stance or position on an issue."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-27b25ff501b02da6dd2ba1ce",
+      "replacementText": "donuk",
+      "reason": "The figurative stiff or inexpressive adjective, not a wooden object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2c305d015ad41578b6238a67",
+      "replacementText": "kilise ayini",
+      "reason": "A church worship service, distinct from the building."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2eec1b5136021009823d9197",
+      "replacementText": "o bakımdan",
+      "reason": "Natural equivalent of as far as that is concerned."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-320de4fbbc9d48037ecb200d",
+      "replacementText": "kılık değiştirme kıyafeti",
+      "reason": "This sense denotes attire concealing identity, rather than the act alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-34edc9c95ae51efc53d73fc7",
+      "replacementText": "çanak",
+      "reason": "A water-eroded rock basin, not a coastal bay."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-378b48774c4764f43aec8775",
+      "replacementText": "kendini tutamamak",
+      "reason": "Natural expression for yielding to temptation, without an invented calque."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-39bb9ade1ce556cf159c157b",
+      "replacementText": "hukuki belge",
+      "reason": "A legal instrument; distinguishes this deed sense from any document."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3c4050f47bd4f4d47ec2c9ba",
+      "replacementText": "kıvrak zekâ",
+      "reason": "Ability to think quickly, not necessarily quick verbal replies."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3d48caae8b40c8c7d1dc0794",
+      "replacementText": "çarpıtmak",
+      "reason": "Presenting a biased account; the gloss does not require favorable embellishment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3fe018c7a211aa38291e1fff",
+      "replacementText": "araştırmak",
+      "reason": "Research or investigation generally, not necessarily a formal inquiry."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-428894e2e243d7229c6c28f1",
+      "replacementText": "yaz mevsimi",
+      "reason": "Season noun, not the Turkish adverb meaning in summer."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-43be717bd714aa9c358db6cf",
+      "replacementText": "kaos",
+      "reason": "Modern noun for a state of disorder."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4cf99f113cb46a84d76b6f75",
+      "replacementText": "rıza göstermek",
+      "reason": "The explicit giving-assent sense rather than observing a rule."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4d5141755301f1836aa2aca3",
+      "replacementText": "yol vermek",
+      "reason": "The give-way sense, not supplying something or necessarily submitting to power."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-54517300df396f192f642647",
+      "replacementText": "düzen",
+      "reason": "The resulting structured layout, not solely the act of arranging."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-56765d8dd38e3f4ebda4fd24",
+      "replacementText": "karmakarışıklık",
+      "reason": "A confused jumble of things rather than an archaic abstract noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5bc21cb084aad91dfd2de2ce",
+      "replacementText": "alkol",
+      "reason": "The source gloss explicitly identifies alcohol without restricting drink strength."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5c4aa2e54657f1fc33e8f447",
+      "replacementText": "geri kazanma",
+      "reason": "An instance of getting something back, not a health-only recovery."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-60878ad67de69bfc263ba8ce",
+      "replacementText": "salatalık turşusu",
+      "reason": "Preserved cucumber generally, without restricting its variety or size."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-639a72618754f15ad6971123",
+      "replacementText": "kalite",
+      "reason": "The degree of freedom from defects as a quality noun; reliability is a narrower dimension."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6b184f65045734903626c77b",
+      "replacementText": "sindirmek",
+      "reason": "Natural figurative verb for mentally processing information."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6d1fcb49f1ff5af373f8f810",
+      "replacementText": "söyleşi",
+      "reason": "Verbal exchange or conversation, without implying disagreement."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7297b9051045ffbde71a588b",
+      "replacementText": "tamir etmeye uğraşmak",
+      "reason": "Attempted tinkering need not result in a successful repair."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-76e1bc8d9e26eafdb3a9038c",
+      "replacementText": "rahat",
+      "reason": "Casually calm and relaxed, without asserting absence of all worries."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7a5dcf53e70afaf6c220fe0e",
+      "replacementText": "dua etmek",
+      "reason": "Ordinary modern verb replacing the archaic divine-name expression."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7d0e8f34e01175eb2aa66e0c",
+      "replacementText": "ve/veya",
+      "reason": "Preserves the explicitly inclusive conjunction and/or."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8185839e08a53528c53279df",
+      "replacementText": "boyama",
+      "reason": "The action of applying paint, not only artistic picture-making."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-83f9dacb1f955f7eb625be39",
+      "replacementText": "geceyi geçirmek",
+      "reason": "Temporary overnight accommodation rather than staying awake until dawn."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8536165525fd23582d21dc14",
+      "replacementText": "uyuşuk",
+      "reason": "The lethargic sense rather than physical clumsiness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-863a4ff32957d4d3108b6df7",
+      "replacementText": "fiyat",
+      "reason": "Price or cost of an item, not an installment or tax."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8960c5127a4d715994f30c8e",
+      "replacementText": "şimdiki zamanla bağlantılı geçmiş zaman",
+      "reason": "Describes the present-perfect relation without falsely treating perfect as faultless."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8b90e65a57ce9fb61fade6c2",
+      "replacementText": "talepte bulunmak",
+      "reason": "Making a petition need not always involve a written document."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-923207b54d7a75ca68c64863",
+      "replacementText": "kafiyeli şiir",
+      "reason": "Rhyme in its verse sense, rather than all poetry or the rhyme relation alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-937cc2655f024c2b936e2d62",
+      "replacementText": "hayret",
+      "reason": "Amazement without requiring admiration or religious reverence."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-983da4f7d887bd9cb6a76bf9",
+      "replacementText": "rezervasyon yapmak",
+      "reason": "Natural verb for booking or reserving."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9bffae44c04231ca6265b452",
+      "replacementText": "arzu edilir",
+      "reason": "Something suitable to be desired, rather than merely satisfactory."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9e72f20346500d0fb58c9fc7",
+      "replacementText": "kayaçların ayrışması",
+      "reason": "The geological weathering process, distinct from weather or air."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a3688cc74a2f34875b33d366",
+      "replacementText": "Olimpiyatlar arasındaki dört yıllık dönem",
+      "reason": "Preserves the Olympiad interval rather than conflating it with the Games."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a68880dfd0949c4eb3a6f156",
+      "replacementText": "kafası iyi",
+      "reason": "Contemporary colloquial drug-intoxication expression."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-aaa34fa1e17e05c2875d4595",
+      "replacementText": "tüyo",
+      "reason": "A private useful tip, not merely a general key point."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ad238b30890f2b83055f11c3",
+      "replacementText": "çıkış",
+      "reason": "The exit/departure action, rather than abandonment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ad26ac797c487c9e084430da",
+      "replacementText": "galip",
+      "reason": "Current everyday adjective for being the winner."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ae63959f816a3ac019fe8fd9",
+      "replacementText": "ilginç tip",
+      "reason": "Natural conversational expression for an eccentric character."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b0554915a69a30d3b2890c83",
+      "replacementText": "gelecek kuşaklar",
+      "reason": "All future generations, not a single generation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ba3848789c1c1b675850635d",
+      "replacementText": "nöbet tutma",
+      "reason": "The watchman's action rather than legal guardianship."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bbd780916b8de43ea55bafaa",
+      "replacementText": "eşevrelilik",
+      "reason": "Coherence is a noun in all paired headwords despite the shorthand adjectival gloss."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0310a7f93c870ae9986fe91",
+      "replacementText": "uyuşuk",
+      "reason": "Sluggish and lethargic, not a skin disease."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c15988fea1e4de7e11cb9312",
+      "replacementText": "çok büyük",
+      "reason": "Plain contemporary adjective for massive size or significance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c20e5ab7e99875123053514b",
+      "replacementText": "kıdemli hemşire",
+      "reason": "A senior nurse need not be the single head nurse."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c52bf2e03f22b0004b05036e",
+      "replacementText": "vekâlet yetkisi",
+      "reason": "Authority to act for another, not the representative person."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c7c66ff9cd56f337716ee59b",
+      "replacementText": "akıl",
+      "reason": "The intellect sense of brains, not the anatomical organ."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cec2a6922fb5d019ddce2e42",
+      "replacementText": "kütüphaneden ödünç almak",
+      "reason": "Library checkout rather than hotel departure or generic taking."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d028e47de15842b8d1bc6039",
+      "replacementText": "yaşam alanı",
+      "reason": "An organism's habitat, not its country of origin."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d26a6abb366b2e881ca2b1f7",
+      "replacementText": "teneke kutu",
+      "reason": "The can sense shared with Blechdose/lata, distinct from a generic box."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dfcfbc013708fee9fb95ec14",
+      "replacementText": "ne tür",
+      "reason": "What-kind interrogative, preserving the kind distinction rather than bare which."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e3322d4542b15ae9c7f2890c",
+      "replacementText": "eylemi yapan",
+      "reason": "Transparent expression for the grammatical agent."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e87914501ff34f631d05ab96",
+      "replacementText": "su yatağı",
+      "reason": "The channel through which water flows rather than any navigable waterway."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ee4b43b1fe86f24d8c956cbe",
+      "replacementText": "uygun hâle getirmek",
+      "reason": "Preserves the transitive render-suitable sense and standard diacritic."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f11442d4f1c71346591a1896",
+      "replacementText": "siyasi program",
+      "reason": "A broad political platform, not necessarily confined to a party."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-facf6577226ff7c88845168d",
+      "replacementText": "üç aylık dönem",
+      "reason": "Any three-month period, not only a calendar-year quarter."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fc66e9073a5d3566c164758a",
+      "replacementText": "öne çıkan özellik",
+      "reason": "The principal highlighted feature rather than generic quality."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-02d1a6ea84eefbdaf82fe16f",
+      "replacementText": "karışıklık",
+      "reason": "Lack of clarity or order need not be a person's mental confusion."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-02e1a2d1242a4da6c2e9e6b1",
+      "replacementText": "niyet etmek",
+      "reason": "Having intentions, rather than making a detailed plan."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-04afcb75971b5dd6b8c1810b",
+      "replacementText": "parfüm",
+      "reason": "The explicit perfume sense, replacing an archaic word."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-09e50987155bf4c38e081245",
+      "replacementText": "hazırlamak",
+      "reason": "Preparation for eating or drinking includes beverages, not solely meals."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1bf36abb26ed07d350c59937",
+      "replacementText": "varlığını sürdürmek",
+      "reason": "The explicit continue-to-exist sense, with the correct intransitive relation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-205e4d2d75019ede1a1baeeb",
+      "replacementText": "çeşni katmak",
+      "reason": "Seasoning can be savory; avoids implying only sweetening."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-225101a36c936ae4492652a9",
+      "replacementText": "bölüm",
+      "reason": "A discrete game segment, not the player's proficiency level."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-378e6841803f5fd1809793f5",
+      "replacementText": "nitelendirmek",
+      "reason": "Ascribing an attribute, not making an estimate."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3be694e459d244b889195b28",
+      "replacementText": "gidişat",
+      "reason": "The course or progression of events."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-487834f6ba0381872d97e7b9",
+      "replacementText": "sayı sözcüğü veya simgesi",
+      "reason": "Preserves both lexical and symbolic numerals, rather than digits only."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4b22d081e3d2f250b26f7649",
+      "replacementText": "dönüştürme",
+      "reason": "The act of converting something, preserving the causative sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4f4bc0d289efb0be26114a26",
+      "replacementText": "çok mutlu",
+      "reason": "The elated sense emphasizes great happiness; excitement alone is broader."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-50d887bc66895d233ac51d74",
+      "replacementText": "tesadüfi",
+      "reason": "The chance-occurrence adjective, not its adverb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-52654b193ce1db293ecc9b81",
+      "replacementText": "düşündürmek",
+      "reason": "Causing someone to suppose something rather than giving advice."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-568f6f704286ed4e8de01ffd",
+      "replacementText": "suskunluk",
+      "reason": "Taciturn disposition rather than environmental silence."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5ebcf1458814478db9fdaafe",
+      "replacementText": "kötü",
+      "reason": "The source includes mischievous as well as evil; şeytani overstates it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-60a093d260dfad0336d61b4c",
+      "replacementText": "acı",
+      "reason": "Ordinary modern noun for suffering or distress."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-68a13e4f389f05ab7a6dbbbb",
+      "replacementText": "teşhis etmek",
+      "reason": "Diagnosis of a root cause; not restricted to a medical diagnosis alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6baa332806e11337bdb646e9",
+      "replacementText": "sütun kaidesi",
+      "reason": "The bottom part of a column rather than any foundation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6dd9f869da17eb89f081020a",
+      "replacementText": "küçük tuvalet",
+      "reason": "Contemporary everyday euphemism for urination."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7d14e0e9f06c24130e78c441",
+      "replacementText": "istikrar",
+      "reason": "The stable condition generally, without implying determination alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-82f561038d12d4166ed76535",
+      "replacementText": "şeker eklemek",
+      "reason": "Explicit addition of sugar rather than a nap or coating process."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-888035d930ced63e485529f5",
+      "replacementText": "suçlar",
+      "reason": "Criminal acts collectively; avoids the guilt meaning of suçluluk."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8faae1d681b60e89ccf20b3a",
+      "replacementText": "zorlu deneyim",
+      "reason": "The difficult trial/ordeal sense, not experience generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9351d687cfdf7a8e687a8496",
+      "replacementText": "eş anlamlı sözcük",
+      "reason": "A word with the same meaning, preserving the noun sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9859ae3fee9af72f5469d536",
+      "replacementText": "aynı dönem öğrencileri",
+      "reason": "A cohort of people sharing an intake or graduation year, expressed naturally without conflating the people with the period itself."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-998980352902dcb9c2a9f803",
+      "replacementText": "sanat destekçisi",
+      "reason": "Modern transparent equivalent for a patron of the arts."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a83bf42afa2ad0879f3e4efe",
+      "replacementText": "suya girmek",
+      "reason": "Immersing oneself in water need not be for washing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b962ca95a2221254ea263894",
+      "replacementText": "kararlı",
+      "reason": "Intent in the determined sense, not merely serious demeanor."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bab3f7fab4cb2b04595e248e",
+      "replacementText": "onlu grup",
+      "reason": "A series of ten items, not necessarily ten years."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0cc22adc5e2c7996b1c29df",
+      "replacementText": "Tamam düğmesine basmak",
+      "reason": "The computing action verb, not the button label alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c15c2e0e45201dbaa8fbbe8d",
+      "replacementText": "niyet beyanı",
+      "reason": "A statement of intent rather than an offer or judicial decision."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c89f6d8536f661a00a2b1c7f",
+      "replacementText": "içine girmek",
+      "reason": "Enter or penetrate, preserving the intransitive sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c8c971b0c30d71e602df1951",
+      "replacementText": "askı kancası",
+      "reason": "A protrusion for hanging something, not a clothes peg."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cc7953bfff1ff576039fa363",
+      "replacementText": "temel",
+      "reason": "The lowest supporting part of a wall rather than an ornamental pedestal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cd7423a870e2af32ebd7d2a5",
+      "replacementText": "ıssız",
+      "reason": "A place rarely visited or remote from society."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d40d741e41be26a3f3650736",
+      "replacementText": "puan pimini ilerletmek",
+      "reason": "Specific cribbage scoring action, not estimating or hanging on a peg."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d65055f22f7d5aeaaf4e11b5",
+      "replacementText": "bordür",
+      "reason": "The decorative edge strip, not decoration generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d6a13e2f8a1a4118f26c40f2",
+      "replacementText": "dumana maruz bırakmak",
+      "reason": "Exposure to fumes need not involve deliberate culinary smoking."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d83c2a7b6261c2830446e041",
+      "replacementText": "aletlerle donatmak",
+      "reason": "Specifies equipping with tools, preserving the source sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d8849d55e3638c4398fbdee1",
+      "replacementText": "dünya küresi",
+      "reason": "The physical model of Earth rather than Earth itself or a generic sphere."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-db119cb93ed3d43dd6733c37",
+      "replacementText": "açıklama",
+      "reason": "An account stating causes or grounds rather than a report title."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dec8119417685e66ed7c9f22",
+      "replacementText": "masanın üstü",
+      "reason": "The literal top surface of a desk, not a computer desktop."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e0c8b6a5df66a0381489a133",
+      "replacementText": "sarsılmaz",
+      "reason": "Steadfast or steady, rather than merely continuous."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e0d5271af698493528101e22",
+      "replacementText": "kaplam",
+      "reason": "The established semantics term for extension, distinct from intension."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-eb60d9ad6e6ab0ee7c28ce43",
+      "replacementText": "kocaman şey",
+      "reason": "Colloquial noun for a remarkably large thing."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ecb96198f1a401d97a7f5342",
+      "replacementText": "en son",
+      "reason": "Most recent rather than the last in a counted sequence."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-edb3b08d8b2186e0b92b81c6",
+      "replacementText": "şoke olmuş",
+      "reason": "Preserves the stronger shocked/startled sense as an adjective."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f02855adeffa38941c17c67c",
+      "replacementText": "şeytan çıkaran kişi",
+      "reason": "General equivalent of exorcist without restricting the believed entity to jinn."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f7f93cab729f38f5e0017ea9",
+      "replacementText": "balık menisi",
+      "reason": "The fish seminal-fluid sense, distinct from dairy milk."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f954396b861520d7ca4c93c5",
+      "replacementText": "karıştırarak pişirmek",
+      "reason": "The culinary scrambling action, not simply whisking uncooked food."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f9fcad9a9d05d42a0f04bedf",
+      "replacementText": "sıçratmak",
+      "reason": "Agitating liquid; the source does not restrict the liquid to water."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fa82a5c9b3ea1ecd905762f0",
+      "replacementText": "gözaltına almak",
+      "reason": "Taking into legal custody, distinct from a court's remand decision."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fe6cf086a37502a0f295ef1c",
+      "replacementText": "günlük kaydı",
+      "reason": "The computing log sense, not a tree trunk or personal journal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0a72c4e67198dc333c086b54",
+      "replacementText": "beğenmek",
+      "reason": "Finding something attractive rather than loving it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0fd111ca36eacd70390db3e1",
+      "replacementText": "kısa ve öz",
+      "reason": "Ordinary concise adjective, without an archaic synonym."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1947cfc2da1d08c7f5a308ea",
+      "replacementText": "şarkı sözleri",
+      "reason": "The words of a song collectively."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-19a4a699368f94f04f3f342c",
+      "replacementText": "öngörme",
+      "reason": "The act of anticipating rather than an expectation alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-20933bc4b32b1f9f5c083447",
+      "replacementText": "tütün içme",
+      "reason": "Includes tobacco smoking beyond cigarettes."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3406a54c660ea1c0bc978026",
+      "replacementText": "iletişim kurmak",
+      "reason": "Non-oral communication need not be written correspondence."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-457ec7fd1bb0157b27cbe959",
+      "replacementText": "rüşvet verme",
+      "reason": "The act of making an illegal payment to influence an official."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-52519f127ef311192afad9e8",
+      "replacementText": "cüce",
+      "reason": "The noun for an unusually small example of its kind."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5b1506405f26e78088ff9d4e",
+      "replacementText": "tehditkâr",
+      "reason": "Threatening appearance or demeanor, not merely hardness."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-63fc962186314e960f7ff3b6",
+      "replacementText": "dikkat!",
+      "reason": "Warning interjection as used on danger signs."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6a26d93f80a78bbe0c5c9c4e",
+      "replacementText": "savunma oyuncusu",
+      "reason": "The sporting player role rather than an advocate."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7081d5c85fad45c640ba8e1c",
+      "replacementText": "yayını engellemek",
+      "reason": "Preventing publication, rather than silencing a speaker."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-72547798c9ac0a0a85ac2e45",
+      "replacementText": "söz varlığı",
+      "reason": "A language's words collectively rather than an imported loan."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-74db1ee474353482c506a4d1",
+      "replacementText": "yazı yazmaya yönelik",
+      "reason": "The attributive use for writing, distinct from written composition itself."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-7509de96bba1d6d64d857f62",
+      "replacementText": "sakız gibi",
+      "reason": "Natural texture description for springy chewy food, not merely hard."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-79530002c8891b93e661d9e0",
+      "replacementText": "aynı safta yer almak",
+      "reason": "Aligning with a person or way of thinking rather than agreeing on details."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-81f5c5876a4b9e95a9702eef",
+      "replacementText": "büyükelçilik",
+      "reason": "Current precise equivalent for an embassy organization."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8235b682acebdae715bdd280",
+      "replacementText": "mantık yanılgısı",
+      "reason": "The invalid-argument sense rather than a factual mistake alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-853d19da71cc3c7bfb8bb3a2",
+      "replacementText": "yayın kuruluşu",
+      "reason": "An organization or station, not an individual presenter."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-9f909794f99d036bc45da980",
+      "replacementText": "cinsel istismar",
+      "reason": "Preserves the sexual-abuse sense rather than general harassment."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a2ec9010a9f06b4bbc94f851",
+      "replacementText": "baraka",
+      "reason": "The temporary shelter structure, not simply an awning."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a7cffa28ea404e46761e8275",
+      "replacementText": "şanssız",
+      "reason": "Unfortunate rather than bringing bad luck to others."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a9f649325051f81d5ca5fe66",
+      "replacementText": "ayrıca",
+      "reason": "Introduces another item without requiring it to be exactly the second."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-bb8497cdc6e7857d67c06981",
+      "replacementText": "sayıp dökme",
+      "reason": "Enumeration as listing items, not merely counting their quantity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c025b34aec113f8d6bab5f34",
+      "replacementText": "kurmak",
+      "reason": "Forming or establishing a business rather than locating an object."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0c952fbece8a37bd06a8a64",
+      "replacementText": "yardımsız",
+      "reason": "Explicit absence of assistance, not necessarily being physically alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d973255c6ef8e1db8e40ce4d",
+      "replacementText": "geçici durdurma",
+      "reason": "Transparent expression for suspension of an ongoing activity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e1905af8938c63c4b0b82a5e",
+      "replacementText": "sürükleme kuvveti",
+      "reason": "The fluid-resistance force, not the action of dragging something."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e4883f8a0ba172a726739105",
+      "replacementText": "toplamı olmak",
+      "reason": "Amounts to a total; does not imply a count has grown toward a threshold."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e5a523f65dbb497e9498a91e",
+      "replacementText": "söz etmek",
+      "reason": "Briefly referring to something rather than saying generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e6818155d507381459e544b9",
+      "replacementText": "kâğıt yaprağı",
+      "reason": "The paper-sheet sense rather than a botanical leaf."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f13e81cd9403fcb90b133246",
+      "replacementText": "savaş becerisi",
+      "reason": "Military prowess rather than an individual combat sport."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-f40d8ccee52b6119a86d5f72",
+      "replacementText": "stok yapmak",
+      "reason": "Accumulating supplies without necessarily implying profiteering."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-01cd32b0febbfa5d00d950c0",
+      "replacementText": "kurallara uygun",
+      "reason": "Compliance with guidelines, not general compatibility alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-11eb7e257d4df9adba965673",
+      "replacementText": "veri trafiği",
+      "reason": "The collective exchange of data rather than one message."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-12491a0b80a280bd2f1c2849",
+      "replacementText": "en üstün",
+      "reason": "Dominant or supreme in rank or power rather than physical height."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-17a3e846b0f2f01308554114",
+      "replacementText": "ıslatma sıvısı",
+      "reason": "Upstream steep noun denotes the liquid used for steeping, without requiring alkalinity."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-19b602265c7b47968ebc5b37",
+      "replacementText": "yeterlilik",
+      "reason": "Competence for a general role rather than authority to act."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1bde7b6d6627cf77388771ed",
+      "replacementText": "özellikler",
+      "reason": "The set of characteristics, preserving its collective meaning."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-21d32b3a09f1cdae80d977d9",
+      "replacementText": "ortaya çıkma",
+      "reason": "The act of appearing rather than appearance in the visual-style sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2fc6aa68b1c8068e33807f8f",
+      "replacementText": "görevine bağlı",
+      "reason": "Accepting obligations rather than doing homework."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-374d4ef3cfbbcb6982cad8c4",
+      "replacementText": "hatırı sayılır",
+      "reason": "The substantial quantity sense of decent, not adequacy alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-441c12d072ba57d13693afb6",
+      "replacementText": "adı olmak",
+      "reason": "Natural expression for having a specific name, not being callable."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-498ad1d6b862e8d7923fdec7",
+      "replacementText": "kuvvet",
+      "reason": "A group exercising control or attack, preserving the singular collective noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-4b4ad066df028dad8929a207",
+      "replacementText": "yazılım aracısı",
+      "reason": "The computing agent rather than an attorney or human representative."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-532c3306cd22ad1e463b03b6",
+      "replacementText": "vınlama",
+      "reason": "The high-pitched zip sound rather than a malformed isolated onomatopoeia."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5a45447dabb55c37d9ba4acc",
+      "replacementText": "yeterlilik",
+      "reason": "Competence for a task, rather than jurisdiction or permission."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6b3ca906e1c331ae7445bcc8",
+      "replacementText": "işyeri konseyi",
+      "reason": "The works-council organization, not a generic work discussion."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6d2885079fdeee3b9da44cc1",
+      "replacementText": "cesaret",
+      "reason": "Pluck as nerve or fortitude, without requiring masculine heroism."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8821cbaeaa4063f9d841346e",
+      "replacementText": "tarihlendirme",
+      "reason": "Estimating an object's age rather than merely writing a date."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-8ace0bc19d75813967d70c92",
+      "replacementText": "işin beyni",
+      "reason": "The person supplying intellectual leadership, not a provider of secret intelligence; confirmed by the source's brains-behind-the-scheme definition."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-978b2c4378c30f34f308905d",
+      "replacementText": "zeki kişi",
+      "reason": "An intelligent person, not necessarily a genius."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a2efa674b00e26a3b4962354",
+      "replacementText": "cömert davranış",
+      "reason": "A generous act rather than the enduring trait alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a9b1b0c83aca10ab576245ea",
+      "replacementText": "fikir geliştirmek",
+      "reason": "Developing an idea, not creating an object generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ae03b1b118e108d502626e2d",
+      "replacementText": "yan anlam",
+      "reason": "Suggested or implied meaning rather than an archaic expression."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c0f0b8a1b6d1e1ed3555cf8f",
+      "replacementText": "varlıklı kişi",
+      "reason": "A wealthy person as a noun, not the adjective alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c7b2e96753c7d4d9b92f38e4",
+      "replacementText": "adet kanaması",
+      "reason": "The menstruation process rather than custom or a counting unit."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-cd59da00d9612ce87b4853f0",
+      "replacementText": "yeşiller partisi üyesi",
+      "reason": "A member of a green political party, not an invented personal label."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d64034fdee971931128b5531",
+      "replacementText": "devir",
+      "reason": "A complete rotation, preserving the cyclic-motion sense."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d6c1dd2ce025f4060847969f",
+      "replacementText": "ana iletişim hattı",
+      "reason": "The telecommunications trunk rather than a tree trunk or generic branch line."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d9b1ccf8a3a4f2eb8c666917",
+      "replacementText": "zihninde canlandırmak",
+      "reason": "Visualizing something mentally rather than predicting it."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-de9de82c156106dfc3281c86",
+      "replacementText": "sıra dışı kişi",
+      "reason": "Natural description of an eccentric person without an unrelated insult."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e6ee9a5d487a82c6c09b0a0c",
+      "replacementText": "taşıt yolu",
+      "reason": "The roadway used by vehicles, not an individual lane."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e7b205ee2b98facbe8d63e74",
+      "replacementText": "hafif eğimli",
+      "reason": "The gentle, non-steep grade sense, preserving the concrete gradient."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fb7e299d12b3fb0537d20009",
+      "replacementText": "harıl harıl yanan ateş",
+      "reason": "A fast-burning blaze need not be an uncontrolled destructive fire."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-044dfcc033ec99f289493d21",
+      "replacementText": "yemek duası",
+      "reason": "A prayer of thanks said before or after a meal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-050e7c80b6f81e21ff7585e8",
+      "replacementText": "erzak",
+      "reason": "Supplies set aside for future use, using the ordinary modern term."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-08a252c3939d3bb6006b0162",
+      "replacementText": "ısrarla istemek",
+      "reason": "The full source definition is persistent endeavor to obtain something, illustrated by soliciting alms or a favor; retain persistent asking rather than generic effort."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0d3aa0c5c2263525b53de584",
+      "replacementText": "şans eseri olan",
+      "reason": "The fortuitous-occurrence adjective rather than its adverb."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0ed8af7708559f1541ee8af5",
+      "replacementText": "stok",
+      "reason": "Supply ready for use, without restricting it to food provisions."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0fc0b645d9694299b59d52f3",
+      "replacementText": "yakında",
+      "reason": "Within a short time, without implying only a few moments."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-12f53aa052be4275ed1cce3c",
+      "replacementText": "CEO",
+      "reason": "Current Turkish business usage; a chief executive is distinct from chair of the board."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1b0a7833b5b1423a2e6acb38",
+      "replacementText": "dışarı doğru eğilmek",
+      "reason": "Leaning outward rather than resting against a support."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-2d08fdb96cf2d5589adbbdf6",
+      "replacementText": "yüz hattı",
+      "reason": "One physical feature of the face, preserving singular number."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-31d64619d385db783c6c240c",
+      "replacementText": "sorumluluk yükü",
+      "reason": "The figurative burden of responsibility, not effort or inconvenience."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-58dccab273d282bd1b3ef3c3",
+      "replacementText": "hoş koku",
+      "reason": "Pleasant smell rather than a manufactured perfume alone."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6ead39ae46004e7371feb563",
+      "replacementText": "navigasyon",
+      "reason": "Modern familiar term for course planning and navigation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-88895d0c5c7aed02f6bd9a2f",
+      "replacementText": "yetkin",
+      "reason": "Skilled or proficient rather than merely adequate."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-90f6261fa7106ddb70d2fc6e",
+      "replacementText": "reklam sloganı",
+      "reason": "The specifically commercial advertising catchphrase."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-91388684ce8e10c1b643d9bd",
+      "replacementText": "skeç",
+      "reason": "A short comic performance, not a joke in general."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-98c89dae171fcdb9f5de08a9",
+      "replacementText": "yağmuruna tutmak",
+      "reason": "Natural figurative expression for bestowing praise or gifts liberally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-aba485d55e1dfc8cdaf3c7aa",
+      "replacementText": "saçı şampuanla yıkama",
+      "reason": "An instance of hair washing, not the product itself."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b775bb57c16ae4aa6a102434",
+      "replacementText": "şiddetli",
+      "reason": "Extreme violent energy without requiring moral cruelty."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-ce9078b84f8a3e18320f5147",
+      "replacementText": "vermek",
+      "reason": "Giving as required, not producing a crop."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-dc63580389383db568d33bd8",
+      "replacementText": "öne çıkarmak",
+      "reason": "Giving principal importance rather than merely possessing a feature."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e7a5429f6468f0fc58ef367d",
+      "replacementText": "sağ kol",
+      "reason": "A trusted subordinate or follower rather than any assistant."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-fb140a7e1fcca88d12b70a73",
+      "replacementText": "yaşasın",
+      "reason": "The conventional long-live wish; the shorthand prosper gloss should not turn it into an ordinary infinitive."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-0d39608fc0743038cab4499f",
+      "replacementText": "isim çekimi",
+      "reason": "Grammatical declension rather than verbal conjugation or attraction."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-365fb85ab39974b033f694ee",
+      "replacementText": "döngü",
+      "reason": "A repeating process, using the ordinary modern noun."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-3a738b802ba49d1fe5d0fbad",
+      "replacementText": "gereksiz yere",
+      "reason": "Not required by the circumstances, rather than just inappropriate location."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5c53fff44f6aa6fba2f033ca",
+      "replacementText": "vücut yapısı",
+      "reason": "A person's physique rather than a literal frame."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-6bb7e58da52b6a811015781a",
+      "replacementText": "fiş",
+      "reason": "The gambling token, distinct from an electronic chip."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-818ee4e879737a08a1d0699b",
+      "replacementText": "çok fazla",
+      "reason": "The excessive-quantity adverb, not simply much."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a450e55a782f2841e9738ff3",
+      "replacementText": "çoğul",
+      "reason": "The plural-number adjective rather than quantity generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-a93a34c2b4724a2c265db599",
+      "replacementText": "gereğinden fazla",
+      "reason": "Degree beyond enough rather than simple abundance."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-b0c6a7ed53bd643cfd92d956",
+      "replacementText": "çakır kuşu",
+      "reason": "The goshawk species, distinct from sparrowhawk/atmaca."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-d73397e5989ac0fc4241d843",
+      "replacementText": "nöbet süresi",
+      "reason": "The period of duty rather than duration of all work generally."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-e0426e3f47b6126f721dba35",
+      "replacementText": "film karesi",
+      "reason": "An image-bearing photographic frame rather than its border."
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-08a252c3939d3bb6006b0162",
+      "replacementText": "nachdrücklich erbitten",
+      "reason": "Align the full source sense of persistently seeking something such as alms or a favor; not generic effort or a single neutral request."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-08a252c3939d3bb6006b0162",
+      "replacementText": "solicitar insistentemente",
+      "reason": "Align the full source sense of persistently seeking something such as alms or a favor; not generic effort or a single neutral request."
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-e7b205ee2b98facbe8d63e74",
+      "replacementText": "sanft",
+      "reason": "The gentle-gradient sense pairs with hafif eğimli and пологий; allmählich alone describes temporal gradualness rather than the gradient."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-370bb68efc4d5c2d6cb623db",
+      "replacementText": "makamlı söyleyiş",
+      "reason": "Chanting as a manner of vocal recitation, not any song."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-5623aa2e33cd48f50f4344d2",
+      "replacementText": "şirin şey",
+      "reason": "Natural affectionate noun phrase for a cute person or animal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-c15a6861501648b7f25ac592",
+      "replacementText": "özel haber",
+      "reason": "A prominent feature story, not just any special article."
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-4c838c876c0a45948e6af0fc",
+      "replacementText": "du",
+      "reason": "Align the singular informal second-person form with the adjudicated Turkish sen/seni, including accusative object case."
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-f28468cb75f9b1b919ddca58",
+      "replacementText": "dich",
+      "reason": "Align the singular informal second-person form with the adjudicated Turkish sen/seni, including accusative object case."
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-f28468cb75f9b1b919ddca58",
+      "replacementText": "тебя",
+      "reason": "Align the singular informal second-person form with the adjudicated Turkish sen/seni, including accusative object case."
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-e025a7b4463bfa2ad1498d31",
+      "replacementText": "одевать",
+      "reason": "Match dressing another person rather than dressing oneself."
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-f954396b861520d7ca4c93c5",
+      "replacementText": "готовить, помешивая",
+      "reason": "Match the culinary scrambling process of cooking while stirring, not just beating uncooked ingredients."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-05871d381b61f5cb25eb358e",
+      "replacementText": "uğruna",
+      "reason": "Restore the full source sense of acting out of consideration for or in the interest of someone; the shortened because-of heading misled the earlier proposal."
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-e025a7b4463bfa2ad1498d31",
+      "replacementText": "anziehen",
+      "reason": "Preserve transitive dressing of another person; remove the reflexive proposal."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-163fabbf4fd1459f69539bd3",
+      "replacementText": "önermek",
+      "reason": "The full suggest definition proposes something for consideration; the loose translation heading is not a request sense."
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-163fabbf4fd1459f69539bd3",
+      "replacementText": "предлагать",
+      "reason": "Align with suggestion rather than asking; the full source definition supports proposing something for consideration."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-e025a7b4463bfa2ad1498d31",
+      "replacementText": "vestir",
+      "reason": "Match dressing another person rather than dressing oneself."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-2fd837ef3da407fee1b3f9df",
+      "replacementText": "empezar a tener sueño",
+      "reason": "Match becoming sleepy rather than becoming tired."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-196289203238e3f278b0bbdc",
+      "replacementText": "deshuesar",
+      "reason": "General deboning rather than exclusively removing fish bones."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-96e0e3ea1525b6735e963650",
+      "replacementText": "ofrecer servicios sexuales",
+      "reason": "The exact sense is offering services rather than practising an occupation."
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-1aac07ec40b0dd2f65b8f502",
+      "replacementText": "püskürmek",
+      "reason": "The full erupt definition is explicitly intransitive volcanic or geyser eruption, not causative ejecting."
+    }
+  ],
+  "approvedExclusions": [
+    {
+      "conceptId": "bulk-b1a39d43478b1bb06266c7c6",
+      "language": "tr",
+      "originalText": "We sat on the bench",
+      "reason": "Malformed example fragment extracted as a translation of the English modal would. Turkish expresses this sense through a context-dependent tense construction; the fragment is not a valid standalone vocabulary equivalent. Exclude this Turkish mapping rather than invent a new concept.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/would"
+      ]
+    },
+    {
+      "conceptId": "bulk-096e3bc39ca6fb17766e4be4",
+      "language": "tr",
+      "originalText": "In the winters",
+      "reason": "Malformed example fragment extracted as a translation of the English modal would. Turkish expresses this sense through a context-dependent tense construction; the fragment is not a valid standalone vocabulary equivalent. Exclude this Turkish mapping rather than invent a new concept.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/would"
+      ]
+    },
+    {
+      "conceptId": "bulk-fe98c1965ea4da8b414a2df8",
+      "language": "tr",
+      "originalText": "daha sıcak olurduk!",
+      "reason": "Malformed example fragment extracted as a translation of the English modal would. Turkish expresses this sense through a context-dependent tense construction; the fragment is not a valid standalone vocabulary equivalent. Exclude this Turkish mapping rather than invent a new concept.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/would"
+      ]
+    },
+    {
+      "language": "tr",
+      "conceptId": "bulk-94242325e7262ac994eb9337",
+      "originalText": "bulmak",
+      "reason": "The source translation table conflates tracking and drawing under the vague noun act of tracing. Exclude this Turkish mapping until those meanings are properly split; selecting one would create false bidirectional equivalents."
+    },
+    {
+      "conceptId": "bulk-096e3bc39ca6fb17766e4be4",
+      "language": "es",
+      "originalText": "In the winters",
+      "reason": "English example fragment extracted as a Spanish verb lemma; no valid Spanish lexical entry."
+    },
+    {
+      "conceptId": "bulk-096e3bc39ca6fb17766e4be4",
+      "language": "de",
+      "originalText": "In the winters",
+      "reason": "English example fragment extracted as a German verb lemma; no valid German lexical entry."
+    },
+    {
+      "conceptId": "bulk-d6de237d8b42ff27fd8732ed",
+      "language": "tr",
+      "originalText": "be mübarek",
+      "reason": "The bare slang-intensifier entry lacks its phrase context; these literal sacred/holy forms are not usable bidirectional vocabulary equivalents."
+    },
+    {
+      "conceptId": "bulk-d6de237d8b42ff27fd8732ed",
+      "language": "ru",
+      "originalText": "свято́й",
+      "reason": "The bare slang-intensifier entry lacks its phrase context; these literal sacred/holy forms are not usable bidirectional vocabulary equivalents."
+    },
+    {
+      "conceptId": "bulk-b1a39d43478b1bb06266c7c6",
+      "language": "es",
+      "originalText": "conditional tense",
+      "reason": "An English grammar label was parsed as a Spanish translation of would; it is not a Spanish lexical equivalent."
+    },
+    {
+      "conceptId": "bulk-c331acf7b88f87f009a96b6c",
+      "language": "tr",
+      "originalText": "zenci",
+      "reason": "Exclude the explicitly derogatory racial-slur sense from the general learning library; neutral descriptions remain under their separate sense IDs."
+    },
+    {
+      "conceptId": "bulk-c331acf7b88f87f009a96b6c",
+      "language": "es",
+      "originalText": "negro",
+      "reason": "Exclude the explicitly derogatory racial-slur sense from the general learning library; neutral descriptions remain under their separate sense IDs."
+    },
+    {
+      "conceptId": "bulk-b1a39d43478b1bb06266c7c6",
+      "language": "de",
+      "originalText": "We sat on the bench",
+      "reason": "An English example sentence was parsed as a German lexical translation of would; no reliable equivalent can be recovered from the fragment."
+    },
+    {
+      "conceptId": "bulk-736099fa96169b0fa24d77a7",
+      "language": "tr",
+      "originalText": "yolunu bulmak",
+      "reason": "The upstream contrive sense describes projection of light but its translation table supplies managing/accomplishing terms. Exclude this internally inconsistent mapping pending a trustworthy sense split.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/contrive"
+      ]
+    },
+    {
+      "conceptId": "bulk-736099fa96169b0fa24d77a7",
+      "language": "de",
+      "originalText": "bewerkstelligen",
+      "reason": "The upstream contrive sense describes projection of light but its translation table supplies managing/accomplishing terms. Exclude this internally inconsistent mapping pending a trustworthy sense split.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/contrive"
+      ]
+    }
+  ],
+  "additionalCorrections": [
+    {
+      "language": "en",
+      "conceptId": "bulk-f5b52bcd8ad4cb9f8711bf96",
+      "originalText": "welkin",
+      "replacementText": "sky",
+      "reason": "Replace the archaic literary English headword with its modern everyday equivalent for this exact sky sense."
+    },
+    {
+      "language": "en",
+      "conceptId": "bulk-282485526b903ec3c722712d",
+      "originalText": "monthly",
+      "replacementText": "period",
+      "reason": "Use the ordinary modern noun for the menstrual-period sense rather than dated euphemistic monthly."
+    },
+    {
+      "language": "en",
+      "conceptId": "bulk-02d8cb30a60e774a09f9ac5c",
+      "originalText": "stingy",
+      "replacementText": "stinging",
+      "reason": "Use the ordinary capacity-to-sting adjective rather than a heteronym overwhelmingly associated with ungenerous in current use.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/stinging",
+        "https://en.wiktionary.org/wiki/stingy"
+      ]
+    },
+    {
+      "language": "en",
+      "conceptId": "bulk-8ace0bc19d75813967d70c92",
+      "originalText": "brain",
+      "replacementText": "brains",
+      "reason": "This intellectual-leader sense is used in the plural, as in the brains behind a plan; it is not the anatomical organ or an intelligence informant.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/brain"
+      ]
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-4c838c876c0a45948e6af0fc",
+      "originalText": "вы",
+      "replacementText": "ты",
+      "reason": "Align the singular informal second-person form with Turkish sen/seni; retain separate formal/plural senses elsewhere."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-4c838c876c0a45948e6af0fc",
+      "originalText": "usted",
+      "replacementText": "tú",
+      "reason": "Align the singular informal second-person form with Turkish sen/seni; retain separate formal/plural senses elsewhere."
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-f28468cb75f9b1b919ddca58",
+      "originalText": "la",
+      "replacementText": "te",
+      "reason": "Align the singular informal second-person form with Turkish sen/seni; retain separate formal/plural senses elsewhere."
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-8dabafd03beb5513d10f66fa",
+      "replacementText": "ты прав",
+      "reason": "Match informal singular haklısın rather than polite or plural address.",
+      "originalText": "вы пра́вы́"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-765af75687c0e3645cde40e8",
+      "replacementText": "я тебя люблю",
+      "reason": "Match informal singular seni seviyorum rather than polite or plural address.",
+      "originalText": "я вас люблю́"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-9b02cc371a1a30361cd90252",
+      "replacementText": "висеть",
+      "reason": "Preserve being suspended rather than hanging another object.",
+      "originalText": "подве́шивать"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-e5bf4bc5a5e8448a03ec4528",
+      "replacementText": "расширяться",
+      "reason": "Match intransitive expanding rather than transitive extending.",
+      "originalText": "продлева́ть"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-26213bb095afa629ec246a8d",
+      "replacementText": "качаться",
+      "reason": "Match intransitive swaying rather than rocking another object.",
+      "originalText": "кача́ть"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-f9fcad9a9d05d42a0f04bedf",
+      "replacementText": "плескать",
+      "reason": "Match transitive splashing liquid rather than splashing oneself.",
+      "originalText": "плеска́ться"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-baf7e4862312ea04db012c07",
+      "replacementText": "записывать",
+      "reason": "Match recording something rather than enrolling oneself.",
+      "originalText": "запи́сываться"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-fa0c5354f5c74b91d8bd8ec4",
+      "replacementText": "практиковать",
+      "reason": "Match practising a craft or profession rather than practising to improve a skill.",
+      "originalText": "практикова́ться"
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-05871d381b61f5cb25eb358e",
+      "replacementText": "zuliebe",
+      "reason": "Align the consideration or benefit/purpose sense of for the sake of, rather than neutral causal wegen.",
+      "originalText": "wegen"
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-e5bf4bc5a5e8448a03ec4528",
+      "replacementText": "sich erweitern",
+      "reason": "Match intransitive growth in extent rather than enlarging something else.",
+      "originalText": "erweitern"
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-f954396b861520d7ca4c93c5",
+      "replacementText": "unter Rühren garen",
+      "reason": "The culinary scrambling sense entails cooking while stirring, not mixing alone.",
+      "originalText": "verrühren"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-26213bb095afa629ec246a8d",
+      "replacementText": "mecerse",
+      "reason": "Match intransitive rocking or swaying rather than rocking something else.",
+      "originalText": "mecer"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-10b2f5d31f38c3fe721a66fc",
+      "replacementText": "apresurarse",
+      "reason": "Retain intransitive hurrying after checking the full source definition.",
+      "originalText": "apresurarse"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-1aac07ec40b0dd2f65b8f502",
+      "replacementText": "entrar en erupción",
+      "reason": "Retain the intransitive eruption sense after full-source verification.",
+      "originalText": "entrar en erupción"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-7dc8b117a58223d7de439476",
+      "replacementText": "rendirse",
+      "reason": "Match surrendering oneself rather than granting or conceding something.",
+      "originalText": "conceder"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-e7960987bebb596afdf75dd6",
+      "replacementText": "dar sueño",
+      "reason": "Match causing sleepiness rather than merely tiring someone.",
+      "originalText": "cansar"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-f45ca6af1c63a6b74f4e5d1a",
+      "replacementText": "detener",
+      "reason": "Match transitive stopping rather than ceasing oneself.",
+      "originalText": "dejar de"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-06da98dd4f2c78a929b1c961",
+      "replacementText": "prefiero",
+      "reason": "The idiomatic give-me sense expresses preference, not a literal imperative.",
+      "originalText": "deme"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-dff5d19973b87544b7313a84",
+      "replacementText": "unos pocos",
+      "reason": "A small countable plural number rather than a mass quantity.",
+      "originalText": "poco"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-f954396b861520d7ca4c93c5",
+      "replacementText": "cocinar removiendo",
+      "reason": "Cooking while stirring rather than stirring ingredients alone.",
+      "originalText": "revolver"
+    },
+    {
+      "language": "es",
+      "conceptId": "bulk-baf7e4862312ea04db012c07",
+      "replacementText": "matricular",
+      "reason": "The source explicitly denotes enrolling a student, transitively.",
+      "originalText": "registrar"
+    },
+    {
+      "language": "ru",
+      "conceptId": "bulk-1aac07ec40b0dd2f65b8f502",
+      "replacementText": "извергаться",
+      "reason": "Use the source-attested intransitive alternative for volcanic eruption, matching püskürmek/ausbrechen.",
+      "originalText": "изверга́ть"
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-06da98dd4f2c78a929b1c961",
+      "replacementText": "ich bevorzuge",
+      "reason": "The idiomatic phrase expresses preference rather than a literal give-me imperative.",
+      "originalText": "geben Sie mir"
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-e7960987bebb596afdf75dd6",
+      "replacementText": "schläfrig machen",
+      "reason": "The specific source submeaning is causing sleepiness, not tiring generally.",
+      "originalText": "ermüden"
+    },
+    {
+      "language": "de",
+      "conceptId": "bulk-2fd837ef3da407fee1b3f9df",
+      "replacementText": "schläfrig werden",
+      "reason": "The specific source submeaning is becoming sleepy, not causing fatigue.",
+      "originalText": "ermüden"
+    }
+  ],
+  "meaningCorrections": [
+    {
+      "conceptId": "bulk-cf770335c0e2f62199cba973",
+      "originalText": "relating to people with dark skin — see also dark-skinned\n alt=To be cleaned up\n A user suggests that this Translingual entry be cleaned up, giving the reason: “e.g. Dutch: neger (nl) m, negerin (nl) f and German: Schwarzer (de) m, Schwarze (de) f aren't translations of the adjective, but of the noun for which see below.”\n Please see the discussion on Requests for cleanup(+) for more information and remove this template after the problem has been dealt with.",
+      "replacementText": "relating to people with dark skin — see also dark-skinned",
+      "reason": "Remove embedded dictionary maintenance-template text while retaining the actual adjective sense unchanged."
+    },
+    {
+      "conceptId": "bulk-05871d381b61f5cb25eb358e",
+      "originalText": "because of",
+      "replacementText": "out of consideration for; in the interest of",
+      "reason": "Restore the distinguishing full-source definition omitted by the abbreviated translation-table heading.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/for_the_sake_of"
+      ]
+    },
+    {
+      "conceptId": "bulk-163fabbf4fd1459f69539bd3",
+      "originalText": "to ask for without demanding",
+      "replacementText": "to propose something for consideration",
+      "reason": "Replace a loose translation-table heading with the actual full suggestion sense shared by the source forms.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/suggest"
+      ]
+    },
+    {
+      "conceptId": "bulk-10b2f5d31f38c3fe721a66fc",
+      "originalText": "to speed up the rate",
+      "replacementText": "intransitive: to do something more quickly",
+      "reason": "Restore the distinguishing full-source sense omitted by the shortened translation heading.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/hurry"
+      ]
+    },
+    {
+      "conceptId": "bulk-1aac07ec40b0dd2f65b8f502",
+      "originalText": "to violently eject",
+      "replacementText": "intransitive: to burst into volcanic or geyser eruption",
+      "reason": "Restore the distinguishing full-source sense omitted by the shortened translation heading.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/erupt"
+      ]
+    },
+    {
+      "conceptId": "bulk-8ace0bc19d75813967d70c92",
+      "originalText": "person providing intelligence",
+      "replacementText": "person providing the intellectual leadership behind an undertaking",
+      "reason": "Restore the distinguishing full-source sense omitted by the shortened translation heading.",
+      "evidenceUrls": [
+        "https://en.wiktionary.org/wiki/brain"
+      ]
+    }
+  ]
+}

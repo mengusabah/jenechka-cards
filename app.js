@@ -1,6 +1,10 @@
 import { openDeckStore, createId, parseBackup, makeBackup, mergeDecks, MAX_BACKUP_BYTES, LIMITS } from './data.js';
 import { createStudySession, rateStudyCard } from './study.js';
 import { setupWelcome } from './welcome.js';
+import { LANGUAGES, languageByName } from './languages.js';
+import { createLibraryLoader, definitions, buildTemplate, hasImported, importTemplate, importTemplateSelection, prebuiltTargets, PREBUILT_LANGUAGES } from './prebuilt.js';
+import { setupPreviewSlider } from './preview.js';
+import { createSelectionState, setupDeckBuilder } from './deck-builder.js';
 
 const welcome = setupWelcome();
 
@@ -9,16 +13,22 @@ const esc = (value) => String(value ?? '').replace(/[&<>"']/g, (c) => ({
   '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
 }[c]));
 const copy = (value) => JSON.parse(JSON.stringify(value));
-const languages = ['English', 'Turkish', 'German', 'Spanish', 'French', 'Italian', 'Russian', 'Portuguese', 'Chinese', 'Japanese', 'Korean', 'Arabic', 'Dutch'];
+const languages = LANGUAGES.map(language => language.name);
+const loadLibrary = createLibraryLoader();
+let library, libraryLoading = false, libraryError = '', libraryRequest = 0;
+let librarySource = 'English', libraryTarget = 'Turkish', librarySection = 'topic', previewDefinition;
 let storage, decks = [], page = 'home', draft, active, session;
 let dirty = false, busy = false, pendingImport = null, noticeTimer;
 let offlineReady = false, offlineError = '', registration, installPrompt, reloadRequested = false;
 let persistent = false;
+let destroyPreview = () => {};
+let selectionState;
 const installed = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 const isEditing = () => ['create', 'edit'].includes(page);
 const blankCard = () => ({ id: createId(), front: '', back: '' });
 const blankDeck = () => ({ id: createId(), name: '', source: 'English', target: 'Turkish', cards: [blankCard()] });
 const countCards = (items) => items.reduce((sum, deck) => sum + deck.cards.length, 0);
+const posLabel = value => ({ unknown: '', unspecified: '', intj: 'expression', pron: 'pronoun', conj: 'conjunction', prep: 'preposition', det: 'determiner', num: 'number', adj: 'adjective', adv: 'adverb' }[value] ?? value);
 
 function notify(message, error = false) {
   clearTimeout(noticeTimer);
@@ -54,12 +64,12 @@ function cardEditor(card, index) {
     <div class="field"><label for="back-${card.id}">Translation</label><textarea id="back-${card.id}" data-back="${card.id}" placeholder="Günaydın" maxlength="${LIMITS.side}">${esc(card.back)}</textarea></div></div>`;
 }
 
-function languagePicker(id, label, value) {
-  const custom = !languages.includes(value);
+function languagePicker(id, label, value, allowCustom = true, options = languages) {
+  const custom = !options.includes(value);
   return `<div class="field"><label for="${id}">${label}</label>
     <select id="${id}" data-language-picker>
-      ${languages.map((language) => `<option value="${language}" ${language === value ? 'selected' : ''}>${language}</option>`).join('')}
-      <option value="__custom__" ${custom ? 'selected' : ''}>Other (type a language)…</option>
+      ${options.map((language) => `<option value="${language}" ${language === value ? 'selected' : ''}>${language}</option>`).join('')}
+      ${allowCustom ? `<option value="__custom__" ${custom ? 'selected' : ''}>Other (type a language)…</option>` : ''}
     </select>
     <div id="${id}-custom-field" class="custom-language" ${custom ? '' : 'hidden'}>
       <label for="${id}-custom">${label} name</label>
@@ -72,7 +82,10 @@ function languageValue(id) {
 }
 
 function render() {
+  destroyPreview();
+  destroyPreview = () => {};
   $('app').setAttribute('aria-busy', String(busy));
+  $('app').classList.toggle('building-deck', page === 'prebuilt-builder');
   if (page === 'home') {
     $('app').innerHTML = `<header><span class="logo">jenechka<b>cards.</b></span>${statusPill()}</header>
       ${storage.warning ? `<div class="storage-warning" role="alert">${esc(storage.warning)} <button class="text-button" data-go="settings">Open backups</button></div>` : ''}
@@ -85,7 +98,14 @@ function render() {
     shell('My Decks', `<div class="section-intro"><p>Your vocabulary collections, in one place.</p><button class="text-button" data-go="settings">Backups ↗</button></div>
       ${decks.length ? decks.map((deck) => `<div class="deck"><h2>${esc(deck.name)}</h2><small>${esc(deck.source)} → ${esc(deck.target)} · ${deck.cards.length} cards</small>
         <div class="buttons"><button class="btn primary" data-study="${deck.id}" ${deck.cards.length ? '' : 'disabled'}>Study →</button><button class="btn outline" data-edit="${deck.id}">Edit</button><button class="btn red" data-delete="${deck.id}">Delete</button></div></div>`).join('') : '<div class="panel center"><h2>📚 No decks yet</h2><p>Create your first deck or import a backup.</p></div>'}
-      <button class="btn outline full" data-go="create">+ Create Deck</button>`);
+      <div class="stack"><button class="btn outline full" data-go="create">+ Create Deck</button>
+      <button class="btn primary full" data-go="prebuilt">Add Prebuilt Deck</button></div>`);
+  } else if (page === 'prebuilt') {
+    renderPrebuilt();
+  } else if (page === 'prebuilt-preview') {
+    renderPrebuiltPreview();
+  } else if (page === 'prebuilt-builder') {
+    renderPrebuiltBuilder();
   } else if (isEditing()) {
     shell(page === 'edit' ? 'Edit Deck' : 'Create Deck', `<p>Make a collection of words worth remembering.</p>
       <div class="panel"><div class="field"><label for="name">Deck name</label><input id="name" value="${esc(draft.name)}" placeholder="English Vocabulary" maxlength="${LIMITS.name}"></div>
@@ -119,6 +139,119 @@ function render() {
     renderSettings();
   }
   updateAppStatus();
+}
+
+function cacheLibraryPair() {
+  if ((!library && !libraryLoading) || librarySource === libraryTarget) return;
+  // A memory-cached language may not issue a fetch. Tell the offline cache
+  // which pair is in use, including when first installation gains control.
+  try {
+    navigator.serviceWorker?.controller?.postMessage({
+      type: 'VOCABULARY_PAIR',
+      languages: [languageByName(librarySource).code, languageByName(libraryTarget).code],
+    });
+  } catch { /* Optional offline caching must not prevent opening a deck. */ }
+}
+
+async function refreshLibrary() {
+  const request = ++libraryRequest;
+  library = null;
+  libraryError = '';
+  libraryLoading = librarySource !== libraryTarget;
+  if (!libraryLoading) libraryError = 'Choose two different languages to see translated decks.';
+  if (page === 'prebuilt') render();
+  if (!libraryLoading) return;
+  try {
+    const sourceCode = languageByName(librarySource).code;
+    const targetCode = languageByName(libraryTarget).code;
+    cacheLibraryPair();
+    const result = await loadLibrary(sourceCode, targetCode);
+    if (request !== libraryRequest) return;
+    library = result;
+  } catch (error) {
+    if (request !== libraryRequest) return;
+    libraryError = error.message || 'This pair has not been downloaded. Connect to the internet and try again.';
+  } finally {
+    if (request === libraryRequest) {
+      libraryLoading = false;
+      if (page === 'prebuilt') render();
+    }
+  }
+}
+
+function renderPrebuilt() {
+  const templates = library ? definitions(library.catalog).filter(item => item.kind === librarySection)
+    .map(item => buildTemplate(library, item)) : [];
+  const available = templates.filter(template => template.cards.length);
+  const unavailable = templates.filter(template => !template.cards.length);
+  shell('Prebuilt decks', `<div class="panel">
+      <div class="row">${languagePicker('library-source', 'Source · translations in', librarySource, false, PREBUILT_LANGUAGES.map(language => language.name))}
+      ${languagePicker('library-target', 'Target · learning', libraryTarget, false, prebuiltTargets(languageByName(librarySource).code).map(language => language.name))}</div>
+      <button class="text-button" data-swap-languages>⇄ Swap languages</button>
+    </div>
+    <div class="library-sections" aria-label="Deck sections">${[
+      ['frequency', 'Most Common Words'], ['cefr', 'CEFR Levels'], ['topic', 'Topics & Categories'], ['dictionary', 'Dictionary'],
+    ].map(([id, name]) => `<button class="btn ${id === librarySection ? 'primary' : 'outline'}" data-library-section="${id}" aria-pressed="${id === librarySection}">${name}</button>`).join('')}</div>
+    <div id="library-results" aria-live="polite" aria-busy="${libraryLoading}">
+      ${libraryLoading ? '<div class="panel"><p>Opening this language pair…</p></div>' : ''}
+      ${libraryError ? `<div class="panel"><p role="status">${esc(libraryError)}</p>${librarySource !== libraryTarget ? '<button class="btn outline" data-retry-library>Try again</button>' : ''}</div>` : ''}
+      ${library ? `
+        ${available.length ? available.map(template => `<button class="tile library-deck" data-preview-prebuilt="${esc(template.id)}">
+          <span><strong>${esc(template.name)}</strong><small>${template.cards.length} cards${template.estimatedCount ? template.estimatedCount === template.cards.length ? ' · Estimated' : ' · Includes estimates' : ''}${hasImported(decks, template) ? ' · Already added' : ''}</small></span><span class="arrow" aria-hidden="true">›</span>
+          </button>`).join('') : '<div class="panel"><h2>No translated decks in this section yet</h2><p>Try Topics & Categories or another language pair.</p></div>'}
+        ${unavailable.length && librarySection !== 'dictionary' ? `<details class="panel"><summary>Not yet available (${unavailable.length})</summary><p class="help">${unavailable.map(template => esc(template.name)).join(' · ')}</p></details>` : ''}` : ''}
+    </div>`, 'decks');
+}
+
+function renderPrebuiltPreview() {
+  if (!library || !previewDefinition) return go('prebuilt');
+  const template = buildTemplate(library, previewDefinition);
+  const imported = hasImported(decks, template);
+  shell(template.name, `<p>Translations in <strong>${esc(template.sourceName)}</strong> · Learning <strong>${esc(template.targetName)}</strong></p>
+    <div class="panel"><span class="status-pill">${template.cards.length} cards</span>
+      ${template.estimatedCount ? `<span class="status-pill">${template.estimatedCount === template.cards.length ? 'Estimated level' : 'Includes estimated levels'}</span>` : ''}
+    </div>
+    <div class="subset-actions" role="group" aria-label="Create a deck with fewer words">
+      <button class="subset-option" data-build-prebuilt="random" ${!template.cards.length ? 'disabled' : ''}><span class="subset-symbol" aria-hidden="true">⇄</span><strong>Random words</strong><small>You choose how many</small></button>
+      <button class="subset-option" data-build-prebuilt="manual" ${!template.cards.length ? 'disabled' : ''}><span class="subset-symbol" aria-hidden="true">✓</span><strong>Choose words</strong><small>Pick your favorites</small></button>
+    </div>
+    <section class="preview-slider" aria-labelledby="preview-title" aria-roledescription="carousel">
+      <h2 id="preview-title">A look inside</h2>
+      <div class="vocabulary-heading"><span>${esc(template.targetName)}</span><span>${esc(template.sourceName)}</span></div>
+      <div id="preview-slider-viewport" class="preview-viewport" data-preview-viewport tabindex="0" aria-label="Vocabulary preview" dir="ltr"></div>
+      <div class="preview-controls">
+        <button class="btn outline preview-arrow" data-preview-previous aria-label="Previous words" aria-controls="preview-slider-viewport">‹</button>
+        <output class="preview-count" data-preview-count aria-live="polite" aria-atomic="true"></output>
+        <button class="btn outline preview-arrow" data-preview-next aria-label="Next words" aria-controls="preview-slider-viewport">›</button>
+      </div>
+      <input class="preview-range" data-preview-range type="range" min="1" value="1" step="1" aria-label="Preview page" aria-controls="preview-slider-viewport">
+    </section>
+    <div class="panel stack"><button class="btn primary full" data-import-prebuilt ${imported || !template.cards.length || storage.backend === 'memory' ? 'disabled' : ''}>${imported ? 'Already in My Decks' : 'Add to My Decks'}</button>
+      <button class="btn outline full" data-go="prebuilt">Browse more decks</button></div>`, 'prebuilt');
+  destroyPreview = setupPreviewSlider(document.querySelector('.preview-slider'), template.cards, card => `
+    <div class="vocabulary-row" role="listitem">
+      <div><strong lang="${template.targetCode}" dir="auto">${esc(card.back)}</strong><small>${[posLabel(card.pos), template.kind === 'cefr' ? card.estimated ? 'Estimated level' : 'Source-listed level' : ''].filter(Boolean).map(esc).join(' · ')}</small></div>
+      <div><span lang="${template.sourceCode}" dir="auto">${esc(card.front)}</span></div>
+    </div>`);
+}
+
+function renderPrebuiltBuilder() {
+  if (!library || !previewDefinition || !selectionState) return go('prebuilt');
+  const template = buildTemplate(library, previewDefinition);
+  shell('Build your deck', `<p>${esc(template.name)} · ${esc(template.sourceName)} → ${esc(template.targetName)}</p><div class="deck-builder" data-deck-builder></div>`, 'prebuilt-preview');
+  destroyPreview = setupDeckBuilder(document.querySelector('[data-deck-builder]'), template, selectionState, {
+    canSave: storage.backend !== 'memory',
+    async onSave(entryIds, name) {
+      try {
+        const deck = importTemplateSelection(template, entryIds, { name });
+        if (await saveDecks([...decks, deck])) {
+          selectionState = null;
+          go('decks');
+          notify(`Created a deck with ${deck.cards.length} words.`);
+        }
+      } catch (error) { notify(error.message || 'Unable to create this deck. Your selection is still here.', true); }
+    },
+  });
 }
 
 function renderSettings() {
@@ -235,6 +368,16 @@ $('app').addEventListener('input', () => { if (isEditing()) dirty = true; });
 $('app').addEventListener('change', async (event) => {
   if (event.target.matches('[data-language-picker]')) {
     const id = event.target.id;
+    if (id === 'library-source' || id === 'library-target') {
+      const previousSource = librarySource;
+      librarySource = languageValue('library-source');
+      libraryTarget = languageValue('library-target');
+      const targets = prebuiltTargets(languageByName(librarySource).code).map(language => language.name);
+      if (!targets.includes(libraryTarget)) libraryTarget = targets.includes(previousSource) ? previousSource : targets[0];
+      await refreshLibrary();
+      if (page === 'prebuilt') $(id)?.focus({ preventScroll: true });
+      return;
+    }
     const custom = event.target.value === '__custom__';
     $(`${id}-custom-field`).hidden = !custom;
     if (custom) $(`${id}-custom`).focus();
@@ -268,6 +411,27 @@ $('app').addEventListener('click', async (event) => {
       if (!mayLeave()) return;
       if (action.go === 'create') { draft = blankDeck(); dirty = false; }
       go(action.go);
+      if (action.go === 'prebuilt' && !library && !libraryLoading) refreshLibrary();
+    } else if ('swapLanguages' in action) {
+      [librarySource, libraryTarget] = [libraryTarget, librarySource];
+      await refreshLibrary();
+    } else if (action.librarySection) {
+      librarySection = action.librarySection; render();
+      document.querySelector(`[data-library-section="${librarySection}"]`)?.focus({ preventScroll: true });
+    } else if ('retryLibrary' in action) {
+      await refreshLibrary();
+    } else if (action.previewPrebuilt && library) {
+      previewDefinition = definitions(library.catalog).find(item => item.id === action.previewPrebuilt);
+      if (previewDefinition) go('prebuilt-preview');
+    } else if (action.buildPrebuilt && library && previewDefinition) {
+      const template = buildTemplate(library, previewDefinition);
+      if (selectionState?.templateId !== template.templateId) selectionState = createSelectionState(template, action.buildPrebuilt);
+      else { selectionState.mode = action.buildPrebuilt; selectionState.page = 0; }
+      go('prebuilt-builder');
+    } else if ('importPrebuilt' in action && library && previewDefinition) {
+      const template = buildTemplate(library, previewDefinition);
+      const next = [...decks, importTemplate(template, decks)];
+      if (await saveDecks(next)) { go('decks'); notify(`Added ${template.cards.length} editable cards. Saved on this device.`); }
     } else if ('cancel' in action) {
       if (mayLeave()) { dirty = false; go('decks'); }
     } else if ('add' in action) {
@@ -329,14 +493,14 @@ function updateAppStatus() {
     : 'Storage protection depends on your browser. You can request it below.';
   if ($('install-app')) $('install-app').hidden = !installPrompt || installed();
   const waiting = Boolean(registration?.waiting);
-  const unsafe = isEditing() || page === 'study' || busy;
+  const unsafe = isEditing() || page === 'prebuilt-builder' || page === 'study' || busy;
   $('update-banner').hidden = !waiting;
   $('apply-update').disabled = unsafe;
   $('update-message').textContent = unsafe ? 'An update is ready. Save your deck or finish studying to update.' : 'A new version of Jenechka Cards is ready.';
 }
 
 $('apply-update').addEventListener('click', () => {
-  if (!registration?.waiting || isEditing() || page === 'study' || busy) return;
+  if (!registration?.waiting || isEditing() || page === 'prebuilt-builder' || page === 'study' || busy) return;
   reloadRequested = true;
   registration.waiting.postMessage({ type: 'SKIP_WAITING' });
 });
@@ -348,7 +512,9 @@ window.addEventListener('appinstalled', () => { installPrompt = null; if (page =
 window.addEventListener('online', updateAppStatus);
 window.addEventListener('offline', updateAppStatus);
 window.addEventListener('beforeunload', (event) => {
-  if ((isEditing() && dirty) || busy) { event.preventDefault(); event.returnValue = ''; }
+  if ((isEditing() && dirty) || selectionState?.manualIds.size || selectionState?.name.trim() || busy) {
+    event.preventDefault(); event.returnValue = '';
+  }
 });
 
 async function setupOffline() {
@@ -368,9 +534,10 @@ async function setupOffline() {
     registration.addEventListener('updatefound', () => watch(registration.installing));
     navigator.serviceWorker.addEventListener('controllerchange', () => {
       offlineReady = true;
+      cacheLibraryPair();
       if (reloadRequested) location.reload(); else updateAppStatus();
     });
-    navigator.serviceWorker.ready.then(() => { offlineReady = true; offlineError = ''; updateAppStatus(); });
+    navigator.serviceWorker.ready.then(() => { offlineReady = true; offlineError = ''; cacheLibraryPair(); updateAppStatus(); });
     updateAppStatus();
   } catch {
     offlineError = 'Offline setup could not finish. Reopen online in Safari or another supported browser.';

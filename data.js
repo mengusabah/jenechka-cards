@@ -73,6 +73,7 @@ export function validateDecks(value) {
       name: textField(deck.name, LIMITS.name, `${label} name`),
       source: textField(deck.source, LIMITS.language, `${label} source language`),
       target: textField(deck.target, LIMITS.language, `${label} target language`),
+      ...(deck.prebuilt === undefined ? {} : { prebuilt: validatePrebuilt(deck.prebuilt) }),
       cards: deck.cards.map((card, cardIndex) => {
         const cardLabel = `${label}, card ${cardIndex + 1}`;
         object(card, cardLabel);
@@ -89,6 +90,45 @@ export function validateDecks(value) {
   });
   checkBackupSize(decks);
   return decks;
+}
+
+// Keep dataset attribution with copied templates, including JSON backups.
+// Old custom decks remain valid; arbitrary extra fields are still discarded.
+function validatePrebuilt(value) {
+  object(value, 'Prebuilt metadata');
+  const url = (value, label) => {
+    const result = textField(value, 2000, label);
+    try {
+      if (new URL(result).protocol === 'https:') return result;
+    } catch { /* Reject links that cannot safely be displayed as attribution. */ }
+    throw failure(`${label} must be an HTTPS URL.`);
+  };
+  if (!Array.isArray(value.sources) || !value.sources.length || value.sources.length > 20) {
+    throw failure('Prebuilt metadata must contain its dataset sources.');
+  }
+  return {
+    templateId: id(value.templateId, 'Prebuilt template ID'),
+    version: textField(value.version, 100, 'Prebuilt version'),
+    sourceLanguage: textField(value.sourceLanguage, 20, 'Prebuilt source language'),
+    targetLanguage: textField(value.targetLanguage, 20, 'Prebuilt target language'),
+    title: textField(value.title, 1000, 'Prebuilt title'),
+    notice: textField(value.notice, 4000, 'Prebuilt notice'),
+    sources: value.sources.map(source => {
+      object(source, 'Dataset source');
+      if (source.pages !== undefined && (!Array.isArray(source.pages) || source.pages.length > 10000)) {
+        throw failure('Dataset entry attribution must contain at most 10000 page URLs.');
+      }
+      return {
+        name: textField(source.name, 1000, 'Dataset name'),
+        url: url(source.url, 'Dataset URL'),
+        license: textField(source.license, 1000, 'Dataset license'),
+        licenseUrl: url(source.licenseUrl, 'Dataset license URL'),
+        attribution: textField(source.attribution, 8000, 'Dataset attribution'),
+        modifications: textField(source.modifications, 8000, 'Dataset modifications'),
+        ...(source.pages === undefined ? {} : { pages: source.pages.map(page => url(page, 'Dictionary entry URL')) }),
+      };
+    }),
+  };
 }
 
 export function makeBackup(decks) {

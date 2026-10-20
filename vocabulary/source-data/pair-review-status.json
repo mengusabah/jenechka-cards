@@ -1,0 +1,77 @@
+{
+  "snapshotSha256": "2b834c8c03d56288b4d593b28377592c1e2f7be7dad4ffa469974061168f65eb",
+  "method": "Independent model-assisted bidirectional pair review; only explicitly inspected sense IDs count as semantically reviewed.",
+  "pairCount": 4,
+  "totalPairRecords": 43286,
+  "pairs": [
+    {
+      "key": "en-tr",
+      "pair": [
+        "en",
+        "tr"
+      ],
+      "names": [
+        "English",
+        "Turkish"
+      ],
+      "records": 11796,
+      "categorized": 2153,
+      "sha256": "ff08810adabe4d6e7d9c0edf2032b2a0eefb3d20f6069d180575b486ea0975e9",
+      "status": "reviewed",
+      "reviewed": 11796,
+      "corrections": 1477
+    },
+    {
+      "key": "tr-de",
+      "pair": [
+        "tr",
+        "de"
+      ],
+      "names": [
+        "Turkish",
+        "German"
+      ],
+      "records": 10699,
+      "categorized": 2134,
+      "sha256": "3840ea76102ff7ee62796f1295af0df8fb2a9ba61192d763c939ee847282a4e7",
+      "status": "reviewed",
+      "reviewed": 10699,
+      "corrections": 2812
+    },
+    {
+      "key": "tr-es",
+      "pair": [
+        "tr",
+        "es"
+      ],
+      "names": [
+        "Turkish",
+        "Spanish"
+      ],
+      "records": 10104,
+      "categorized": 2087,
+      "sha256": "9765321f91b03437beb7002a99d65a221ec05101a83daf5a8d777105e77e1e6f",
+      "status": "reviewed",
+      "reviewed": 10104,
+      "corrections": 2290
+    },
+    {
+      "key": "tr-ru",
+      "pair": [
+        "tr",
+        "ru"
+      ],
+      "names": [
+        "Turkish",
+        "Russian"
+      ],
+      "records": 10687,
+      "categorized": 2130,
+      "sha256": "1498729188fb26c58909dc06269a481af05ceb1b81df986c4615559e28f301a8",
+      "status": "reviewed",
+      "reviewed": 10687,
+      "corrections": 1853
+    }
+  ],
+  "scope": "Turkish paired with English, German, Spanish and Russian only; all other pairs deferred by user."
+}

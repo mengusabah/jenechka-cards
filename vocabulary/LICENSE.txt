@@ -1,0 +1,245 @@
+Jenechka Cards vocabulary data
+
+The application's MIT license covers application code, not the third-party
+linguistic materials in this directory. Sources are identified per record in
+v1/*.json and fully attributed in v1/catalog.json and source-data/*.json.
+The app retains dataset attribution in imported decks and exported backups.
+
+Wiktionary translations via Kaikki / Wiktextract
+  Source ID: wiktionary-kaikki.
+  Copyright Wiktionary contributors.
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+  https://kaikki.org/dictionary/English/index.html
+  Changes: selected translation-table meanings and forms, standard-language
+  filtering, grammatical annotations, source-linked sense IDs, semantic topic
+  assignments, and conversion to compact per-language JSON files. These
+  adaptations of Wiktionary content remain under CC BY-SA 4.0.
+  Individual entry URLs and extraction evidence appear in source-data/lexicon.json.
+
+Expanded Wiktionary translation tables via Kaikki / Wiktextract
+  Source ID: wiktionary-kaikki-expanded.
+  Copyright Wiktionary contributors; extraction by Wiktextract/Kaikki
+  (Tatu Ylonen and contributors).
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+  https://kaikki.org/dictionary/English/index.html
+  Changes: select explicit English entry/POS/etymology/translation-table
+  meanings, including nested parent-sense tables; filter forms and register;
+  retain source annotations, variants and sense evidence; select equivalent
+  forms; use source translation headings as English sense labels; convert to
+  JSON. Explicit source topic associations are retained when available.
+  These adaptations remain under CC BY-SA 4.0. Extraction provenance, source
+  entry links and input hashes appear in source-data/expanded-lexicon.json.
+  Additional category/context assignments are individually reviewed exact
+  dictionary senses, recorded in source-data/topic-supplement.json and
+  source-data/context-supplement.json. This is model-assisted semantic curation
+  by the coding assistant, not independent human or native-speaker review.
+  A raw parent-sense topic is used automatically only when its gloss matches
+  the translation heading; unrelated inherited topics are not propagated.
+  Targeted form corrections and exclusions are recorded in
+  source-data/form-review.json. Replacements are literal alternatives in the
+  same source table; uncertain or mismatched forms are omitted.
+
+FrequencyWords / OPUS OpenSubtitles 2018
+  Source ID: frequencywords.
+  Hermit Dave; OPUS OpenSubtitles 2018 and OpenSubtitles.org contributors.
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://github.com/hermitdave/FrequencyWords
+  http://opus.nlpl.eu/OpenSubtitles2018.php
+  https://www.opensubtitles.org/
+  Changes: extract the first 1000 original token positions per target language,
+  match available dictionary forms, retain original ranks without renumbering,
+  and convert to JSON. Additional Asian dictionary selection uses full source
+  token lists, also retaining original ranks. These are token frequencies,
+  not lemma or sense frequencies; unmatched ranks are not filled or renumbered.
+  These adaptations remain under CC BY-SA 4.0. The pinned revision and input
+  hashes appear in source-data/frequency.json and source-data/asian.json.
+
+CEFR-J Wordlist Version 1.6
+  Source ID: cefrj.
+  Compiled by Yukio Tono, Tokyo University of Foreign Studies.
+  Copyright Tono Laboratory, TUFS.
+  Permission: research, educational and commercial use with source attribution,
+  under the source's stated terms; this is not a Creative Commons license.
+  https://www.cefr-j.org/download.html
+  Changes: official headword/POS/level matches for available English entries;
+  alternative forms only where confirmed in the official ALL_sep worksheet.
+  No level is inferred from rank or copied to another language.
+
+Octanove Vocabulary Profile C1/C2 1.0 (English)
+  Source ID: octanove.
+  Octanove Labs; distributed by Open Language Profiles.
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://github.com/openlanguageprofiles/olp-en-cefrj
+  Changes: retain source-assigned English headword/POS C1/C2 classifications,
+  omit conflicting or unmatched classifications, and convert to JSON.
+  These are the publisher's supplementary classifications, not official
+  certification of individual dictionary senses. They are not transferred
+  to another language. These adaptations remain under CC BY-SA 4.0.
+  The pinned revision and input hash appear in source-data/levels.json.
+
+SMARTool data for English-speaking learners of Russian
+  Source ID: smartool.
+  Radovan Bast, Laura A. Janda, Mikhail Kopotev, Olga Lyashevskaya,
+  James D. McDonald, Tore Nesset, Ekaterina Rakhilina, Svetlana Sokolova,
+  Evgeniia Sudarikova, Francis M. Tyers, Valentina Zhukova, Elizaveta Kibisova.
+  Content: Creative Commons Attribution 4.0 International.
+  https://creativecommons.org/licenses/by/4.0/
+  https://doi.org/10.18710/QNAPNE
+  https://github.com/smartool/data-rus-eng
+  Changes: normalize stress marks, combine repeated example rows, exclude
+  conflicting or incomplete records, retain source English glosses and
+  Russian A1-B2 labels, and map exact source topics to library categories.
+
+Intercontinental Dictionary Series (IDS)
+  Source ID: ids.
+  Key, Mary Ritchie & Comrie, Bernard (eds.) 2023.
+  The Intercontinental Dictionary Series.
+  Leipzig: Max Planck Institute for Evolutionary Anthropology.
+  CLDF v4.4. Digitization: Robert Forkel, Christoph Rzymski, Hans-Jörg Bibiko
+  and contributors.
+  Dictionary authors: Italian, Martin Maiden; French, various;
+  Spanish, Joan Rafel and various; Portuguese, various; English, various;
+  Dutch, Bernard Bichakjian and Hendrikje Hettema; German, Meredith Lee.
+  Content: Creative Commons Attribution 4.0 International.
+  https://creativecommons.org/licenses/by/4.0/
+  https://ids.clld.org/
+  https://doi.org/10.5281/zenodo.23245041
+  https://github.com/intercontinental-dictionary-series/ids
+  Changes: select one eligible source form per language/concept in English,
+  German, French, Spanish, Italian, Portuguese and Dutch; preserve accents;
+  omit qualified or uncertain forms and documented capitalization/POS
+  mismatches. Reuse equivalent semantic chapters and add explicitly reviewed
+  concept-ID category assignments. Source alternatives remain evidence.
+  Spanish forms require exact dictionary spelling validation. Russian
+  phonemic transcriptions are excluded. No CEFR level is assigned from IDS.
+  Provenance, exclusions and pinned input hashes: source-data/european.json.
+
+Spanish Wiktionary headwords for IDS spelling validation
+  Source ID: kaikki-spanish-ids-validation.
+  Copyright Wiktionary contributors; extraction by Wiktextract/Kaikki
+  (Tatu Ylonen and contributors).
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+  https://kaikki.org/dictionary/Spanish/index.html
+  Changes: extract exact NFC headwords supported by an ordinary dictionary
+  sense; exclude forms supported only by obsolete, archaic, nonstandard or
+  spelling-error senses; compare to IDS candidates without converting
+  phonetic transcription to spelling. No meaning or CEFR level is imported
+  from this validation source. Derived Wiktionary material remains under
+  CC BY-SA 4.0. Snapshot and validation evidence: source-data/european.json.
+
+CC-CEDICT Chinese-English Dictionary
+  Source ID: cc-cedict.
+  CC-CEDICT contributors, published by MDBG.
+  Original CEDICT by Paul Andrew Denisowski.
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://www.mdbg.net/chinese/dictionary?page=cedict
+  Changes: select simplified dictionary forms, pinyin and individual English
+  glosses; retain register annotations; exclude proper names, reference-only
+  entries, bound forms, explicitly archaic/literary/dialectal definitions,
+  classifier lists and long definitions; convert to JSON.
+  CC-CEDICT does not provide POS, so unknown POS is not guessed.
+  These adaptations remain under CC BY-SA 4.0.
+  Input hashes and selection provenance appear in source-data/asian.json.
+
+JMdict Japanese-English Dictionary
+  Source ID: jmdict.
+  James William Breen and the Electronic Dictionary Research and Development
+  Group (EDRDG); dictionary contributors.
+  Content used here: Japanese and English components of JMdict.
+  Creative Commons Attribution-ShareAlike 4.0 International, with EDRDG
+  acknowledgement, documentation-link and maintenance requirements described
+  in its licence statement.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://www.edrdg.org/edrdg/licence.html
+  https://www.edrdg.org/wiki/index.php/JMdict-EDICT_Dictionary_Project
+  https://www.edrdg.org/jmdict/edict_doc.html
+  Changes: select eligible spellings, readings and English senses; honor
+  spelling/reading/sense restrictions; preserve POS and usage descriptions;
+  omit dated/dialectal senses, affixes and abbreviations; select additional
+  entries with explicit dictionary common-priority codes; convert to JSON.
+  No CEFR or JLPT classification is inferred. These adaptations remain under
+  CC BY-SA 4.0. Input hashes and evidence: source-data/asian.json.
+  Maintenance procedure for redistributed JMdict data: periodically check the
+  upstream dictionary, refresh using scripts/fetch-asian-vocabulary.py
+  --refresh, review source/selection changes, rebuild the vocabulary, run its
+  checks, and distribute the reviewed update. EDRDG section 4 requests regular
+  updates and gives monthly checks for WWW dictionary servers as an example.
+  This procedure does not itself schedule or publish updates.
+
+Korean and Arabic Wiktionary entries via Kaikki / Wiktextract
+  Source IDs: wiktionary-korean; wiktionary-arabic.
+  Copyright Wiktionary contributors; extraction by Wiktextract/Kaikki
+  (Tatu Ylonen and contributors).
+  Content: Creative Commons Attribution-ShareAlike 4.0 International.
+  https://creativecommons.org/licenses/by-sa/4.0/
+  https://en.wiktionary.org/wiki/Wiktionary:Copyrights
+  https://kaikki.org/dictionary/Korean/index.html
+  https://kaikki.org/dictionary/Arabic/index.html
+  Changes: select native-script dictionary lemmata and English glosses;
+  preserve source POS, sense IDs, usage tags, explicit topics and available
+  canonical Arabic vocalization; omit inflection-only, alternative-only,
+  obsolete, dialectal and nonlexical records; convert to JSON.
+  These adaptations remain under CC BY-SA 4.0.
+  Input hashes and selection provenance appear in source-data/asian.json.
+
+The third-party materials retain the respective terms above. ShareAlike
+material is not relicensed as MIT. Source metadata and attribution should
+accompany redistributed adaptations, including vocabulary backups.
+Dictionary English glosses do not establish independent English CEFR levels
+or cross-dictionary sense equivalence. Source frequency ranks, semantic
+categories and CEFR classifications are distinct kinds of evidence.
+
+No source author endorses this application. Source classifications and
+dictionary-derived translations are not a claim of official certification or
+independent native-speaker review of every resulting card. User edits may
+change imported copies; attribution remains attached to their original data.
+
+Recorded quality review and editorial material, 2026-10-20
+  All thirteen languages underwent structural, script, register and POS
+  screening. Individually accepted repairs/exclusions are in quality-west.json,
+  quality-romance-ru.json and quality-asian.json. Exact source snapshots remain
+  unchanged. Source-attested alternatives, annotation cleanup and original
+  editorial repairs are distinguished. This is model-assisted review, not a
+  guarantee that every translation has independent native-speaker approval.
+  Parenthetical explanations/readings are removed from study faces; original
+  annotations and sense evidence remain in source-data.
+  Frequency preferences pin the target's ordinary reviewed sense before
+  translation lookup. Unsupported grammatical tokens and homograph-only
+  matches are omitted, never replaced by a different sense or a lower rank.
+
+  Original Jenechka vocabulary and level-estimation code: MIT.
+  Source IDs: jenechka-editorial; jenechka-estimates.
+  https://github.com/mengusabah/jenechka-cards/blob/main/LICENSE
+  New original editorial concepts are in source-data/editorial.json.
+  Dataset-derived corrections remain adaptations under their original source
+  licences; adding editorial provenance does not relicense ShareAlike data.
+  Additional exact-sense topic assignments are in
+  source-data/topic-expansion-reviewed.json.
+
+  Bidirectional pair review covers Turkish with English, German, Spanish
+  and Russian. Other prebuilt language combinations are deferred. Each
+  pair's explicitly inspected sense IDs and proposed repairs are retained in
+  source-data/pair-reviews; shared-form disagreements are adjudicated in
+  pair-review-resolutions.json. The build applies pair-corrections.json,
+  preserving original source attribution alongside editorial provenance.
+  This is model-assisted semantic review, not independent human translator
+  certification. Replacement words receive their own native corpus ranks
+  and level classifications; old headword ranks are not transferred.
+
+  Source CEFR assignments remain separate from editorial estimates. All
+  estimates are visibly marked in the app and in copied-deck notices.
+  The method combines native familiarity, native editorial anchors, exact
+  meaning/domain, POS, register and language-specific word/phrase complexity;
+  source-data/cefr-reviewed-*.json records individual native-sense overrides.
+  No English CEFR label is transferred to another language, no native corpus
+  rank alone defines a level, and HSK/JLPT/TOPIK levels are not converted.
+  Reference framework: https://www.coe.int/en/web/common-european-framework-reference-languages/cefr-descriptors

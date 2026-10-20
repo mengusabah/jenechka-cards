@@ -1,0 +1,2293 @@
+{
+  "methodology": "Conservative positive POS-and-sense guards for already existing native editorial level anchors. English gloss only disambiguates the sense; no English CEFR level is consulted. A failed guard means use the ordinary multifactor estimate, never delete the word or force an advanced level. A guard absent from this mapping is NOT positively validated. CC-CEDICT unknown POS is accepted only together with a specific matching lexical sense. Technical/register tags must also be considered; e.g. Japanese work/physics is not ordinary employment.",
+  "ANCHOR_GUARDS": {
+    "zh": {
+      "喝": {
+        "allowedPos": [
+          "verb",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^(?:to )?drink\\b",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:809715a82cd345707698",
+            "lemma": "喝",
+            "pos": "unknown",
+            "meaning": "to drink",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:43478907ec66b164eb11",
+            "lemma": "喝",
+            "pos": "unknown",
+            "meaning": "to shout",
+            "tags": []
+          }
+        ]
+      },
+      "看": {
+        "allowedPos": [
+          "verb",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^(?:to )?(?:see|look at|watch|read)\\b",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:2b1f26ca25c77681e8ce",
+            "lemma": "看",
+            "pos": "unknown",
+            "meaning": "to look after",
+            "tags": []
+          },
+          {
+            "conceptId": "cc-cedict:c19056840d4d170af667",
+            "lemma": "看",
+            "pos": "unknown",
+            "meaning": "to take care of",
+            "tags": []
+          }
+        ]
+      },
+      "读": {
+        "allowedPos": [
+          "verb",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^(?:to )?read\\b",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:b58043eb521fabcf1f00",
+            "lemma": "读",
+            "pos": "unknown",
+            "meaning": "comma",
+            "tags": []
+          },
+          {
+            "conceptId": "cc-cedict:68d49e935e9f90b7a88e",
+            "lemma": "读",
+            "pos": "unknown",
+            "meaning": "phrase marked by pause",
+            "tags": []
+          }
+        ]
+      },
+      "水": {
+        "allowedPos": [
+          "noun",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^water(?:$|[ ;(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:ebb473e55070400dfbf4",
+            "lemma": "水",
+            "pos": "unknown",
+            "meaning": "water",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:84f7bb4283443e6d4703",
+            "lemma": "水",
+            "pos": "unknown",
+            "meaning": "(after a name) ... River",
+            "tags": []
+          }
+        ]
+      },
+      "猫": {
+        "allowedPos": [
+          "noun",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^(?:domestic )?cat(?:$|[ ;(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:548cf4bc71cee20fc9c5",
+            "lemma": "猫",
+            "pos": "unknown",
+            "meaning": "cat (CL:隻|只[zhi1])",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:7d764cd7fa6de4e41004",
+            "lemma": "猫",
+            "pos": "unknown",
+            "meaning": "(loanword) (coll.) modem",
+            "tags": [
+              "colloquial"
+            ]
+          }
+        ]
+      },
+      "书": {
+        "allowedPos": [
+          "noun",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^book(?:$|[ ;(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:cf210b13e1d2c66ba3c0",
+            "lemma": "书",
+            "pos": "unknown",
+            "meaning": "book",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:0e97ac4af287d2fe1118",
+            "lemma": "书",
+            "pos": "unknown",
+            "meaning": "letter",
+            "tags": []
+          }
+        ]
+      },
+      "红色": {
+        "allowedPos": [
+          "adj",
+          "adjective",
+          "noun",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^red(?:$|[ ;(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:b4fbcdbb50ebb826d080",
+            "lemma": "红色",
+            "pos": "unknown",
+            "meaning": "red (color)",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:e9270d9ff6be3d379669",
+            "lemma": "红色",
+            "pos": "unknown",
+            "meaning": "revolutionary",
+            "tags": []
+          }
+        ]
+      },
+      "工作": {
+        "allowedPos": [
+          "noun",
+          "verb",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^(?:to )?work(?:$|[ ;(])|^(?:job|employment|occupation)\\b",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:be5c1f5d8c4f740c6784",
+            "lemma": "工作",
+            "pos": "unknown",
+            "meaning": "to work",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:29f19b5f12ee5afe3f5e",
+            "lemma": "工作",
+            "pos": "unknown",
+            "meaning": "(of a machine) to operate",
+            "tags": []
+          }
+        ]
+      },
+      "妹妹": {
+        "allowedPos": [
+          "noun",
+          "unknown"
+        ],
+        "positiveMeaningPattern": "^(?:younger|little) sister\\b",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "cc-cedict:7782e901a50ddfe04c30",
+            "lemma": "妹妹",
+            "pos": "unknown",
+            "meaning": "younger sister",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "cc-cedict:5efd742a6b0ca7ec5974",
+            "lemma": "妹妹",
+            "pos": "unknown",
+            "meaning": "young woman",
+            "tags": []
+          }
+        ]
+      }
+    },
+    "ja": {
+      "本": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^book(?:$|[ ;(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1260670:ad011c353549",
+            "lemma": "本",
+            "pos": "noun",
+            "meaning": "origin; source; beginning",
+            "tags": [
+              "esp. 元",
+              "noun (common) (futsuumeishi)"
+            ]
+          },
+          {
+            "conceptId": "jmdict:1260670:a3ab13fda22e",
+            "lemma": "本",
+            "pos": "noun",
+            "meaning": "basis; base; foundation; root",
+            "tags": [
+              "noun (common) (futsuumeishi)",
+              "oft. 基"
+            ]
+          }
+        ]
+      },
+      "一": {
+        "allowedPos": [
+          "num",
+          "numeral",
+          "number"
+        ],
+        "positiveMeaningPattern": "^one(?:$|[ ;,(])|^1(?:$|[ ;,])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1160790:7483fb7826e3",
+            "lemma": "一",
+            "pos": "num",
+            "meaning": "one; 1",
+            "tags": [
+              "numeric",
+              "prefix",
+              "壱, 弌 and 壹 are used in legal documents"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1160790:8bc323990bfc",
+            "lemma": "一",
+            "pos": "noun",
+            "meaning": "best",
+            "tags": [
+              "nouns which may take the genitive case particle 'no'",
+              "suffix"
+            ]
+          }
+        ]
+      },
+      "椅子": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:chair|stool|bench)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1157070:90a574861380",
+            "lemma": "椅子",
+            "pos": "noun",
+            "meaning": "chair; seat; stool; bench",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1157070:2b282ac213f1",
+            "lemma": "椅子",
+            "pos": "noun",
+            "meaning": "post; position; seat; office",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ]
+      },
+      "水": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^water(?:$|[ ;(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1371260:88ed0b82d2d4",
+            "lemma": "水",
+            "pos": "noun",
+            "meaning": "water (esp. cool or cold)",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1371260:2fb758291b3d",
+            "lemma": "水",
+            "pos": "noun",
+            "meaning": "fluid (esp. in an animal tissue); liquid",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ]
+      },
+      "飲む": {
+        "allowedPos": [
+          "verb"
+        ],
+        "positiveMeaningPattern": "^(?:to )?drink(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1169870:1f5e9614185a",
+            "lemma": "飲む",
+            "pos": "verb",
+            "meaning": "to drink; to swallow; to take (medicine)",
+            "tags": [
+              "Godan verb with 'mu' ending",
+              "transitive verb",
+              "呑む refers to swallowing whole or gulping down"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1169870:fecf95800036",
+            "lemma": "飲む",
+            "pos": "verb",
+            "meaning": "to smoke (tobacco)",
+            "tags": [
+              "Godan verb with 'mu' ending",
+              "transitive verb"
+            ]
+          }
+        ]
+      },
+      "彼女": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^(?:she|her)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1483150:239c184ce9e4",
+            "lemma": "彼女",
+            "pos": "pron",
+            "meaning": "she; her",
+            "tags": [
+              "pronoun"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1483150:46aef9cf7d78",
+            "lemma": "彼女",
+            "pos": "noun",
+            "meaning": "girlfriend",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ]
+      },
+      "予約": {
+        "allowedPos": [
+          "noun",
+          "verb"
+        ],
+        "positiveMeaningPattern": "^(?:reservation|appointment|booking|advance order)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1543750:7728a99f5809",
+            "lemma": "予約",
+            "pos": "noun",
+            "meaning": "reservation; appointment; booking; advance order",
+            "tags": [
+              "noun (common) (futsuumeishi)",
+              "noun or participle which takes the aux. verb suru",
+              "transitive verb"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1543750:6b5e05e0c5d8",
+            "lemma": "予約",
+            "pos": "noun",
+            "meaning": "contract; subscription; pledge",
+            "tags": [
+              "noun (common) (futsuumeishi)",
+              "noun or participle which takes the aux. verb suru",
+              "transitive verb"
+            ]
+          }
+        ]
+      },
+      "交渉": {
+        "allowedPos": [
+          "noun",
+          "verb"
+        ],
+        "positiveMeaningPattern": "^(?:negotiations?|bargaining|discussions?|talks)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1272110:2f13e6fa0e48",
+            "lemma": "交渉",
+            "pos": "noun",
+            "meaning": "negotiations; bargaining; discussions; talks",
+            "tags": [
+              "intransitive verb",
+              "noun (common) (futsuumeishi)",
+              "noun or participle which takes the aux. verb suru",
+              "transitive verb"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1272110:bb96ad06c622",
+            "lemma": "交渉",
+            "pos": "noun",
+            "meaning": "connection; relationship; relations; dealings",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ]
+      },
+      "荷物": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:luggage|baggage|package)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1195430:081ce4165b14",
+            "lemma": "荷物",
+            "pos": "noun",
+            "meaning": "luggage; baggage; package",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1195430:2e34a07aef96",
+            "lemma": "荷物",
+            "pos": "noun",
+            "meaning": "burden",
+            "tags": [
+              "noun (common) (futsuumeishi)"
+            ]
+          }
+        ]
+      },
+      "仕事": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:work|job|labou?r|employment|occupation)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "jmdict:1304970:2aaafef476cb",
+            "lemma": "仕事",
+            "pos": "noun",
+            "meaning": "work; job; labor; labour; business; task; assignment; occupation; employment",
+            "tags": [
+              "intransitive verb",
+              "noun (common) (futsuumeishi)",
+              "noun or participle which takes the aux. verb suru"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "jmdict:1304970:2559bd0cb3b4",
+            "lemma": "仕事",
+            "pos": "noun",
+            "meaning": "work",
+            "tags": [
+              "noun (common) (futsuumeishi)",
+              "physics"
+            ]
+          }
+        ]
+      }
+    },
+    "ko": {
+      "우리": {
+        "allowedPos": [
+          "pron",
+          "pronoun",
+          "det",
+          "determiner"
+        ],
+        "positiveMeaningPattern": "^(?:we|us|our)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-우리-ko-noun-Tx5xTpyc",
+            "lemma": "우리",
+            "pos": "noun",
+            "meaning": "cage, pen, coop, enclosure (a designated area or structure for confining animals)",
+            "tags": []
+          },
+          {
+            "conceptId": "wiktionary-korean:en-우리-ko-counter-cHE4-42R",
+            "lemma": "우리",
+            "pos": "counter",
+            "meaning": "uri (counter for roof tiles)",
+            "tags": []
+          }
+        ]
+      },
+      "왜": {
+        "allowedPos": [
+          "adv",
+          "adverb"
+        ],
+        "positiveMeaningPattern": "^why(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-왜-ko-adv-K-I8WF8V",
+            "lemma": "왜",
+            "pos": "adv",
+            "meaning": "why",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-왜-ko-noun-ZHKUODss",
+            "lemma": "왜",
+            "pos": "noun",
+            "meaning": "Japan",
+            "tags": [
+              "derogatory"
+            ]
+          }
+        ]
+      },
+      "너": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^you(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-너-ko-pron-3wxvjuAq",
+            "lemma": "너",
+            "pos": "pron",
+            "meaning": "second-person singular informal pronoun; you",
+            "tags": [
+              "informal"
+            ]
+          },
+          {
+            "conceptId": "wiktionary-korean:en-너-ko-num-hHGG1Pwc",
+            "lemma": "너",
+            "pos": "num",
+            "meaning": "four (before certain classifiers)",
+            "tags": []
+          }
+        ]
+      },
+      "네": {
+        "allowedPos": [
+          "intj",
+          "interjection"
+        ],
+        "positiveMeaningPattern": "^yes(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-네-ko-intj-inmIkP6T",
+            "lemma": "네",
+            "pos": "intj",
+            "meaning": "yes",
+            "tags": [
+              "polite"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-네-ko-det-J-YuTJhN",
+            "lemma": "네",
+            "pos": "det",
+            "meaning": "four (of something)",
+            "tags": []
+          }
+        ]
+      },
+      "안녕": {
+        "allowedPos": [
+          "intj",
+          "interjection",
+          "phrase"
+        ],
+        "positiveMeaningPattern": "^(?:hello|goodbye|hi|bye)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-안녕-ko-noun-RtCBAWd5",
+            "lemma": "안녕",
+            "pos": "noun",
+            "meaning": "peace; tranquility",
+            "tags": []
+          },
+          {
+            "conceptId": "wiktionary-korean:en-안녕-ko-noun-vJClCy-g",
+            "lemma": "안녕",
+            "pos": "noun",
+            "meaning": "wellness",
+            "tags": []
+          }
+        ]
+      },
+      "돈": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^money(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-돈-ko-noun-jSrItY6t",
+            "lemma": "돈",
+            "pos": "noun",
+            "meaning": "money",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-돈-ko-noun-8dqaslwi",
+            "lemma": "돈",
+            "pos": "noun",
+            "meaning": "a don, a Korean unit of weight equivalent to about 4 g",
+            "tags": [
+              "units-of-measure"
+            ]
+          }
+        ]
+      },
+      "밤": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^night(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-밤-ko-noun-F2Rz1zEz",
+            "lemma": "밤",
+            "pos": "noun",
+            "meaning": "night",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-밤-ko-noun-BtkvF6M7",
+            "lemma": "밤",
+            "pos": "noun",
+            "meaning": "chestnut",
+            "tags": []
+          }
+        ]
+      },
+      "개": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:dog|a dog|domestic dog)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-개-ko-noun-zWNX792W",
+            "lemma": "개",
+            "pos": "noun",
+            "meaning": "dog",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-개-ko-noun-f9CjYpvw",
+            "lemma": "개",
+            "pos": "noun",
+            "meaning": "inlet; estuary",
+            "tags": []
+          }
+        ]
+      },
+      "물": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^water(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-물-ko-noun-D0FoSQ44",
+            "lemma": "물",
+            "pos": "noun",
+            "meaning": "water",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-물-ko-noun-UBaRF5JS",
+            "lemma": "물",
+            "pos": "noun",
+            "meaning": "influence; taint (with verbs 들다 (deulda) or 먹다 (meokda))",
+            "tags": [
+              "negative",
+              "often"
+            ]
+          }
+        ]
+      },
+      "의사": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:doctor|physician|medical doctor)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-의사-ko-noun-cvS-idbr",
+            "lemma": "의사",
+            "pos": "noun",
+            "meaning": "doctor",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-의사-ko-noun-KCvLw~Cj",
+            "lemma": "의사",
+            "pos": "noun",
+            "meaning": "intent",
+            "tags": []
+          }
+        ]
+      },
+      "사과": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^apple(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-사과-ko-noun-OnvT4jYK",
+            "lemma": "사과",
+            "pos": "noun",
+            "meaning": "apple",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-사과-ko-noun-4WEgHbAY",
+            "lemma": "사과",
+            "pos": "noun",
+            "meaning": "apology",
+            "tags": []
+          }
+        ]
+      },
+      "결정": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:decision|determination)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-결정-ko-noun-hq411Ypq",
+            "lemma": "결정",
+            "pos": "noun",
+            "meaning": "decision",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-결정-ko-noun-YKD3i1B~",
+            "lemma": "결정",
+            "pos": "noun",
+            "meaning": "crystal",
+            "tags": [
+              "chemistry",
+              "natural-sciences",
+              "physical-sciences"
+            ]
+          }
+        ]
+      },
+      "표": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^ticket(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-표-ko-noun-FAaUKRUK",
+            "lemma": "표",
+            "pos": "noun",
+            "meaning": "ticket",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-표-ko-noun-ovwOxyPB",
+            "lemma": "표",
+            "pos": "noun",
+            "meaning": "vote or ballot",
+            "tags": []
+          }
+        ]
+      },
+      "그녀": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^(?:she|her)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-그녀-ko-pron-LNqF5QTh",
+            "lemma": "그녀",
+            "pos": "pron",
+            "meaning": "she",
+            "tags": [
+              "literary"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-그녀-ko-noun-fmpwIP7~",
+            "lemma": "그녀",
+            "pos": "noun",
+            "meaning": "girlfriend; crush; a woman that one is romantically interested in",
+            "tags": []
+          }
+        ]
+      },
+      "일": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:work|job|labou?r|employment)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-일-ko-noun-UkVA7M6-",
+            "lemma": "일",
+            "pos": "noun",
+            "meaning": "work (activity done for compensation or reward)",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-일-ko-noun-xStwDBdi",
+            "lemma": "일",
+            "pos": "noun",
+            "meaning": "a fact, an event, a situation (any kind of occurrence)",
+            "tags": []
+          }
+        ]
+      },
+      "빵": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^bread(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-빵-ko-noun-mFYEwrYC",
+            "lemma": "빵",
+            "pos": "noun",
+            "meaning": "bread",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-빵-ko-intj-oYRrwpXH",
+            "lemma": "빵",
+            "pos": "intj",
+            "meaning": "bang!",
+            "tags": []
+          }
+        ]
+      },
+      "나라": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:country|nation)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-나라-ko-noun-7Lwn8w8Z",
+            "lemma": "나라",
+            "pos": "noun",
+            "meaning": "country, nation",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-korean:en-나라-ko-noun-q16eN2-V",
+            "lemma": "나라",
+            "pos": "noun",
+            "meaning": "government",
+            "tags": []
+          }
+        ]
+      }
+    },
+    "ar": {
+      "أنا": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^I(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أنا-ar-pron-toFKCKUv",
+            "lemma": "أَنَا",
+            "pos": "pron",
+            "meaning": "I (first person singular subject pronoun)",
+            "tags": [
+              "feminine",
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أنا-ar-noun-1cJ9sNra",
+            "lemma": "أَنَا",
+            "pos": "noun",
+            "meaning": "ego",
+            "tags": [
+              "feminine",
+              "human-sciences",
+              "masculine",
+              "psychology",
+              "sciences"
+            ]
+          }
+        ]
+      },
+      "أنت": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^you(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أنت-ar-pron-p1Vbbb3K",
+            "lemma": "أَنْتَ",
+            "pos": "pron",
+            "meaning": "you; thou (masculine singular subject pronoun)",
+            "tags": [
+              "masculine"
+            ]
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-أنت-ar-pron-E1GOFZvk",
+            "lemma": "أَنْتِ",
+            "pos": "pron",
+            "meaning": "you, thou (feminine singular subject pronoun)",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ],
+        "rejectExamples": []
+      },
+      "هو": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^he(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-هو-ar-pron-2m96apNz",
+            "lemma": "هُوَ",
+            "pos": "pron",
+            "meaning": "he (subject pronoun)",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-هو-ar-pron-~a57aYyQ",
+            "lemma": "هُوَ",
+            "pos": "pron",
+            "meaning": "it (subject pronoun, referring to inanimate nouns of masculine gender)",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ]
+      },
+      "هي": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^she(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-هي-ar-pron-Y3EPODN8",
+            "lemma": "هِيَ",
+            "pos": "pron",
+            "meaning": "she (subject pronoun).",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-هي-ar-pron-C3AOH7cO",
+            "lemma": "هِيَ",
+            "pos": "pron",
+            "meaning": "it (subject pronoun, referring to animals and inanimate nouns of feminine gender)",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      },
+      "نحن": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^we(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-نحن-ar-pron-7ZPXdQHc",
+            "lemma": "نَحْنُ",
+            "pos": "pron",
+            "meaning": "we (subject pronoun)",
+            "tags": [
+              "feminine",
+              "masculine",
+              "plural"
+            ]
+          }
+        ],
+        "rejectExamples": []
+      },
+      "أنتم": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^you(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أنتم-ar-pron-Sn28PItN",
+            "lemma": "أَنْتُمْ",
+            "pos": "pron",
+            "meaning": "you, ye (masculine plural subject pronoun)",
+            "tags": [
+              "masculine",
+              "plural"
+            ]
+          }
+        ],
+        "rejectExamples": []
+      },
+      "هم": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^they(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-هم-ar-pron-GzRrUsVE",
+            "lemma": "هُمْ",
+            "pos": "pron",
+            "meaning": "they (masculine plural subject pronoun)",
+            "tags": [
+              "masculine",
+              "plural"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-هم-ar-verb-fQgOabEp",
+            "lemma": "هَمَّ",
+            "pos": "verb",
+            "meaning": "to disquiet, to make uneasy, to distress",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "نعم": {
+        "allowedPos": [
+          "intj",
+          "interjection",
+          "adv",
+          "adverb",
+          "particle"
+        ],
+        "positiveMeaningPattern": "^yes(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-نعم-ar-verb-7maAt0AX",
+            "lemma": "نَعَمَ",
+            "pos": "verb",
+            "meaning": "to live in comfort, to be pleased",
+            "tags": [
+              "form-i"
+            ]
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-نعم-ar-verb-6UtvX9tY",
+            "lemma": "نَعَمَ",
+            "pos": "verb",
+            "meaning": "to enjoy",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "أين": {
+        "allowedPos": [
+          "adv",
+          "adverb"
+        ],
+        "positiveMeaningPattern": "^where(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أين-ar-adv-gRsD5X8q",
+            "lemma": "أَيْنَ",
+            "pos": "adv",
+            "meaning": "where, at which place, whence",
+            "tags": [
+              "interrogative"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أين-ar-adv-s5IuYCUL",
+            "lemma": "أَيْنَ",
+            "pos": "adv",
+            "meaning": "wherever",
+            "tags": [
+              "conditional"
+            ]
+          }
+        ]
+      },
+      "متى": {
+        "allowedPos": [
+          "adv",
+          "adverb"
+        ],
+        "positiveMeaningPattern": "^when(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-متى-ar-adv-VZN6p6WD",
+            "lemma": "مَتَى",
+            "pos": "adv",
+            "meaning": "when (at what time?)",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-متى-ar-adv-0uRKd8Lq",
+            "lemma": "مَتَى",
+            "pos": "adv",
+            "meaning": "whenever",
+            "tags": []
+          }
+        ]
+      },
+      "كيف": {
+        "allowedPos": [
+          "adv",
+          "adverb"
+        ],
+        "positiveMeaningPattern": "^how(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-كيف-ar-adv-gESq4fho",
+            "lemma": "كَيْفَ",
+            "pos": "adv",
+            "meaning": "how",
+            "tags": [
+              "interrogative"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-كيف-ar-adv-uiP0FN4o",
+            "lemma": "كَيْفَ",
+            "pos": "adv",
+            "meaning": "however (in whatever way or state)",
+            "tags": []
+          }
+        ]
+      },
+      "من": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^who(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-من-ar-prep-tQBsGQED",
+            "lemma": "مِنْ",
+            "pos": "prep",
+            "meaning": "having partitive effect: of, some of, parts of, one of",
+            "tags": []
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-من-ar-prep-YKrKNWy5",
+            "lemma": "مِنْ",
+            "pos": "prep",
+            "meaning": "made of",
+            "tags": []
+          }
+        ]
+      },
+      "ما": {
+        "allowedPos": [
+          "pron",
+          "pronoun"
+        ],
+        "positiveMeaningPattern": "^what(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-ما-ar-pron-LMmlmuFO",
+            "lemma": "مَا",
+            "pos": "pron",
+            "meaning": "what?",
+            "tags": [
+              "interrogative",
+              "masculine"
+            ]
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-ما-ar-pron-NYl6NznY",
+            "lemma": "مَا",
+            "pos": "pron",
+            "meaning": "some, a certain",
+            "tags": [
+              "indefinite",
+              "masculine"
+            ]
+          }
+        ]
+      },
+      "شخص": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:person|individual)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-شخص-ar-verb-MNXE6ywW",
+            "lemma": "شَخَصَ",
+            "pos": "verb",
+            "meaning": "to rise, to tower up",
+            "tags": [
+              "form-i"
+            ]
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-شخص-ar-verb-UjgTdHPH",
+            "lemma": "شَخَصَ",
+            "pos": "verb",
+            "meaning": "to become high, to become lofty",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "أم": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^mother(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أم-ar-noun-zwYi7ypm",
+            "lemma": "أُمّ",
+            "pos": "noun",
+            "meaning": "mother",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أم-ar-noun-GB~dRvxK",
+            "lemma": "أُمّ",
+            "pos": "noun",
+            "meaning": "origin",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      },
+      "صديق": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^friend(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-صديق-ar-noun-zeSFN8os",
+            "lemma": "صَدِيق",
+            "pos": "noun",
+            "meaning": "friend",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-صديق-ar-adj-GVFeDwta",
+            "lemma": "صِدِّيق",
+            "pos": "adj",
+            "meaning": "always truthful, veracious",
+            "tags": []
+          }
+        ]
+      },
+      "غدا": {
+        "allowedPos": [
+          "adv",
+          "adverb"
+        ],
+        "positiveMeaningPattern": "^tomorrow(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-غدا-ar-adv-uv0VGob5",
+            "lemma": "غَدًا",
+            "pos": "adv",
+            "meaning": "tomorrow",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-غدا-ar-verb-cHW9GIeJ",
+            "lemma": "غَدَا",
+            "pos": "verb",
+            "meaning": "go away, leave, come, do something, or exist early in the morning",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "قط": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:cat|domestic cat)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-قط-ar-adv-oXerTKo4",
+            "lemma": "قَطُّ",
+            "pos": "adv",
+            "meaning": "ever, never",
+            "tags": []
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-قط-ar-verb-UAfC37a9",
+            "lemma": "قَطَّ",
+            "pos": "verb",
+            "meaning": "to carve",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "كلب": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:dog|domestic dog)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-كلب-ar-noun-zWNX792W",
+            "lemma": "كَلْب",
+            "pos": "noun",
+            "meaning": "dog",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-كلب-ar-verb-z-kTFJY1",
+            "lemma": "كَلِبَ",
+            "pos": "verb",
+            "meaning": "to be seized by hydrophobia, to become rabid",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "ماء": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^water(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-ماء-ar-noun-D0FoSQ44",
+            "lemma": "مَاء",
+            "pos": "noun",
+            "meaning": "water",
+            "tags": [
+              "masculine",
+              "uncountable",
+              "usually"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-ماء-ar-noun-kYy5LWzS",
+            "lemma": "مَاء",
+            "pos": "noun",
+            "meaning": "liquid, fluid — the liquefied or molten form of a metal (usually gold, silver, or copper)",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ]
+      },
+      "أحمر": {
+        "allowedPos": [
+          "adj",
+          "adjective"
+        ],
+        "positiveMeaningPattern": "^red(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أحمر-ar-adj-sfUaUR8d",
+            "lemma": "أَحْمَر",
+            "pos": "adj",
+            "meaning": "red",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-أحمر-ar-adj-FEQRWow8",
+            "lemma": "أَحْمَر",
+            "pos": "adj",
+            "meaning": "Japhetite, non-Semite",
+            "tags": []
+          }
+        ]
+      },
+      "طاولة": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^table(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-طاولة-ar-noun-DU~Ep403",
+            "lemma": "طَاوِلَة",
+            "pos": "noun",
+            "meaning": "table",
+            "tags": [
+              "feminine",
+              "furniture",
+              "lifestyle"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-طاولة-ar-noun-fuZzgLub",
+            "lemma": "طَاوِلَة",
+            "pos": "noun",
+            "meaning": "backgammon",
+            "tags": [
+              "backgammon",
+              "feminine",
+              "games"
+            ]
+          }
+        ]
+      },
+      "شرب": {
+        "allowedPos": [
+          "verb"
+        ],
+        "positiveMeaningPattern": "^(?:to )?drink(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-شرب-ar-verb-5i9kA2DY",
+            "lemma": "شَرِبَ",
+            "pos": "verb",
+            "meaning": "to drink",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-شرب-ar-verb-3ryJe-na",
+            "lemma": "شَرَّبَ",
+            "pos": "verb",
+            "meaning": "to make drink, to drench",
+            "tags": [
+              "ditransitive",
+              "form-ii"
+            ]
+          }
+        ]
+      },
+      "كاتب": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:writer|author)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-كاتب-ar-noun-AOIVLFbv",
+            "lemma": "كَاتِب",
+            "pos": "noun",
+            "meaning": "writer; author",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-كاتب-ar-verb-KwIpPqiK",
+            "lemma": "كَاتَبَ",
+            "pos": "verb",
+            "meaning": "to keep up a correspondence, to correspond with",
+            "tags": [
+              "form-iii"
+            ]
+          }
+        ]
+      },
+      "معلم": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:teacher|instructor)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-معلم-ar-adj-ivWKgdPN",
+            "lemma": "مُعَلَّم",
+            "pos": "adj",
+            "meaning": "taught, schooled, instructed, educated, trained",
+            "tags": []
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-معلم-ar-adj-pmZcvdO6",
+            "lemma": "مُعَلَّم",
+            "pos": "adj",
+            "meaning": "marked, labeled, represented",
+            "tags": []
+          }
+        ]
+      },
+      "ساعد": {
+        "allowedPos": [
+          "verb"
+        ],
+        "positiveMeaningPattern": "^(?:to )?(?:help|assist)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-ساعد-ar-verb-qFLzNg2r",
+            "lemma": "سَاعَدَ",
+            "pos": "verb",
+            "meaning": "to help, to assist",
+            "tags": [
+              "form-iii"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-ساعد-ar-noun-XYhluHLK",
+            "lemma": "سَاعِد",
+            "pos": "noun",
+            "meaning": "forearm, bracchium",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ]
+      },
+      "خبز": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^bread(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-خبز-ar-noun-mFYEwrYC",
+            "lemma": "خُبْز",
+            "pos": "noun",
+            "meaning": "bread",
+            "tags": [
+              "masculine",
+              "uncountable"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-خبز-ar-verb-nA1rQ20p",
+            "lemma": "خَبَزَ",
+            "pos": "verb",
+            "meaning": "to bake",
+            "tags": [
+              "form-i"
+            ]
+          }
+        ]
+      },
+      "طالب": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:student|pupil)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-طالب-ar-noun-JkyMOBvx",
+            "lemma": "طَالِب",
+            "pos": "noun",
+            "meaning": "student",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-طالب-ar-noun--47H98VO",
+            "lemma": "طَالِب",
+            "pos": "noun",
+            "meaning": "seeker, pursuer",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ]
+      },
+      "تذكرة": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^ticket(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-تذكرة-ar-noun-vcjnYO37",
+            "lemma": "تَذْكِرَة",
+            "pos": "noun",
+            "meaning": "memorandum, admonition",
+            "tags": [
+              "feminine"
+            ]
+          },
+          {
+            "conceptId": "wiktionary-arabic:en-تذكرة-ar-noun-brjSyO5p",
+            "lemma": "تَذْكِرَة",
+            "pos": "noun",
+            "meaning": "collection, precepts, summa",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      },
+      "مدينة": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:city|town)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-مدينة-ar-noun-ZCEWfNGR",
+            "lemma": "مَدِينَة",
+            "pos": "noun",
+            "meaning": "town, city",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-مدينة-ar-noun-vNOoiEAf",
+            "lemma": "مَدِينَة",
+            "pos": "noun",
+            "meaning": "jurisdiction",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      },
+      "عادة": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:habit|custom)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-عادة-ar-noun-~ECyzojz",
+            "lemma": "عَادَة",
+            "pos": "noun",
+            "meaning": "custom, habit, manner, wont",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-عادة-ar-noun-jx90rfZY",
+            "lemma": "عَادَة",
+            "pos": "noun",
+            "meaning": "law",
+            "tags": [
+              "feminine"
+            ]
+          }
+        ]
+      },
+      "قرار": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^(?:decision|resolution)(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-قرار-ar-noun-hq411Ypq",
+            "lemma": "قَرَار",
+            "pos": "noun",
+            "meaning": "decision",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-قرار-ar-noun-K8ojGbtd",
+            "lemma": "قَرَار",
+            "pos": "noun",
+            "meaning": "fixed residence, domicile",
+            "tags": [
+              "masculine"
+            ]
+          }
+        ]
+      },
+      "خبرة": {
+        "allowedPos": [
+          "noun"
+        ],
+        "positiveMeaningPattern": "^experience(?:$|[ ;,(])",
+        "rejectRegisterTags": [
+          "physics",
+          "computing",
+          "archaic",
+          "obsolete"
+        ],
+        "allowExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-خبرة-ar-noun-U-XnxaiE",
+            "lemma": "خِبْرَة",
+            "pos": "noun",
+            "meaning": "experience",
+            "tags": []
+          }
+        ],
+        "rejectExamples": [
+          {
+            "conceptId": "wiktionary-arabic:en-خبرة-ar-noun-ILEHcvT0",
+            "lemma": "خِبْرَة",
+            "pos": "noun",
+            "meaning": "probing",
+            "tags": []
+          }
+        ]
+      }
+    }
+  }
+}

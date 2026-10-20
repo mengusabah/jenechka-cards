@@ -1,0 +1,1927 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-10-20",
+  "methodology": {
+    "status": "Estimated editorial study bands, not certified CEFR vocabulary levels.",
+    "review": "Each listed native lemma and exact dictionary sense was inspected individually in the source snapshot. The judgments consider target-language register, lexical specificity, idiomaticity or specialist conceptual knowledge. A shared concept can receive different bands or no assignment in different languages.",
+    "independence": "No English CEFR labels, rank thresholds, HSK/JLPT/TOPIK conversions or quotas were used. In particular, ordinary native translations of rare English words were not promoted merely because the English headword is advanced.",
+    "C1": "Advanced abstract, evaluative, cultural and professional vocabulary usable in sustained discussion.",
+    "C2": "Marked learned/literary native lexical choices or tightly specialised senses requiring precision beyond general advanced discourse. This is a study-placement judgment, not evidence that all proficient speakers know every specialist term.",
+    "limitations": "Model-assisted editorial judgments have not been independently validated by native-speaker educators or an empirical CEFR study. Homonymous everyday senses must not inherit these levels. Existing published source classifications take precedence.",
+    "matching": "Apply only when conceptId, target language, normalized current lemma and exact meaning all match. Lemmas remove Russian combining stress marks but preserve ё and й."
+  },
+  "assignments": [
+    {
+      "conceptId": "bulk-093194d31c853eaf22346479",
+      "language": "es",
+      "level": "C1",
+      "lemma": "meticuloso",
+      "meaning": "characterized by very precise, conscientious attention to details",
+      "reason": "meticuloso: Precise character/process adjective for painstaking attention to detail; advanced descriptive vocabulary with a distinct positive or critical nuance."
+    },
+    {
+      "conceptId": "bulk-21c87ea2ef87797e3d5d115a",
+      "language": "es",
+      "level": "C1",
+      "lemma": "paradoja",
+      "meaning": "apparent contradiction which is nonetheless true",
+      "reason": "paradoja: Abstract noun for an apparently contradictory truth; advanced reasoning vocabulary beyond a simple factual contradiction."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "es",
+      "level": "C1",
+      "lemma": "jurisdicción",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "jurisdicción: Legal authority to interpret and apply law; an advanced institutional sense, including the specialised legal meaning of Portuguese competência."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "es",
+      "level": "C1",
+      "lemma": "surrealismo",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "surrealismo: Art-critical movement name involving a specific aesthetic concept; advanced cultural vocabulary rather than everyday description."
+    },
+    {
+      "conceptId": "bulk-3861976f018d65b218fc6940",
+      "language": "es",
+      "level": "C1",
+      "lemma": "conjetura",
+      "meaning": "unproven statement; guess",
+      "reason": "conjetura: Learned noun for an unproved supposition; advanced argumentative vocabulary rather than an ordinary casual guess."
+    },
+    {
+      "conceptId": "bulk-38ff31b8bae19e2c158adabd",
+      "language": "es",
+      "level": "C1",
+      "lemma": "modernismo",
+      "meaning": "any of several styles of art, architecture, literature, philosophy, etc., that flourished in the 20th century",
+      "reason": "modernismo: Established learned name of a twentieth-century cultural movement; appropriate to advanced discussion of art and intellectual history."
+    },
+    {
+      "conceptId": "bulk-39cc6cdf65b2232c440f2efc",
+      "language": "es",
+      "level": "C1",
+      "lemma": "tácito",
+      "meaning": "done or made in silence; implied, but not expressed; silent",
+      "reason": "tácito: Formal adjective for something understood without explicit statement; advanced pragmatic or institutional use."
+    },
+    {
+      "conceptId": "bulk-3bd74a0f45bde6cefbacbcd9",
+      "language": "es",
+      "level": "C1",
+      "lemma": "concienzudo",
+      "meaning": "thorough, careful, or vigilant",
+      "reason": "concienzudo: Nuanced character adjective for careful, responsible attention to obligations; formal descriptive vocabulary beyond a general good or careful."
+    },
+    {
+      "conceptId": "bulk-4c13a7cfc71d5d50a27a0804",
+      "language": "es",
+      "level": "C1",
+      "lemma": "intrínseco",
+      "meaning": "inherent",
+      "reason": "intrínseco: Abstract relational adjective for an inherent quality; productive in advanced explanation and argument, not merely physical interior position."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "es",
+      "level": "C1",
+      "lemma": "eufemismo",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "eufemismo: Rhetorical/metalinguistic term for replacing a potentially offensive expression; requires nuanced discussion of register and meaning."
+    },
+    {
+      "conceptId": "bulk-6e985b79be384bd73e8c04d7",
+      "language": "es",
+      "level": "C1",
+      "lemma": "alusión",
+      "meaning": "indirect reference, hint",
+      "reason": "alusión: Literary/communicative term for an indirect reference; requires interpretation beyond the literal expression."
+    },
+    {
+      "conceptId": "bulk-74436027a473064b3c30f8ca",
+      "language": "es",
+      "level": "C1",
+      "lemma": "erudito",
+      "meaning": "scholarly, learned",
+      "reason": "erudito: Learned adjective for extensive scholarly knowledge; an advanced register-specific distinction from the ordinary knowledgeable."
+    },
+    {
+      "conceptId": "bulk-859fd7d1d141d45cc237a73f",
+      "language": "es",
+      "level": "C1",
+      "lemma": "estoicismo",
+      "meaning": "school of philosophy",
+      "reason": "estoicismo: Name of the philosophical school; advanced cultural-discussion vocabulary, distinct from an everyday stoical attitude."
+    },
+    {
+      "conceptId": "bulk-8cae2596d564bf4b82cc1f31",
+      "language": "es",
+      "level": "C1",
+      "lemma": "axioma",
+      "meaning": "mathematics: fundamental assumption",
+      "reason": "axioma: Mathematical foundational-assumption term; established academic vocabulary requiring an abstract concept, without implying every mathematical term is C2."
+    },
+    {
+      "conceptId": "bulk-a79105783f5408be58a23735",
+      "language": "es",
+      "level": "C1",
+      "lemma": "inexorable",
+      "meaning": "impossible to prevent or stop — see also inevitable",
+      "reason": "inexorable: Formal descriptive adjective for an unavoidable course or force; a nuanced advanced equivalent of inevitability."
+    },
+    {
+      "conceptId": "bulk-a83e705925183f4bf4804df0",
+      "language": "es",
+      "level": "C1",
+      "lemma": "hipérbole",
+      "meaning": "rhetorical device",
+      "reason": "hipérbole: Rhetorical-device term for deliberate exaggeration; advanced analytical vocabulary, with the geometrical homonym excluded."
+    },
+    {
+      "conceptId": "bulk-c8a1b3931561d5949ba5d3d1",
+      "language": "es",
+      "level": "C1",
+      "lemma": "arbitrario",
+      "meaning": "based on individual discretion or judgment",
+      "reason": "arbitrario: Abstract evaluative adjective for a decision based on individual discretion; requires distinction from random and other nearby meanings."
+    },
+    {
+      "conceptId": "bulk-ca3cf656e9ce0bda965d56f8",
+      "language": "es",
+      "level": "C1",
+      "lemma": "ecléctico",
+      "meaning": "selecting a mixture of what appear to be best of various doctrines, methods or styles",
+      "reason": "ecléctico: Learned adjective for selecting from different doctrines or styles; advanced artistic/intellectual description rather than the generic mixed."
+    },
+    {
+      "conceptId": "bulk-d51680f00f5be7d77bc03d5a",
+      "language": "es",
+      "level": "C1",
+      "lemma": "inequívoco",
+      "meaning": "without ambiguity",
+      "reason": "inequívoco: Formal adjective or phrase for a completely unambiguous statement; useful in advanced argument and precise interpretation."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "es",
+      "level": "C1",
+      "lemma": "alegoría",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "alegoría: Literary-analysis term for a sustained symbolic representation; an established abstract artistic concept."
+    },
+    {
+      "conceptId": "bulk-f6b93d83d7d435599d23dcdb",
+      "language": "es",
+      "level": "C1",
+      "lemma": "hipocresía",
+      "meaning": "claim, pretense, or false representation of holding beliefs, feelings, or virtues that one does not actually possess",
+      "reason": "hipocresía: Abstract moral/social noun describing a discrepancy between professed values and conduct; nuanced evaluative vocabulary."
+    },
+    {
+      "conceptId": "bulk-fa55e0cb2e5fafc264691257",
+      "language": "es",
+      "level": "C1",
+      "lemma": "antítesis",
+      "meaning": "proposition that is opposite to other proposition",
+      "reason": "antítesis: Learned argumentative term for an opposing proposition; suited to advanced abstract discussion rather than routine conversation."
+    },
+    {
+      "conceptId": "bulk-0572a79aa6ab5e872e7c609c",
+      "language": "es",
+      "level": "C2",
+      "lemma": "palo",
+      "meaning": "heraldry: vertical band",
+      "reason": "palo: Precise heraldic term for a vertical ordinary on a shield; a restricted technical sense, not an everyday pole or strip."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "es",
+      "level": "C2",
+      "lemma": "anillo",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "anillo: This familiar-looking native noun denotes the abstract algebraic structure with two operations; the ring-jewellery sense is explicitly outside this judgment."
+    },
+    {
+      "conceptId": "bulk-1962997eb1ac32ff01190ab5",
+      "language": "es",
+      "level": "C2",
+      "lemma": "idiosincrásico",
+      "meaning": "peculiar to a specific individual",
+      "reason": "idiosincrásico: Learned adjective describing characteristics peculiar to a specific individual; morphologically and conceptually specialised native vocabulary."
+    },
+    {
+      "conceptId": "bulk-1e62e609adaf72e04126dfab",
+      "language": "es",
+      "level": "C2",
+      "lemma": "motivo",
+      "meaning": "nucleotide or amino-acid sequence pattern",
+      "reason": "motivo: Specialist molecular-sequence sense of motif, a recurring nucleotide or amino-acid pattern; ordinary motive/pattern senses are excluded."
+    },
+    {
+      "conceptId": "bulk-2a07212fb0cfe6796916ad99",
+      "language": "es",
+      "level": "C2",
+      "lemma": "ecuanimidad",
+      "meaning": "state of being calm",
+      "reason": "ecuanimidad: Uncommon learned noun for evenness of temper and composure; a formal lexical choice beyond ordinary calmness vocabulary."
+    },
+    {
+      "conceptId": "bulk-30fbfb499a30036f64e854c2",
+      "language": "es",
+      "level": "C2",
+      "lemma": "arcano",
+      "meaning": "understood by only a few; obscure",
+      "reason": "arcano: Literary/learned adjective for knowledge understood by an initiated few; a restricted-register alternative to ordinary secret or obscure."
+    },
+    {
+      "conceptId": "bulk-3298a0e96e82e5aa05e21231",
+      "language": "es",
+      "level": "C2",
+      "lemma": "cobertura",
+      "meaning": "(genetics) average number of reads representing a given nucleotide",
+      "reason": "cobertura: Sequencing-specific depth-of-coverage concept, measured through reads at a nucleotide; distinct from everyday cover or coverage."
+    },
+    {
+      "conceptId": "bulk-4b284d999e22e03980678476",
+      "language": "es",
+      "level": "C2",
+      "lemma": "partido",
+      "meaning": "heraldry: partitioned vertically: party per pale",
+      "reason": "partido: Heraldic partition term meaning a shield divided vertically; the ordinary divided or political-party meanings are outside this estimate."
+    },
+    {
+      "conceptId": "bulk-57b95a5fa4f1b0159aa2a646",
+      "language": "es",
+      "level": "C2",
+      "lemma": "circunspecto",
+      "meaning": "carefully aware of all circumstances",
+      "reason": "circunspecto: Marked formal adjective for caution informed by awareness of circumstances; a precise learned character-description term."
+    },
+    {
+      "conceptId": "bulk-59551a38a1dd1420dd71fdcf",
+      "language": "es",
+      "level": "C2",
+      "lemma": "amplificación",
+      "meaning": "in genetics",
+      "reason": "amplificación: Specialist genetics sense of amplification, increasing copies of genetic material; everyday amplification of sound or importance is not assessed here."
+    },
+    {
+      "conceptId": "bulk-64510559c2f13e2460081e22",
+      "language": "es",
+      "level": "C2",
+      "lemma": "verga",
+      "meaning": "nautical: tapered timber from which square sails hang",
+      "reason": "verga: Technical nautical name of the spar supporting a square sail; uncommon outside sailing and maritime texts."
+    },
+    {
+      "conceptId": "bulk-7059dc19346f312cd50489e5",
+      "language": "es",
+      "level": "C2",
+      "lemma": "sonda",
+      "meaning": "biochemistry: radioactively labeled molecule",
+      "reason": "sonda: Biochemistry term for a labelled molecular probe; the meaning requires specialised laboratory knowledge beyond the ordinary probe or sensor."
+    },
+    {
+      "conceptId": "bulk-842f84aa0bee0f4887b62693",
+      "language": "es",
+      "level": "C2",
+      "lemma": "magnánimo",
+      "meaning": "noble and generous in spirit",
+      "reason": "magnánimo: Elevated moral-character adjective for generosity and nobility of spirit; this marked native form requires finer register control than everyday generous."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "es",
+      "level": "C2",
+      "lemma": "solipsismo",
+      "meaning": "theory",
+      "reason": "solipsismo: Technical philosophical name for the doctrine that only one's own mind can be known; a restricted specialist concept, not an everyday word for selfishness."
+    },
+    {
+      "conceptId": "bulk-8b06d894eb510b9cada37035",
+      "language": "es",
+      "level": "C2",
+      "lemma": "predicativo",
+      "meaning": "element of the predicate of a sentence which supplements the subject or object by means of the verb",
+      "reason": "predicativo: Specialist grammatical constituent complementing a subject or object through a linking verb; requires analysis of predicative structure."
+    },
+    {
+      "conceptId": "bulk-92c393734069568c9b3ae99a",
+      "language": "es",
+      "level": "C2",
+      "lemma": "subrepticio",
+      "meaning": "stealthy, furtive, well hidden, covert",
+      "reason": "subrepticio: Marked formal adjective for concealed or covert action; the native lexical choice is substantially more literary/legal than an ordinary word for secret."
+    },
+    {
+      "conceptId": "bulk-93374b1d70b3e42d4cba0878",
+      "language": "es",
+      "level": "C2",
+      "lemma": "ignominioso",
+      "meaning": "causing or marked by disgrace or dishonour — see also disgraceful, dishonourable",
+      "reason": "ignominioso: Strongly formal/literary evaluative adjective for disgrace or dishonour; precise rhetorical register rather than routine bad or shameful vocabulary."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "es",
+      "level": "C2",
+      "lemma": "escolástica",
+      "meaning": "school of philosophy",
+      "reason": "escolástica: Specialist history-of-philosophy term for the scholastic school and method; requires knowledge of the doctrine rather than the everyday idea of studying."
+    },
+    {
+      "conceptId": "bulk-b56a9eb03687429fc7c0714c",
+      "language": "es",
+      "level": "C2",
+      "lemma": "taciturno",
+      "meaning": "untalkative, silent",
+      "reason": "taciturno: Learned character-description adjective for habitual reserve in speech; a marked literary choice beyond the ordinary quiet or silent equivalents."
+    },
+    {
+      "conceptId": "bulk-b6ec04315f04216f66e4dc2d",
+      "language": "es",
+      "level": "C2",
+      "lemma": "traducción",
+      "meaning": "genetics: process for producing proteins",
+      "reason": "traducción: Specialist molecular-biology use for protein synthesis from messenger RNA; distinct from the ordinary language-translation or broadcasting senses."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "es",
+      "level": "C2",
+      "lemma": "aposición",
+      "meaning": "grammatical construction",
+      "reason": "aposición: Technical grammatical use for an appositional construction; this assignment excludes ordinary attachment/application meanings of homonymous forms."
+    },
+    {
+      "conceptId": "bulk-cd93efed2fb8c2b2bc54e41d",
+      "language": "es",
+      "level": "C2",
+      "lemma": "sin sentido",
+      "meaning": "resulting from the substitution of a nucleotide in a sense codon, causing it to become a stop codon",
+      "reason": "sin sentido: Genetics use in nonsense mutation, where a substitution creates a stop codon; not the ordinary phrase meaning absurd or meaningless."
+    },
+    {
+      "conceptId": "bulk-d2956b03887cf3469db99509",
+      "language": "es",
+      "level": "C2",
+      "lemma": "competitivo",
+      "meaning": "biochemistry: inhibiting an enzyme",
+      "reason": "competitivo: Biochemistry sense of competitive enzyme inhibition; the specialist relational meaning is separate from ordinary competition."
+    },
+    {
+      "conceptId": "bulk-d65b091e83bb5f2b8ff5ff60",
+      "language": "es",
+      "level": "C2",
+      "lemma": "espín",
+      "meaning": "physics: quantum angular momentum",
+      "reason": "espín: Quantum-mechanical angular momentum terminology; the specialist native borrowing or sense is not the everyday act of spinning."
+    },
+    {
+      "conceptId": "bulk-d7ecdbfdba435d6ab28fa62c",
+      "language": "es",
+      "level": "C2",
+      "lemma": "traza",
+      "meaning": "linear algebra: sum of the diagonal elements of a square matrix",
+      "reason": "traza: Linear-algebra sense naming the sum of a square matrix's diagonal entries; ordinary trail or mark meanings do not motivate this estimate."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "es",
+      "level": "C2",
+      "lemma": "cuerpo",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "cuerpo: Restricted abstract-algebra sense of a field, a commutative division structure; native everyday body/field senses do not receive this assignment."
+    },
+    {
+      "conceptId": "bulk-db5e0dbc79779bf76cd99cb8",
+      "language": "es",
+      "level": "C2",
+      "lemma": "conjeturar",
+      "meaning": "to guess",
+      "reason": "conjeturar: Formal verb for advancing a conjecture on incomplete evidence; a marked native lexical choice beyond everyday guessing."
+    },
+    {
+      "conceptId": "bulk-eafef14a6769537f72c1c511",
+      "language": "es",
+      "level": "C2",
+      "lemma": "cadena",
+      "meaning": "genetics: nucleotide chain",
+      "reason": "cadena: Specialist genetics sense of a nucleotide strand; the familiar native material-thread or chain meanings do not determine this assignment."
+    },
+    {
+      "conceptId": "bulk-093194d31c853eaf22346479",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "méticuleux",
+      "meaning": "characterized by very precise, conscientious attention to details",
+      "reason": "méticuleux: Precise character/process adjective for painstaking attention to detail; advanced descriptive vocabulary with a distinct positive or critical nuance."
+    },
+    {
+      "conceptId": "bulk-21c87ea2ef87797e3d5d115a",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "paradoxe",
+      "meaning": "apparent contradiction which is nonetheless true",
+      "reason": "paradoxe: Abstract noun for an apparently contradictory truth; advanced reasoning vocabulary beyond a simple factual contradiction."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "juridiction",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "juridiction: Legal authority to interpret and apply law; an advanced institutional sense, including the specialised legal meaning of Portuguese competência."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "surréalisme",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "surréalisme: Art-critical movement name involving a specific aesthetic concept; advanced cultural vocabulary rather than everyday description."
+    },
+    {
+      "conceptId": "bulk-3861976f018d65b218fc6940",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "conjecture",
+      "meaning": "unproven statement; guess",
+      "reason": "conjecture: Learned noun for an unproved supposition; advanced argumentative vocabulary rather than an ordinary casual guess."
+    },
+    {
+      "conceptId": "bulk-38ff31b8bae19e2c158adabd",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "modernisme",
+      "meaning": "any of several styles of art, architecture, literature, philosophy, etc., that flourished in the 20th century",
+      "reason": "modernisme: Established learned name of a twentieth-century cultural movement; appropriate to advanced discussion of art and intellectual history."
+    },
+    {
+      "conceptId": "bulk-39cc6cdf65b2232c440f2efc",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "tacite",
+      "meaning": "done or made in silence; implied, but not expressed; silent",
+      "reason": "tacite: Formal adjective for something understood without explicit statement; advanced pragmatic or institutional use."
+    },
+    {
+      "conceptId": "bulk-3bd74a0f45bde6cefbacbcd9",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "consciencieux",
+      "meaning": "thorough, careful, or vigilant",
+      "reason": "consciencieux: Nuanced character adjective for careful, responsible attention to obligations; formal descriptive vocabulary beyond a general good or careful."
+    },
+    {
+      "conceptId": "bulk-4c13a7cfc71d5d50a27a0804",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "intrinsèque",
+      "meaning": "inherent",
+      "reason": "intrinsèque: Abstract relational adjective for an inherent quality; productive in advanced explanation and argument, not merely physical interior position."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "euphémisme",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "euphémisme: Rhetorical/metalinguistic term for replacing a potentially offensive expression; requires nuanced discussion of register and meaning."
+    },
+    {
+      "conceptId": "bulk-6e985b79be384bd73e8c04d7",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "allusion",
+      "meaning": "indirect reference, hint",
+      "reason": "allusion: Literary/communicative term for an indirect reference; requires interpretation beyond the literal expression."
+    },
+    {
+      "conceptId": "bulk-74436027a473064b3c30f8ca",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "érudit",
+      "meaning": "scholarly, learned",
+      "reason": "érudit: Learned adjective for extensive scholarly knowledge; an advanced register-specific distinction from the ordinary knowledgeable."
+    },
+    {
+      "conceptId": "bulk-859fd7d1d141d45cc237a73f",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "stoïcisme",
+      "meaning": "school of philosophy",
+      "reason": "stoïcisme: Name of the philosophical school; advanced cultural-discussion vocabulary, distinct from an everyday stoical attitude."
+    },
+    {
+      "conceptId": "bulk-8cae2596d564bf4b82cc1f31",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "axiome",
+      "meaning": "mathematics: fundamental assumption",
+      "reason": "axiome: Mathematical foundational-assumption term; established academic vocabulary requiring an abstract concept, without implying every mathematical term is C2."
+    },
+    {
+      "conceptId": "bulk-a79105783f5408be58a23735",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "inexorable",
+      "meaning": "impossible to prevent or stop — see also inevitable",
+      "reason": "inexorable: Formal descriptive adjective for an unavoidable course or force; a nuanced advanced equivalent of inevitability."
+    },
+    {
+      "conceptId": "bulk-a83e705925183f4bf4804df0",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "hyperbole",
+      "meaning": "rhetorical device",
+      "reason": "hyperbole: Rhetorical-device term for deliberate exaggeration; advanced analytical vocabulary, with the geometrical homonym excluded."
+    },
+    {
+      "conceptId": "bulk-c8a1b3931561d5949ba5d3d1",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "arbitraire",
+      "meaning": "based on individual discretion or judgment",
+      "reason": "arbitraire: Abstract evaluative adjective for a decision based on individual discretion; requires distinction from random and other nearby meanings."
+    },
+    {
+      "conceptId": "bulk-ca3cf656e9ce0bda965d56f8",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "éclectique",
+      "meaning": "selecting a mixture of what appear to be best of various doctrines, methods or styles",
+      "reason": "éclectique: Learned adjective for selecting from different doctrines or styles; advanced artistic/intellectual description rather than the generic mixed."
+    },
+    {
+      "conceptId": "bulk-d51680f00f5be7d77bc03d5a",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "sans équivoque",
+      "meaning": "without ambiguity",
+      "reason": "sans équivoque: Formal adjective or phrase for a completely unambiguous statement; useful in advanced argument and precise interpretation."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "allégorie",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "allégorie: Literary-analysis term for a sustained symbolic representation; an established abstract artistic concept."
+    },
+    {
+      "conceptId": "bulk-f6b93d83d7d435599d23dcdb",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "hypocrisie",
+      "meaning": "claim, pretense, or false representation of holding beliefs, feelings, or virtues that one does not actually possess",
+      "reason": "hypocrisie: Abstract moral/social noun describing a discrepancy between professed values and conduct; nuanced evaluative vocabulary."
+    },
+    {
+      "conceptId": "bulk-fa55e0cb2e5fafc264691257",
+      "language": "fr",
+      "level": "C1",
+      "lemma": "antithèse",
+      "meaning": "proposition that is opposite to other proposition",
+      "reason": "antithèse: Learned argumentative term for an opposing proposition; suited to advanced abstract discussion rather than routine conversation."
+    },
+    {
+      "conceptId": "bulk-0572a79aa6ab5e872e7c609c",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "pal",
+      "meaning": "heraldry: vertical band",
+      "reason": "pal: Precise heraldic term for a vertical ordinary on a shield; a restricted technical sense, not an everyday pole or strip."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "anneau",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "anneau: This familiar-looking native noun denotes the abstract algebraic structure with two operations; the ring-jewellery sense is explicitly outside this judgment."
+    },
+    {
+      "conceptId": "bulk-1e62e609adaf72e04126dfab",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "motif",
+      "meaning": "nucleotide or amino-acid sequence pattern",
+      "reason": "motif: Specialist molecular-sequence sense of motif, a recurring nucleotide or amino-acid pattern; ordinary motive/pattern senses are excluded."
+    },
+    {
+      "conceptId": "bulk-2a07212fb0cfe6796916ad99",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "équanimité",
+      "meaning": "state of being calm",
+      "reason": "équanimité: Uncommon learned noun for evenness of temper and composure; a formal lexical choice beyond ordinary calmness vocabulary."
+    },
+    {
+      "conceptId": "bulk-2b82b88aa85d20f77eb9fd69",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "loch",
+      "meaning": "nautical: device for measuring the speed of a vessel",
+      "reason": "loch: Specialist nautical instrument noun for measuring a vessel's speed; this is not an everyday record or logbook sense."
+    },
+    {
+      "conceptId": "bulk-3298a0e96e82e5aa05e21231",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "couverture",
+      "meaning": "(genetics) average number of reads representing a given nucleotide",
+      "reason": "couverture: Sequencing-specific depth-of-coverage concept, measured through reads at a nucleotide; distinct from everyday cover or coverage."
+    },
+    {
+      "conceptId": "bulk-4b284d999e22e03980678476",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "parti",
+      "meaning": "heraldry: partitioned vertically: party per pale",
+      "reason": "parti: Heraldic partition term meaning a shield divided vertically; the ordinary divided or political-party meanings are outside this estimate."
+    },
+    {
+      "conceptId": "bulk-57b95a5fa4f1b0159aa2a646",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "circonspect",
+      "meaning": "carefully aware of all circumstances",
+      "reason": "circonspect: Marked formal adjective for caution informed by awareness of circumstances; a precise learned character-description term."
+    },
+    {
+      "conceptId": "bulk-59551a38a1dd1420dd71fdcf",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "amplification",
+      "meaning": "in genetics",
+      "reason": "amplification: Specialist genetics sense of amplification, increasing copies of genetic material; everyday amplification of sound or importance is not assessed here."
+    },
+    {
+      "conceptId": "bulk-64510559c2f13e2460081e22",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "vergue",
+      "meaning": "nautical: tapered timber from which square sails hang",
+      "reason": "vergue: Technical nautical name of the spar supporting a square sail; uncommon outside sailing and maritime texts."
+    },
+    {
+      "conceptId": "bulk-701dfcb1d34f39fa1173a838",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "cacatois",
+      "meaning": "nautical: a sail",
+      "reason": "cacatois: Precisely named upper square sail in traditional nautical terminology; a narrow current specialist vocabulary item."
+    },
+    {
+      "conceptId": "bulk-7059dc19346f312cd50489e5",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "sonde",
+      "meaning": "biochemistry: radioactively labeled molecule",
+      "reason": "sonde: Biochemistry term for a labelled molecular probe; the meaning requires specialised laboratory knowledge beyond the ordinary probe or sensor."
+    },
+    {
+      "conceptId": "bulk-842f84aa0bee0f4887b62693",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "magnanime",
+      "meaning": "noble and generous in spirit",
+      "reason": "magnanime: Elevated moral-character adjective for generosity and nobility of spirit; this marked native form requires finer register control than everyday generous."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "solipsisme",
+      "meaning": "theory",
+      "reason": "solipsisme: Technical philosophical name for the doctrine that only one's own mind can be known; a restricted specialist concept, not an everyday word for selfishness."
+    },
+    {
+      "conceptId": "bulk-8b06d894eb510b9cada37035",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "attribut",
+      "meaning": "element of the predicate of a sentence which supplements the subject or object by means of the verb",
+      "reason": "attribut: Specialist grammatical constituent complementing a subject or object through a linking verb; requires analysis of predicative structure."
+    },
+    {
+      "conceptId": "bulk-93374b1d70b3e42d4cba0878",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "ignominieux",
+      "meaning": "causing or marked by disgrace or dishonour — see also disgraceful, dishonourable",
+      "reason": "ignominieux: Strongly formal/literary evaluative adjective for disgrace or dishonour; precise rhetorical register rather than routine bad or shameful vocabulary."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "scolastique",
+      "meaning": "school of philosophy",
+      "reason": "scolastique: Specialist history-of-philosophy term for the scholastic school and method; requires knowledge of the doctrine rather than the everyday idea of studying."
+    },
+    {
+      "conceptId": "bulk-b56a9eb03687429fc7c0714c",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "taciturne",
+      "meaning": "untalkative, silent",
+      "reason": "taciturne: Learned character-description adjective for habitual reserve in speech; a marked literary choice beyond the ordinary quiet or silent equivalents."
+    },
+    {
+      "conceptId": "bulk-b6ec04315f04216f66e4dc2d",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "traduction",
+      "meaning": "genetics: process for producing proteins",
+      "reason": "traduction: Specialist molecular-biology use for protein synthesis from messenger RNA; distinct from the ordinary language-translation or broadcasting senses."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "apposition",
+      "meaning": "grammatical construction",
+      "reason": "apposition: Technical grammatical use for an appositional construction; this assignment excludes ordinary attachment/application meanings of homonymous forms."
+    },
+    {
+      "conceptId": "bulk-cd93efed2fb8c2b2bc54e41d",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "non-sens",
+      "meaning": "resulting from the substitution of a nucleotide in a sense codon, causing it to become a stop codon",
+      "reason": "non-sens: Genetics use in nonsense mutation, where a substitution creates a stop codon; not the ordinary phrase meaning absurd or meaningless."
+    },
+    {
+      "conceptId": "bulk-d2956b03887cf3469db99509",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "compétitif",
+      "meaning": "biochemistry: inhibiting an enzyme",
+      "reason": "compétitif: Biochemistry sense of competitive enzyme inhibition; the specialist relational meaning is separate from ordinary competition."
+    },
+    {
+      "conceptId": "bulk-d65b091e83bb5f2b8ff5ff60",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "spin",
+      "meaning": "physics: quantum angular momentum",
+      "reason": "spin: Quantum-mechanical angular momentum terminology; the specialist native borrowing or sense is not the everyday act of spinning."
+    },
+    {
+      "conceptId": "bulk-d7ecdbfdba435d6ab28fa62c",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "trace",
+      "meaning": "linear algebra: sum of the diagonal elements of a square matrix",
+      "reason": "trace: Linear-algebra sense naming the sum of a square matrix's diagonal entries; ordinary trail or mark meanings do not motivate this estimate."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "corps",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "corps: Restricted abstract-algebra sense of a field, a commutative division structure; native everyday body/field senses do not receive this assignment."
+    },
+    {
+      "conceptId": "bulk-db5e0dbc79779bf76cd99cb8",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "conjecturer",
+      "meaning": "to guess",
+      "reason": "conjecturer: Formal verb for advancing a conjecture on incomplete evidence; a marked native lexical choice beyond everyday guessing."
+    },
+    {
+      "conceptId": "bulk-eafef14a6769537f72c1c511",
+      "language": "fr",
+      "level": "C2",
+      "lemma": "brin",
+      "meaning": "genetics: nucleotide chain",
+      "reason": "brin: Specialist genetics sense of a nucleotide strand; the familiar native material-thread or chain meanings do not determine this assignment."
+    },
+    {
+      "conceptId": "bulk-093194d31c853eaf22346479",
+      "language": "it",
+      "level": "C1",
+      "lemma": "meticoloso",
+      "meaning": "characterized by very precise, conscientious attention to details",
+      "reason": "meticoloso: Precise character/process adjective for painstaking attention to detail; advanced descriptive vocabulary with a distinct positive or critical nuance."
+    },
+    {
+      "conceptId": "bulk-21c87ea2ef87797e3d5d115a",
+      "language": "it",
+      "level": "C1",
+      "lemma": "paradosso",
+      "meaning": "apparent contradiction which is nonetheless true",
+      "reason": "paradosso: Abstract noun for an apparently contradictory truth; advanced reasoning vocabulary beyond a simple factual contradiction."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "it",
+      "level": "C1",
+      "lemma": "giurisdizione",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "giurisdizione: Legal authority to interpret and apply law; an advanced institutional sense, including the specialised legal meaning of Portuguese competência."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "it",
+      "level": "C1",
+      "lemma": "surrealismo",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "surrealismo: Art-critical movement name involving a specific aesthetic concept; advanced cultural vocabulary rather than everyday description."
+    },
+    {
+      "conceptId": "bulk-3861976f018d65b218fc6940",
+      "language": "it",
+      "level": "C1",
+      "lemma": "congettura",
+      "meaning": "unproven statement; guess",
+      "reason": "congettura: Learned noun for an unproved supposition; advanced argumentative vocabulary rather than an ordinary casual guess."
+    },
+    {
+      "conceptId": "bulk-38ff31b8bae19e2c158adabd",
+      "language": "it",
+      "level": "C1",
+      "lemma": "modernismo",
+      "meaning": "any of several styles of art, architecture, literature, philosophy, etc., that flourished in the 20th century",
+      "reason": "modernismo: Established learned name of a twentieth-century cultural movement; appropriate to advanced discussion of art and intellectual history."
+    },
+    {
+      "conceptId": "bulk-3bd74a0f45bde6cefbacbcd9",
+      "language": "it",
+      "level": "C1",
+      "lemma": "coscienzioso",
+      "meaning": "thorough, careful, or vigilant",
+      "reason": "coscienzioso: Nuanced character adjective for careful, responsible attention to obligations; formal descriptive vocabulary beyond a general good or careful."
+    },
+    {
+      "conceptId": "bulk-4c13a7cfc71d5d50a27a0804",
+      "language": "it",
+      "level": "C1",
+      "lemma": "intrinseco",
+      "meaning": "inherent",
+      "reason": "intrinseco: Abstract relational adjective for an inherent quality; productive in advanced explanation and argument, not merely physical interior position."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "it",
+      "level": "C1",
+      "lemma": "eufemismo",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "eufemismo: Rhetorical/metalinguistic term for replacing a potentially offensive expression; requires nuanced discussion of register and meaning."
+    },
+    {
+      "conceptId": "bulk-6e985b79be384bd73e8c04d7",
+      "language": "it",
+      "level": "C1",
+      "lemma": "allusione",
+      "meaning": "indirect reference, hint",
+      "reason": "allusione: Literary/communicative term for an indirect reference; requires interpretation beyond the literal expression."
+    },
+    {
+      "conceptId": "bulk-74436027a473064b3c30f8ca",
+      "language": "it",
+      "level": "C1",
+      "lemma": "erudito",
+      "meaning": "scholarly, learned",
+      "reason": "erudito: Learned adjective for extensive scholarly knowledge; an advanced register-specific distinction from the ordinary knowledgeable."
+    },
+    {
+      "conceptId": "bulk-859fd7d1d141d45cc237a73f",
+      "language": "it",
+      "level": "C1",
+      "lemma": "stoicismo",
+      "meaning": "school of philosophy",
+      "reason": "stoicismo: Name of the philosophical school; advanced cultural-discussion vocabulary, distinct from an everyday stoical attitude."
+    },
+    {
+      "conceptId": "bulk-8cae2596d564bf4b82cc1f31",
+      "language": "it",
+      "level": "C1",
+      "lemma": "assioma",
+      "meaning": "mathematics: fundamental assumption",
+      "reason": "assioma: Mathematical foundational-assumption term; established academic vocabulary requiring an abstract concept, without implying every mathematical term is C2."
+    },
+    {
+      "conceptId": "bulk-a79105783f5408be58a23735",
+      "language": "it",
+      "level": "C1",
+      "lemma": "inesorabile",
+      "meaning": "impossible to prevent or stop — see also inevitable",
+      "reason": "inesorabile: Formal descriptive adjective for an unavoidable course or force; a nuanced advanced equivalent of inevitability."
+    },
+    {
+      "conceptId": "bulk-a83e705925183f4bf4804df0",
+      "language": "it",
+      "level": "C1",
+      "lemma": "iperbole",
+      "meaning": "rhetorical device",
+      "reason": "iperbole: Rhetorical-device term for deliberate exaggeration; advanced analytical vocabulary, with the geometrical homonym excluded."
+    },
+    {
+      "conceptId": "bulk-c8a1b3931561d5949ba5d3d1",
+      "language": "it",
+      "level": "C1",
+      "lemma": "arbitrario",
+      "meaning": "based on individual discretion or judgment",
+      "reason": "arbitrario: Abstract evaluative adjective for a decision based on individual discretion; requires distinction from random and other nearby meanings."
+    },
+    {
+      "conceptId": "bulk-ca3cf656e9ce0bda965d56f8",
+      "language": "it",
+      "level": "C1",
+      "lemma": "eclettico",
+      "meaning": "selecting a mixture of what appear to be best of various doctrines, methods or styles",
+      "reason": "eclettico: Learned adjective for selecting from different doctrines or styles; advanced artistic/intellectual description rather than the generic mixed."
+    },
+    {
+      "conceptId": "bulk-d51680f00f5be7d77bc03d5a",
+      "language": "it",
+      "level": "C1",
+      "lemma": "inequivocabile",
+      "meaning": "without ambiguity",
+      "reason": "inequivocabile: Formal adjective or phrase for a completely unambiguous statement; useful in advanced argument and precise interpretation."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "it",
+      "level": "C1",
+      "lemma": "allegoria",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "allegoria: Literary-analysis term for a sustained symbolic representation; an established abstract artistic concept."
+    },
+    {
+      "conceptId": "bulk-f6b93d83d7d435599d23dcdb",
+      "language": "it",
+      "level": "C1",
+      "lemma": "ipocrisia",
+      "meaning": "claim, pretense, or false representation of holding beliefs, feelings, or virtues that one does not actually possess",
+      "reason": "ipocrisia: Abstract moral/social noun describing a discrepancy between professed values and conduct; nuanced evaluative vocabulary."
+    },
+    {
+      "conceptId": "bulk-fa55e0cb2e5fafc264691257",
+      "language": "it",
+      "level": "C1",
+      "lemma": "antitesi",
+      "meaning": "proposition that is opposite to other proposition",
+      "reason": "antitesi: Learned argumentative term for an opposing proposition; suited to advanced abstract discussion rather than routine conversation."
+    },
+    {
+      "conceptId": "bulk-0572a79aa6ab5e872e7c609c",
+      "language": "it",
+      "level": "C2",
+      "lemma": "palo",
+      "meaning": "heraldry: vertical band",
+      "reason": "palo: Precise heraldic term for a vertical ordinary on a shield; a restricted technical sense, not an everyday pole or strip."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "it",
+      "level": "C2",
+      "lemma": "anello",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "anello: This familiar-looking native noun denotes the abstract algebraic structure with two operations; the ring-jewellery sense is explicitly outside this judgment."
+    },
+    {
+      "conceptId": "bulk-1962997eb1ac32ff01190ab5",
+      "language": "it",
+      "level": "C2",
+      "lemma": "idiosincrasico",
+      "meaning": "peculiar to a specific individual",
+      "reason": "idiosincrasico: Learned adjective describing characteristics peculiar to a specific individual; morphologically and conceptually specialised native vocabulary."
+    },
+    {
+      "conceptId": "bulk-1e62e609adaf72e04126dfab",
+      "language": "it",
+      "level": "C2",
+      "lemma": "motivo",
+      "meaning": "nucleotide or amino-acid sequence pattern",
+      "reason": "motivo: Specialist molecular-sequence sense of motif, a recurring nucleotide or amino-acid pattern; ordinary motive/pattern senses are excluded."
+    },
+    {
+      "conceptId": "bulk-2a07212fb0cfe6796916ad99",
+      "language": "it",
+      "level": "C2",
+      "lemma": "equanimità",
+      "meaning": "state of being calm",
+      "reason": "equanimità: Uncommon learned noun for evenness of temper and composure; a formal lexical choice beyond ordinary calmness vocabulary."
+    },
+    {
+      "conceptId": "bulk-2b82b88aa85d20f77eb9fd69",
+      "language": "it",
+      "level": "C2",
+      "lemma": "solcometro",
+      "meaning": "nautical: device for measuring the speed of a vessel",
+      "reason": "solcometro: Specialist nautical instrument noun for measuring a vessel's speed; this is not an everyday record or logbook sense."
+    },
+    {
+      "conceptId": "bulk-30fbfb499a30036f64e854c2",
+      "language": "it",
+      "level": "C2",
+      "lemma": "arcano",
+      "meaning": "understood by only a few; obscure",
+      "reason": "arcano: Literary/learned adjective for knowledge understood by an initiated few; a restricted-register alternative to ordinary secret or obscure."
+    },
+    {
+      "conceptId": "bulk-3298a0e96e82e5aa05e21231",
+      "language": "it",
+      "level": "C2",
+      "lemma": "copertura",
+      "meaning": "(genetics) average number of reads representing a given nucleotide",
+      "reason": "copertura: Sequencing-specific depth-of-coverage concept, measured through reads at a nucleotide; distinct from everyday cover or coverage."
+    },
+    {
+      "conceptId": "bulk-4b284d999e22e03980678476",
+      "language": "it",
+      "level": "C2",
+      "lemma": "partito",
+      "meaning": "heraldry: partitioned vertically: party per pale",
+      "reason": "partito: Heraldic partition term meaning a shield divided vertically; the ordinary divided or political-party meanings are outside this estimate."
+    },
+    {
+      "conceptId": "bulk-59551a38a1dd1420dd71fdcf",
+      "language": "it",
+      "level": "C2",
+      "lemma": "amplificazione",
+      "meaning": "in genetics",
+      "reason": "amplificazione: Specialist genetics sense of amplification, increasing copies of genetic material; everyday amplification of sound or importance is not assessed here."
+    },
+    {
+      "conceptId": "bulk-7059dc19346f312cd50489e5",
+      "language": "it",
+      "level": "C2",
+      "lemma": "sonda",
+      "meaning": "biochemistry: radioactively labeled molecule",
+      "reason": "sonda: Biochemistry term for a labelled molecular probe; the meaning requires specialised laboratory knowledge beyond the ordinary probe or sensor."
+    },
+    {
+      "conceptId": "bulk-842f84aa0bee0f4887b62693",
+      "language": "it",
+      "level": "C2",
+      "lemma": "magnanimo",
+      "meaning": "noble and generous in spirit",
+      "reason": "magnanimo: Elevated moral-character adjective for generosity and nobility of spirit; this marked native form requires finer register control than everyday generous."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "it",
+      "level": "C2",
+      "lemma": "solipsismo",
+      "meaning": "theory",
+      "reason": "solipsismo: Technical philosophical name for the doctrine that only one's own mind can be known; a restricted specialist concept, not an everyday word for selfishness."
+    },
+    {
+      "conceptId": "bulk-92c393734069568c9b3ae99a",
+      "language": "it",
+      "level": "C2",
+      "lemma": "surrettizio",
+      "meaning": "stealthy, furtive, well hidden, covert",
+      "reason": "surrettizio: Marked formal adjective for concealed or covert action; the native lexical choice is substantially more literary/legal than an ordinary word for secret."
+    },
+    {
+      "conceptId": "bulk-93374b1d70b3e42d4cba0878",
+      "language": "it",
+      "level": "C2",
+      "lemma": "ignominioso",
+      "meaning": "causing or marked by disgrace or dishonour — see also disgraceful, dishonourable",
+      "reason": "ignominioso: Strongly formal/literary evaluative adjective for disgrace or dishonour; precise rhetorical register rather than routine bad or shameful vocabulary."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "it",
+      "level": "C2",
+      "lemma": "scolasticismo",
+      "meaning": "school of philosophy",
+      "reason": "scolasticismo: Specialist history-of-philosophy term for the scholastic school and method; requires knowledge of the doctrine rather than the everyday idea of studying."
+    },
+    {
+      "conceptId": "bulk-b56a9eb03687429fc7c0714c",
+      "language": "it",
+      "level": "C2",
+      "lemma": "taciturno",
+      "meaning": "untalkative, silent",
+      "reason": "taciturno: Learned character-description adjective for habitual reserve in speech; a marked literary choice beyond the ordinary quiet or silent equivalents."
+    },
+    {
+      "conceptId": "bulk-b6ec04315f04216f66e4dc2d",
+      "language": "it",
+      "level": "C2",
+      "lemma": "traduzione",
+      "meaning": "genetics: process for producing proteins",
+      "reason": "traduzione: Specialist molecular-biology use for protein synthesis from messenger RNA; distinct from the ordinary language-translation or broadcasting senses."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "it",
+      "level": "C2",
+      "lemma": "apposizione",
+      "meaning": "grammatical construction",
+      "reason": "apposizione: Technical grammatical use for an appositional construction; this assignment excludes ordinary attachment/application meanings of homonymous forms."
+    },
+    {
+      "conceptId": "bulk-cd93efed2fb8c2b2bc54e41d",
+      "language": "it",
+      "level": "C2",
+      "lemma": "senza senso",
+      "meaning": "resulting from the substitution of a nucleotide in a sense codon, causing it to become a stop codon",
+      "reason": "senza senso: Genetics use in nonsense mutation, where a substitution creates a stop codon; not the ordinary phrase meaning absurd or meaningless."
+    },
+    {
+      "conceptId": "bulk-d2956b03887cf3469db99509",
+      "language": "it",
+      "level": "C2",
+      "lemma": "competitivo",
+      "meaning": "biochemistry: inhibiting an enzyme",
+      "reason": "competitivo: Biochemistry sense of competitive enzyme inhibition; the specialist relational meaning is separate from ordinary competition."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "it",
+      "level": "C2",
+      "lemma": "campo",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "campo: Restricted abstract-algebra sense of a field, a commutative division structure; native everyday body/field senses do not receive this assignment."
+    },
+    {
+      "conceptId": "bulk-db5e0dbc79779bf76cd99cb8",
+      "language": "it",
+      "level": "C2",
+      "lemma": "congetturare",
+      "meaning": "to guess",
+      "reason": "congetturare: Formal verb for advancing a conjecture on incomplete evidence; a marked native lexical choice beyond everyday guessing."
+    },
+    {
+      "conceptId": "bulk-eafef14a6769537f72c1c511",
+      "language": "it",
+      "level": "C2",
+      "lemma": "filamento",
+      "meaning": "genetics: nucleotide chain",
+      "reason": "filamento: Specialist genetics sense of a nucleotide strand; the familiar native material-thread or chain meanings do not determine this assignment."
+    },
+    {
+      "conceptId": "bulk-093194d31c853eaf22346479",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "meticuloso",
+      "meaning": "characterized by very precise, conscientious attention to details",
+      "reason": "meticuloso: Precise character/process adjective for painstaking attention to detail; advanced descriptive vocabulary with a distinct positive or critical nuance."
+    },
+    {
+      "conceptId": "bulk-21c87ea2ef87797e3d5d115a",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "paradoxo",
+      "meaning": "apparent contradiction which is nonetheless true",
+      "reason": "paradoxo: Abstract noun for an apparently contradictory truth; advanced reasoning vocabulary beyond a simple factual contradiction."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "competência",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "competência: Legal authority to interpret and apply law; an advanced institutional sense, including the specialised legal meaning of Portuguese competência."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "surrealismo",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "surrealismo: Art-critical movement name involving a specific aesthetic concept; advanced cultural vocabulary rather than everyday description."
+    },
+    {
+      "conceptId": "bulk-3861976f018d65b218fc6940",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "conjetura",
+      "meaning": "unproven statement; guess",
+      "reason": "conjetura: Learned noun for an unproved supposition; advanced argumentative vocabulary rather than an ordinary casual guess."
+    },
+    {
+      "conceptId": "bulk-38ff31b8bae19e2c158adabd",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "modernismo",
+      "meaning": "any of several styles of art, architecture, literature, philosophy, etc., that flourished in the 20th century",
+      "reason": "modernismo: Established learned name of a twentieth-century cultural movement; appropriate to advanced discussion of art and intellectual history."
+    },
+    {
+      "conceptId": "bulk-39cc6cdf65b2232c440f2efc",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "tácito",
+      "meaning": "done or made in silence; implied, but not expressed; silent",
+      "reason": "tácito: Formal adjective for something understood without explicit statement; advanced pragmatic or institutional use."
+    },
+    {
+      "conceptId": "bulk-3bd74a0f45bde6cefbacbcd9",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "consciencioso",
+      "meaning": "thorough, careful, or vigilant",
+      "reason": "consciencioso: Nuanced character adjective for careful, responsible attention to obligations; formal descriptive vocabulary beyond a general good or careful."
+    },
+    {
+      "conceptId": "bulk-4c13a7cfc71d5d50a27a0804",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "intrínseco",
+      "meaning": "inherent",
+      "reason": "intrínseco: Abstract relational adjective for an inherent quality; productive in advanced explanation and argument, not merely physical interior position."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "eufemismo",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "eufemismo: Rhetorical/metalinguistic term for replacing a potentially offensive expression; requires nuanced discussion of register and meaning."
+    },
+    {
+      "conceptId": "bulk-6e985b79be384bd73e8c04d7",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "alusão",
+      "meaning": "indirect reference, hint",
+      "reason": "alusão: Literary/communicative term for an indirect reference; requires interpretation beyond the literal expression."
+    },
+    {
+      "conceptId": "bulk-74436027a473064b3c30f8ca",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "erudito",
+      "meaning": "scholarly, learned",
+      "reason": "erudito: Learned adjective for extensive scholarly knowledge; an advanced register-specific distinction from the ordinary knowledgeable."
+    },
+    {
+      "conceptId": "bulk-859fd7d1d141d45cc237a73f",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "estoicismo",
+      "meaning": "school of philosophy",
+      "reason": "estoicismo: Name of the philosophical school; advanced cultural-discussion vocabulary, distinct from an everyday stoical attitude."
+    },
+    {
+      "conceptId": "bulk-8cae2596d564bf4b82cc1f31",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "axioma",
+      "meaning": "mathematics: fundamental assumption",
+      "reason": "axioma: Mathematical foundational-assumption term; established academic vocabulary requiring an abstract concept, without implying every mathematical term is C2."
+    },
+    {
+      "conceptId": "bulk-a79105783f5408be58a23735",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "inexorável",
+      "meaning": "impossible to prevent or stop — see also inevitable",
+      "reason": "inexorável: Formal descriptive adjective for an unavoidable course or force; a nuanced advanced equivalent of inevitability."
+    },
+    {
+      "conceptId": "bulk-a83e705925183f4bf4804df0",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "hipérbole",
+      "meaning": "rhetorical device",
+      "reason": "hipérbole: Rhetorical-device term for deliberate exaggeration; advanced analytical vocabulary, with the geometrical homonym excluded."
+    },
+    {
+      "conceptId": "bulk-c8a1b3931561d5949ba5d3d1",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "arbitrário",
+      "meaning": "based on individual discretion or judgment",
+      "reason": "arbitrário: Abstract evaluative adjective for a decision based on individual discretion; requires distinction from random and other nearby meanings."
+    },
+    {
+      "conceptId": "bulk-ca3cf656e9ce0bda965d56f8",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "eclético",
+      "meaning": "selecting a mixture of what appear to be best of various doctrines, methods or styles",
+      "reason": "eclético: Learned adjective for selecting from different doctrines or styles; advanced artistic/intellectual description rather than the generic mixed."
+    },
+    {
+      "conceptId": "bulk-d51680f00f5be7d77bc03d5a",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "inequívoco",
+      "meaning": "without ambiguity",
+      "reason": "inequívoco: Formal adjective or phrase for a completely unambiguous statement; useful in advanced argument and precise interpretation."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "alegoria",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "alegoria: Literary-analysis term for a sustained symbolic representation; an established abstract artistic concept."
+    },
+    {
+      "conceptId": "bulk-f6b93d83d7d435599d23dcdb",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "hipocrisia",
+      "meaning": "claim, pretense, or false representation of holding beliefs, feelings, or virtues that one does not actually possess",
+      "reason": "hipocrisia: Abstract moral/social noun describing a discrepancy between professed values and conduct; nuanced evaluative vocabulary."
+    },
+    {
+      "conceptId": "bulk-fa55e0cb2e5fafc264691257",
+      "language": "pt",
+      "level": "C1",
+      "lemma": "antítese",
+      "meaning": "proposition that is opposite to other proposition",
+      "reason": "antítese: Learned argumentative term for an opposing proposition; suited to advanced abstract discussion rather than routine conversation."
+    },
+    {
+      "conceptId": "bulk-0572a79aa6ab5e872e7c609c",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "pala",
+      "meaning": "heraldry: vertical band",
+      "reason": "pala: Precise heraldic term for a vertical ordinary on a shield; a restricted technical sense, not an everyday pole or strip."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "anel",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "anel: This familiar-looking native noun denotes the abstract algebraic structure with two operations; the ring-jewellery sense is explicitly outside this judgment."
+    },
+    {
+      "conceptId": "bulk-1962997eb1ac32ff01190ab5",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "idiossincrásico",
+      "meaning": "peculiar to a specific individual",
+      "reason": "idiossincrásico: Learned adjective describing characteristics peculiar to a specific individual; morphologically and conceptually specialised native vocabulary."
+    },
+    {
+      "conceptId": "bulk-1e62e609adaf72e04126dfab",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "motivo",
+      "meaning": "nucleotide or amino-acid sequence pattern",
+      "reason": "motivo: Specialist molecular-sequence sense of motif, a recurring nucleotide or amino-acid pattern; ordinary motive/pattern senses are excluded."
+    },
+    {
+      "conceptId": "bulk-2a07212fb0cfe6796916ad99",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "equanimidade",
+      "meaning": "state of being calm",
+      "reason": "equanimidade: Uncommon learned noun for evenness of temper and composure; a formal lexical choice beyond ordinary calmness vocabulary."
+    },
+    {
+      "conceptId": "bulk-2b82b88aa85d20f77eb9fd69",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "barquilha",
+      "meaning": "nautical: device for measuring the speed of a vessel",
+      "reason": "barquilha: Specialist nautical instrument noun for measuring a vessel's speed; this is not an everyday record or logbook sense."
+    },
+    {
+      "conceptId": "bulk-30fbfb499a30036f64e854c2",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "arcano",
+      "meaning": "understood by only a few; obscure",
+      "reason": "arcano: Literary/learned adjective for knowledge understood by an initiated few; a restricted-register alternative to ordinary secret or obscure."
+    },
+    {
+      "conceptId": "bulk-3298a0e96e82e5aa05e21231",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "cobertura",
+      "meaning": "(genetics) average number of reads representing a given nucleotide",
+      "reason": "cobertura: Sequencing-specific depth-of-coverage concept, measured through reads at a nucleotide; distinct from everyday cover or coverage."
+    },
+    {
+      "conceptId": "bulk-42d3a018a9f703bd23183900",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "cogente",
+      "meaning": "forcefully persuasive",
+      "reason": "cogente: Formal adjective for compelling or logically binding force; the learned native form is more restricted than everyday convincente."
+    },
+    {
+      "conceptId": "bulk-4b284d999e22e03980678476",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "partido",
+      "meaning": "heraldry: partitioned vertically: party per pale",
+      "reason": "partido: Heraldic partition term meaning a shield divided vertically; the ordinary divided or political-party meanings are outside this estimate."
+    },
+    {
+      "conceptId": "bulk-59551a38a1dd1420dd71fdcf",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "amplificação",
+      "meaning": "in genetics",
+      "reason": "amplificação: Specialist genetics sense of amplification, increasing copies of genetic material; everyday amplification of sound or importance is not assessed here."
+    },
+    {
+      "conceptId": "bulk-64510559c2f13e2460081e22",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "verga",
+      "meaning": "nautical: tapered timber from which square sails hang",
+      "reason": "verga: Technical nautical name of the spar supporting a square sail; uncommon outside sailing and maritime texts."
+    },
+    {
+      "conceptId": "bulk-7059dc19346f312cd50489e5",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "sonda",
+      "meaning": "biochemistry: radioactively labeled molecule",
+      "reason": "sonda: Biochemistry term for a labelled molecular probe; the meaning requires specialised laboratory knowledge beyond the ordinary probe or sensor."
+    },
+    {
+      "conceptId": "bulk-842f84aa0bee0f4887b62693",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "magnânimo",
+      "meaning": "noble and generous in spirit",
+      "reason": "magnânimo: Elevated moral-character adjective for generosity and nobility of spirit; this marked native form requires finer register control than everyday generous."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "solipsismo",
+      "meaning": "theory",
+      "reason": "solipsismo: Technical philosophical name for the doctrine that only one's own mind can be known; a restricted specialist concept, not an everyday word for selfishness."
+    },
+    {
+      "conceptId": "bulk-8b06d894eb510b9cada37035",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "predicativo",
+      "meaning": "element of the predicate of a sentence which supplements the subject or object by means of the verb",
+      "reason": "predicativo: Specialist grammatical constituent complementing a subject or object through a linking verb; requires analysis of predicative structure."
+    },
+    {
+      "conceptId": "bulk-92c393734069568c9b3ae99a",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "sub-reptício",
+      "meaning": "stealthy, furtive, well hidden, covert",
+      "reason": "sub-reptício: Marked formal adjective for concealed or covert action; the native lexical choice is substantially more literary/legal than an ordinary word for secret."
+    },
+    {
+      "conceptId": "bulk-93374b1d70b3e42d4cba0878",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "ignominioso",
+      "meaning": "causing or marked by disgrace or dishonour — see also disgraceful, dishonourable",
+      "reason": "ignominioso: Strongly formal/literary evaluative adjective for disgrace or dishonour; precise rhetorical register rather than routine bad or shameful vocabulary."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "escolasticismo",
+      "meaning": "school of philosophy",
+      "reason": "escolasticismo: Specialist history-of-philosophy term for the scholastic school and method; requires knowledge of the doctrine rather than the everyday idea of studying."
+    },
+    {
+      "conceptId": "bulk-b56a9eb03687429fc7c0714c",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "taciturno",
+      "meaning": "untalkative, silent",
+      "reason": "taciturno: Learned character-description adjective for habitual reserve in speech; a marked literary choice beyond the ordinary quiet or silent equivalents."
+    },
+    {
+      "conceptId": "bulk-b6ec04315f04216f66e4dc2d",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "tradução",
+      "meaning": "genetics: process for producing proteins",
+      "reason": "tradução: Specialist molecular-biology use for protein synthesis from messenger RNA; distinct from the ordinary language-translation or broadcasting senses."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "aposto",
+      "meaning": "grammatical construction",
+      "reason": "aposto: Technical grammatical use for an appositional construction; this assignment excludes ordinary attachment/application meanings of homonymous forms."
+    },
+    {
+      "conceptId": "bulk-cd93efed2fb8c2b2bc54e41d",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "sem sentido",
+      "meaning": "resulting from the substitution of a nucleotide in a sense codon, causing it to become a stop codon",
+      "reason": "sem sentido: Genetics use in nonsense mutation, where a substitution creates a stop codon; not the ordinary phrase meaning absurd or meaningless."
+    },
+    {
+      "conceptId": "bulk-d2956b03887cf3469db99509",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "competitivo",
+      "meaning": "biochemistry: inhibiting an enzyme",
+      "reason": "competitivo: Biochemistry sense of competitive enzyme inhibition; the specialist relational meaning is separate from ordinary competition."
+    },
+    {
+      "conceptId": "bulk-d65b091e83bb5f2b8ff5ff60",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "spin",
+      "meaning": "physics: quantum angular momentum",
+      "reason": "spin: Quantum-mechanical angular momentum terminology; the specialist native borrowing or sense is not the everyday act of spinning."
+    },
+    {
+      "conceptId": "bulk-d7ecdbfdba435d6ab28fa62c",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "traço",
+      "meaning": "linear algebra: sum of the diagonal elements of a square matrix",
+      "reason": "traço: Linear-algebra sense naming the sum of a square matrix's diagonal entries; ordinary trail or mark meanings do not motivate this estimate."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "corpo",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "corpo: Restricted abstract-algebra sense of a field, a commutative division structure; native everyday body/field senses do not receive this assignment."
+    },
+    {
+      "conceptId": "bulk-db5e0dbc79779bf76cd99cb8",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "conjeturar",
+      "meaning": "to guess",
+      "reason": "conjeturar: Formal verb for advancing a conjecture on incomplete evidence; a marked native lexical choice beyond everyday guessing."
+    },
+    {
+      "conceptId": "bulk-eafef14a6769537f72c1c511",
+      "language": "pt",
+      "level": "C2",
+      "lemma": "fita",
+      "meaning": "genetics: nucleotide chain",
+      "reason": "fita: Specialist genetics sense of a nucleotide strand; the familiar native material-thread or chain meanings do not determine this assignment."
+    },
+    {
+      "conceptId": "bulk-093194d31c853eaf22346479",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "скрупулёзный",
+      "meaning": "characterized by very precise, conscientious attention to details",
+      "reason": "скрупулёзный: Precise character/process adjective for painstaking attention to detail; advanced descriptive vocabulary with a distinct positive or critical nuance."
+    },
+    {
+      "conceptId": "bulk-21c87ea2ef87797e3d5d115a",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "парадокс",
+      "meaning": "apparent contradiction which is nonetheless true",
+      "reason": "парадокс: Abstract noun for an apparently contradictory truth; advanced reasoning vocabulary beyond a simple factual contradiction."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "юрисдикция",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "юрисдикция: Legal authority to interpret and apply law; an advanced institutional sense, including the specialised legal meaning of Portuguese competência."
+    },
+    {
+      "conceptId": "bulk-2a07212fb0cfe6796916ad99",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "хладнокровие",
+      "meaning": "state of being calm",
+      "reason": "хладнокровие: Native compound noun for composure under stress; sophisticated character vocabulary but less restricted than the learned Romance equivalents."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "сюрреализм",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "сюрреализм: Art-critical movement name involving a specific aesthetic concept; advanced cultural vocabulary rather than everyday description."
+    },
+    {
+      "conceptId": "bulk-38ff31b8bae19e2c158adabd",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "модернизм",
+      "meaning": "any of several styles of art, architecture, literature, philosophy, etc., that flourished in the 20th century",
+      "reason": "модернизм: Established learned name of a twentieth-century cultural movement; appropriate to advanced discussion of art and intellectual history."
+    },
+    {
+      "conceptId": "bulk-39cc6cdf65b2232c440f2efc",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "негласный",
+      "meaning": "done or made in silence; implied, but not expressed; silent",
+      "reason": "негласный: Formal adjective for something understood without explicit statement; advanced pragmatic or institutional use."
+    },
+    {
+      "conceptId": "bulk-3bd74a0f45bde6cefbacbcd9",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "добросовестный",
+      "meaning": "thorough, careful, or vigilant",
+      "reason": "добросовестный: Nuanced character adjective for careful, responsible attention to obligations; formal descriptive vocabulary beyond a general good or careful."
+    },
+    {
+      "conceptId": "bulk-4c13a7cfc71d5d50a27a0804",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "присущий",
+      "meaning": "inherent",
+      "reason": "присущий: Abstract relational adjective for an inherent quality; productive in advanced explanation and argument, not merely physical interior position."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "эвфемизм",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "эвфемизм: Rhetorical/metalinguistic term for replacing a potentially offensive expression; requires nuanced discussion of register and meaning."
+    },
+    {
+      "conceptId": "bulk-57b95a5fa4f1b0159aa2a646",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "осмотрительный",
+      "meaning": "carefully aware of all circumstances",
+      "reason": "осмотрительный: Precise character adjective for prudent awareness of consequences; advanced descriptive use."
+    },
+    {
+      "conceptId": "bulk-6e985b79be384bd73e8c04d7",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "аллюзия",
+      "meaning": "indirect reference, hint",
+      "reason": "аллюзия: Literary/communicative term for an indirect reference; requires interpretation beyond the literal expression."
+    },
+    {
+      "conceptId": "bulk-74436027a473064b3c30f8ca",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "эрудированный",
+      "meaning": "scholarly, learned",
+      "reason": "эрудированный: Learned adjective for extensive scholarly knowledge; an advanced register-specific distinction from the ordinary knowledgeable."
+    },
+    {
+      "conceptId": "bulk-842f84aa0bee0f4887b62693",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "великодушный",
+      "meaning": "noble and generous in spirit",
+      "reason": "великодушный: Native adjective for noble generosity of spirit; advanced moral description without requiring the marked Romance literary register."
+    },
+    {
+      "conceptId": "bulk-859fd7d1d141d45cc237a73f",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "стоицизм",
+      "meaning": "school of philosophy",
+      "reason": "стоицизм: Name of the philosophical school; advanced cultural-discussion vocabulary, distinct from an everyday stoical attitude."
+    },
+    {
+      "conceptId": "bulk-8cae2596d564bf4b82cc1f31",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "аксиома",
+      "meaning": "mathematics: fundamental assumption",
+      "reason": "аксиома: Mathematical foundational-assumption term; established academic vocabulary requiring an abstract concept, without implying every mathematical term is C2."
+    },
+    {
+      "conceptId": "bulk-a79105783f5408be58a23735",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "неотвратимый",
+      "meaning": "impossible to prevent or stop — see also inevitable",
+      "reason": "неотвратимый: Formal descriptive adjective for an unavoidable course or force; a nuanced advanced equivalent of inevitability."
+    },
+    {
+      "conceptId": "bulk-a83e705925183f4bf4804df0",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "гипербола",
+      "meaning": "rhetorical device",
+      "reason": "гипербола: Rhetorical-device term for deliberate exaggeration; advanced analytical vocabulary, with the geometrical homonym excluded."
+    },
+    {
+      "conceptId": "bulk-c8a1b3931561d5949ba5d3d1",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "произвольный",
+      "meaning": "based on individual discretion or judgment",
+      "reason": "произвольный: Abstract evaluative adjective for a decision based on individual discretion; requires distinction from random and other nearby meanings."
+    },
+    {
+      "conceptId": "bulk-ca3cf656e9ce0bda965d56f8",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "эклектичный",
+      "meaning": "selecting a mixture of what appear to be best of various doctrines, methods or styles",
+      "reason": "эклектичный: Learned adjective for selecting from different doctrines or styles; advanced artistic/intellectual description rather than the generic mixed."
+    },
+    {
+      "conceptId": "bulk-d51680f00f5be7d77bc03d5a",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "недвусмысленный",
+      "meaning": "without ambiguity",
+      "reason": "недвусмысленный: Formal adjective or phrase for a completely unambiguous statement; useful in advanced argument and precise interpretation."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "аллегория",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "аллегория: Literary-analysis term for a sustained symbolic representation; an established abstract artistic concept."
+    },
+    {
+      "conceptId": "bulk-f6b93d83d7d435599d23dcdb",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "лицемерие",
+      "meaning": "claim, pretense, or false representation of holding beliefs, feelings, or virtues that one does not actually possess",
+      "reason": "лицемерие: Abstract moral/social noun describing a discrepancy between professed values and conduct; nuanced evaluative vocabulary."
+    },
+    {
+      "conceptId": "bulk-fa55e0cb2e5fafc264691257",
+      "language": "ru",
+      "level": "C1",
+      "lemma": "антитеза",
+      "meaning": "proposition that is opposite to other proposition",
+      "reason": "антитеза: Learned argumentative term for an opposing proposition; suited to advanced abstract discussion rather than routine conversation."
+    },
+    {
+      "conceptId": "bulk-004247e402762555d620ac07",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "конфирмация",
+      "meaning": "Christian ceremony or sacrament",
+      "reason": "конфирмация: Denominational religious term naming the rite of confirmation; a restricted borrowing rather than everyday подтверждение."
+    },
+    {
+      "conceptId": "bulk-0a8a812f8db5675f9a6efff2",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "эфемерный",
+      "meaning": "lasting for a short period of time",
+      "reason": "эфемерный: Learned literary adjective for something fleeting or insubstantial; the borrowed native form is markedly less ordinary than недолговечный."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "кольцо",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "кольцо: This familiar-looking native noun denotes the abstract algebraic structure with two operations; the ring-jewellery sense is explicitly outside this judgment."
+    },
+    {
+      "conceptId": "bulk-2b82b88aa85d20f77eb9fd69",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "лаг",
+      "meaning": "nautical: device for measuring the speed of a vessel",
+      "reason": "лаг: Specialist nautical instrument noun for measuring a vessel's speed; this is not an everyday record or logbook sense."
+    },
+    {
+      "conceptId": "bulk-3015d213511c019025baf8c1",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "развёртка",
+      "meaning": "geometry: set of joined polygons",
+      "reason": "развёртка: Geometric net of connected polygons that folds into a solid; the specialist construction sense is separate from ordinary unrolling."
+    },
+    {
+      "conceptId": "bulk-64510559c2f13e2460081e22",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "рея",
+      "meaning": "nautical: tapered timber from which square sails hang",
+      "reason": "рея: Technical nautical name of the spar supporting a square sail; uncommon outside sailing and maritime texts."
+    },
+    {
+      "conceptId": "bulk-6e9c656e6e7530ec99d3b0a6",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "предосудительный",
+      "meaning": "blameworthy",
+      "reason": "предосудительный: Marked formal evaluative adjective expressing moral blameworthiness; a precise literary/legal-register choice."
+    },
+    {
+      "conceptId": "bulk-701dfcb1d34f39fa1173a838",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "бом-брамсель",
+      "meaning": "nautical: a sail",
+      "reason": "бом-брамсель: Precisely named upper square sail in traditional nautical terminology; a narrow current specialist vocabulary item."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "солипсизм",
+      "meaning": "theory",
+      "reason": "солипсизм: Technical philosophical name for the doctrine that only one's own mind can be known; a restricted specialist concept, not an everyday word for selfishness."
+    },
+    {
+      "conceptId": "bulk-8b06d894eb510b9cada37035",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "именная часть составного сказуемого",
+      "meaning": "element of the predicate of a sentence which supplements the subject or object by means of the verb",
+      "reason": "именная часть составного сказуемого: Specialist grammatical constituent complementing a subject or object through a linking verb; requires analysis of predicative structure."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "схоластика",
+      "meaning": "school of philosophy",
+      "reason": "схоластика: Specialist history-of-philosophy term for the scholastic school and method; requires knowledge of the doctrine rather than the everyday idea of studying."
+    },
+    {
+      "conceptId": "bulk-afab8e8c96ecf6ce7cf6e65f",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "неправоспособность",
+      "meaning": "legal incapacity or incompetency",
+      "reason": "неправоспособность: Formal legal noun for absence of legal capacity; a restricted legal concept distinct from ordinary disability or lack of skill."
+    },
+    {
+      "conceptId": "bulk-b3e40eda0244351a03017ef5",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "эклектик",
+      "meaning": "one who selects by the eclectic method",
+      "reason": "эклектик: Learned noun naming a practitioner of the eclectic method; specialist intellectual-history vocabulary rather than a general mixed style."
+    },
+    {
+      "conceptId": "bulk-b6ec04315f04216f66e4dc2d",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "трансляция",
+      "meaning": "genetics: process for producing proteins",
+      "reason": "трансляция: Specialist molecular-biology use for protein synthesis from messenger RNA; distinct from the ordinary language-translation or broadcasting senses."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "приложение",
+      "meaning": "grammatical construction",
+      "reason": "приложение: Technical grammatical use for an appositional construction; this assignment excludes ordinary attachment/application meanings of homonymous forms."
+    },
+    {
+      "conceptId": "bulk-c6ab13482265380c325f6616",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "преходящий",
+      "meaning": "passing or disappearing with time; transitory",
+      "reason": "преходящий: Literary adjective for what passes away with time; distinguishes the elevated native form from ordinary временный."
+    },
+    {
+      "conceptId": "bulk-d65b091e83bb5f2b8ff5ff60",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "спин",
+      "meaning": "physics: quantum angular momentum",
+      "reason": "спин: Quantum-mechanical angular momentum terminology; the specialist native borrowing or sense is not the everyday act of spinning."
+    },
+    {
+      "conceptId": "bulk-d7ecdbfdba435d6ab28fa62c",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "след",
+      "meaning": "linear algebra: sum of the diagonal elements of a square matrix",
+      "reason": "след: Linear-algebra sense naming the sum of a square matrix's diagonal entries; ordinary trail or mark meanings do not motivate this estimate."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "поле",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "поле: Restricted abstract-algebra sense of a field, a commutative division structure; native everyday body/field senses do not receive this assignment."
+    },
+    {
+      "conceptId": "bulk-eafef14a6769537f72c1c511",
+      "language": "ru",
+      "level": "C2",
+      "lemma": "цепь",
+      "meaning": "genetics: nucleotide chain",
+      "reason": "цепь: Specialist genetics sense of a nucleotide strand; the familiar native material-thread or chain meanings do not determine this assignment."
+    }
+  ]
+}

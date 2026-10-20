@@ -6,6 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "node --test tests/*.test.mjs",
+    "vocabulary:build": "python3 scripts/build-editorial-vocabulary.py && python3 scripts/build-vocabulary.py && node scripts/report-vocabulary.mjs",
+    "vocabulary:check": "python3 scripts/build-editorial-vocabulary.py --check && python3 scripts/build-vocabulary.py --check && python3 scripts/fetch-frequency.py --check",
     "start": "python3 -m http.server 8000 --bind 127.0.0.1"
   }
 }

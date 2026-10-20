@@ -1,0 +1,963 @@
+{
+  "methodology": "Individual sense review and model-assisted editorial judgment of native Chinese, Japanese, Korean and Arabic forms. Explicit estimates for the specified concept and language only; no English CEFR labels, HSK/JLPT/TOPIK conversion, rank thresholds, or quota filling. English source meanings identify senses and do not supply levels. C2 is reserved here for specialized academic or uncommon technical senses; transparent or more established advanced native terms are placed at C1. Different languages may therefore have different or absent assignments. These judgments are not official or independently native-speaker validated. A small reviewed sample supplements the multi-factor rubric; no claim is made that all advanced words are covered.",
+  "sources": [
+    {
+      "path": "vocabulary/source-data/expanded-lexicon.json",
+      "sha256": "2f04112e3badb3efd445d8329f38cf61a16ebe2295cfb97ceb397178113d7d6e"
+    }
+  ],
+  "assignments": [
+    {
+      "conceptId": "bulk-18218ee0203e02d4212c4779",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "تَقَاضٍ",
+      "meaning": "conduct of a lawsuit",
+      "reason": "تَقَاضٍ: The native legal noun denotes litigation as a process; formal procedural vocabulary rather than an everyday quarrel. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-19fcdc986482f7befd5e372a",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "إِلِكْتْرُون",
+      "meaning": "the negatively charged subatomic particles that orbit atoms",
+      "reason": "إِلِكْتْرُون: The native word denotes the electron; established scientific vocabulary with a precise subatomic meaning. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "سُرْيَالِيَّة",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "سُرْيَالِيَّة: The native artistic-movement term denotes Surrealism; specialized cultural and art-critical vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4a16803987284c052a4863c5",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "نَوَاة",
+      "meaning": "physics: massive, positively charged core of an atom",
+      "reason": "نَوَاة: The native form denotes the nucleus of an atom in this exact sense; technical atomic-physics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4ba76bc31a5922101078c1da",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "قُدْرَة",
+      "meaning": "physics: measure of the rate of doing work or transferring energy",
+      "reason": "قُدْرَة: The exact native term denotes physical power as work per time; technical meaning distinct from influence or personal strength. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e71798e0fcd6fc38ab0f316",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "حَفَّاز",
+      "meaning": "substance which increases the rate of a chemical reaction without being consumed in the process",
+      "reason": "حَفَّاز: The exact native noun denotes a chemical catalyst; a technical chemistry concept rather than a general agent of change. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-629b846222f243aaf760b380",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "شَرَّعَ",
+      "meaning": "pass laws",
+      "reason": "شَرَّعَ: The native verb denotes legislating or enacting law; formal institutional action distinct from ordinary rule-following. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-6650271fecd703ccd0186aa7",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "مُتَنَحٍّ",
+      "meaning": "in genetics",
+      "reason": "مُتَنَحٍّ: The native genetic adjective denotes a recessive trait; scientific meaning distinct from ordinary concealment or retreat. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-8528e664e96d427ab87c998c",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "مُشَرِّع",
+      "meaning": "who creates or enacts laws",
+      "reason": "مُشَرِّع: The native derived noun denotes a legislator; formal legal-political vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-a2b890c554a5ef297440839c",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "بَلَاغَة",
+      "meaning": "art of using language for persuasion",
+      "reason": "بَلَاغَة: The native noun names rhetoric as the art or study of persuasion; formal academic register. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b34d8794649ea1a1a7d5f3df",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "أَيْدِيُولُوجِيَا",
+      "meaning": "doctrine, body of ideas",
+      "reason": "أَيْدِيُولُوجِيَا: The native term names ideology as a system of doctrines; abstract political and theoretical discourse. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b35fa50d587c8d11de3c0f0d",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "تَكَامُل",
+      "meaning": "limit of sums",
+      "reason": "تَكَامُل: The native mathematical noun denotes an integral; formal calculus vocabulary distinct from ordinary completeness. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-cd25e68a8800baf447caa917",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "كِيمِيَاء حَيَوِيَّة",
+      "meaning": "the chemistry of those compounds that occur in living organisms, and the processes that occur in their metabolism and catabolism",
+      "reason": "كِيمِيَاء حَيَوِيَّة: The native compound names biochemistry as a discipline; advanced scientific vocabulary, although transparently composed in this language. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ee160adffd19757cc2875933",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "عِلْمُ وِرَاثَة",
+      "meaning": "branch of biology",
+      "reason": "عِلْمُ وِرَاثَة: The native discipline name denotes genetics; technical scientific vocabulary used beyond everyday biological references. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-f5454fe6761350cdb3acf4ff",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "مَادِّيَّة",
+      "meaning": "philosophical belief",
+      "reason": "مَادِّيَّة: The native form denotes philosophical materialism in this sense, not ordinary concern with money or possessions. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-fd5837b995d86557bdf50b51",
+      "language": "ar",
+      "level": "C1",
+      "lemma": "مُوَكِّل",
+      "meaning": "legal: one on behalf of whom an agent or gestor acts",
+      "reason": "مُوَكِّل: The native legal noun denotes the principal represented by an agent; specialized legal relationship distinct from ordinary main or leading. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "حَلْقَة",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "حَلْقَة: The native word denotes the algebraic structure ring; this abstract algebra sense is distinct from the ordinary circular-object word. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-5c538b8bcecb7d220f3cac1e",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "تَلَازُم",
+      "meaning": "logical connective",
+      "reason": "تَلَازُم: The native word denotes logical implication in this exact sense; specialist formal-logic use, not everyday association or suggestion. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-833dd6a748f6b4c85f702f7d",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "كَلْبِيّ",
+      "meaning": "philosopher",
+      "reason": "كَلْبِيّ: This exact native adjective used substantivally denotes an adherent of ancient Cynicism; it is unrelated to ordinary dog-related or cynical uses. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-859fd7d1d141d45cc237a73f",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "رِوَاقِيَّة",
+      "meaning": "school of philosophy",
+      "reason": "رِوَاقِيَّة: The native school name denotes Stoicism; uncommon philosophical terminology rather than ordinary patience or endurance. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "وَحْدَة الْأَنَا",
+      "meaning": "theory",
+      "reason": "وَحْدَة الْأَنَا: A rare philosophical doctrine term for solipsism; the native compound names a specific epistemological position. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-9405408789438cda279340b0",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "بَدِيهِيَّة",
+      "meaning": "philosophy: supposed self‐evident or necessary truth",
+      "reason": "بَدِيهِيَّة: The native noun denotes a philosophical self-evident axiom; specialized epistemological use beyond ordinary obviousness. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "بدل",
+      "meaning": "grammatical construction",
+      "reason": "بدل: The native term denotes grammatical apposition; a precise syntactic construction beyond general everyday grammar vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ea8d89f1cfb072e3ad184ba5",
+      "language": "ar",
+      "level": "C2",
+      "lemma": "تَحْلِيل رِيَاضِيّ",
+      "meaning": "in mathematics",
+      "reason": "تَحْلِيل رِيَاضِيّ: The native compound names mathematical analysis as a discipline, rather than ordinary analysis of information. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-0a748c10967427b18e1d7c42",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "コーパス",
+      "meaning": "linguistics: collection of writings",
+      "reason": "コーパス: An established native linguistics term for a text corpus; advanced academic vocabulary rather than general writing. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-18218ee0203e02d4212c4779",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "訴訟",
+      "meaning": "conduct of a lawsuit",
+      "reason": "訴訟: The native legal noun denotes litigation as a process; formal procedural vocabulary rather than an everyday quarrel. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-19fcdc986482f7befd5e372a",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "電子",
+      "meaning": "the negatively charged subatomic particles that orbit atoms",
+      "reason": "電子: The native word denotes the electron; established scientific vocabulary with a precise subatomic meaning. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "管轄",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "管轄: The native legal form denotes jurisdiction; formal institutional authority rather than ordinary geographical location. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "シュルレアリスム",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "シュルレアリスム: The native artistic-movement term denotes Surrealism; specialized cultural and art-critical vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4a16803987284c052a4863c5",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "原子核",
+      "meaning": "physics: massive, positively charged core of an atom",
+      "reason": "原子核: The native form denotes the nucleus of an atom in this exact sense; technical atomic-physics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4ba76bc31a5922101078c1da",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "仕事率",
+      "meaning": "physics: measure of the rate of doing work or transferring energy",
+      "reason": "仕事率: The exact native term denotes physical power as work per time; technical meaning distinct from influence or personal strength. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e71798e0fcd6fc38ab0f316",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "触媒",
+      "meaning": "substance which increases the rate of a chemical reaction without being consumed in the process",
+      "reason": "触媒: The exact native noun denotes a chemical catalyst; a technical chemistry concept rather than a general agent of change. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "婉曲法",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "婉曲法: The native term identifies euphemistic language use and is typical of advanced linguistic or literary discussion. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-6650271fecd703ccd0186aa7",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "潜性",
+      "meaning": "in genetics",
+      "reason": "潜性: The native genetic adjective denotes a recessive trait; scientific meaning distinct from ordinary concealment or retreat. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-9405408789438cda279340b0",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "公理",
+      "meaning": "philosophy: supposed self‐evident or necessary truth",
+      "reason": "公理: The native noun denotes an axiom in philosophical argument; academic vocabulary that is also encountered in formal mathematics education. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-a2b890c554a5ef297440839c",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "修辞学",
+      "meaning": "art of using language for persuasion",
+      "reason": "修辞学: The native noun names rhetoric as the art or study of persuasion; formal academic register. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b34d8794649ea1a1a7d5f3df",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "観念形態",
+      "meaning": "doctrine, body of ideas",
+      "reason": "観念形態: The native term names ideology as a system of doctrines; abstract political and theoretical discourse. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b35fa50d587c8d11de3c0f0d",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "積分",
+      "meaning": "limit of sums",
+      "reason": "積分: The native mathematical noun denotes an integral; formal calculus vocabulary distinct from ordinary completeness. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-cd25e68a8800baf447caa917",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "生化学",
+      "meaning": "the chemistry of those compounds that occur in living organisms, and the processes that occur in their metabolism and catabolism",
+      "reason": "生化学: The native compound names biochemistry as a discipline; advanced scientific vocabulary, although transparently composed in this language. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "アレゴリー",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "アレゴリー: The native word names allegorical interpretation; advanced literary-analysis vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ee160adffd19757cc2875933",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "遺伝学",
+      "meaning": "branch of biology",
+      "reason": "遺伝学: The native discipline name denotes genetics; technical scientific vocabulary used beyond everyday biological references. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-f5454fe6761350cdb3acf4ff",
+      "language": "ja",
+      "level": "C1",
+      "lemma": "唯物論",
+      "meaning": "philosophical belief",
+      "reason": "唯物論: The native form denotes philosophical materialism in this sense, not ordinary concern with money or possessions. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-07f5f9d097880f2e8d64502a",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "リエゾン",
+      "meaning": "linguistics: a sandhi",
+      "reason": "リエゾン: The native term names liaison in phonology; a specialist sound-combination process, not ordinary social liaison. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "環",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "環: The native word denotes the algebraic structure ring; this abstract algebra sense is distinct from the ordinary circular-object word. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-2930edd2859db172dd8c8ad8",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "調音",
+      "meaning": "linguistics: means of uttering a phoneme",
+      "reason": "調音: The native noun denotes speech-sound articulation; specialized phonetics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e54b5d2efa11ee9928d92a3",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "完了相",
+      "meaning": "grammatical term",
+      "reason": "完了相: A specialized native grammatical-aspect term; requires precise aspectual analysis rather than general past-tense vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-527b18bda4857f4785fb6c02",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "閉包",
+      "meaning": "mathematics: type of set",
+      "reason": "閉包: The native technical noun denotes a mathematical closure, not everyday closing; set-theoretic interpretation is required. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-5c538b8bcecb7d220f3cac1e",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "含意",
+      "meaning": "logical connective",
+      "reason": "含意: The native word denotes logical implication in this exact sense; specialist formal-logic use, not everyday association or suggestion. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-5f0b7f0f965c0d1b4268929b",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "法線",
+      "meaning": "mathematics: a line perpendicular to another",
+      "reason": "法線: The native compound names a geometric normal line; specialist geometric meaning rather than everyday normality. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-71446009f0fafed03808d548",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "蒴果",
+      "meaning": "botany: seed-case",
+      "reason": "蒴果: This uncommon native botanical term names a dry dehiscent fruit type; it is distinct from everyday capsule vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-7ae1a5003153841964e91d0c",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "計量",
+      "meaning": "notion in mathematics",
+      "reason": "計量: The native technical noun denotes a mathematical metric rather than ordinary measurement; advanced mathematical register. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "スコラ学",
+      "meaning": "school of philosophy",
+      "reason": "スコラ学: A specialized historical-philosophy school name; interpreting this native technical term requires the scholastic tradition rather than ordinary everyday vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b8f2e8f3d1df8f65cb99c9c2",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "指標",
+      "meaning": "(mathematics) complex number",
+      "reason": "指標: The native word is used for a mathematical character, a specialist sense distinct from an ordinary index or indicator. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "同格",
+      "meaning": "grammatical construction",
+      "reason": "同格: The native term denotes grammatical apposition; a precise syntactic construction beyond general everyday grammar vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d65b091e83bb5f2b8ff5ff60",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "スピン",
+      "meaning": "physics: quantum angular momentum",
+      "reason": "スピン: The exact native form names intrinsic quantum angular momentum; specialist physics sense, not ordinary spinning. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "体",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "体: The short native form denotes the algebraic structure field; everyday familiarity with the same characters does not convey this specialist sense. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-e2e165697a5a9f65b97cc577",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "漿果",
+      "meaning": "botany: soft fruit developing from a superior ovary and containing seeds not encased in pits",
+      "reason": "漿果: The native botanical fruit-classification term is uncommon outside technical botany and differs from everyday berry words. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-e7055277c973890741c973f1",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "概型",
+      "meaning": "mathematics: structure that enlarges the notion of algebraic variety",
+      "reason": "概型: The native term denotes a scheme in algebraic geometry; highly specialized mathematical usage. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ea8d89f1cfb072e3ad184ba5",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "解析学",
+      "meaning": "in mathematics",
+      "reason": "解析学: The native compound names mathematical analysis as a discipline, rather than ordinary analysis of information. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ee681c9d84bfc55efbf9e66f",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "基数",
+      "meaning": "mathematics: number of distinct symbols used to represent numbers",
+      "reason": "基数: The exact mathematical radix sense requires numeral-system terminology; the same characters can have more general base/cardinal meanings. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-f852cb9ff981f048afdf2edd",
+      "language": "ja",
+      "level": "C2",
+      "lemma": "コライダー",
+      "meaning": "particle accelerator",
+      "reason": "コライダー: The native noun denotes a particle collider; specialized experimental-physics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-0a748c10967427b18e1d7c42",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "말뭉치",
+      "meaning": "linguistics: collection of writings",
+      "reason": "말뭉치: An established native linguistics term for a text corpus; advanced academic vocabulary rather than general writing. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-18218ee0203e02d4212c4779",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "소송",
+      "meaning": "conduct of a lawsuit",
+      "reason": "소송: The native legal noun denotes litigation as a process; formal procedural vocabulary rather than an everyday quarrel. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-19fcdc986482f7befd5e372a",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "전자",
+      "meaning": "the negatively charged subatomic particles that orbit atoms",
+      "reason": "전자: The native word denotes the electron; established scientific vocabulary with a precise subatomic meaning. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "관할",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "관할: The native legal form denotes jurisdiction; formal institutional authority rather than ordinary geographical location. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "서리얼리즘",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "서리얼리즘: The native artistic-movement term denotes Surrealism; specialized cultural and art-critical vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4a16803987284c052a4863c5",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "원자핵",
+      "meaning": "physics: massive, positively charged core of an atom",
+      "reason": "원자핵: The native form denotes the nucleus of an atom in this exact sense; technical atomic-physics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4ba76bc31a5922101078c1da",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "일률",
+      "meaning": "physics: measure of the rate of doing work or transferring energy",
+      "reason": "일률: The exact native term denotes physical power as work per time; technical meaning distinct from influence or personal strength. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e71798e0fcd6fc38ab0f316",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "촉매",
+      "meaning": "substance which increases the rate of a chemical reaction without being consumed in the process",
+      "reason": "촉매: The exact native noun denotes a chemical catalyst; a technical chemistry concept rather than a general agent of change. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "완곡어법",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "완곡어법: The native term identifies euphemistic language use and is typical of advanced linguistic or literary discussion. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-9405408789438cda279340b0",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "공리",
+      "meaning": "philosophy: supposed self‐evident or necessary truth",
+      "reason": "공리: The native noun denotes an axiom in philosophical argument; academic vocabulary that is also encountered in formal mathematics education. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-a2b890c554a5ef297440839c",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "수사학",
+      "meaning": "art of using language for persuasion",
+      "reason": "수사학: The native noun names rhetoric as the art or study of persuasion; formal academic register. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b34d8794649ea1a1a7d5f3df",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "이데올로기",
+      "meaning": "doctrine, body of ideas",
+      "reason": "이데올로기: The native term names ideology as a system of doctrines; abstract political and theoretical discourse. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b35fa50d587c8d11de3c0f0d",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "적분",
+      "meaning": "limit of sums",
+      "reason": "적분: The native mathematical noun denotes an integral; formal calculus vocabulary distinct from ordinary completeness. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-cd25e68a8800baf447caa917",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "생화학",
+      "meaning": "the chemistry of those compounds that occur in living organisms, and the processes that occur in their metabolism and catabolism",
+      "reason": "생화학: The native compound names biochemistry as a discipline; advanced scientific vocabulary, although transparently composed in this language. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "알레고리",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "알레고리: The native word names allegorical interpretation; advanced literary-analysis vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ee160adffd19757cc2875933",
+      "language": "ko",
+      "level": "C1",
+      "lemma": "유전학",
+      "meaning": "branch of biology",
+      "reason": "유전학: The native discipline name denotes genetics; technical scientific vocabulary used beyond everyday biological references. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-07f5f9d097880f2e8d64502a",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "리에종",
+      "meaning": "linguistics: a sandhi",
+      "reason": "리에종: The native term names liaison in phonology; a specialist sound-combination process, not ordinary social liaison. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e54b5d2efa11ee9928d92a3",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "완료상",
+      "meaning": "grammatical term",
+      "reason": "완료상: A specialized native grammatical-aspect term; requires precise aspectual analysis rather than general past-tense vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-5f0b7f0f965c0d1b4268929b",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "법선",
+      "meaning": "mathematics: a line perpendicular to another",
+      "reason": "법선: The native compound names a geometric normal line; specialist geometric meaning rather than everyday normality. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-71446009f0fafed03808d548",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "삭과",
+      "meaning": "botany: seed-case",
+      "reason": "삭과: This uncommon native botanical term names a dry dehiscent fruit type; it is distinct from everyday capsule vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "스콜라주의",
+      "meaning": "school of philosophy",
+      "reason": "스콜라주의: A specialized historical-philosophy school name; interpreting this native technical term requires the scholastic tradition rather than ordinary everyday vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-bc3cb125634ce2c3ee77e797",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "가가가속도",
+      "meaning": "physics: fourth derivative of the position vector with respect to time",
+      "reason": "가가가속도: The rare native compound names the fourth time derivative of position, requiring specialist mechanics terminology. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-e2e165697a5a9f65b97cc577",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "장과",
+      "meaning": "botany: soft fruit developing from a superior ovary and containing seeds not encased in pits",
+      "reason": "장과: The native botanical fruit-classification term is uncommon outside technical botany and differs from everyday berry words. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ea8d89f1cfb072e3ad184ba5",
+      "language": "ko",
+      "level": "C2",
+      "lemma": "해석학",
+      "meaning": "in mathematics",
+      "reason": "해석학: The native compound names mathematical analysis as a discipline, rather than ordinary analysis of information. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-0a748c10967427b18e1d7c42",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "语料库",
+      "meaning": "linguistics: collection of writings",
+      "reason": "语料库: An established native linguistics term for a text corpus; advanced academic vocabulary rather than general writing. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-18218ee0203e02d4212c4779",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "诉讼",
+      "meaning": "conduct of a lawsuit",
+      "reason": "诉讼: The native legal noun denotes litigation as a process; formal procedural vocabulary rather than an everyday quarrel. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-19fcdc986482f7befd5e372a",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "电子",
+      "meaning": "the negatively charged subatomic particles that orbit atoms",
+      "reason": "电子: The native word denotes the electron; established scientific vocabulary with a precise subatomic meaning. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-25f967eb64761ea0ac9da37f",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "管辖权",
+      "meaning": "the power, right, or authority to interpret and apply the law",
+      "reason": "管辖权: The native legal form denotes jurisdiction; formal institutional authority rather than ordinary geographical location. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-348ef1820973f69128401149",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "超现实主义",
+      "meaning": "artistic movement and aesthetic philosophy",
+      "reason": "超现实主义: The native artistic-movement term denotes Surrealism; specialized cultural and art-critical vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4a16803987284c052a4863c5",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "原子核",
+      "meaning": "physics: massive, positively charged core of an atom",
+      "reason": "原子核: The native form denotes the nucleus of an atom in this exact sense; technical atomic-physics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4ba76bc31a5922101078c1da",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "功率",
+      "meaning": "physics: measure of the rate of doing work or transferring energy",
+      "reason": "功率: The exact native term denotes physical power as work per time; technical meaning distinct from influence or personal strength. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e71798e0fcd6fc38ab0f316",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "催化剂",
+      "meaning": "substance which increases the rate of a chemical reaction without being consumed in the process",
+      "reason": "催化剂: The exact native noun denotes a chemical catalyst; a technical chemistry concept rather than a general agent of change. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4fb26108e694c4902d9d1cbd",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "委婉语",
+      "meaning": "use of a word or phrase to replace another word with one considered less offensive",
+      "reason": "委婉语: The native term identifies euphemistic language use and is typical of advanced linguistic or literary discussion. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-6650271fecd703ccd0186aa7",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "隐性",
+      "meaning": "in genetics",
+      "reason": "隐性: The native genetic adjective denotes a recessive trait; scientific meaning distinct from ordinary concealment or retreat. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-a2b890c554a5ef297440839c",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "修辞",
+      "meaning": "art of using language for persuasion",
+      "reason": "修辞: The native noun names rhetoric as the art or study of persuasion; formal academic register. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b34d8794649ea1a1a7d5f3df",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "意识形态",
+      "meaning": "doctrine, body of ideas",
+      "reason": "意识形态: The native term names ideology as a system of doctrines; abstract political and theoretical discourse. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-b35fa50d587c8d11de3c0f0d",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "积分",
+      "meaning": "limit of sums",
+      "reason": "积分: The native mathematical noun denotes an integral; formal calculus vocabulary distinct from ordinary completeness. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-cd25e68a8800baf447caa917",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "生物化学",
+      "meaning": "the chemistry of those compounds that occur in living organisms, and the processes that occur in their metabolism and catabolism",
+      "reason": "生物化学: The native compound names biochemistry as a discipline; advanced scientific vocabulary, although transparently composed in this language. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d78cdf8ed19a266a13f616fc",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "讽喻",
+      "meaning": "use of symbols which may be interpreted to reveal a hidden, broader message about real-world issues and occurrences; the interpretation of such symbols",
+      "reason": "讽喻: The native word names allegorical interpretation; advanced literary-analysis vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ee160adffd19757cc2875933",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "遗传学",
+      "meaning": "branch of biology",
+      "reason": "遗传学: The native discipline name denotes genetics; technical scientific vocabulary used beyond everyday biological references. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-f5454fe6761350cdb3acf4ff",
+      "language": "zh",
+      "level": "C1",
+      "lemma": "唯物主义",
+      "meaning": "philosophical belief",
+      "reason": "唯物主义: The native form denotes philosophical materialism in this sense, not ordinary concern with money or possessions. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-07f5f9d097880f2e8d64502a",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "联诵",
+      "meaning": "linguistics: a sandhi",
+      "reason": "联诵: The native term names liaison in phonology; a specialist sound-combination process, not ordinary social liaison. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-0bbd27592dcd0fcedc1108d7",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "环",
+      "meaning": "algebra: an algebraic structure",
+      "reason": "环: The native word denotes the algebraic structure ring; this abstract algebra sense is distinct from the ordinary circular-object word. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-2930edd2859db172dd8c8ad8",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "调音",
+      "meaning": "linguistics: means of uttering a phoneme",
+      "reason": "调音: The native noun denotes speech-sound articulation; specialized phonetics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-4e54b5d2efa11ee9928d92a3",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "完成体",
+      "meaning": "grammatical term",
+      "reason": "完成体: A specialized native grammatical-aspect term; requires precise aspectual analysis rather than general past-tense vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-527b18bda4857f4785fb6c02",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "闭包",
+      "meaning": "mathematics: type of set",
+      "reason": "闭包: The native technical noun denotes a mathematical closure, not everyday closing; set-theoretic interpretation is required. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-5f0b7f0f965c0d1b4268929b",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "法线",
+      "meaning": "mathematics: a line perpendicular to another",
+      "reason": "法线: The native compound names a geometric normal line; specialist geometric meaning rather than everyday normality. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-71446009f0fafed03808d548",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "蒴果",
+      "meaning": "botany: seed-case",
+      "reason": "蒴果: This uncommon native botanical term names a dry dehiscent fruit type; it is distinct from everyday capsule vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-7ae1a5003153841964e91d0c",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "度量",
+      "meaning": "notion in mathematics",
+      "reason": "度量: The native technical noun denotes a mathematical metric rather than ordinary measurement; advanced mathematical register. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-86574a191189d04ac66db94a",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "唯我论",
+      "meaning": "theory",
+      "reason": "唯我论: A rare philosophical doctrine term for solipsism; the native compound names a specific epistemological position. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-9b7206811abcc10857cb978c",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "经院哲学",
+      "meaning": "school of philosophy",
+      "reason": "经院哲学: A specialized historical-philosophy school name; interpreting this native technical term requires the scholastic tradition rather than ordinary everyday vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-c3d18c28b2050756b8977452",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "同位语",
+      "meaning": "grammatical construction",
+      "reason": "同位语: The native term denotes grammatical apposition; a precise syntactic construction beyond general everyday grammar vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d65b091e83bb5f2b8ff5ff60",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "自旋",
+      "meaning": "physics: quantum angular momentum",
+      "reason": "自旋: The exact native form names intrinsic quantum angular momentum; specialist physics sense, not ordinary spinning. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-d8680a75f0e5b0fb49ece3d9",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "域",
+      "meaning": "mathematics (algebra): a commutative ring satisfying the field axioms",
+      "reason": "域: The short native form denotes the algebraic structure field; everyday familiarity with the same characters does not convey this specialist sense. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-e7055277c973890741c973f1",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "概形",
+      "meaning": "mathematics: structure that enlarges the notion of algebraic variety",
+      "reason": "概形: The native term denotes a scheme in algebraic geometry; highly specialized mathematical usage. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-ee681c9d84bfc55efbf9e66f",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "基数",
+      "meaning": "mathematics: number of distinct symbols used to represent numbers",
+      "reason": "基数: The exact mathematical radix sense requires numeral-system terminology; the same characters can have more general base/cardinal meanings. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-f34d7b7c43c2441fd2f2d803",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "二难推理",
+      "meaning": "in logic",
+      "reason": "二难推理: The native compound explicitly denotes a dilemma argument in formal logic, not an ordinary difficult choice. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    },
+    {
+      "conceptId": "bulk-f852cb9ff981f048afdf2edd",
+      "language": "zh",
+      "level": "C2",
+      "lemma": "对撞机",
+      "meaning": "particle accelerator",
+      "reason": "对撞机: The native noun denotes a particle collider; specialized experimental-physics vocabulary. This is an editorial study-band estimate for this native form and sense, not a certified CEFR assignment."
+    }
+  ]
+}

@@ -1,0 +1,8108 @@
+{
+  "sources": [
+    {
+      "id": "jenechka-editorial",
+      "name": "Jenechka modern vocabulary and corrections",
+      "url": "https://github.com/mengusabah/jenechka-cards",
+      "license": "MIT",
+      "licenseUrl": "https://github.com/mengusabah/jenechka-cards/blob/main/LICENSE",
+      "attribution": "Jenechka Cards contributors; original model-assisted editorial translations and corrections.",
+      "methodology": "Original everyday vocabulary with one defined meaning per row and translations in all thirteen languages. Model-assisted editorial additions and repairs are distinguished from dictionary-attested alternatives. No proprietary learning-app vocabulary was used; independent native-speaker certification is not claimed.",
+      "version": "editorial-2026-10-20-1"
+    }
+  ],
+  "categories": [],
+  "concepts": [
+    {
+      "id": "editorial-core-i",
+      "meaning": "first-person singular subject pronoun",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "I",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "ben",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "ich",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "yo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "je",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "io",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "я",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "eu",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "我",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "私",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "나",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "أنا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "ik",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "I",
+        "partOfSpeech": "pron",
+        "translationSense": "first-person singular subject pronoun",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-you",
+      "meaning": "second-person singular subject pronoun, familiar address",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "you",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "sen",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "du",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "tú",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "tu",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "tu",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "ты",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "tu",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "你",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "あなた",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "너",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "أنت",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "jij",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "you",
+        "partOfSpeech": "pron",
+        "translationSense": "second-person singular subject pronoun, familiar address",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-he",
+      "meaning": "third-person singular masculine subject pronoun",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "he",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "o",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "er",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "él",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "il",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "lui",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "он",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "ele",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "他",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "彼",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "그",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "هو",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "hij",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "he",
+        "partOfSpeech": "pron",
+        "translationSense": "third-person singular masculine subject pronoun",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-she",
+      "meaning": "third-person singular feminine subject pronoun",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "she",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "o",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "sie",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "ella",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "elle",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "lei",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "она",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "ela",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "她",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "彼女",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "그녀",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "هي",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "zij",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "she",
+        "partOfSpeech": "pron",
+        "translationSense": "third-person singular feminine subject pronoun",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-we",
+      "meaning": "first-person plural subject pronoun",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "we",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "biz",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "wir",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "nosotros",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "nous",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "noi",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "мы",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "nós",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "我们",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "私たち",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "우리",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "نحن",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "wij",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "we",
+        "partOfSpeech": "pron",
+        "translationSense": "first-person plural subject pronoun",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-they",
+      "meaning": "third-person plural subject pronoun",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "they",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "onlar",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "sie",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "ellos",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "ils",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "loro",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "они",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "eles",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "他们",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "彼ら",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "그들",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "هم",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "zij",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "they",
+        "partOfSpeech": "pron",
+        "translationSense": "third-person plural subject pronoun",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-what",
+      "meaning": "question word asking about a thing",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "what",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "ne",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "was",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "qué",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "quoi",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "che cosa",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "что",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "o que",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "什么",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "何",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "무엇",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "ماذا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "wat",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "what",
+        "partOfSpeech": "pron",
+        "translationSense": "question word asking about a thing",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-who",
+      "meaning": "question word asking about a person",
+      "pos": "pron",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "who",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "kim",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "wer",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "quién",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "qui",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "chi",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "кто",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "quem",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "谁",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "誰",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "누구",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "من",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "wie",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "who",
+        "partOfSpeech": "pron",
+        "translationSense": "question word asking about a person",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-where",
+      "meaning": "question word asking about a place",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "where",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "nerede",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "wo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "dónde",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "où",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "dove",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "где",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "onde",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "哪里",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "どこ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "어디",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "أين",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "waar",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "where",
+        "partOfSpeech": "adv",
+        "translationSense": "question word asking about a place",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-when",
+      "meaning": "question word asking about a time",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "when",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "ne zaman",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "wann",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "cuándo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "quand",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "quando",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "когда",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "quando",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "什么时候",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "いつ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "언제",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "متى",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "wanneer",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "when",
+        "partOfSpeech": "adv",
+        "translationSense": "question word asking about a time",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-why",
+      "meaning": "question word asking for a reason",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "why",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "neden",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "warum",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "por qué",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "pourquoi",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "perché",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "почему",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "por que",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "为什么",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "なぜ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "왜",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "لماذا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "waarom",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "why",
+        "partOfSpeech": "adv",
+        "translationSense": "question word asking for a reason",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-how",
+      "meaning": "question word asking about manner",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "how",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "nasıl",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "wie",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "cómo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "comment",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "come",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "как",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "como",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "怎么",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "どう",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "어떻게",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "كيف",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "hoe",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "how",
+        "partOfSpeech": "adv",
+        "translationSense": "question word asking about manner",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-yes",
+      "meaning": "affirmative response",
+      "pos": "intj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "yes",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "evet",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "ja",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "sí",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "oui",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "sì",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "да",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "sim",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "是的",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "はい",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "네",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "نعم",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "ja",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "yes",
+        "partOfSpeech": "intj",
+        "translationSense": "affirmative response",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-no",
+      "meaning": "negative response",
+      "pos": "intj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "no",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "hayır",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "nein",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "no",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "non",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "no",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "нет",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "não",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "不是",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "いいえ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "아니요",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "لا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "nee",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "no",
+        "partOfSpeech": "intj",
+        "translationSense": "negative response",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-more",
+      "meaning": "comparative quantity or degree",
+      "pos": "adv",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "more",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "daha",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "mehr",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "más",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "plus",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "più",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "больше",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "mais",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "更多",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "もっと",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "더",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "أكثر",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "meer",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "more",
+        "partOfSpeech": "adv",
+        "translationSense": "comparative quantity or degree",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-very",
+      "meaning": "to a high degree",
+      "pos": "adv",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "very",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "çok",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "sehr",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "muy",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "très",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "molto",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "очень",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "muito",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "很",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "とても",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "매우",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "جدا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "heel",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "very",
+        "partOfSpeech": "adv",
+        "translationSense": "to a high degree",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-okay",
+      "meaning": "response expressing agreement or acceptance",
+      "pos": "intj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "OK",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "tamam",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "okay",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "vale",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "d'accord",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "va bene",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "хорошо",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "está bem",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "好的",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "いいですよ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "좋아요",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "حسنا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "oké",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "OK",
+        "partOfSpeech": "intj",
+        "translationSense": "response expressing agreement or acceptance",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-please",
+      "meaning": "polite request marker",
+      "pos": "intj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "please",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "lütfen",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "bitte",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "por favor",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "s'il vous plaît",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "per favore",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "пожалуйста",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "por favor",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "请",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "お願いします",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "부탁합니다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "من فضلك",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "alstublieft",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "please",
+        "partOfSpeech": "intj",
+        "translationSense": "polite request marker",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-sorry",
+      "meaning": "everyday apology",
+      "pos": "intj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "sorry",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "özür dilerim",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "Entschuldigung",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "lo siento",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "désolé",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "scusa",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "извините",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "desculpe",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "对不起",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "ごめんなさい",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "미안해요",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "آسف",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "sorry",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "sorry",
+        "partOfSpeech": "intj",
+        "translationSense": "everyday apology",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-thanks",
+      "meaning": "expression of gratitude",
+      "pos": "intj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "thank you",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "teşekkür ederim",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "danke",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "gracias",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "merci",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "grazie",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "спасибо",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "obrigado",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "谢谢",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "ありがとう",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "감사합니다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "شكرا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "dank je",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "thank you",
+        "partOfSpeech": "intj",
+        "translationSense": "expression of gratitude",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-do",
+      "meaning": "perform an action or task",
+      "pos": "verb",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "do",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "yapmak",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "machen",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "hacer",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "faire",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "fare",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "делать",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "fazer",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "做",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "する",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "하다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "فعل",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "doen",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "do",
+        "partOfSpeech": "verb",
+        "translationSense": "perform an action or task",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-can",
+      "meaning": "have the ability to do something",
+      "pos": "verb",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "can",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "yapabilmek",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "können",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "poder",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "pouvoir",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "potere",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "мочь",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "poder",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "能",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "できる",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "할 수 있다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "استطاع",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "kunnen",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "can",
+        "partOfSpeech": "verb",
+        "translationSense": "have the ability to do something",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-have",
+      "meaning": "possess something",
+      "pos": "verb",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "have",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "sahip olmak",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "haben",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "tener",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "avoir",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "avere",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "иметь",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "ter",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "有",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "持っている",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "가지다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "امتلك",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "hebben",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "have",
+        "partOfSpeech": "verb",
+        "translationSense": "possess something",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-good",
+      "meaning": "of satisfactory or desirable quality",
+      "pos": "adj",
+      "categories": [
+        "everyday",
+        "descriptions"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "good",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "iyi",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "gut",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "bueno",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "bon",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "buono",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "хороший",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "bom",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "好",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "良い",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "좋다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "جيد",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "goed",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "good",
+        "partOfSpeech": "adj",
+        "translationSense": "of satisfactory or desirable quality",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-bad",
+      "meaning": "of poor or undesirable quality",
+      "pos": "adj",
+      "categories": [
+        "everyday",
+        "descriptions"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "bad",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "kötü",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "schlecht",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "malo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "mauvais",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "cattivo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "плохой",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "mau",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "坏",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "悪い",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "나쁘다",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "سيئ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "slecht",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "bad",
+        "partOfSpeech": "adj",
+        "translationSense": "of poor or undesirable quality",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-just",
+      "meaning": "only, merely",
+      "pos": "adv",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "just",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "sadece",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "nur",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "solo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "seulement",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "solo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "только",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "só",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "只是",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "ただ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "그냥",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "فقط",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "alleen",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "just",
+        "partOfSpeech": "adv",
+        "translationSense": "only, merely",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-and",
+      "meaning": "coordinating conjunction joining words or clauses",
+      "pos": "conj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "and",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "ve",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "und",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "y",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "et",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "e",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "и",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "e",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "和",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "と",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "그리고",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "و",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "en",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "and",
+        "partOfSpeech": "conj",
+        "translationSense": "coordinating conjunction joining words or clauses",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-but",
+      "meaning": "conjunction introducing a contrast",
+      "pos": "conj",
+      "categories": [
+        "everyday",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "but",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "ama",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "aber",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "pero",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "mais",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "ma",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "но",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "mas",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "但是",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "しかし",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "하지만",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "لكن",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "maar",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "but",
+        "partOfSpeech": "conj",
+        "translationSense": "conjunction introducing a contrast",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-with",
+      "meaning": "together with, in the company of",
+      "pos": "prep",
+      "categories": [
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "with",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "ile",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "mit",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "con",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "avec",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "con",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "с",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "com",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "和",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "と一緒に",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "함께",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "مع",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "met",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "with",
+        "partOfSpeech": "prep",
+        "translationSense": "together with, in the company of",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-before",
+      "meaning": "earlier in time",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "time"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "before",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "önce",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "vorher",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "antes",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "avant",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "prima",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "раньше",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "antes",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "以前",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "前に",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "전에",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "قبل",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "eerder",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "before",
+        "partOfSpeech": "adv",
+        "translationSense": "earlier in time",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-after",
+      "meaning": "later in time",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "time"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "after",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "sonra",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "danach",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "después",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "après",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "dopo",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "потом",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "depois",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "以后",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "後で",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "후에",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "بعد",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "daarna",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "after",
+        "partOfSpeech": "adv",
+        "translationSense": "later in time",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-now",
+      "meaning": "at the present time",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "time"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "now",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "şimdi",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "jetzt",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "ahora",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "maintenant",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "adesso",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "сейчас",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "agora",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "现在",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "今",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "지금",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "الآن",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "nu",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "now",
+        "partOfSpeech": "adv",
+        "translationSense": "at the present time",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-here",
+      "meaning": "in this place",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "places"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "here",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "burada",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "hier",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "aquí",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "ici",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "qui",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "здесь",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "aqui",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "这里",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "ここ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "여기",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "هنا",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "hier",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "here",
+        "partOfSpeech": "adv",
+        "translationSense": "in this place",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-core-there",
+      "meaning": "in that place",
+      "pos": "adv",
+      "categories": [
+        "everyday",
+        "places"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "there",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "tr": {
+          "text": "orada",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "de": {
+          "text": "dort",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "es": {
+          "text": "allí",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "fr": {
+          "text": "là",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "it": {
+          "text": "lì",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ru": {
+          "text": "там",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "pt": {
+          "text": "ali",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "zh": {
+          "text": "那里",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ja": {
+          "text": "そこ",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ko": {
+          "text": "거기",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "ar": {
+          "text": "هناك",
+          "tags": [],
+          "estimatedLevel": "A1"
+        },
+        "nl": {
+          "text": "daar",
+          "tags": [],
+          "estimatedLevel": "A1"
+        }
+      },
+      "frequencyPriority": true,
+      "evidence": {
+        "headword": "there",
+        "partOfSpeech": "adv",
+        "translationSense": "in that place",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-epistemology",
+      "meaning": "philosophical study of knowledge and justified belief",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "epistemology",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "bilgi kuramı",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Erkenntnistheorie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "epistemología",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "épistémologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "epistemologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "эпистемология",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "epistemologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "认识论",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "認識論",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "인식론",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "نظرية المعرفة",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "epistemologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "epistemology",
+        "partOfSpeech": "noun",
+        "translationSense": "philosophical study of knowledge and justified belief",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-ontology",
+      "meaning": "philosophical study of being and existence",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "ontology",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "varlık felsefesi",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "de": {
+          "text": "Ontologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "ontología",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "ontologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "ontologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "онтология",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "ontologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "本体论",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "存在論",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ko": {
+          "text": "존재론",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "علم الوجود",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "ontologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "ontology",
+        "partOfSpeech": "noun",
+        "translationSense": "philosophical study of being and existence",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-hermeneutics",
+      "meaning": "theory and methodology of interpretation",
+      "pos": "noun",
+      "categories": [
+        "thoughts",
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "hermeneutics",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "yorumbilim",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Hermeneutik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "hermenéutica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "herméneutique",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "ermeneutica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "герменевтика",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "hermenêutica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "诠释学",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "解釈学",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "해석학",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "علم التأويل",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "hermeneutiek",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "hermeneutics",
+        "partOfSpeech": "noun",
+        "translationSense": "theory and methodology of interpretation",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-phenomenology",
+      "meaning": "philosophical study of structures of experience and consciousness",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "phenomenology",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "fenomenoloji",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Phänomenologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "fenomenología",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "phénoménologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "fenomenologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "феноменология",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "fenomenologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "现象学",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "現象学",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "현상학",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "علم الظواهر",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "fenomenologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "phenomenology",
+        "partOfSpeech": "noun",
+        "translationSense": "philosophical study of structures of experience and consciousness",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-utilitarianism",
+      "meaning": "ethical theory assessing actions by their overall utility",
+      "pos": "noun",
+      "categories": [
+        "thoughts",
+        "society"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "utilitarianism",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "faydacılık",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "de": {
+          "text": "Utilitarismus",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "utilitarismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "fr": {
+          "text": "utilitarisme",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "it": {
+          "text": "utilitarismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ru": {
+          "text": "утилитаризм",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "utilitarismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "zh": {
+          "text": "功利主义",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "功利主義",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "공리주의",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "النفعية",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "utilitarisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "utilitarianism",
+        "partOfSpeech": "noun",
+        "translationSense": "ethical theory assessing actions by their overall utility",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-deontology",
+      "meaning": "ethical theory emphasizing duties and rules",
+      "pos": "noun",
+      "categories": [
+        "thoughts",
+        "society"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "deontology",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "ödev etiği",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Deontologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "deontología",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "déontologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "deontologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "деонтология",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "deontologia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "义务论",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "義務論",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "의무론",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "أخلاق الواجب",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "deontologie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "deontology",
+        "partOfSpeech": "noun",
+        "translationSense": "ethical theory emphasizing duties and rules",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-syllogism",
+      "meaning": "deductive argument with two premises and a conclusion",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "syllogism",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "tasım",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Syllogismus",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "silogismo",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "syllogisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "sillogismo",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "силлогизм",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "silogismo",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "三段论",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "三段論法",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "삼단논법",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "قياس منطقي",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "syllogisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "syllogism",
+        "partOfSpeech": "noun",
+        "translationSense": "deductive argument with two premises and a conclusion",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-semiotics",
+      "meaning": "study of signs and sign processes",
+      "pos": "noun",
+      "categories": [
+        "communication",
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "semiotics",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "göstergebilim",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Semiotik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "semiótica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "sémiotique",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "semiotica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "семиотика",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "semiótica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "符号学",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "記号論",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "기호학",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "علم العلامات",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "semiotiek",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "semiotics",
+        "partOfSpeech": "noun",
+        "translationSense": "study of signs and sign processes",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-metonymy",
+      "meaning": "figure of speech replacing a name by an associated thing",
+      "pos": "noun",
+      "categories": [
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "metonymy",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "ad aktarması",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "de": {
+          "text": "Metonymie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "metonimia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "métonymie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "metonimia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "метонимия",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "metonímia",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "转喻",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "換喩",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "환유",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "المجاز المرسل",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "metonymie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "metonymy",
+        "partOfSpeech": "noun",
+        "translationSense": "figure of speech replacing a name by an associated thing",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-synecdoche",
+      "meaning": "figure of speech in which a part stands for a whole or vice versa",
+      "pos": "noun",
+      "categories": [
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "synecdoche",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "kapsamlayış",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Synekdoche",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "sinécdoque",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "synecdoque",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "sineddoche",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "синекдоха",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "sinédoque",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "提喻",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "提喩",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "제유",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "المجاز الجزئي",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "synecdoche",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "synecdoche",
+        "partOfSpeech": "noun",
+        "translationSense": "figure of speech in which a part stands for a whole or vice versa",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-intertextuality",
+      "meaning": "relationships between a text and other texts",
+      "pos": "noun",
+      "categories": [
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "intertextuality",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "metinlerarasılık",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Intertextualität",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "intertextualidad",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "intertextualité",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "intertestualità",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "интертекстуальность",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "intertextualidade",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "互文性",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "間テクスト性",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "상호텍스트성",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "التناص",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "intertekstualiteit",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "intertextuality",
+        "partOfSpeech": "noun",
+        "translationSense": "relationships between a text and other texts",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-intersubjectivity",
+      "meaning": "shared understanding or experience between subjects",
+      "pos": "noun",
+      "categories": [
+        "thoughts",
+        "society"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "intersubjectivity",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "öznelerarasılık",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Intersubjektivität",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "intersubjetividad",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "intersubjectivité",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "intersoggettività",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "интерсубъективность",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "intersubjetividade",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "主体间性",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "間主観性",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "상호주관성",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "البينذاتية",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "intersubjectiviteit",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "intersubjectivity",
+        "partOfSpeech": "noun",
+        "translationSense": "shared understanding or experience between subjects",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-falsifiability",
+      "meaning": "capacity of a claim to be disproved by observation",
+      "pos": "noun",
+      "categories": [
+        "thoughts",
+        "school"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "falsifiability",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "yanlışlanabilirlik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Falsifizierbarkeit",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "falsabilidad",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "réfutabilité",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "falsificabilità",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "фальсифицируемость",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "falseabilidade",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "可证伪性",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "反証可能性",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "반증 가능성",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "قابلية الدحض",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "falsifieerbaarheid",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "falsifiability",
+        "partOfSpeech": "noun",
+        "translationSense": "capacity of a claim to be disproved by observation",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-polysemy",
+      "meaning": "coexistence of multiple related meanings of a word",
+      "pos": "noun",
+      "categories": [
+        "communication"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "polysemy",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "çok anlamlılık",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "de": {
+          "text": "Polysemie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "polisemia",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "fr": {
+          "text": "polysémie",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "it": {
+          "text": "polisemia",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ru": {
+          "text": "полисемия",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "polissemia",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "zh": {
+          "text": "一词多义",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ja": {
+          "text": "多義性",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ko": {
+          "text": "다의성",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ar": {
+          "text": "تعدد المعاني",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "polysemie",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "polysemy",
+        "partOfSpeech": "noun",
+        "translationSense": "coexistence of multiple related meanings of a word",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-dialectic",
+      "meaning": "method of reasoning through opposing ideas and their relations",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "dialectic",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "diyalektik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Dialektik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "dialéctica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "dialectique",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "dialettica",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "диалектика",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "dialética",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "辩证法",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "弁証法",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "변증법",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "الجدلية",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "dialectiek",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "dialectic",
+        "partOfSpeech": "noun",
+        "translationSense": "method of reasoning through opposing ideas and their relations",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-existentialism",
+      "meaning": "philosophical movement emphasizing individual existence and choice",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "existentialism",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "tr": {
+          "text": "varoluşçuluk",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "de": {
+          "text": "Existenzialismus",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "es": {
+          "text": "existencialismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "fr": {
+          "text": "existentialisme",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "it": {
+          "text": "esistenzialismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ru": {
+          "text": "экзистенциализм",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "pt": {
+          "text": "existencialismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "zh": {
+          "text": "存在主义",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "実存主義",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "실존주의",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "الوجودية",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "nl": {
+          "text": "existentialisme",
+          "tags": [],
+          "estimatedLevel": "C1"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "existentialism",
+        "partOfSpeech": "noun",
+        "translationSense": "philosophical movement emphasizing individual existence and choice",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-essentialism",
+      "meaning": "view that entities have essential defining properties",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "essentialism",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "tr": {
+          "text": "özcülük",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Essentialismus",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "esencialismo",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "fr": {
+          "text": "essentialisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "it": {
+          "text": "essenzialismo",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ru": {
+          "text": "эссенциализм",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "essencialismo",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "zh": {
+          "text": "本质主义",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "本質主義",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "본질주의",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "الجوهرانية",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "essentialisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "essentialism",
+        "partOfSpeech": "noun",
+        "translationSense": "view that entities have essential defining properties",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-determinism",
+      "meaning": "view that events are determined by preceding causes",
+      "pos": "noun",
+      "categories": [
+        "thoughts"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "determinism",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "tr": {
+          "text": "belirlenimcilik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Determinismus",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "determinismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "fr": {
+          "text": "déterminisme",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "it": {
+          "text": "determinismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ru": {
+          "text": "детерминизм",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "determinismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "zh": {
+          "text": "决定论",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ja": {
+          "text": "決定論",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "결정론",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "الحتمية",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "nl": {
+          "text": "determinisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "determinism",
+        "partOfSpeech": "noun",
+        "translationSense": "view that events are determined by preceding causes",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-advanced-relativism",
+      "meaning": "view that truth or values depend on a framework or context",
+      "pos": "noun",
+      "categories": [
+        "thoughts",
+        "society"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "relativism",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "tr": {
+          "text": "görecilik",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "de": {
+          "text": "Relativismus",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "es": {
+          "text": "relativismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "fr": {
+          "text": "relativisme",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "it": {
+          "text": "relativismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "ru": {
+          "text": "релятивизм",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "pt": {
+          "text": "relativismo",
+          "tags": [],
+          "estimatedLevel": "C1"
+        },
+        "zh": {
+          "text": "相对主义",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ja": {
+          "text": "相対主義",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ko": {
+          "text": "상대주의",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "ar": {
+          "text": "النسبوية",
+          "tags": [],
+          "estimatedLevel": "C2"
+        },
+        "nl": {
+          "text": "relativisme",
+          "tags": [],
+          "estimatedLevel": "C2"
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "relativism",
+        "partOfSpeech": "noun",
+        "translationSense": "view that truth or values depend on a framework or context",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-power-bank",
+      "meaning": "portable battery used to recharge a device",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "airport"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "power bank",
+          "tags": []
+        },
+        "tr": {
+          "text": "taşınabilir şarj cihazı",
+          "tags": []
+        },
+        "de": {
+          "text": "Powerbank",
+          "tags": []
+        },
+        "es": {
+          "text": "batería externa",
+          "tags": []
+        },
+        "fr": {
+          "text": "batterie externe",
+          "tags": []
+        },
+        "it": {
+          "text": "batteria portatile",
+          "tags": []
+        },
+        "ru": {
+          "text": "внешний аккумулятор",
+          "tags": []
+        },
+        "pt": {
+          "text": "carregador portátil",
+          "tags": []
+        },
+        "zh": {
+          "text": "充电宝",
+          "tags": []
+        },
+        "ja": {
+          "text": "モバイルバッテリー",
+          "tags": []
+        },
+        "ko": {
+          "text": "보조 배터리",
+          "tags": []
+        },
+        "ar": {
+          "text": "شاحن متنقل",
+          "tags": []
+        },
+        "nl": {
+          "text": "powerbank",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "power bank",
+        "partOfSpeech": "noun",
+        "translationSense": "portable battery used to recharge a device",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-charging-cable",
+      "meaning": "cable used to charge a device",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "household"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "charging cable",
+          "tags": []
+        },
+        "tr": {
+          "text": "şarj kablosu",
+          "tags": []
+        },
+        "de": {
+          "text": "Ladekabel",
+          "tags": []
+        },
+        "es": {
+          "text": "cable de carga",
+          "tags": []
+        },
+        "fr": {
+          "text": "câble de recharge",
+          "tags": []
+        },
+        "it": {
+          "text": "cavo di ricarica",
+          "tags": []
+        },
+        "ru": {
+          "text": "зарядный кабель",
+          "tags": []
+        },
+        "pt": {
+          "text": "cabo de carregamento",
+          "tags": []
+        },
+        "zh": {
+          "text": "充电线",
+          "tags": []
+        },
+        "ja": {
+          "text": "充電ケーブル",
+          "tags": []
+        },
+        "ko": {
+          "text": "충전 케이블",
+          "tags": []
+        },
+        "ar": {
+          "text": "كابل شحن",
+          "tags": []
+        },
+        "nl": {
+          "text": "oplaadkabel",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "charging cable",
+        "partOfSpeech": "noun",
+        "translationSense": "cable used to charge a device",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-wireless-headphones",
+      "meaning": "headphones that connect without a cable",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "hobbies"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "wireless headphones",
+          "tags": []
+        },
+        "tr": {
+          "text": "kablosuz kulaklık",
+          "tags": []
+        },
+        "de": {
+          "text": "kabellose Kopfhörer",
+          "tags": []
+        },
+        "es": {
+          "text": "auriculares inalámbricos",
+          "tags": []
+        },
+        "fr": {
+          "text": "casque sans fil",
+          "tags": []
+        },
+        "it": {
+          "text": "cuffie wireless",
+          "tags": []
+        },
+        "ru": {
+          "text": "беспроводные наушники",
+          "tags": []
+        },
+        "pt": {
+          "text": "fones de ouvido sem fio",
+          "tags": []
+        },
+        "zh": {
+          "text": "无线耳机",
+          "tags": []
+        },
+        "ja": {
+          "text": "ワイヤレスヘッドホン",
+          "tags": []
+        },
+        "ko": {
+          "text": "무선 헤드폰",
+          "tags": []
+        },
+        "ar": {
+          "text": "سماعات رأس لاسلكية",
+          "tags": []
+        },
+        "nl": {
+          "text": "draadloze koptelefoon",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "wireless headphones",
+        "partOfSpeech": "noun",
+        "translationSense": "headphones that connect without a cable",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-screen-brightness",
+      "meaning": "brightness setting of a display",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "screen brightness",
+          "tags": []
+        },
+        "tr": {
+          "text": "ekran parlaklığı",
+          "tags": []
+        },
+        "de": {
+          "text": "Bildschirmhelligkeit",
+          "tags": []
+        },
+        "es": {
+          "text": "brillo de la pantalla",
+          "tags": []
+        },
+        "fr": {
+          "text": "luminosité de l'écran",
+          "tags": []
+        },
+        "it": {
+          "text": "luminosità dello schermo",
+          "tags": []
+        },
+        "ru": {
+          "text": "яркость экрана",
+          "tags": []
+        },
+        "pt": {
+          "text": "brilho da tela",
+          "tags": []
+        },
+        "zh": {
+          "text": "屏幕亮度",
+          "tags": []
+        },
+        "ja": {
+          "text": "画面の明るさ",
+          "tags": []
+        },
+        "ko": {
+          "text": "화면 밝기",
+          "tags": []
+        },
+        "ar": {
+          "text": "سطوع الشاشة",
+          "tags": []
+        },
+        "nl": {
+          "text": "schermhelderheid",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "screen brightness",
+        "partOfSpeech": "noun",
+        "translationSense": "brightness setting of a display",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-dark-mode",
+      "meaning": "interface setting with dark backgrounds",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "dark mode",
+          "tags": []
+        },
+        "tr": {
+          "text": "koyu mod",
+          "tags": []
+        },
+        "de": {
+          "text": "Dunkelmodus",
+          "tags": []
+        },
+        "es": {
+          "text": "modo oscuro",
+          "tags": []
+        },
+        "fr": {
+          "text": "mode sombre",
+          "tags": []
+        },
+        "it": {
+          "text": "modalità scura",
+          "tags": []
+        },
+        "ru": {
+          "text": "тёмный режим",
+          "tags": []
+        },
+        "pt": {
+          "text": "modo escuro",
+          "tags": []
+        },
+        "zh": {
+          "text": "深色模式",
+          "tags": []
+        },
+        "ja": {
+          "text": "ダークモード",
+          "tags": []
+        },
+        "ko": {
+          "text": "다크 모드",
+          "tags": []
+        },
+        "ar": {
+          "text": "الوضع الداكن",
+          "tags": []
+        },
+        "nl": {
+          "text": "donkere modus",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "dark mode",
+        "partOfSpeech": "noun",
+        "translationSense": "interface setting with dark backgrounds",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-airplane-mode",
+      "meaning": "device setting that disables wireless transmissions",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "airport"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "airplane mode",
+          "tags": []
+        },
+        "tr": {
+          "text": "uçak modu",
+          "tags": []
+        },
+        "de": {
+          "text": "Flugmodus",
+          "tags": []
+        },
+        "es": {
+          "text": "modo avión",
+          "tags": []
+        },
+        "fr": {
+          "text": "mode avion",
+          "tags": []
+        },
+        "it": {
+          "text": "modalità aereo",
+          "tags": []
+        },
+        "ru": {
+          "text": "авиарежим",
+          "tags": []
+        },
+        "pt": {
+          "text": "modo avião",
+          "tags": []
+        },
+        "zh": {
+          "text": "飞行模式",
+          "tags": []
+        },
+        "ja": {
+          "text": "機内モード",
+          "tags": []
+        },
+        "ko": {
+          "text": "비행기 모드",
+          "tags": []
+        },
+        "ar": {
+          "text": "وضع الطيران",
+          "tags": []
+        },
+        "nl": {
+          "text": "vliegtuigmodus",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "airplane mode",
+        "partOfSpeech": "noun",
+        "translationSense": "device setting that disables wireless transmissions",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-mobile-data",
+      "meaning": "internet access through a mobile network",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "mobile data",
+          "tags": []
+        },
+        "tr": {
+          "text": "mobil veri",
+          "tags": []
+        },
+        "de": {
+          "text": "mobile Daten",
+          "tags": []
+        },
+        "es": {
+          "text": "datos móviles",
+          "tags": []
+        },
+        "fr": {
+          "text": "données mobiles",
+          "tags": []
+        },
+        "it": {
+          "text": "dati mobili",
+          "tags": []
+        },
+        "ru": {
+          "text": "мобильные данные",
+          "tags": []
+        },
+        "pt": {
+          "text": "dados móveis",
+          "tags": []
+        },
+        "zh": {
+          "text": "移动数据",
+          "tags": []
+        },
+        "ja": {
+          "text": "モバイルデータ",
+          "tags": []
+        },
+        "ko": {
+          "text": "모바일 데이터",
+          "tags": []
+        },
+        "ar": {
+          "text": "بيانات الهاتف المحمول",
+          "tags": []
+        },
+        "nl": {
+          "text": "mobiele data",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "mobile data",
+        "partOfSpeech": "noun",
+        "translationSense": "internet access through a mobile network",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-storage-space",
+      "meaning": "space available for storing digital files",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "office"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "storage space",
+          "tags": []
+        },
+        "tr": {
+          "text": "depolama alanı",
+          "tags": []
+        },
+        "de": {
+          "text": "Speicherplatz",
+          "tags": []
+        },
+        "es": {
+          "text": "espacio de almacenamiento",
+          "tags": []
+        },
+        "fr": {
+          "text": "espace de stockage",
+          "tags": []
+        },
+        "it": {
+          "text": "spazio di archiviazione",
+          "tags": []
+        },
+        "ru": {
+          "text": "место для хранения данных",
+          "tags": []
+        },
+        "pt": {
+          "text": "espaço de armazenamento",
+          "tags": []
+        },
+        "zh": {
+          "text": "存储空间",
+          "tags": []
+        },
+        "ja": {
+          "text": "ストレージの空き容量",
+          "tags": []
+        },
+        "ko": {
+          "text": "저장 공간",
+          "tags": []
+        },
+        "ar": {
+          "text": "مساحة التخزين",
+          "tags": []
+        },
+        "nl": {
+          "text": "opslagruimte",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "storage space",
+        "partOfSpeech": "noun",
+        "translationSense": "space available for storing digital files",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-backup-copy",
+      "meaning": "spare copy of digital data",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "office"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "backup copy",
+          "tags": []
+        },
+        "tr": {
+          "text": "yedek kopya",
+          "tags": []
+        },
+        "de": {
+          "text": "Sicherungskopie",
+          "tags": []
+        },
+        "es": {
+          "text": "copia de seguridad",
+          "tags": []
+        },
+        "fr": {
+          "text": "copie de sauvegarde",
+          "tags": []
+        },
+        "it": {
+          "text": "copia di backup",
+          "tags": []
+        },
+        "ru": {
+          "text": "резервная копия",
+          "tags": []
+        },
+        "pt": {
+          "text": "cópia de segurança",
+          "tags": []
+        },
+        "zh": {
+          "text": "备份副本",
+          "tags": []
+        },
+        "ja": {
+          "text": "バックアップコピー",
+          "tags": []
+        },
+        "ko": {
+          "text": "백업 사본",
+          "tags": []
+        },
+        "ar": {
+          "text": "نسخة احتياطية",
+          "tags": []
+        },
+        "nl": {
+          "text": "reservekopie",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "backup copy",
+        "partOfSpeech": "noun",
+        "translationSense": "spare copy of digital data",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-password-manager",
+      "meaning": "software that stores and manages passwords",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "office"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "password manager",
+          "tags": []
+        },
+        "tr": {
+          "text": "şifre yöneticisi",
+          "tags": []
+        },
+        "de": {
+          "text": "Passwortmanager",
+          "tags": []
+        },
+        "es": {
+          "text": "gestor de contraseñas",
+          "tags": []
+        },
+        "fr": {
+          "text": "gestionnaire de mots de passe",
+          "tags": []
+        },
+        "it": {
+          "text": "gestore di password",
+          "tags": []
+        },
+        "ru": {
+          "text": "менеджер паролей",
+          "tags": []
+        },
+        "pt": {
+          "text": "gerenciador de senhas",
+          "tags": []
+        },
+        "zh": {
+          "text": "密码管理器",
+          "tags": []
+        },
+        "ja": {
+          "text": "パスワードマネージャー",
+          "tags": []
+        },
+        "ko": {
+          "text": "비밀번호 관리자",
+          "tags": []
+        },
+        "ar": {
+          "text": "مدير كلمات المرور",
+          "tags": []
+        },
+        "nl": {
+          "text": "wachtwoordbeheerder",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "password manager",
+        "partOfSpeech": "noun",
+        "translationSense": "software that stores and manages passwords",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-video-call",
+      "meaning": "call with live video and audio",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "office",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "video call",
+          "tags": []
+        },
+        "tr": {
+          "text": "görüntülü arama",
+          "tags": []
+        },
+        "de": {
+          "text": "Videoanruf",
+          "tags": []
+        },
+        "es": {
+          "text": "videollamada",
+          "tags": []
+        },
+        "fr": {
+          "text": "appel vidéo",
+          "tags": []
+        },
+        "it": {
+          "text": "videochiamata",
+          "tags": []
+        },
+        "ru": {
+          "text": "видеозвонок",
+          "tags": []
+        },
+        "pt": {
+          "text": "videochamada",
+          "tags": []
+        },
+        "zh": {
+          "text": "视频通话",
+          "tags": []
+        },
+        "ja": {
+          "text": "ビデオ通話",
+          "tags": []
+        },
+        "ko": {
+          "text": "영상 통화",
+          "tags": []
+        },
+        "ar": {
+          "text": "مكالمة فيديو",
+          "tags": []
+        },
+        "nl": {
+          "text": "videogesprek",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "video call",
+        "partOfSpeech": "noun",
+        "translationSense": "call with live video and audio",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-voice-message",
+      "meaning": "recorded spoken message",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "voice message",
+          "tags": []
+        },
+        "tr": {
+          "text": "sesli mesaj",
+          "tags": []
+        },
+        "de": {
+          "text": "Sprachnachricht",
+          "tags": []
+        },
+        "es": {
+          "text": "mensaje de voz",
+          "tags": []
+        },
+        "fr": {
+          "text": "message vocal",
+          "tags": []
+        },
+        "it": {
+          "text": "messaggio vocale",
+          "tags": []
+        },
+        "ru": {
+          "text": "голосовое сообщение",
+          "tags": []
+        },
+        "pt": {
+          "text": "mensagem de voz",
+          "tags": []
+        },
+        "zh": {
+          "text": "语音消息",
+          "tags": []
+        },
+        "ja": {
+          "text": "音声メッセージ",
+          "tags": []
+        },
+        "ko": {
+          "text": "음성 메시지",
+          "tags": []
+        },
+        "ar": {
+          "text": "رسالة صوتية",
+          "tags": []
+        },
+        "nl": {
+          "text": "spraakbericht",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "voice message",
+        "partOfSpeech": "noun",
+        "translationSense": "recorded spoken message",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-online-meeting",
+      "meaning": "meeting held over the internet",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "office"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "online meeting",
+          "tags": []
+        },
+        "tr": {
+          "text": "çevrim içi toplantı",
+          "tags": []
+        },
+        "de": {
+          "text": "Onlinebesprechung",
+          "tags": []
+        },
+        "es": {
+          "text": "reunión en línea",
+          "tags": []
+        },
+        "fr": {
+          "text": "réunion en ligne",
+          "tags": []
+        },
+        "it": {
+          "text": "riunione online",
+          "tags": []
+        },
+        "ru": {
+          "text": "онлайн-встреча",
+          "tags": []
+        },
+        "pt": {
+          "text": "reunião online",
+          "tags": []
+        },
+        "zh": {
+          "text": "线上会议",
+          "tags": []
+        },
+        "ja": {
+          "text": "オンライン会議",
+          "tags": []
+        },
+        "ko": {
+          "text": "온라인 회의",
+          "tags": []
+        },
+        "ar": {
+          "text": "اجتماع عبر الإنترنت",
+          "tags": []
+        },
+        "nl": {
+          "text": "onlinevergadering",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "online meeting",
+        "partOfSpeech": "noun",
+        "translationSense": "meeting held over the internet",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-screen-sharing",
+      "meaning": "showing a device screen to remote participants",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "office"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "screen sharing",
+          "tags": []
+        },
+        "tr": {
+          "text": "ekran paylaşımı",
+          "tags": []
+        },
+        "de": {
+          "text": "Bildschirmfreigabe",
+          "tags": []
+        },
+        "es": {
+          "text": "uso compartido de pantalla",
+          "tags": []
+        },
+        "fr": {
+          "text": "partage d'écran",
+          "tags": []
+        },
+        "it": {
+          "text": "condivisione dello schermo",
+          "tags": []
+        },
+        "ru": {
+          "text": "демонстрация экрана",
+          "tags": []
+        },
+        "pt": {
+          "text": "compartilhamento de tela",
+          "tags": []
+        },
+        "zh": {
+          "text": "屏幕共享",
+          "tags": []
+        },
+        "ja": {
+          "text": "画面共有",
+          "tags": []
+        },
+        "ko": {
+          "text": "화면 공유",
+          "tags": []
+        },
+        "ar": {
+          "text": "مشاركة الشاشة",
+          "tags": []
+        },
+        "nl": {
+          "text": "schermdelen",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "screen sharing",
+        "partOfSpeech": "noun",
+        "translationSense": "showing a device screen to remote participants",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-search-history",
+      "meaning": "record of earlier searches",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "search history",
+          "tags": []
+        },
+        "tr": {
+          "text": "arama geçmişi",
+          "tags": []
+        },
+        "de": {
+          "text": "Suchverlauf",
+          "tags": []
+        },
+        "es": {
+          "text": "historial de búsqueda",
+          "tags": []
+        },
+        "fr": {
+          "text": "historique de recherche",
+          "tags": []
+        },
+        "it": {
+          "text": "cronologia delle ricerche",
+          "tags": []
+        },
+        "ru": {
+          "text": "история поиска",
+          "tags": []
+        },
+        "pt": {
+          "text": "histórico de pesquisa",
+          "tags": []
+        },
+        "zh": {
+          "text": "搜索历史",
+          "tags": []
+        },
+        "ja": {
+          "text": "検索履歴",
+          "tags": []
+        },
+        "ko": {
+          "text": "검색 기록",
+          "tags": []
+        },
+        "ar": {
+          "text": "سجل البحث",
+          "tags": []
+        },
+        "nl": {
+          "text": "zoekgeschiedenis",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "search history",
+        "partOfSpeech": "noun",
+        "translationSense": "record of earlier searches",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-notification-settings",
+      "meaning": "settings controlling application notifications",
+      "pos": "noun",
+      "categories": [
+        "technology",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "notification settings",
+          "tags": []
+        },
+        "tr": {
+          "text": "bildirim ayarları",
+          "tags": []
+        },
+        "de": {
+          "text": "Benachrichtigungseinstellungen",
+          "tags": []
+        },
+        "es": {
+          "text": "ajustes de notificaciones",
+          "tags": []
+        },
+        "fr": {
+          "text": "paramètres de notification",
+          "tags": []
+        },
+        "it": {
+          "text": "impostazioni delle notifiche",
+          "tags": []
+        },
+        "ru": {
+          "text": "настройки уведомлений",
+          "tags": []
+        },
+        "pt": {
+          "text": "configurações de notificações",
+          "tags": []
+        },
+        "zh": {
+          "text": "通知设置",
+          "tags": []
+        },
+        "ja": {
+          "text": "通知設定",
+          "tags": []
+        },
+        "ko": {
+          "text": "알림 설정",
+          "tags": []
+        },
+        "ar": {
+          "text": "إعدادات الإشعارات",
+          "tags": []
+        },
+        "nl": {
+          "text": "meldingsinstellingen",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "notification settings",
+        "partOfSpeech": "noun",
+        "translationSense": "settings controlling application notifications",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-reusable-water-bottle",
+      "meaning": "water bottle designed to be refilled",
+      "pos": "noun",
+      "categories": [
+        "household",
+        "sports",
+        "airport"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "reusable water bottle",
+          "tags": []
+        },
+        "tr": {
+          "text": "yeniden kullanılabilir su şişesi",
+          "tags": []
+        },
+        "de": {
+          "text": "wiederverwendbare Wasserflasche",
+          "tags": []
+        },
+        "es": {
+          "text": "botella de agua reutilizable",
+          "tags": []
+        },
+        "fr": {
+          "text": "gourde réutilisable",
+          "tags": []
+        },
+        "it": {
+          "text": "borraccia riutilizzabile",
+          "tags": []
+        },
+        "ru": {
+          "text": "многоразовая бутылка для воды",
+          "tags": []
+        },
+        "pt": {
+          "text": "garrafa de água reutilizável",
+          "tags": []
+        },
+        "zh": {
+          "text": "可重复使用的水瓶",
+          "tags": []
+        },
+        "ja": {
+          "text": "繰り返し使える水筒",
+          "tags": []
+        },
+        "ko": {
+          "text": "재사용 물병",
+          "tags": []
+        },
+        "ar": {
+          "text": "زجاجة ماء قابلة لإعادة الاستخدام",
+          "tags": []
+        },
+        "nl": {
+          "text": "herbruikbare waterfles",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "reusable water bottle",
+        "partOfSpeech": "noun",
+        "translationSense": "water bottle designed to be refilled",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-yoga-mat",
+      "meaning": "mat used for yoga exercises",
+      "pos": "noun",
+      "categories": [
+        "sports",
+        "hobbies",
+        "household"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "yoga mat",
+          "tags": []
+        },
+        "tr": {
+          "text": "yoga matı",
+          "tags": []
+        },
+        "de": {
+          "text": "Yogamatte",
+          "tags": []
+        },
+        "es": {
+          "text": "esterilla de yoga",
+          "tags": []
+        },
+        "fr": {
+          "text": "tapis de yoga",
+          "tags": []
+        },
+        "it": {
+          "text": "tappetino da yoga",
+          "tags": []
+        },
+        "ru": {
+          "text": "коврик для йоги",
+          "tags": []
+        },
+        "pt": {
+          "text": "tapete de ioga",
+          "tags": []
+        },
+        "zh": {
+          "text": "瑜伽垫",
+          "tags": []
+        },
+        "ja": {
+          "text": "ヨガマット",
+          "tags": []
+        },
+        "ko": {
+          "text": "요가 매트",
+          "tags": []
+        },
+        "ar": {
+          "text": "حصيرة يوغا",
+          "tags": []
+        },
+        "nl": {
+          "text": "yogamat",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "yoga mat",
+        "partOfSpeech": "noun",
+        "translationSense": "mat used for yoga exercises",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-resistance-band",
+      "meaning": "elastic band used for exercise",
+      "pos": "noun",
+      "categories": [
+        "sports",
+        "hobbies"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "resistance band",
+          "tags": []
+        },
+        "tr": {
+          "text": "egzersiz lastiği",
+          "tags": []
+        },
+        "de": {
+          "text": "Widerstandsband",
+          "tags": []
+        },
+        "es": {
+          "text": "banda de resistencia",
+          "tags": []
+        },
+        "fr": {
+          "text": "bande de résistance",
+          "tags": []
+        },
+        "it": {
+          "text": "elastico fitness",
+          "tags": []
+        },
+        "ru": {
+          "text": "фитнес-резинка",
+          "tags": []
+        },
+        "pt": {
+          "text": "faixa de resistência",
+          "tags": []
+        },
+        "zh": {
+          "text": "弹力带",
+          "tags": []
+        },
+        "ja": {
+          "text": "トレーニングバンド",
+          "tags": []
+        },
+        "ko": {
+          "text": "저항 밴드",
+          "tags": []
+        },
+        "ar": {
+          "text": "شريط مقاومة",
+          "tags": []
+        },
+        "nl": {
+          "text": "weerstandsband",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "resistance band",
+        "partOfSpeech": "noun",
+        "translationSense": "elastic band used for exercise",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-swimming-goggles",
+      "meaning": "goggles worn when swimming",
+      "pos": "noun",
+      "categories": [
+        "sports",
+        "hobbies"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "swimming goggles",
+          "tags": []
+        },
+        "tr": {
+          "text": "yüzücü gözlüğü",
+          "tags": []
+        },
+        "de": {
+          "text": "Schwimmbrille",
+          "tags": []
+        },
+        "es": {
+          "text": "gafas de natación",
+          "tags": []
+        },
+        "fr": {
+          "text": "lunettes de natation",
+          "tags": []
+        },
+        "it": {
+          "text": "occhialini da nuoto",
+          "tags": []
+        },
+        "ru": {
+          "text": "очки для плавания",
+          "tags": []
+        },
+        "pt": {
+          "text": "óculos de natação",
+          "tags": []
+        },
+        "zh": {
+          "text": "泳镜",
+          "tags": []
+        },
+        "ja": {
+          "text": "水泳用ゴーグル",
+          "tags": []
+        },
+        "ko": {
+          "text": "수경",
+          "tags": []
+        },
+        "ar": {
+          "text": "نظارات سباحة",
+          "tags": []
+        },
+        "nl": {
+          "text": "zwembril",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "swimming goggles",
+        "partOfSpeech": "noun",
+        "translationSense": "goggles worn when swimming",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-bicycle-helmet",
+      "meaning": "protective helmet for cycling",
+      "pos": "noun",
+      "categories": [
+        "sports",
+        "transportation"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "bicycle helmet",
+          "tags": []
+        },
+        "tr": {
+          "text": "bisiklet kaskı",
+          "tags": []
+        },
+        "de": {
+          "text": "Fahrradhelm",
+          "tags": []
+        },
+        "es": {
+          "text": "casco de bicicleta",
+          "tags": []
+        },
+        "fr": {
+          "text": "casque de vélo",
+          "tags": []
+        },
+        "it": {
+          "text": "casco da bicicletta",
+          "tags": []
+        },
+        "ru": {
+          "text": "велосипедный шлем",
+          "tags": []
+        },
+        "pt": {
+          "text": "capacete de bicicleta",
+          "tags": []
+        },
+        "zh": {
+          "text": "自行车头盔",
+          "tags": []
+        },
+        "ja": {
+          "text": "自転車用ヘルメット",
+          "tags": []
+        },
+        "ko": {
+          "text": "자전거 헬멧",
+          "tags": []
+        },
+        "ar": {
+          "text": "خوذة دراجة",
+          "tags": []
+        },
+        "nl": {
+          "text": "fietshelm",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "bicycle helmet",
+        "partOfSpeech": "noun",
+        "translationSense": "protective helmet for cycling",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-hiking-trail",
+      "meaning": "path used for hiking",
+      "pos": "noun",
+      "categories": [
+        "sports",
+        "hobbies",
+        "nature"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "hiking trail",
+          "tags": []
+        },
+        "tr": {
+          "text": "yürüyüş parkuru",
+          "tags": []
+        },
+        "de": {
+          "text": "Wanderweg",
+          "tags": []
+        },
+        "es": {
+          "text": "ruta de senderismo",
+          "tags": []
+        },
+        "fr": {
+          "text": "sentier de randonnée",
+          "tags": []
+        },
+        "it": {
+          "text": "sentiero escursionistico",
+          "tags": []
+        },
+        "ru": {
+          "text": "туристическая тропа",
+          "tags": []
+        },
+        "pt": {
+          "text": "trilha de caminhada",
+          "tags": []
+        },
+        "zh": {
+          "text": "徒步路线",
+          "tags": []
+        },
+        "ja": {
+          "text": "ハイキングコース",
+          "tags": []
+        },
+        "ko": {
+          "text": "등산로",
+          "tags": []
+        },
+        "ar": {
+          "text": "مسار للمشي",
+          "tags": []
+        },
+        "nl": {
+          "text": "wandelpad",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "hiking trail",
+        "partOfSpeech": "noun",
+        "translationSense": "path used for hiking",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-board-game",
+      "meaning": "game played on a board",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "board game",
+          "tags": []
+        },
+        "tr": {
+          "text": "masa oyunu",
+          "tags": []
+        },
+        "de": {
+          "text": "Brettspiel",
+          "tags": []
+        },
+        "es": {
+          "text": "juego de tablero",
+          "tags": []
+        },
+        "fr": {
+          "text": "jeu de plateau",
+          "tags": []
+        },
+        "it": {
+          "text": "gioco da tavolo",
+          "tags": []
+        },
+        "ru": {
+          "text": "настольная игра",
+          "tags": []
+        },
+        "pt": {
+          "text": "jogo de tabuleiro",
+          "tags": []
+        },
+        "zh": {
+          "text": "棋盘游戏",
+          "tags": []
+        },
+        "ja": {
+          "text": "ボードゲーム",
+          "tags": []
+        },
+        "ko": {
+          "text": "보드게임",
+          "tags": []
+        },
+        "ar": {
+          "text": "لعبة لوحية",
+          "tags": []
+        },
+        "nl": {
+          "text": "bordspel",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "board game",
+        "partOfSpeech": "noun",
+        "translationSense": "game played on a board",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-jigsaw-puzzle",
+      "meaning": "picture assembled from interlocking pieces",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "jigsaw puzzle",
+          "tags": []
+        },
+        "tr": {
+          "text": "yapboz",
+          "tags": []
+        },
+        "de": {
+          "text": "Puzzle",
+          "tags": []
+        },
+        "es": {
+          "text": "rompecabezas",
+          "tags": []
+        },
+        "fr": {
+          "text": "puzzle",
+          "tags": []
+        },
+        "it": {
+          "text": "puzzle",
+          "tags": []
+        },
+        "ru": {
+          "text": "пазл",
+          "tags": []
+        },
+        "pt": {
+          "text": "quebra-cabeça",
+          "tags": []
+        },
+        "zh": {
+          "text": "拼图",
+          "tags": []
+        },
+        "ja": {
+          "text": "ジグソーパズル",
+          "tags": []
+        },
+        "ko": {
+          "text": "직소 퍼즐",
+          "tags": []
+        },
+        "ar": {
+          "text": "أحجية تركيب الصور",
+          "tags": []
+        },
+        "nl": {
+          "text": "legpuzzel",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "jigsaw puzzle",
+        "partOfSpeech": "noun",
+        "translationSense": "picture assembled from interlocking pieces",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-pottery-class",
+      "meaning": "class where participants learn pottery",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "school"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "pottery class",
+          "tags": []
+        },
+        "tr": {
+          "text": "seramik kursu",
+          "tags": []
+        },
+        "de": {
+          "text": "Töpferkurs",
+          "tags": []
+        },
+        "es": {
+          "text": "clase de cerámica",
+          "tags": []
+        },
+        "fr": {
+          "text": "cours de poterie",
+          "tags": []
+        },
+        "it": {
+          "text": "corso di ceramica",
+          "tags": []
+        },
+        "ru": {
+          "text": "урок керамики",
+          "tags": []
+        },
+        "pt": {
+          "text": "aula de cerâmica",
+          "tags": []
+        },
+        "zh": {
+          "text": "陶艺课",
+          "tags": []
+        },
+        "ja": {
+          "text": "陶芸教室",
+          "tags": []
+        },
+        "ko": {
+          "text": "도예 수업",
+          "tags": []
+        },
+        "ar": {
+          "text": "درس فخار",
+          "tags": []
+        },
+        "nl": {
+          "text": "pottenbakles",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "pottery class",
+        "partOfSpeech": "noun",
+        "translationSense": "class where participants learn pottery",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-sketchbook",
+      "meaning": "book of blank pages for drawing",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "school"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "sketchbook",
+          "tags": []
+        },
+        "tr": {
+          "text": "eskiz defteri",
+          "tags": []
+        },
+        "de": {
+          "text": "Skizzenbuch",
+          "tags": []
+        },
+        "es": {
+          "text": "cuaderno de bocetos",
+          "tags": []
+        },
+        "fr": {
+          "text": "carnet de croquis",
+          "tags": []
+        },
+        "it": {
+          "text": "album da disegno",
+          "tags": []
+        },
+        "ru": {
+          "text": "альбом для рисования",
+          "tags": []
+        },
+        "pt": {
+          "text": "caderno de esboços",
+          "tags": []
+        },
+        "zh": {
+          "text": "素描本",
+          "tags": []
+        },
+        "ja": {
+          "text": "スケッチブック",
+          "tags": []
+        },
+        "ko": {
+          "text": "스케치북",
+          "tags": []
+        },
+        "ar": {
+          "text": "دفتر رسم",
+          "tags": []
+        },
+        "nl": {
+          "text": "schetsboek",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "sketchbook",
+        "partOfSpeech": "noun",
+        "translationSense": "book of blank pages for drawing",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-watercolor-paint",
+      "meaning": "paint diluted with water for painting",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "school"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "watercolor paint",
+          "tags": []
+        },
+        "tr": {
+          "text": "sulu boya",
+          "tags": []
+        },
+        "de": {
+          "text": "Aquarellfarbe",
+          "tags": []
+        },
+        "es": {
+          "text": "acuarela",
+          "tags": []
+        },
+        "fr": {
+          "text": "aquarelle",
+          "tags": []
+        },
+        "it": {
+          "text": "acquerello",
+          "tags": []
+        },
+        "ru": {
+          "text": "акварель",
+          "tags": []
+        },
+        "pt": {
+          "text": "aquarela",
+          "tags": []
+        },
+        "zh": {
+          "text": "水彩颜料",
+          "tags": []
+        },
+        "ja": {
+          "text": "水彩絵の具",
+          "tags": []
+        },
+        "ko": {
+          "text": "수채 물감",
+          "tags": []
+        },
+        "ar": {
+          "text": "ألوان مائية",
+          "tags": []
+        },
+        "nl": {
+          "text": "aquarelverf",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "watercolor paint",
+        "partOfSpeech": "noun",
+        "translationSense": "paint diluted with water for painting",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-knitting-needle",
+      "meaning": "needle used for knitting",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "household"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "knitting needle",
+          "tags": []
+        },
+        "tr": {
+          "text": "örgü şişi",
+          "tags": []
+        },
+        "de": {
+          "text": "Stricknadel",
+          "tags": []
+        },
+        "es": {
+          "text": "aguja de tejer",
+          "tags": []
+        },
+        "fr": {
+          "text": "aiguille à tricoter",
+          "tags": []
+        },
+        "it": {
+          "text": "ferro da maglia",
+          "tags": []
+        },
+        "ru": {
+          "text": "спица для вязания",
+          "tags": []
+        },
+        "pt": {
+          "text": "agulha de tricô",
+          "tags": []
+        },
+        "zh": {
+          "text": "毛衣针",
+          "tags": []
+        },
+        "ja": {
+          "text": "編み針",
+          "tags": []
+        },
+        "ko": {
+          "text": "뜨개바늘",
+          "tags": []
+        },
+        "ar": {
+          "text": "إبرة حياكة",
+          "tags": []
+        },
+        "nl": {
+          "text": "breinaald",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "knitting needle",
+        "partOfSpeech": "noun",
+        "translationSense": "needle used for knitting",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-book-club",
+      "meaning": "group that meets to discuss books",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "school"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "book club",
+          "tags": []
+        },
+        "tr": {
+          "text": "kitap kulübü",
+          "tags": []
+        },
+        "de": {
+          "text": "Buchclub",
+          "tags": []
+        },
+        "es": {
+          "text": "club de lectura",
+          "tags": []
+        },
+        "fr": {
+          "text": "club de lecture",
+          "tags": []
+        },
+        "it": {
+          "text": "club del libro",
+          "tags": []
+        },
+        "ru": {
+          "text": "книжный клуб",
+          "tags": []
+        },
+        "pt": {
+          "text": "clube de leitura",
+          "tags": []
+        },
+        "zh": {
+          "text": "读书会",
+          "tags": []
+        },
+        "ja": {
+          "text": "読書会",
+          "tags": []
+        },
+        "ko": {
+          "text": "독서 모임",
+          "tags": []
+        },
+        "ar": {
+          "text": "نادي القراءة",
+          "tags": []
+        },
+        "nl": {
+          "text": "leesclub",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "book club",
+        "partOfSpeech": "noun",
+        "translationSense": "group that meets to discuss books",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-walking-tour",
+      "meaning": "guided sightseeing tour on foot",
+      "pos": "noun",
+      "categories": [
+        "hobbies",
+        "airport"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "guided walking tour",
+          "tags": []
+        },
+        "tr": {
+          "text": "rehberli yürüyüş turu",
+          "tags": []
+        },
+        "de": {
+          "text": "Führung zu Fuß",
+          "tags": []
+        },
+        "es": {
+          "text": "visita guiada a pie",
+          "tags": []
+        },
+        "fr": {
+          "text": "visite guidée à pied",
+          "tags": []
+        },
+        "it": {
+          "text": "visita guidata a piedi",
+          "tags": []
+        },
+        "ru": {
+          "text": "пешеходная экскурсия с гидом",
+          "tags": []
+        },
+        "pt": {
+          "text": "visita guiada a pé",
+          "tags": []
+        },
+        "zh": {
+          "text": "徒步导览",
+          "tags": []
+        },
+        "ja": {
+          "text": "ガイド付き徒歩ツアー",
+          "tags": []
+        },
+        "ko": {
+          "text": "가이드 동반 도보 관광",
+          "tags": []
+        },
+        "ar": {
+          "text": "جولة سيرا على الأقدام مع مرشد",
+          "tags": []
+        },
+        "nl": {
+          "text": "rondleiding te voet",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "guided walking tour",
+        "partOfSpeech": "noun",
+        "translationSense": "guided sightseeing tour on foot",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-seed-tray",
+      "meaning": "tray used for starting seedlings",
+      "pos": "noun",
+      "categories": [
+        "gardening",
+        "agriculture"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "seed tray",
+          "tags": []
+        },
+        "tr": {
+          "text": "fide tepsisi",
+          "tags": []
+        },
+        "de": {
+          "text": "Anzuchtschale",
+          "tags": []
+        },
+        "es": {
+          "text": "bandeja de semillero",
+          "tags": []
+        },
+        "fr": {
+          "text": "plateau de semis",
+          "tags": []
+        },
+        "it": {
+          "text": "vassoio per semina",
+          "tags": []
+        },
+        "ru": {
+          "text": "лоток для рассады",
+          "tags": []
+        },
+        "pt": {
+          "text": "bandeja de mudas",
+          "tags": []
+        },
+        "zh": {
+          "text": "育苗盘",
+          "tags": []
+        },
+        "ja": {
+          "text": "育苗トレー",
+          "tags": []
+        },
+        "ko": {
+          "text": "육묘 트레이",
+          "tags": []
+        },
+        "ar": {
+          "text": "صينية شتلات",
+          "tags": []
+        },
+        "nl": {
+          "text": "zaaitray",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "seed tray",
+        "partOfSpeech": "noun",
+        "translationSense": "tray used for starting seedlings",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-potting-soil",
+      "meaning": "soil mix for plants grown in pots",
+      "pos": "noun",
+      "categories": [
+        "gardening",
+        "agriculture"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "potting soil",
+          "tags": []
+        },
+        "tr": {
+          "text": "saksı toprağı",
+          "tags": []
+        },
+        "de": {
+          "text": "Blumenerde",
+          "tags": []
+        },
+        "es": {
+          "text": "tierra para macetas",
+          "tags": []
+        },
+        "fr": {
+          "text": "terreau",
+          "tags": []
+        },
+        "it": {
+          "text": "terriccio",
+          "tags": []
+        },
+        "ru": {
+          "text": "грунт для горшечных растений",
+          "tags": []
+        },
+        "pt": {
+          "text": "terra para vasos",
+          "tags": []
+        },
+        "zh": {
+          "text": "盆栽土",
+          "tags": []
+        },
+        "ja": {
+          "text": "培養土",
+          "tags": []
+        },
+        "ko": {
+          "text": "분갈이 흙",
+          "tags": []
+        },
+        "ar": {
+          "text": "تربة للأصص",
+          "tags": []
+        },
+        "nl": {
+          "text": "potgrond",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "potting soil",
+        "partOfSpeech": "noun",
+        "translationSense": "soil mix for plants grown in pots",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-drip-irrigation",
+      "meaning": "irrigation delivering water in small drops",
+      "pos": "noun",
+      "categories": [
+        "gardening",
+        "agriculture"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "drip irrigation",
+          "tags": []
+        },
+        "tr": {
+          "text": "damla sulama",
+          "tags": []
+        },
+        "de": {
+          "text": "Tröpfchenbewässerung",
+          "tags": []
+        },
+        "es": {
+          "text": "riego por goteo",
+          "tags": []
+        },
+        "fr": {
+          "text": "irrigation au goutte-à-goutte",
+          "tags": []
+        },
+        "it": {
+          "text": "irrigazione a goccia",
+          "tags": []
+        },
+        "ru": {
+          "text": "капельное орошение",
+          "tags": []
+        },
+        "pt": {
+          "text": "irrigação por gotejamento",
+          "tags": []
+        },
+        "zh": {
+          "text": "滴灌",
+          "tags": []
+        },
+        "ja": {
+          "text": "点滴灌漑",
+          "tags": []
+        },
+        "ko": {
+          "text": "점적 관개",
+          "tags": []
+        },
+        "ar": {
+          "text": "الري بالتنقيط",
+          "tags": []
+        },
+        "nl": {
+          "text": "druppelirrigatie",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "drip irrigation",
+        "partOfSpeech": "noun",
+        "translationSense": "irrigation delivering water in small drops",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-compost-bin",
+      "meaning": "container for composting organic material",
+      "pos": "noun",
+      "categories": [
+        "gardening",
+        "agriculture",
+        "household"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "compost bin",
+          "tags": []
+        },
+        "tr": {
+          "text": "kompost kutusu",
+          "tags": []
+        },
+        "de": {
+          "text": "Kompostbehälter",
+          "tags": []
+        },
+        "es": {
+          "text": "contenedor de compost",
+          "tags": []
+        },
+        "fr": {
+          "text": "bac à compost",
+          "tags": []
+        },
+        "it": {
+          "text": "contenitore per compost",
+          "tags": []
+        },
+        "ru": {
+          "text": "компостный контейнер",
+          "tags": []
+        },
+        "pt": {
+          "text": "composteira",
+          "tags": []
+        },
+        "zh": {
+          "text": "堆肥箱",
+          "tags": []
+        },
+        "ja": {
+          "text": "コンポスト容器",
+          "tags": []
+        },
+        "ko": {
+          "text": "퇴비통",
+          "tags": []
+        },
+        "ar": {
+          "text": "حاوية سماد عضوي",
+          "tags": []
+        },
+        "nl": {
+          "text": "compostbak",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "compost bin",
+        "partOfSpeech": "noun",
+        "translationSense": "container for composting organic material",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-gardening-gloves",
+      "meaning": "gloves used to protect hands while gardening",
+      "pos": "noun",
+      "categories": [
+        "gardening",
+        "agriculture",
+        "clothing"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "gardening gloves",
+          "tags": []
+        },
+        "tr": {
+          "text": "bahçe eldiveni",
+          "tags": []
+        },
+        "de": {
+          "text": "Gartenhandschuhe",
+          "tags": []
+        },
+        "es": {
+          "text": "guantes de jardinería",
+          "tags": []
+        },
+        "fr": {
+          "text": "gants de jardinage",
+          "tags": []
+        },
+        "it": {
+          "text": "guanti da giardinaggio",
+          "tags": []
+        },
+        "ru": {
+          "text": "садовые перчатки",
+          "tags": []
+        },
+        "pt": {
+          "text": "luvas de jardinagem",
+          "tags": []
+        },
+        "zh": {
+          "text": "园艺手套",
+          "tags": []
+        },
+        "ja": {
+          "text": "園芸用手袋",
+          "tags": []
+        },
+        "ko": {
+          "text": "원예용 장갑",
+          "tags": []
+        },
+        "ar": {
+          "text": "قفازات البستنة",
+          "tags": []
+        },
+        "nl": {
+          "text": "tuinhandschoenen",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "gardening gloves",
+        "partOfSpeech": "noun",
+        "translationSense": "gloves used to protect hands while gardening",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-carry-on-luggage",
+      "meaning": "luggage carried into the aircraft cabin",
+      "pos": "noun",
+      "categories": [
+        "airport",
+        "transportation"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "carry-on luggage",
+          "tags": []
+        },
+        "tr": {
+          "text": "el bagajı",
+          "tags": []
+        },
+        "de": {
+          "text": "Handgepäck",
+          "tags": []
+        },
+        "es": {
+          "text": "equipaje de mano",
+          "tags": []
+        },
+        "fr": {
+          "text": "bagage à main",
+          "tags": []
+        },
+        "it": {
+          "text": "bagaglio a mano",
+          "tags": []
+        },
+        "ru": {
+          "text": "ручная кладь",
+          "tags": []
+        },
+        "pt": {
+          "text": "bagagem de mão",
+          "tags": []
+        },
+        "zh": {
+          "text": "手提行李",
+          "tags": []
+        },
+        "ja": {
+          "text": "機内持ち込み手荷物",
+          "tags": []
+        },
+        "ko": {
+          "text": "기내 수하물",
+          "tags": []
+        },
+        "ar": {
+          "text": "أمتعة يدوية",
+          "tags": []
+        },
+        "nl": {
+          "text": "handbagage",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "carry-on luggage",
+        "partOfSpeech": "noun",
+        "translationSense": "luggage carried into the aircraft cabin",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-baggage-claim",
+      "meaning": "airport area for collecting checked baggage",
+      "pos": "noun",
+      "categories": [
+        "airport"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "baggage claim",
+          "tags": []
+        },
+        "tr": {
+          "text": "bagaj teslim alanı",
+          "tags": []
+        },
+        "de": {
+          "text": "Gepäckausgabe",
+          "tags": []
+        },
+        "es": {
+          "text": "recogida de equipajes",
+          "tags": []
+        },
+        "fr": {
+          "text": "livraison des bagages",
+          "tags": []
+        },
+        "it": {
+          "text": "ritiro bagagli",
+          "tags": []
+        },
+        "ru": {
+          "text": "выдача багажа",
+          "tags": []
+        },
+        "pt": {
+          "text": "retirada de bagagem",
+          "tags": []
+        },
+        "zh": {
+          "text": "行李提取处",
+          "tags": []
+        },
+        "ja": {
+          "text": "手荷物受取所",
+          "tags": []
+        },
+        "ko": {
+          "text": "수하물 찾는 곳",
+          "tags": []
+        },
+        "ar": {
+          "text": "منطقة استلام الأمتعة",
+          "tags": []
+        },
+        "nl": {
+          "text": "bagageafhaalhal",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "baggage claim",
+        "partOfSpeech": "noun",
+        "translationSense": "airport area for collecting checked baggage",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-boarding-gate",
+      "meaning": "airport gate where passengers board",
+      "pos": "noun",
+      "categories": [
+        "airport"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "boarding gate",
+          "tags": []
+        },
+        "tr": {
+          "text": "biniş kapısı",
+          "tags": []
+        },
+        "de": {
+          "text": "Flugsteig",
+          "tags": []
+        },
+        "es": {
+          "text": "puerta de embarque",
+          "tags": []
+        },
+        "fr": {
+          "text": "porte d'embarquement",
+          "tags": []
+        },
+        "it": {
+          "text": "porta d'imbarco",
+          "tags": []
+        },
+        "ru": {
+          "text": "выход на посадку",
+          "tags": []
+        },
+        "pt": {
+          "text": "portão de embarque",
+          "tags": []
+        },
+        "zh": {
+          "text": "登机口",
+          "tags": []
+        },
+        "ja": {
+          "text": "搭乗口",
+          "tags": []
+        },
+        "ko": {
+          "text": "탑승구",
+          "tags": []
+        },
+        "ar": {
+          "text": "بوابة الصعود",
+          "tags": []
+        },
+        "nl": {
+          "text": "vertrekgate",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "boarding gate",
+        "partOfSpeech": "noun",
+        "translationSense": "airport gate where passengers board",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-connecting-flight",
+      "meaning": "onward flight reached by changing aircraft",
+      "pos": "noun",
+      "categories": [
+        "airport",
+        "transportation"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "connecting flight",
+          "tags": []
+        },
+        "tr": {
+          "text": "aktarmalı uçuş",
+          "tags": []
+        },
+        "de": {
+          "text": "Anschlussflug",
+          "tags": []
+        },
+        "es": {
+          "text": "vuelo de conexión",
+          "tags": []
+        },
+        "fr": {
+          "text": "vol de correspondance",
+          "tags": []
+        },
+        "it": {
+          "text": "volo in coincidenza",
+          "tags": []
+        },
+        "ru": {
+          "text": "стыковочный рейс",
+          "tags": []
+        },
+        "pt": {
+          "text": "voo de conexão",
+          "tags": []
+        },
+        "zh": {
+          "text": "转机航班",
+          "tags": []
+        },
+        "ja": {
+          "text": "乗り継ぎ便",
+          "tags": []
+        },
+        "ko": {
+          "text": "연결 항공편",
+          "tags": []
+        },
+        "ar": {
+          "text": "رحلة ربط",
+          "tags": []
+        },
+        "nl": {
+          "text": "aansluitende vlucht",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "connecting flight",
+        "partOfSpeech": "noun",
+        "translationSense": "onward flight reached by changing aircraft",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-seat-belt",
+      "meaning": "safety belt securing a seated passenger",
+      "pos": "noun",
+      "categories": [
+        "airport",
+        "transportation"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "seat belt",
+          "tags": []
+        },
+        "tr": {
+          "text": "emniyet kemeri",
+          "tags": []
+        },
+        "de": {
+          "text": "Sicherheitsgurt",
+          "tags": []
+        },
+        "es": {
+          "text": "cinturón de seguridad",
+          "tags": []
+        },
+        "fr": {
+          "text": "ceinture de sécurité",
+          "tags": []
+        },
+        "it": {
+          "text": "cintura di sicurezza",
+          "tags": []
+        },
+        "ru": {
+          "text": "ремень безопасности",
+          "tags": []
+        },
+        "pt": {
+          "text": "cinto de segurança",
+          "tags": []
+        },
+        "zh": {
+          "text": "安全带",
+          "tags": []
+        },
+        "ja": {
+          "text": "シートベルト",
+          "tags": []
+        },
+        "ko": {
+          "text": "안전벨트",
+          "tags": []
+        },
+        "ar": {
+          "text": "حزام الأمان",
+          "tags": []
+        },
+        "nl": {
+          "text": "veiligheidsgordel",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "seat belt",
+        "partOfSpeech": "noun",
+        "translationSense": "safety belt securing a seated passenger",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-weather-forecast",
+      "meaning": "prediction of future weather",
+      "pos": "noun",
+      "categories": [
+        "weather",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "weather forecast",
+          "tags": []
+        },
+        "tr": {
+          "text": "hava tahmini",
+          "tags": []
+        },
+        "de": {
+          "text": "Wettervorhersage",
+          "tags": []
+        },
+        "es": {
+          "text": "pronóstico del tiempo",
+          "tags": []
+        },
+        "fr": {
+          "text": "prévisions météorologiques",
+          "tags": []
+        },
+        "it": {
+          "text": "previsioni del tempo",
+          "tags": []
+        },
+        "ru": {
+          "text": "прогноз погоды",
+          "tags": []
+        },
+        "pt": {
+          "text": "previsão do tempo",
+          "tags": []
+        },
+        "zh": {
+          "text": "天气预报",
+          "tags": []
+        },
+        "ja": {
+          "text": "天気予報",
+          "tags": []
+        },
+        "ko": {
+          "text": "일기 예보",
+          "tags": []
+        },
+        "ar": {
+          "text": "توقعات الطقس",
+          "tags": []
+        },
+        "nl": {
+          "text": "weersvoorspelling",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "weather forecast",
+        "partOfSpeech": "noun",
+        "translationSense": "prediction of future weather",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-heat-wave",
+      "meaning": "period of unusually hot weather",
+      "pos": "noun",
+      "categories": [
+        "weather",
+        "nature"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "heat wave",
+          "tags": []
+        },
+        "tr": {
+          "text": "sıcak hava dalgası",
+          "tags": []
+        },
+        "de": {
+          "text": "Hitzewelle",
+          "tags": []
+        },
+        "es": {
+          "text": "ola de calor",
+          "tags": []
+        },
+        "fr": {
+          "text": "vague de chaleur",
+          "tags": []
+        },
+        "it": {
+          "text": "ondata di caldo",
+          "tags": []
+        },
+        "ru": {
+          "text": "волна жары",
+          "tags": []
+        },
+        "pt": {
+          "text": "onda de calor",
+          "tags": []
+        },
+        "zh": {
+          "text": "热浪",
+          "tags": []
+        },
+        "ja": {
+          "text": "熱波",
+          "tags": []
+        },
+        "ko": {
+          "text": "폭염",
+          "tags": []
+        },
+        "ar": {
+          "text": "موجة حر",
+          "tags": []
+        },
+        "nl": {
+          "text": "hittegolf",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "heat wave",
+        "partOfSpeech": "noun",
+        "translationSense": "period of unusually hot weather",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-wind-speed",
+      "meaning": "speed at which wind moves",
+      "pos": "noun",
+      "categories": [
+        "weather",
+        "nature"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "wind speed",
+          "tags": []
+        },
+        "tr": {
+          "text": "rüzgâr hızı",
+          "tags": []
+        },
+        "de": {
+          "text": "Windgeschwindigkeit",
+          "tags": []
+        },
+        "es": {
+          "text": "velocidad del viento",
+          "tags": []
+        },
+        "fr": {
+          "text": "vitesse du vent",
+          "tags": []
+        },
+        "it": {
+          "text": "velocità del vento",
+          "tags": []
+        },
+        "ru": {
+          "text": "скорость ветра",
+          "tags": []
+        },
+        "pt": {
+          "text": "velocidade do vento",
+          "tags": []
+        },
+        "zh": {
+          "text": "风速",
+          "tags": []
+        },
+        "ja": {
+          "text": "風速",
+          "tags": []
+        },
+        "ko": {
+          "text": "풍속",
+          "tags": []
+        },
+        "ar": {
+          "text": "سرعة الرياح",
+          "tags": []
+        },
+        "nl": {
+          "text": "windsnelheid",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "wind speed",
+        "partOfSpeech": "noun",
+        "translationSense": "speed at which wind moves",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-chance-of-rain",
+      "meaning": "probability that rain will occur",
+      "pos": "noun",
+      "categories": [
+        "weather",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "chance of rain",
+          "tags": []
+        },
+        "tr": {
+          "text": "yağmur ihtimali",
+          "tags": []
+        },
+        "de": {
+          "text": "Regenwahrscheinlichkeit",
+          "tags": []
+        },
+        "es": {
+          "text": "probabilidad de lluvia",
+          "tags": []
+        },
+        "fr": {
+          "text": "risque de pluie",
+          "tags": []
+        },
+        "it": {
+          "text": "probabilità di pioggia",
+          "tags": []
+        },
+        "ru": {
+          "text": "вероятность дождя",
+          "tags": []
+        },
+        "pt": {
+          "text": "probabilidade de chuva",
+          "tags": []
+        },
+        "zh": {
+          "text": "降雨概率",
+          "tags": []
+        },
+        "ja": {
+          "text": "雨が降る確率",
+          "tags": []
+        },
+        "ko": {
+          "text": "비 올 확률",
+          "tags": []
+        },
+        "ar": {
+          "text": "احتمال هطول المطر",
+          "tags": []
+        },
+        "nl": {
+          "text": "regenkans",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "chance of rain",
+        "partOfSpeech": "noun",
+        "translationSense": "probability that rain will occur",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-recycling-bin",
+      "meaning": "bin for materials collected for recycling",
+      "pos": "noun",
+      "categories": [
+        "household",
+        "nature",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "recycling bin",
+          "tags": []
+        },
+        "tr": {
+          "text": "geri dönüşüm kutusu",
+          "tags": []
+        },
+        "de": {
+          "text": "Recyclingtonne",
+          "tags": []
+        },
+        "es": {
+          "text": "contenedor de reciclaje",
+          "tags": []
+        },
+        "fr": {
+          "text": "bac de recyclage",
+          "tags": []
+        },
+        "it": {
+          "text": "contenitore per la raccolta differenziata",
+          "tags": []
+        },
+        "ru": {
+          "text": "контейнер для вторсырья",
+          "tags": []
+        },
+        "pt": {
+          "text": "lixeira de reciclagem",
+          "tags": []
+        },
+        "zh": {
+          "text": "回收箱",
+          "tags": []
+        },
+        "ja": {
+          "text": "リサイクルボックス",
+          "tags": []
+        },
+        "ko": {
+          "text": "재활용 수거함",
+          "tags": []
+        },
+        "ar": {
+          "text": "حاوية إعادة التدوير",
+          "tags": []
+        },
+        "nl": {
+          "text": "recyclebak",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "recycling bin",
+        "partOfSpeech": "noun",
+        "translationSense": "bin for materials collected for recycling",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-shopping-list",
+      "meaning": "list of items to buy",
+      "pos": "noun",
+      "categories": [
+        "shopping",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "shopping list",
+          "tags": []
+        },
+        "tr": {
+          "text": "alışveriş listesi",
+          "tags": []
+        },
+        "de": {
+          "text": "Einkaufsliste",
+          "tags": []
+        },
+        "es": {
+          "text": "lista de la compra",
+          "tags": []
+        },
+        "fr": {
+          "text": "liste de courses",
+          "tags": []
+        },
+        "it": {
+          "text": "lista della spesa",
+          "tags": []
+        },
+        "ru": {
+          "text": "список покупок",
+          "tags": []
+        },
+        "pt": {
+          "text": "lista de compras",
+          "tags": []
+        },
+        "zh": {
+          "text": "购物清单",
+          "tags": []
+        },
+        "ja": {
+          "text": "買い物リスト",
+          "tags": []
+        },
+        "ko": {
+          "text": "쇼핑 목록",
+          "tags": []
+        },
+        "ar": {
+          "text": "قائمة التسوق",
+          "tags": []
+        },
+        "nl": {
+          "text": "boodschappenlijst",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "shopping list",
+        "partOfSpeech": "noun",
+        "translationSense": "list of items to buy",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-contactless-payment",
+      "meaning": "payment made without inserting a card",
+      "pos": "noun",
+      "categories": [
+        "shopping",
+        "dining",
+        "technology"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "contactless payment",
+          "tags": []
+        },
+        "tr": {
+          "text": "temassız ödeme",
+          "tags": []
+        },
+        "de": {
+          "text": "kontaktloses Bezahlen",
+          "tags": []
+        },
+        "es": {
+          "text": "pago sin contacto",
+          "tags": []
+        },
+        "fr": {
+          "text": "paiement sans contact",
+          "tags": []
+        },
+        "it": {
+          "text": "pagamento contactless",
+          "tags": []
+        },
+        "ru": {
+          "text": "бесконтактная оплата",
+          "tags": []
+        },
+        "pt": {
+          "text": "pagamento por aproximação",
+          "tags": []
+        },
+        "zh": {
+          "text": "非接触式支付",
+          "tags": []
+        },
+        "ja": {
+          "text": "非接触決済",
+          "tags": []
+        },
+        "ko": {
+          "text": "비접촉 결제",
+          "tags": []
+        },
+        "ar": {
+          "text": "دفع لاتلامسي",
+          "tags": []
+        },
+        "nl": {
+          "text": "contactloos betalen",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "contactless payment",
+        "partOfSpeech": "noun",
+        "translationSense": "payment made without inserting a card",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-delivery-address",
+      "meaning": "address where an order is delivered",
+      "pos": "noun",
+      "categories": [
+        "shopping",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "delivery address",
+          "tags": []
+        },
+        "tr": {
+          "text": "teslimat adresi",
+          "tags": []
+        },
+        "de": {
+          "text": "Lieferadresse",
+          "tags": []
+        },
+        "es": {
+          "text": "dirección de entrega",
+          "tags": []
+        },
+        "fr": {
+          "text": "adresse de livraison",
+          "tags": []
+        },
+        "it": {
+          "text": "indirizzo di consegna",
+          "tags": []
+        },
+        "ru": {
+          "text": "адрес доставки",
+          "tags": []
+        },
+        "pt": {
+          "text": "endereço de entrega",
+          "tags": []
+        },
+        "zh": {
+          "text": "收货地址",
+          "tags": []
+        },
+        "ja": {
+          "text": "配送先住所",
+          "tags": []
+        },
+        "ko": {
+          "text": "배송 주소",
+          "tags": []
+        },
+        "ar": {
+          "text": "عنوان التسليم",
+          "tags": []
+        },
+        "nl": {
+          "text": "bezorgadres",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "delivery address",
+        "partOfSpeech": "noun",
+        "translationSense": "address where an order is delivered",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-study-break",
+      "meaning": "short rest between periods of studying",
+      "pos": "noun",
+      "categories": [
+        "school",
+        "everyday"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "study break",
+          "tags": []
+        },
+        "tr": {
+          "text": "ders çalışma molası",
+          "tags": []
+        },
+        "de": {
+          "text": "Lernpause",
+          "tags": []
+        },
+        "es": {
+          "text": "descanso del estudio",
+          "tags": []
+        },
+        "fr": {
+          "text": "pause dans les révisions",
+          "tags": []
+        },
+        "it": {
+          "text": "pausa dallo studio",
+          "tags": []
+        },
+        "ru": {
+          "text": "перерыв в учёбе",
+          "tags": []
+        },
+        "pt": {
+          "text": "pausa nos estudos",
+          "tags": []
+        },
+        "zh": {
+          "text": "学习间歇",
+          "tags": []
+        },
+        "ja": {
+          "text": "勉強の休憩",
+          "tags": []
+        },
+        "ko": {
+          "text": "공부 중 휴식",
+          "tags": []
+        },
+        "ar": {
+          "text": "استراحة من الدراسة",
+          "tags": []
+        },
+        "nl": {
+          "text": "studiepauze",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "study break",
+        "partOfSpeech": "noun",
+        "translationSense": "short rest between periods of studying",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    },
+    {
+      "id": "editorial-practice-test",
+      "meaning": "test used to prepare for an examination",
+      "pos": "noun",
+      "categories": [
+        "school"
+      ],
+      "sourceUrl": "https://github.com/mengusabah/jenechka-cards",
+      "forms": {
+        "en": {
+          "text": "practice test",
+          "tags": []
+        },
+        "tr": {
+          "text": "deneme sınavı",
+          "tags": []
+        },
+        "de": {
+          "text": "Übungstest",
+          "tags": []
+        },
+        "es": {
+          "text": "examen de práctica",
+          "tags": []
+        },
+        "fr": {
+          "text": "examen blanc",
+          "tags": []
+        },
+        "it": {
+          "text": "test di prova",
+          "tags": []
+        },
+        "ru": {
+          "text": "пробный экзамен",
+          "tags": []
+        },
+        "pt": {
+          "text": "simulado",
+          "tags": []
+        },
+        "zh": {
+          "text": "模拟考试",
+          "tags": []
+        },
+        "ja": {
+          "text": "模擬試験",
+          "tags": []
+        },
+        "ko": {
+          "text": "모의고사",
+          "tags": []
+        },
+        "ar": {
+          "text": "اختبار تجريبي",
+          "tags": []
+        },
+        "nl": {
+          "text": "oefentoets",
+          "tags": []
+        }
+      },
+      "frequencyPriority": false,
+      "evidence": {
+        "headword": "practice test",
+        "partOfSpeech": "noun",
+        "translationSense": "test used to prepare for an examination",
+        "source": "jenechka-editorial",
+        "method": "original-editorial-translation"
+      }
+    }
+  ]
+}
