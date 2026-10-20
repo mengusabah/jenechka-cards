@@ -35,17 +35,13 @@ export function setupDeckBuilder(root, template, state, { onSave, canSave = true
   const listen = (element, type, fn) => element.addEventListener(type, fn, { signal: abort.signal });
 
   root.innerHTML = `
-    <div class="builder-modes" role="group" aria-label="How to choose words">
-      <button class="btn" data-builder-mode="random">⇄ Random words</button>
-      <button class="btn" data-builder-mode="manual">✓ Choose words</button>
-    </div>
     <section class="panel builder-random" data-random-options>
       <label for="builder-count">How many words?</label>
       <div class="builder-number-row"><input id="builder-count" type="number" inputmode="numeric" min="1" max="${template.cards.length}" step="1" value="${esc(state.count)}" aria-describedby="builder-count-hint builder-count-error"><span>of ${template.cards.length}</span></div>
       <div class="builder-presets" role="group" aria-label="Quick word counts">${[10, 25, 50, 100].filter(count => count <= template.cards.length).map(count => `<button class="btn outline" data-builder-size="${count}">${count}</button>`).join('')}</div>
       <p class="help" id="builder-count-hint">A fresh mix, with no repeated cards.</p>
       <p class="builder-error" id="builder-count-error" role="status" hidden></p>
-      <div class="builder-random-actions"><button class="btn outline" data-builder-shuffle>↻ Shuffle again</button><button class="text-button" data-builder-edit>Edit these words</button></div>
+      <button class="btn outline" data-builder-shuffle>↻ Shuffle again</button>
     </section>
     <section class="builder-manual" data-manual-options>
       <label for="builder-search">Find words</label>
@@ -100,11 +96,9 @@ export function setupDeckBuilder(root, template, state, { onSave, canSave = true
     error.textContent = valid ? '' : `Choose a whole number from 1 to ${template.cards.length}.`;
     node('#builder-count').setAttribute('aria-invalid', String(!valid));
     node('[data-builder-shuffle]').disabled = !valid;
-    node('[data-builder-edit]').disabled = !valid || !state.randomIds.length;
     root.querySelectorAll('[data-builder-size]').forEach(button => button.setAttribute('aria-pressed', String(Number(button.dataset.builderSize) === Number(state.count))));
   }
   function showMode() {
-    root.querySelectorAll('[data-builder-mode]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.builderMode === state.mode)));
     node('[data-random-options]').hidden = state.mode !== 'random';
     node('[data-manual-options]').hidden = state.mode !== 'manual';
     updateCount();
@@ -138,10 +132,8 @@ export function setupDeckBuilder(root, template, state, { onSave, canSave = true
     const button = event.target.closest('button');
     if (!button || button.disabled || saving) return;
     const action = button.dataset;
-    if (action.builderMode) { state.mode = action.builderMode; state.page = 0; showMode(); }
-    else if (action.builderSize) { state.count = action.builderSize; node('#builder-count').value = state.count; sample(); }
+    if (action.builderSize) { state.count = action.builderSize; node('#builder-count').value = state.count; sample(); }
     else if ('builderShuffle' in action) sample();
-    else if ('builderEdit' in action) { state.manualIds = new Set(state.randomIds); state.mode = 'manual'; state.query = ''; node('#builder-search').value = ''; state.selectedOnly = true; state.page = 0; showMode(); node('#builder-search').focus({ preventScroll: true }); }
     else if ('builderSelectedOnly' in action) { state.selectedOnly = !state.selectedOnly; state.page = 0; renderList(); }
     else if ('builderSelectResults' in action) { matches().forEach(card => state.manualIds.add(card.entryId)); renderList(); }
     else if ('builderClear' in action) { state.manualIds.clear(); state.selectedOnly = false; renderList(); }

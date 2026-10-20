@@ -157,15 +157,11 @@ details.panel summary{cursor:pointer;font-weight:750;min-height:32px;line-height
 
 /* Build a manageable deck from any library selection. */
 .deck-builder{position:relative;min-width:0}
-.builder-modes{display:grid;grid-template-columns:1fr 1fr;gap:5px;padding:5px;border-radius:17px;background:#eae7f3;margin:22px 0 18px}
-.builder-modes .btn{background:transparent;padding:12px 8px;font-size:14px;color:#69627c}
-.builder-modes .btn[aria-pressed=true]{background:white;color:#5441a8;box-shadow:0 2px 8px #3e306614}
 .builder-number-row{display:flex;align-items:center;gap:14px}.builder-number-row input{max-width:150px;font-size:24px;font-weight:750}
 .builder-number-row span{color:#696b82;white-space:nowrap}
 .builder-presets{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .builder-presets .btn{flex:1;padding:10px 15px;min-height:44px}
 .builder-presets .btn[aria-pressed=true],.builder-tools .btn[aria-pressed=true]{background:#e9e3ff;border-color:#9a89df;color:#4f3a9b}
-.builder-random-actions{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
 .builder-random .help{margin:12px 0}.builder-error{font-size:14px;color:#b1354e;margin:10px 0}
 .builder-manual{margin:22px 0}.builder-tools{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
 .builder-tools .btn,.builder-tools .text-button{font-size:13px;min-height:44px;padding:10px 12px}
