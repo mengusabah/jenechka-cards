@@ -144,7 +144,7 @@ export function summarizeStats(decks, { deckId = null, now = Date.now(), days = 
 }
 
 const shortDate = key => new Date(`${key}T12:00:00`).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-const exactDate = value => new Date(value).toLocaleString(undefined, { year: 'numeric', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', second: '2-digit' });
+const exactDate = value => new Date(value).toLocaleString(undefined, { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', hourCycle: 'h23' });
 const modeName = mode => ({ forward: 'Forward', reverse: 'Reverse', mixed: 'Mixed' })[mode] || 'Study';
 const icon = name => {
   const paths = {

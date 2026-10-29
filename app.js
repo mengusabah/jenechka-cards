@@ -67,7 +67,7 @@ function nextReviewText(deck) {
     const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1); tomorrow.setHours(0, 0, 0, 0);
     if (!next || tomorrow < next) return 'More new words will be ready tomorrow.';
   }
-  return next ? `Next review: ${next.toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}.` : 'You’re up to date.';
+  return next ? `Next review: ${next.toLocaleString([], { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit', hourCycle: 'h23' })}.` : 'You’re up to date.';
 }
 
 function deckScheduleMarkup(deck) {
@@ -162,7 +162,7 @@ function render() {
     if (!deck) return go('decks');
     const readyCards = selectStudyCards(deck);
     if (!readyCards.length) {
-      shell('All caught up', `<div class="panel review-ready center"><span class="review-spark" aria-hidden="true">✦</span><h2>A little space helps it stick.</h2><p>${esc(nextReviewText(deck))}</p><p class="help">Your review dates are planned automatically.</p><div class="stack"><button class="btn primary full" data-stats-deck="${deck.id}">View deck stats</button><button class="btn outline full" data-refresh-reviews>Check again</button></div></div>`, 'decks');
+      shell('All caught up', `<div class="panel review-ready center"><span class="review-spark" aria-hidden="true">✦</span><h2>A little space helps it stick.</h2><p>${esc(nextReviewText(deck))}</p><p class="help">Reviews become available when their scheduled time arrives.</p><div class="stack"><button class="btn primary full" data-stats-deck="${deck.id}">View deck stats</button><button class="btn outline full" data-refresh-reviews>Check for reviews</button></div></div>`, 'decks');
       updateAppStatus(); return;
     }
     shell('Study direction', `<p>Choose how to study <b>${esc(deck.name)}</b>.</p>${isSpacedEnabled(deck) ? `<div class="review-summary"><strong>${readyCards.length} words ready</strong><small>Reviews first · Up to 20 new words a day</small></div>` : ''}${[
@@ -552,7 +552,17 @@ $('app').addEventListener('click', async (event) => {
         notify(enabled ? 'Spaced repetition is on. Your saved review schedule is ready.' : 'Spaced repetition is off. Your history and review schedule are kept.');
       }
     } else if ('refreshReviews' in action) {
-      render();
+      const deck = decks.find(item => item.id === active);
+      if (!deck) return go('decks');
+      if (selectStudyCards(deck).length) {
+        clearTimeout(noticeTimer);
+        $('notice').hidden = true;
+        go('modes');
+      } else {
+        render();
+        document.querySelector('[data-refresh-reviews]')?.focus({ preventScroll: true });
+        notify(`No words are ready yet. ${nextReviewText(deck)}`);
+      }
     } else if ('swapLanguages' in action) {
       [librarySource, libraryTarget] = [libraryTarget, librarySource];
       await refreshLibrary();

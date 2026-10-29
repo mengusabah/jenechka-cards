@@ -1,5 +1,5 @@
 /* Bump this version whenever any app-shell file changes. */
-const VERSION = '2026.10.30.1';
+const VERSION = '2026.10.30.2';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = `jenechka-cards-shell:${encodeURIComponent(SCOPE)}:`;
 const CACHE_NAME = `${CACHE_PREFIX}${VERSION}`;
