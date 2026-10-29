@@ -140,7 +140,120 @@ test('restarting creates a fresh full session with independent prompts', () => {
 
 test('empty decks have no prompts and unknown modes are rejected', () => {
   const session = createStudySession([], 'mixed');
-  assert.deepEqual(session, { mode: 'mixed', total: 0, done: 0, flipped: false, queue: [] });
+  assert.equal(session.mode, 'mixed');
+  assert.equal(session.total, 0);
+  assert.equal(session.done, 0);
+  assert.equal(session.flipped, false);
+  assert.deepEqual(session.queue, []);
+  assert.deepEqual(session.cardResults, []);
+  assert.equal(session.completedAt, null);
   assert.equal(rateStudyCard(session, 'good'), false);
   assert.throws(() => createStudySession(cards, 'unknown'), RangeError);
+});
+
+test('mixed metrics count the first attempt independently for each direction', () => {
+  let time = Date.parse('2026-10-30T10:00:00Z');
+  const session = createStudySession(cards.slice(0, 1), 'mixed', () => 1 - Number.EPSILON, { now: () => time, kind: 'spaced' });
+  assert.equal(session.startedAt, '2026-10-30T10:00:00.000Z');
+  assert.equal(session.kind, 'spaced');
+  assert.equal(session.cardCount, 1);
+  session.flipped = true;
+  rateStudyCard(session, 'again'); // forward again; reverse becomes next.
+  assert.equal(markGood(session), false);
+  session.flipped = true;
+  rateStudyCard(session, 'again'); // same forward prompt fails twice.
+  time += 8000;
+  assert.equal(markGood(session), true);
+  assert.equal(session.completedAt, '2026-10-30T10:00:08.000Z');
+  assert.equal(session.attempts, 4);
+  assert.equal(session.againCount, 2);
+  assert.equal(session.firstPassGood, 1);
+  assert.deepEqual(session.cardResults[0], {
+    cardId: 'cat', isNew: true, initialSrs: null, questionCount: 2,
+    attempts: 4, againCount: 2, firstPassGood: 1, completed: true,
+    directions: {
+      forward: { attempts: 3, againCount: 2, firstPassGood: false, completed: true },
+      reverse: { attempts: 1, againCount: 0, firstPassGood: true, completed: true },
+    },
+  });
+});
+
+test('metrics stay untouched until a flipped question is rated and completion is stable', () => {
+  let now = Date.parse('2026-10-30T12:00:00Z');
+  const session = createStudySession(cards, 'forward', () => 0, { now: () => now });
+  assert.equal(rateStudyCard(session, 'good'), false);
+  assert.equal(session.attempts, 0);
+  assert.equal(session.cardResults.every(result => result.attempts === 0), true);
+  while (session.queue.length) markGood(session);
+  assert.equal(session.firstPassGood, 3);
+  assert.equal(session.attempts, 3);
+  assert.equal(session.againCount, 0);
+  const completed = session.completedAt;
+  now += 100000;
+  assert.equal(markGood(session), false);
+  assert.equal(session.completedAt, completed);
+  assert.equal(session.attempts, 3);
+});
+
+test('initial SRS is a snapshot and each new session resets measurements', () => {
+  const srs = { stage: 'review', dueAt: '2026-10-30T10:00:00Z', repetitions: 1 };
+  const source = [{ ...cards[0], srs }];
+  const session = createStudySession(source, 'reverse', () => 0, { now: 0 });
+  assert.equal(session.cardResults[0].isNew, false);
+  assert.notEqual(session.cardResults[0].initialSrs, srs);
+  srs.repetitions = 99;
+  assert.equal(session.cardResults[0].initialSrs.repetitions, 1);
+  markGood(session);
+  const next = createStudySession(source, 'reverse', () => 0, { now: 1000 });
+  assert.equal(next.attempts, 0);
+  assert.equal(next.firstPassGood, 0);
+  assert.equal(next.completedAt, null);
+  assert.deepEqual(next.cardResults[0].directions, {
+    reverse: { attempts: 0, againCount: 0, firstPassGood: false, completed: false },
+  });
+});
+
+test('clock reversal cannot produce a negative session and invalid options are rejected', () => {
+  let now = 1000;
+  const session = createStudySession(cards.slice(0, 1), 'forward', () => 0, { now: () => now });
+  now = 500;
+  markGood(session);
+  assert.equal(session.completedAt, session.startedAt);
+  assert.throws(() => createStudySession(cards, 'forward', () => 0, { kind: 'exam' }), RangeError);
+  assert.throws(() => createStudySession(cards, 'forward', () => 0, { now: NaN }), RangeError);
+});
+
+test('spaced sessions shuffle introduced cards before new cards while keeping every requested direction', () => {
+  const selected = [
+    { id: 'new-a', front: 'a', back: 'A' },
+    { id: 'review', front: 'b', back: 'B', srs: { stage: 'review' } },
+    { id: 'new-b', front: 'c', back: 'C' },
+    { id: 'learning', front: 'd', back: 'D', srs: { stage: 'learning' } },
+  ];
+  const before = structuredClone(selected);
+  for (const mode of ['forward', 'reverse', 'mixed']) {
+    for (const random of [() => 0, () => 0.5, () => 1 - Number.EPSILON]) {
+      const session = createStudySession(selected, mode, random, { kind: 'spaced', now: 0 });
+      const groupLength = mode === 'mixed' ? 4 : 2;
+      assert.ok(session.queue.slice(0, groupLength).every(prompt => prompt.srs));
+      assert.ok(session.queue.slice(groupLength).every(prompt => !prompt.srs));
+      for (const card of selected) {
+        const directions = session.queue.filter(prompt => prompt.id === card.id).map(prompt => prompt.reverse).sort();
+        assert.deepEqual(directions, mode === 'mixed' ? [false, true] : [mode === 'reverse']);
+      }
+    }
+  }
+  const spaced = createStudySession(selected, 'mixed', () => 0, { kind: 'spaced', now: 0 });
+  assert.deepEqual(spaced.queue.slice(0, 4).map(prompt => [prompt.id, prompt.reverse]), [
+    ['review', true], ['learning', false], ['learning', true], ['review', false],
+  ]);
+  const retry = spaced.queue[0];
+  spaced.flipped = true;
+  rateStudyCard(spaced, 'again');
+  assert.equal(spaced.queue[3], retry);
+  assert.equal(spaced.attempts, 1);
+  assert.equal(spaced.againCount, 1);
+  const practice = createStudySession(selected, 'forward', () => 1 - Number.EPSILON, { kind: 'practice', now: 0 });
+  assert.deepEqual(practice.queue.map(prompt => prompt.id), selected.map(card => card.id));
+  assert.deepEqual(selected, before);
 });

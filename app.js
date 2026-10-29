@@ -6,6 +6,9 @@ import { createLibraryLoader, definitions, buildTemplate, hasImported, importTem
 import { setupPreviewSlider } from './preview.js';
 import { createSelectionState, setupDeckBuilder } from './deck-builder.js';
 import { openDeckAddDialog } from './deck-add-dialog.js';
+import { spacedRepetitionControl } from './deck-options.js';
+import { isSpacedEnabled, getDeckSchedule, selectStudyCards, completeStudyDeck } from './spaced-repetition.js';
+import { renderStats } from './stats.js';
 
 const welcome = setupWelcome();
 
@@ -25,10 +28,12 @@ let persistent = false;
 let destroyPreview = () => {};
 let selectionState;
 let closeDeckAddDialog = () => {};
+let statsDeckId = null, statsBack = 'decks', statsHistoryLimit = 20;
+let completion = null, studyActiveMs = 0, studyClockAt = null;
 const installed = () => matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 const isEditing = () => ['create', 'edit'].includes(page);
 const blankCard = () => ({ id: createId(), front: '', back: '' });
-const blankDeck = () => ({ id: createId(), name: '', source: 'English', target: 'Turkish', cards: [blankCard()] });
+const blankDeck = () => ({ id: createId(), name: '', source: 'English', target: 'Turkish', spacedRepetition: true, cards: [blankCard()] });
 const countCards = (items) => items.reduce((sum, deck) => sum + deck.cards.length, 0);
 const posLabel = value => ({ unknown: '', unspecified: '', intj: 'expression', pron: 'pronoun', conj: 'conjunction', prep: 'preposition', det: 'determiner', num: 'number', adj: 'adjective', adv: 'adverb' }[value] ?? value);
 
@@ -41,10 +46,36 @@ function notify(message, error = false) {
 }
 
 function go(next) {
+  if (page === 'study' && next !== 'study') tickStudyClock(false);
   page = next;
   render();
   scrollTo(0, 0);
   $('app').querySelector('h1')?.focus({ preventScroll: true });
+}
+
+function tickStudyClock(resume = true) {
+  const now = performance.now();
+  // Count foreground study time; background tabs and app switches are paused.
+  if (studyClockAt !== null) studyActiveMs += Math.max(0, now - studyClockAt);
+  studyClockAt = resume && page === 'study' && !document.hidden ? now : null;
+}
+
+function nextReviewText(deck) {
+  const schedule = getDeckSchedule(deck);
+  const next = schedule.nextDueAt ? new Date(schedule.nextDueAt) : null;
+  if (schedule.newCount && !schedule.newAvailable) {
+    const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1); tomorrow.setHours(0, 0, 0, 0);
+    if (!next || tomorrow < next) return 'More new words will be ready tomorrow.';
+  }
+  return next ? `Next review: ${next.toLocaleString([], { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}.` : 'You’re up to date.';
+}
+
+function deckScheduleMarkup(deck) {
+  const enabled = isSpacedEnabled(deck);
+  const schedule = getDeckSchedule(deck);
+  return `<div class="deck-learning-row"><button class="spaced-toggle" role="switch" aria-checked="${enabled}" aria-label="Spaced repetition for ${esc(deck.name)}" data-toggle-spaced="${deck.id}"><span class="spaced-mini" aria-hidden="true"></span>Spaced repetition <b>${enabled ? 'On' : 'Off'}</b></button></div>
+    ${enabled ? `<div class="deck-schedule" aria-label="Review status"><span><b>${schedule.newCount}</b> New</span><span><b>${schedule.learningCount}</b> Learning</span><span><b>${schedule.dueCount}</b> Review due</span></div>
+    <p class="deck-next-review">${schedule.readyCount ? `${Math.min(50, schedule.readyCount)} words ready to study${schedule.readyCount > 50 ? ' in your next session' : ''}.` : esc(nextReviewText(deck))}</p>` : '<p class="deck-next-review">Study all words at your own pace.</p>'}`;
 }
 
 function networkLabel() {
@@ -96,14 +127,22 @@ function render() {
       <div class="hero"><div class="eyebrow">YOUR LANGUAGE COMPANION</div><h1 tabindex="-1">Small cards.<br>Big progress<span class="accent">.</span></h1><p>Build your vocabulary, one flip at a time. Simple, focused, and made for you.</p></div>
       <button class="tile" data-go="create"><span class="icon" aria-hidden="true">✚</span><span><strong>Create Deck</strong><small>Start a vocabulary collection</small></span><span class="arrow" aria-hidden="true">›</span></button>
       <button class="tile" data-go="decks"><span class="icon" aria-hidden="true">📚</span><span><strong>My Decks</strong><small>${decks.length} saved decks · Ready to study</small></span><span class="arrow" aria-hidden="true">›</span></button>
+      <button class="tile" data-go="stats"><span class="icon" aria-hidden="true">↗</span><span><strong>Stats</strong><small>Your progress, patterns, and study history</small></span><span class="arrow" aria-hidden="true">›</span></button>
       <button class="tile" data-go="settings"><span class="icon" aria-hidden="true">↥</span><span><strong>App & Backups</strong><small>Install, export, and restore your words</small></span><span class="arrow" aria-hidden="true">›</span></button>
       <div class="footer">Your words stay on this device ✦</div>`;
   } else if (page === 'decks') {
     shell('My Decks', `<div class="section-intro"><p>Your vocabulary collections, in one place.</p><button class="text-button" data-go="settings">Backups ↗</button></div>
       ${decks.length ? decks.map((deck) => `<div class="deck"><h2>${esc(deck.name)}</h2><small>${esc(deck.source)} → ${esc(deck.target)} · ${deck.cards.length} cards</small>
-        <div class="buttons"><button class="btn primary" data-study="${deck.id}" ${deck.cards.length ? '' : 'disabled'}>Study →</button><button class="btn outline" data-edit="${deck.id}">Edit</button><button class="btn red" data-delete="${deck.id}">Delete</button></div></div>`).join('') : '<div class="panel center"><h2>📚 No decks yet</h2><p>Create your first deck or import a backup.</p></div>'}
+        ${deckScheduleMarkup(deck)}
+        <div class="buttons"><button class="btn primary" data-study="${deck.id}" ${deck.cards.length ? '' : 'disabled'}>Study →</button><button class="btn outline" data-stats-deck="${deck.id}">Stats</button><button class="btn outline" data-edit="${deck.id}">Edit</button><button class="btn red" data-delete="${deck.id}">Delete</button></div></div>`).join('') : '<div class="panel center"><h2>📚 No decks yet</h2><p>Create your first deck or import a backup.</p></div>'}
       <div class="stack"><button class="btn outline full" data-go="create">+ Create Deck</button>
       <button class="btn primary full" data-go="prebuilt">Add Prebuilt Deck</button></div>`);
+  } else if (page === 'stats') {
+    shell('Your progress', renderStats(decks, { historyLimit: statsHistoryLimit }), 'home');
+  } else if (page === 'deck-stats') {
+    const deck = decks.find(item => item.id === statsDeckId);
+    if (!deck) return go('stats');
+    shell('Deck stats', renderStats(decks, { deckId: statsDeckId, historyLimit: statsHistoryLimit }), statsBack);
   } else if (page === 'prebuilt') {
     renderPrebuilt();
   } else if (page === 'prebuilt-preview') {
@@ -113,17 +152,23 @@ function render() {
   } else if (isEditing()) {
     shell(page === 'edit' ? 'Edit Deck' : 'Create Deck', `<p>Make a collection of words worth remembering.</p>
       <div class="panel"><div class="field"><label for="name">Deck name</label><input id="name" value="${esc(draft.name)}" placeholder="English Vocabulary" maxlength="${LIMITS.name}"></div>
-      <div class="row">${languagePicker('source', 'Source language', draft.source)}${languagePicker('target', 'Target language', draft.target)}</div></div>
+      <div class="row">${languagePicker('source', 'Source language', draft.source)}${languagePicker('target', 'Target language', draft.target)}</div>${spacedRepetitionControl('deck-spaced', isSpacedEnabled(draft))}</div>
+      ${page === 'edit' && draft.cards.some(card => card.srs) ? '<p class="help">Changing a word or its languages restarts its review schedule. Your study history is kept.</p>' : ''}
       <h2>Flashcards (${draft.cards.length})</h2>${draft.cards.map(cardEditor).join('')}
       <button class="btn outline full" data-add>+ Add another card</button>
       <div class="panel stack"><button class="btn primary full" data-save>Save Deck</button><button class="btn outline full" data-export-draft>Download draft backup</button><button class="btn outline full" data-cancel>Cancel</button><small>Your changes are stored after you tap Save Deck. If saving fails, download a backup here to keep your completed changes.</small></div>`, 'decks');
   } else if (page === 'modes') {
     const deck = decks.find((item) => item.id === active);
     if (!deck) return go('decks');
-    shell('Study direction', `<p>Choose how to study <b>${esc(deck.name)}</b>.</p>${[
+    const readyCards = selectStudyCards(deck);
+    if (!readyCards.length) {
+      shell('All caught up', `<div class="panel review-ready center"><span class="review-spark" aria-hidden="true">✦</span><h2>A little space helps it stick.</h2><p>${esc(nextReviewText(deck))}</p><p class="help">Your review dates are planned automatically.</p><div class="stack"><button class="btn primary full" data-stats-deck="${deck.id}">View deck stats</button><button class="btn outline full" data-refresh-reviews>Check again</button></div></div>`, 'decks');
+      updateAppStatus(); return;
+    }
+    shell('Study direction', `<p>Choose how to study <b>${esc(deck.name)}</b>.</p>${isSpacedEnabled(deck) ? `<div class="review-summary"><strong>${readyCards.length} words ready</strong><small>Reviews first · Up to 20 new words a day</small></div>` : ''}${[
       ['forward', '→', `${deck.source} → ${deck.target}`, 'Translate source to target'],
       ['reverse', '←', `${deck.target} → ${deck.source}`, 'Translate target to source'],
-      ['mixed', '⇄', 'Mixed Mode', `Every card in both directions · ${deck.cards.length * 2} questions`]
+      ['mixed', '⇄', 'Mixed Mode', `Every selected card in both directions · ${readyCards.length * 2} questions`]
     ].map(([mode, icon, title, subtitle]) => `<button class="mode" data-mode="${mode}"><span class="icon" aria-hidden="true">${icon}</span><span><strong>${esc(title)}</strong><small>${subtitle}</small></span></button>`).join('')}`, 'decks');
   } else if (page === 'study') {
     const card = session.queue[0];
@@ -138,7 +183,13 @@ function render() {
       <div class="ratings" style="visibility:${session.flipped ? 'visible' : 'hidden'}"><button class="btn red" data-rate="again">✕ Again</button><button class="btn green" data-rate="good">✓ Good</button></div>
       <p class="center"><small>${session.queue.length} questions in queue</small></p>`, 'decks');
   } else if (page === 'complete') {
-    shell('Session complete!', `<div class="center completion"><div class="celebration">🎉</div><h2>Nicely done!</h2><p>You completed all ${session.total} questions.</p><div class="stack"><button class="btn primary full" data-restart>Study Again ↻</button><button class="btn outline full" data-go="decks">My Decks</button></div></div>`, 'decks');
+    const recall = Math.round(session.firstPassGood / session.total * 100);
+    const deck = decks.find(item => item.id === active);
+    const ready = deck ? selectStudyCards(deck).length : 0;
+    shell('Session complete!', `<div class="center completion"><div class="celebration">🎉</div><h2>Nicely done!</h2><p>You completed ${session.total} questions.</p>
+      <div class="session-result"><strong>${recall}%</strong><span>First-pass recall</span><small>${session.firstPassGood} of ${session.total} remembered on the first try · ${session.againCount} repeats</small></div>
+      ${completion?.saved ? `<p class="help">Saved to your study history.${session.kind === 'spaced' ? ' Your next reviews are planned.' : ''}</p><div class="stack"><button class="btn primary full" data-stats-deck="${active}">View deck stats</button>${ready ? `<button class="btn outline full" data-restart>${session.kind === 'spaced' ? 'Continue reviews' : 'Study Again ↻'}</button>` : ''}<button class="btn outline full" data-go="decks">My Decks</button></div>` : completion?.error ? `<div class="storage-warning" role="alert"><strong>Your session hasn’t been saved yet.</strong><p>${esc(completion.error)}</p></div><div class="stack"><button class="btn primary full" data-save-session>Retry saving</button><button class="btn outline full" data-export-session>Download backup with this session</button></div>` : '<p role="status">Saving your progress…</p>'}
+    </div>`, 'decks');
   } else if (page === 'settings') {
     renderSettings();
   }
@@ -243,17 +294,19 @@ function showPrebuiltAddChoices() {
   closeDeckAddDialog = openDeckAddDialog({
     template,
     alreadyImported: hasImported(decks, template),
-    async onAll() {
-      const next = [...decks, importTemplate(template, decks)];
+    spacedRepetition: selectionState?.templateId === template.templateId ? selectionState.spacedRepetition !== false : true,
+    async onAll(spacedRepetition) {
+      const next = [...decks, { ...importTemplate(template, decks), spacedRepetition }];
       if (!await saveDecks(next)) throw new Error($('notice').textContent || 'Unable to save this deck. Please try again.');
       selectionState = null;
       go('decks');
       notify(`Added ${template.cards.length} editable cards. Saved on this device.`);
       return true;
     },
-    onChoose(mode) {
+    onChoose(mode, spacedRepetition) {
       if (selectionState?.templateId !== template.templateId) selectionState = createSelectionState(template, mode);
       else { selectionState.mode = mode; selectionState.page = 0; }
+      selectionState.spacedRepetition = spacedRepetition;
       go('prebuilt-builder');
     },
   });
@@ -265,9 +318,9 @@ function renderPrebuiltBuilder() {
   shell('Build your deck', `<p>${esc(template.name)} · ${esc(template.sourceName)} → ${esc(template.targetName)}</p><div class="deck-builder" data-deck-builder></div>`, 'prebuilt-preview');
   destroyPreview = setupDeckBuilder(document.querySelector('[data-deck-builder]'), template, selectionState, {
     canSave: storage.backend !== 'memory',
-    async onSave(entryIds, name) {
+    async onSave(entryIds, name, spacedRepetition) {
       try {
-        const deck = importTemplateSelection(template, entryIds, { name });
+        const deck = { ...importTemplateSelection(template, entryIds, { name }), spacedRepetition };
         if (await saveDecks([...decks, deck])) {
           selectionState = null;
           go('decks');
@@ -284,9 +337,9 @@ function renderSettings() {
     <section class="panel"><div class="panel-heading"><span class="icon" aria-hidden="true">↥</span><div><h2>Back up your words</h2><small>${decks.length} decks · ${countCards(decks)} cards saved here</small></div></div>
       <p>Export all saved decks as a JSON file. Keep it in Files, iCloud Drive, or another safe place.</p>
       <div class="stack"><button class="btn primary full" data-export>Download backup (.json)</button>${canShareBackup() ? '<button class="btn outline full" data-share>Save / Share backup…</button>' : ''}</div>
-      <p class="help">On iPhone, Save / Share lets you choose Save to Files. Backups include your words and translations.</p>
+      <p class="help">Backups include your words, completed study history, and review schedules. On iPhone, Save / Share lets you choose Save to Files.</p>
     </section>
-    <section class="panel"><h2>Restore a backup</h2><p>Import a Jenechka Cards JSON backup from this or another device. Existing decks are kept. Identical decks are skipped; changed decks are added as separate copies.</p>
+    <section class="panel"><h2>Restore a backup</h2><p>Import a Jenechka Cards JSON backup from this or another device. Existing decks are kept. Identical decks are skipped; different words or study progress are added as separate copies.</p>
       <label class="btn outline full file-button" for="import-file">Choose backup file</label><input class="file-input" id="import-file" type="file" accept=".json,application/json">
       <small>JSON files up to 10 MB. You can review the file before saving.</small>
       ${pendingImport ? `<div class="import-preview" role="status"><strong>${esc(pendingImport.name)}</strong><p>${pendingImport.decks.length} decks · ${countCards(pendingImport.decks)} cards in this backup.<br>${preview.added} new decks · ${preview.skipped} identical decks skipped.</p>
@@ -310,6 +363,7 @@ function syncDraft() {
   draft.name = $('name').value;
   draft.source = languageValue('source');
   draft.target = languageValue('target');
+  draft.spacedRepetition = $('deck-spaced').checked;
   for (const card of draft.cards) {
     card.front = $(`front-${card.id}`).value;
     card.back = $(`back-${card.id}`).value;
@@ -319,6 +373,7 @@ function syncDraft() {
 function mayLeave() {
   if (isEditing() && dirty) return confirm('Discard unsaved changes?');
   if (page === 'study') return confirm('Exit this study session?');
+  if (page === 'complete' && completion && !completion.saved) return confirm('This completed session has not been saved. Leave and discard its progress?');
   return true;
 }
 
@@ -346,8 +401,32 @@ async function saveDecks(next) {
 function start(mode) {
   const deck = decks.find((item) => item.id === active);
   if (!deck?.cards.length) return go('decks');
-  session = createStudySession(deck.cards, mode);
+  const cards = selectStudyCards(deck);
+  if (!cards.length) return go('modes');
+  session = createStudySession(cards, mode, Math.random, { kind: isSpacedEnabled(deck) ? 'spaced' : 'practice' });
+  completion = { id: createId(), completedAt: null, durationMs: 0, saved: false, error: '', next: null };
+  studyActiveMs = 0;
+  studyClockAt = null;
   go('study');
+  tickStudyClock();
+}
+
+async function saveCompletedSession() {
+  if (!completion || completion.saved || busy) return;
+  completion.error = '';
+  try {
+    if (!completion.next) {
+      const deck = decks.find(item => item.id === active);
+      if (!deck) throw new Error('This deck is no longer available.');
+      const updated = completeStudyDeck(deck, session, completion);
+      completion.next = decks.map(item => item.id === active ? updated : item);
+    }
+    if (await saveDecks(completion.next)) completion.saved = true;
+    else completion.error = $('notice').textContent || 'Please try again.';
+  } catch (error) {
+    completion.error = error.message || 'Your progress could not be saved.';
+  }
+  if (page === 'complete') render();
 }
 
 function draftCollection() {
@@ -357,6 +436,15 @@ function draftCollection() {
   if (!saved.name || !saved.source || !saved.target) throw new Error('Enter a deck name and both languages.');
   if (saved.cards.some((card) => Boolean(card.front.trim()) !== Boolean(card.back.trim()))) throw new Error('Complete both sides of each card.');
   saved.cards = saved.cards.filter((card) => card.front.trim() && card.back.trim()).map((card) => ({ ...card, front: card.front.trim(), back: card.back.trim() }));
+  const previous = decks.find(deck => deck.id === saved.id);
+  if (previous) {
+    const oldCards = new Map(previous.cards.map(card => [card.id, card]));
+    const languagesChanged = previous.source !== saved.source || previous.target !== saved.target;
+    for (const card of saved.cards) {
+      const old = oldCards.get(card.id);
+      if (languagesChanged || !old || old.front !== card.front || old.back !== card.back) delete card.srs;
+    }
+  }
   const next = copy(decks);
   const index = next.findIndex((deck) => deck.id === saved.id);
   if (index < 0) next.push(saved); else next[index] = saved;
@@ -390,6 +478,7 @@ async function shareBackup() {
 
 $('app').addEventListener('input', () => { if (isEditing()) dirty = true; });
 $('app').addEventListener('change', async (event) => {
+  if (event.target.id === 'deck-spaced') { dirty = true; return; }
   if (event.target.matches('[data-language-picker]')) {
     const id = event.target.id;
     if (id === 'library-source' || id === 'library-target') {
@@ -435,9 +524,35 @@ $('app').addEventListener('click', async (event) => {
       if (!mayLeave()) return;
       const returnToChoices = page === 'prebuilt-builder' && action.go === 'prebuilt-preview';
       if (action.go === 'create') { draft = blankDeck(); dirty = false; }
+      if (action.go === 'stats') statsHistoryLimit = 20;
       go(action.go);
       if (returnToChoices) showPrebuiltAddChoices();
       if (action.go === 'prebuilt' && !library && !libraryLoading) refreshLibrary();
+    } else if (action.statsDeck) {
+      if (!mayLeave()) return;
+      statsDeckId = action.statsDeck;
+      statsBack = page === 'stats' ? 'stats' : 'decks';
+      statsHistoryLimit = 20;
+      go('deck-stats');
+    } else if ('statsMore' in action) {
+      const y = scrollY;
+      const firstNew = statsHistoryLimit;
+      statsHistoryLimit += 20;
+      render();
+      scrollTo(0, y);
+      const focusTarget = document.querySelectorAll('.stats-session')[firstNew] || document.querySelector('#stats-history-title');
+      if (focusTarget) { focusTarget.tabIndex = -1; focusTarget.focus({ preventScroll: true }); }
+    } else if (action.toggleSpaced) {
+      const deck = decks.find(item => item.id === action.toggleSpaced);
+      if (!deck) return;
+      const enabled = !isSpacedEnabled(deck);
+      if (await saveDecks(decks.map(item => item.id === deck.id ? { ...item, spacedRepetition: enabled } : item))) {
+        const y = scrollY; render(); scrollTo(0, y);
+        document.querySelector(`[data-toggle-spaced="${deck.id}"]`)?.focus({ preventScroll: true });
+        notify(enabled ? 'Spaced repetition is on. Your saved review schedule is ready.' : 'Spaced repetition is off. Your history and review schedule are kept.');
+      }
+    } else if ('refreshReviews' in action) {
+      render();
     } else if ('swapLanguages' in action) {
       [librarySource, libraryTarget] = [libraryTarget, librarySource];
       await refreshLibrary();
@@ -466,12 +581,13 @@ $('app').addEventListener('click', async (event) => {
     } else if (action.edit) {
       draft = copy(decks.find((deck) => deck.id === action.edit)); dirty = false; go('edit');
     } else if (action.delete) {
-      if (confirm('Delete this deck and all its cards? Export a backup first if you want to keep a copy.')) {
+      if (confirm('Delete this deck, its cards, and its study history? Export a backup first if you want to keep a copy.')) {
         if (await saveDecks(decks.filter((deck) => deck.id !== action.delete))) { render(); notify('Deck deleted.'); }
       }
     } else if (action.study) { active = action.study; go('modes'); }
     else if (action.mode) start(action.mode);
     else if ('flip' in action) {
+      tickStudyClock();
       session.flipped = !session.flipped;
       button.classList.toggle('flipped', session.flipped);
       const card = session.queue[0];
@@ -479,8 +595,17 @@ $('app').addEventListener('click', async (event) => {
       button.setAttribute('aria-label', `${session.flipped ? 'Answer' : 'Question'}: ${value}. Tap to ${session.flipped ? 'see question' : 'reveal answer'}.`);
       document.querySelector('.ratings').style.visibility = session.flipped ? 'visible' : 'hidden';
     } else if (action.rate && session.flipped) {
-      if (rateStudyCard(session, action.rate)) go('complete'); else render();
-    } else if ('restart' in action) start(session.mode);
+      tickStudyClock();
+      if (rateStudyCard(session, action.rate)) {
+        tickStudyClock(false);
+        completion.completedAt = session.completedAt;
+        completion.durationMs = Math.round(studyActiveMs);
+        go('complete');
+        await saveCompletedSession();
+      } else render();
+    } else if ('saveSession' in action) await saveCompletedSession();
+    else if ('exportSession' in action && completion?.next) downloadBackup(completion.next);
+    else if ('restart' in action) start(session.mode);
     else if ('exit' in action) { if (mayLeave()) go('decks'); }
     else if ('export' in action) downloadBackup();
     else if ('share' in action) await shareBackup();
@@ -512,14 +637,14 @@ function updateAppStatus() {
     : 'Storage protection depends on your browser. You can request it below.';
   if ($('install-app')) $('install-app').hidden = !installPrompt || installed();
   const waiting = Boolean(registration?.waiting);
-  const unsafe = isEditing() || page === 'prebuilt-builder' || page === 'study' || busy;
+  const unsafe = isEditing() || page === 'prebuilt-builder' || page === 'study' || (page === 'complete' && completion && !completion.saved) || busy;
   $('update-banner').hidden = !waiting;
   $('apply-update').disabled = unsafe;
   $('update-message').textContent = unsafe ? 'An update is ready. Save your deck or finish studying to update.' : 'A new version of Jenechka Cards is ready.';
 }
 
 $('apply-update').addEventListener('click', () => {
-  if (!registration?.waiting || isEditing() || page === 'prebuilt-builder' || page === 'study' || busy) return;
+  if (!registration?.waiting || isEditing() || page === 'prebuilt-builder' || page === 'study' || (page === 'complete' && completion && !completion.saved) || busy) return;
   reloadRequested = true;
   registration.waiting.postMessage({ type: 'SKIP_WAITING' });
 });
@@ -530,8 +655,18 @@ window.addEventListener('beforeinstallprompt', (event) => {
 window.addEventListener('appinstalled', () => { installPrompt = null; if (page === 'settings') render(); });
 window.addEventListener('online', updateAppStatus);
 window.addEventListener('offline', updateAppStatus);
+window.addEventListener('blur', () => { if (page === 'study') tickStudyClock(false); });
+window.addEventListener('focus', () => { if (page === 'study') tickStudyClock(); });
+window.addEventListener('pagehide', () => { if (page === 'study') tickStudyClock(false); });
+window.addEventListener('pageshow', () => { if (page === 'study') tickStudyClock(); });
+document.addEventListener('visibilitychange', () => {
+  if (page === 'study') tickStudyClock(!document.hidden);
+  else if (!document.hidden && !busy && ['decks', 'modes'].includes(page) && !document.querySelector('dialog[open]')) {
+    const y = scrollY; render(); scrollTo(0, y);
+  }
+});
 window.addEventListener('beforeunload', (event) => {
-  if ((isEditing() && dirty) || selectionState?.manualIds.size || selectionState?.name.trim() || busy) {
+  if ((isEditing() && dirty) || page === 'study' || (page === 'complete' && completion && !completion.saved) || selectionState?.manualIds.size || selectionState?.name.trim() || busy) {
     event.preventDefault(); event.returnValue = '';
   }
 });

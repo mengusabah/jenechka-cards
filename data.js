@@ -1,7 +1,8 @@
 // All user data stays on this device. A successful save means the transaction
 // committed; callers must keep their previous state until this promise resolves.
 export const MAX_BACKUP_BYTES = 10 * 1024 * 1024;
-export const LIMITS = Object.freeze({ decks: 2000, cards: 100000, name: 1000, language: 200, side: 100000 });
+export const LIMITS = Object.freeze({ decks: 2000, cards: 100000, history: 100000, name: 1000, language: 200, side: 100000 });
+const SCHEMA_VERSION = 2;
 const LEGACY_KEY = 'jenechka-cards-v1';
 const STORAGE_KEY = 'jenechka-cards-store-v2';
 const BACKEND_KEY = 'jenechka-cards-backend-v2';
@@ -11,6 +12,7 @@ const DATABASE_NAME = 'jenechka-cards';
 const STORE_NAME = 'state';
 const RECORD_KEY = 'decks';
 const SAFE_ID = /^[A-Za-z0-9_-]{1,128}$/;
+const ISO_TIMESTAMP = /^([+-]\d{6}|\d{4})-(\d{2})-(\d{2})T(\d{2}):(\d{2}):(\d{2})(?:\.(\d{1,3}))?(Z|[+-]\d{2}:\d{2})$/;
 const encoder = new TextEncoder();
 
 function failure(message, code = 'INVALID_DATA') {
@@ -41,8 +43,97 @@ function textField(value, limit, label) {
   return value;
 }
 
+function integer(value, minimum, maximum, label) {
+  if (!Number.isSafeInteger(value) || value < minimum || value > maximum) {
+    throw failure(`${label} must be a whole number between ${minimum} and ${maximum}.`);
+  }
+  return value;
+}
+
+function finiteNumber(value, minimum, maximum, label) {
+  if (typeof value !== 'number' || !Number.isFinite(value) || value < minimum || value > maximum) {
+    throw failure(`${label} must be a finite number between ${minimum} and ${maximum}.`);
+  }
+  return value;
+}
+
+function timestamp(value, label) {
+  const parts = typeof value === 'string' ? ISO_TIMESTAMP.exec(value) : null;
+  if (!parts || !Number.isFinite(Date.parse(value))) throw failure(`${label} must be a valid ISO date and time.`);
+  // Date.parse normalizes impossible dates such as February 30. Verify the
+  // local calendar components separately before accepting the UTC offset.
+  const [year, month, day, hour, minute, second] = parts.slice(1, 7).map(Number);
+  const local = new Date(0);
+  local.setUTCFullYear(year, month - 1, day);
+  local.setUTCHours(hour, minute, second, Number((parts[7] || '').padEnd(3, '0')));
+  if (local.getUTCFullYear() !== year || local.getUTCMonth() !== month - 1 || local.getUTCDate() !== day
+    || local.getUTCHours() !== hour || local.getUTCMinutes() !== minute || local.getUTCSeconds() !== second) {
+    throw failure(`${label} must be a valid ISO date and time.`);
+  }
+  return value;
+}
+
+function validateSchedule(value, label) {
+  object(value, `${label} schedule`);
+  if (!['learning', 'review'].includes(value.stage)) throw failure(`${label} schedule stage must be learning or review.`);
+  const schedule = {
+    stage: value.stage,
+    dueAt: timestamp(value.dueAt, `${label} due date`),
+    intervalDays: finiteNumber(value.intervalDays, 0, Number.MAX_VALUE, `${label} review interval`),
+    ease: finiteNumber(value.ease, 1.3, 3, `${label} review ease`),
+    repetitions: integer(value.repetitions, 0, Number.MAX_SAFE_INTEGER, `${label} repetitions`),
+    lapses: integer(value.lapses, 0, Number.MAX_SAFE_INTEGER, `${label} lapses`),
+    reviews: integer(value.reviews, 1, Number.MAX_SAFE_INTEGER, `${label} reviews`),
+    lastReviewedAt: timestamp(value.lastReviewedAt, `${label} last review date`),
+    introducedAt: timestamp(value.introducedAt, `${label} introduction date`),
+  };
+  if (Date.parse(schedule.introducedAt) > Date.parse(schedule.lastReviewedAt) || Date.parse(schedule.lastReviewedAt) > Date.parse(schedule.dueAt)) {
+    throw failure(`${label} schedule dates must follow introduction, last review, then next review.`);
+  }
+  return schedule;
+}
+
+function validateHistory(value, label) {
+  const ids = new Set();
+  return value.map((entry, index) => {
+    const entryLabel = `${label}, completed session ${index + 1}`;
+    object(entry, entryLabel);
+    const entryId = id(entry.id, `${entryLabel} ID`);
+    if (ids.has(entryId)) throw failure(`${entryLabel} has a duplicate history ID.`);
+    ids.add(entryId);
+    if (!['forward', 'reverse', 'mixed'].includes(entry.mode)) throw failure(`${entryLabel} has an invalid study direction.`);
+    if (!['spaced', 'practice'].includes(entry.kind)) throw failure(`${entryLabel} has an invalid study kind.`);
+    const result = {
+      id: entryId,
+      startedAt: timestamp(entry.startedAt, `${entryLabel} start date`),
+      completedAt: timestamp(entry.completedAt, `${entryLabel} completion date`),
+      mode: entry.mode,
+      kind: entry.kind,
+      cardCount: integer(entry.cardCount, 1, LIMITS.cards, `${entryLabel} card count`),
+      questionCount: integer(entry.questionCount, 1, LIMITS.cards * 2, `${entryLabel} question count`),
+      attempts: integer(entry.attempts, 1, Number.MAX_SAFE_INTEGER, `${entryLabel} attempts`),
+      againCount: integer(entry.againCount, 0, Number.MAX_SAFE_INTEGER, `${entryLabel} repeat count`),
+      firstPassGood: integer(entry.firstPassGood, 0, entry.questionCount, `${entryLabel} first-pass correct count`),
+      durationMs: integer(entry.durationMs, 0, Number.MAX_SAFE_INTEGER, `${entryLabel} duration`),
+      newCards: integer(entry.newCards, 0, entry.cardCount, `${entryLabel} new card count`),
+      reviewCards: integer(entry.reviewCards, 0, entry.cardCount, `${entryLabel} review card count`),
+    };
+    const elapsedMs = Date.parse(result.completedAt) - Date.parse(result.startedAt);
+    if (elapsedMs < 0) throw failure(`${entryLabel} cannot finish before it starts.`);
+    if (result.durationMs > elapsedMs) throw failure(`${entryLabel} active duration cannot exceed its elapsed time.`);
+    if (result.questionCount !== result.cardCount * (result.mode === 'mixed' ? 2 : 1)) throw failure(`${entryLabel} question count does not match its direction and card count.`);
+    if (result.attempts !== result.questionCount + result.againCount) throw failure(`${entryLabel} attempts must equal questions plus repeats.`);
+    const firstPassMisses = result.questionCount - result.firstPassGood;
+    if (firstPassMisses > result.againCount || (firstPassMisses === 0 && result.againCount !== 0)) {
+      throw failure(`${entryLabel} first-pass recall and repeat counts are inconsistent.`);
+    }
+    if (result.newCards + result.reviewCards !== result.cardCount) throw failure(`${entryLabel} new and review counts must add up to the card count.`);
+    return result;
+  });
+}
+
 function backupObject(decks) {
-  return { format: 'jenechka-cards', version: 1, exportedAt: new Date().toISOString(), decks };
+  return { format: 'jenechka-cards', version: SCHEMA_VERSION, exportedAt: new Date().toISOString(), decks };
 }
 
 function checkBackupSize(decks) {
@@ -58,6 +149,7 @@ export function validateDecks(value) {
   if (value.length > LIMITS.decks) throw failure(`A collection can contain at most ${LIMITS.decks} decks.`);
   const deckIds = new Set();
   let totalCards = 0;
+  let totalHistory = 0;
   const decks = value.map((deck, index) => {
     const label = `Deck ${index + 1}`;
     object(deck, label);
@@ -67,6 +159,12 @@ export function validateDecks(value) {
     if (!Array.isArray(deck.cards)) throw failure(`${label} must contain a cards array.`);
     totalCards += deck.cards.length;
     if (totalCards > LIMITS.cards) throw failure(`A collection can contain at most ${LIMITS.cards.toLocaleString('en-US')} cards.`);
+    if (deck.spacedRepetition !== undefined && typeof deck.spacedRepetition !== 'boolean') throw failure(`${label} spaced repetition setting must be true or false.`);
+    if (deck.history !== undefined) {
+      if (!Array.isArray(deck.history)) throw failure(`${label} history must be an array of completed sessions.`);
+      totalHistory += deck.history.length;
+      if (totalHistory > LIMITS.history) throw failure(`A collection can contain at most ${LIMITS.history.toLocaleString('en-US')} completed sessions. Export your history before removing old entries.`);
+    }
     const cardIds = new Set();
     return {
       id: deckId,
@@ -74,6 +172,8 @@ export function validateDecks(value) {
       source: textField(deck.source, LIMITS.language, `${label} source language`),
       target: textField(deck.target, LIMITS.language, `${label} target language`),
       ...(deck.prebuilt === undefined ? {} : { prebuilt: validatePrebuilt(deck.prebuilt) }),
+      ...(deck.spacedRepetition === undefined ? {} : { spacedRepetition: deck.spacedRepetition }),
+      ...(deck.history === undefined ? {} : { history: validateHistory(deck.history, label) }),
       cards: deck.cards.map((card, cardIndex) => {
         const cardLabel = `${label}, card ${cardIndex + 1}`;
         object(card, cardLabel);
@@ -84,6 +184,7 @@ export function validateDecks(value) {
           id: cardId,
           front: textField(card.front, LIMITS.side, `${cardLabel} front`),
           back: textField(card.back, LIMITS.side, `${cardLabel} back`),
+          ...(card.srs === undefined ? {} : { srs: validateSchedule(card.srs, cardLabel) }),
         };
       }),
     };
@@ -143,13 +244,19 @@ export function parseBackup(text) {
   catch { throw failure('This file is not valid JSON. Choose a Jenechka Cards backup.'); }
   if (Array.isArray(value)) return validateDecks(value);
   object(value, 'Backup');
-  if (value.format !== 'jenechka-cards' || value.version !== 1) throw failure('This backup format or version is not supported.');
-  if (typeof value.exportedAt !== 'string' || !Number.isFinite(Date.parse(value.exportedAt))) throw failure('The backup export date is missing or invalid.');
+  if (value.format !== 'jenechka-cards' || ![1, SCHEMA_VERSION].includes(value.version)) throw failure('This backup format or version is not supported.');
+  timestamp(value.exportedAt, 'The backup export date');
   return validateDecks(value.decks);
 }
 
 function contentKey(deck) {
-  return JSON.stringify([deck.name, deck.source, deck.target, deck.cards.map(card => [card.front, card.back])]);
+  // Ignore structural deck/card IDs when comparing copies, but never discard
+  // a schedule, completed session, preference, or attribution during import.
+  return JSON.stringify([
+    deck.name, deck.source, deck.target, deck.prebuilt ?? null,
+    deck.spacedRepetition ?? true, deck.history ?? [],
+    deck.cards.map(card => [card.front, card.back, card.srs ?? null]),
+  ]);
 }
 
 export function mergeDecks(existing, incoming) {
@@ -176,12 +283,12 @@ export function mergeDecks(existing, incoming) {
 }
 
 function record(decks) {
-  return { format: 'jenechka-cards-store', version: 1, revision: createId(), decks };
+  return { format: 'jenechka-cards-store', version: SCHEMA_VERSION, revision: createId(), decks };
 }
 
 function validateRecord(value) {
   object(value, 'Stored collection');
-  if (value.format !== 'jenechka-cards-store' || value.version !== 1 || typeof value.revision !== 'string' || !SAFE_ID.test(value.revision)) {
+  if (value.format !== 'jenechka-cards-store' || ![1, SCHEMA_VERSION].includes(value.version) || typeof value.revision !== 'string' || !SAFE_ID.test(value.revision)) {
     throw failure('The saved collection format is invalid.', 'CORRUPT_STORAGE');
   }
   return { ...value, decks: validateDecks(value.decks) };
@@ -338,8 +445,10 @@ async function localStore(databaseError) {
   try {
     const initial = await globalThis.navigator.locks.request(LOCK_NAME, () => {
       const current = readLocal();
-      if (current.value) return current.value;
-      const next = record(current.legacyDecks);
+      if (current.value?.version === SCHEMA_VERSION) return current.value;
+      // Upgrade under the same lock used for saves. Version-1 app windows
+      // reject this record before they can discard newly introduced progress.
+      const next = record(current.value?.decks || current.legacyDecks);
       current.storage.setItem(STORAGE_KEY, JSON.stringify(next));
       // The fallback record itself also identifies the selected backend if
       // storage fills up before this optional marker can be written.
@@ -371,10 +480,18 @@ async function selectStore() {
       ? recoveryStore(error?.code === 'DATABASE_BLOCKED' ? error.message : 'The device database is temporarily unavailable.')
       : localStore(error);
   }
+  let loadedRecord;
   try {
     let warning;
     const initial = await transact(database, saved => {
-      if (saved !== undefined) return { result: validateRecord(saved) };
+      if (saved !== undefined) {
+        loadedRecord = validateRecord(saved);
+        if (loadedRecord.version === SCHEMA_VERSION) return { result: loadedRecord };
+        // Keep the database itself at IDB version 1: the stored record schema
+        // can upgrade atomically without waiting for old tabs to close.
+        const upgraded = record(loadedRecord.decks);
+        return { result: upgraded, write: upgraded };
+      }
       let local;
       try { local = readLocal(); }
       catch (error) {
@@ -398,6 +515,9 @@ async function selectStore() {
     });
   } catch (error) {
     database.close();
+    if (loadedRecord) {
+      return memoryStore(loadedRecord.decks, 'The device could not finish updating its saved data safely. Your collection is available for study and export, but new changes cannot be saved. The original data has been preserved; reopen the app to try again.');
+    }
     // An existing but malformed database must never be replaced by an empty
     // collection or by an older localStorage migration snapshot.
     if (error.code === 'CORRUPT_STORAGE' || error.code === 'INVALID_DATA' || error.code === 'TOO_LARGE') {

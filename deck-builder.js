@@ -1,4 +1,5 @@
 import { sampleTemplateCards } from './prebuilt.js';
+import { spacedRepetitionControl } from './deck-options.js';
 
 const PAGE_SIZE = 20;
 const esc = value => String(value ?? '').replace(/[&<>"']/g, char => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[char]));
@@ -16,7 +17,7 @@ export function createSelectionState(template, mode) {
   const count = Math.min(25, template.cards.length);
   return { templateId: template.templateId, mode, count: String(count),
     randomIds: count ? sampleTemplateCards(template, count) : [], manualIds: new Set(),
-    query: '', selectedOnly: false, page: 0, name: '' };
+    query: '', selectedOnly: false, page: 0, name: '', spacedRepetition: true };
 }
 
 // Only one short page is mounted, even for several thousand words. Selection
@@ -53,6 +54,7 @@ export function setupDeckBuilder(root, template, state, { onSave, canSave = true
     <div class="builder-words" data-builder-words></div>
     <nav class="builder-pagination" aria-label="Word pages"><button class="btn outline" data-builder-previous aria-label="Previous words">‹ Previous</button><span data-builder-page-count></span><button class="btn outline" data-builder-next aria-label="Next words">Next ›</button></nav>
     <div class="field builder-name"><label for="builder-name">Deck name <span class="optional">(optional)</span></label><input id="builder-name" maxlength="1000" value="${esc(state.name)}"></div>
+    ${spacedRepetitionControl('builder-spaced', state.spacedRepetition !== false)}
     <div class="builder-save"><div role="status"><strong data-builder-total></strong><small>selected</small></div><button class="btn primary" data-builder-save>Create deck</button></div>`;
 
   const node = selector => root.querySelector(selector);
@@ -114,6 +116,7 @@ export function setupDeckBuilder(root, template, state, { onSave, canSave = true
   }
   listen(node('#builder-count'), 'input', event => { state.count = event.target.value; sample(); });
   listen(node('#builder-name'), 'input', event => { state.name = event.target.value; });
+  listen(node('#builder-spaced'), 'change', event => { state.spacedRepetition = event.target.checked; });
   listen(node('#builder-search'), 'input', event => { state.query = event.target.value; state.page = 0; renderList(); });
   listen(root, 'change', event => {
     const input = event.target.closest('[data-builder-word]');
@@ -146,7 +149,7 @@ export function setupDeckBuilder(root, template, state, { onSave, canSave = true
       saving = true;
       updateSummary();
       button.textContent = 'Saving…';
-      try { await onSave(selectedIds(), state.name.trim() || undefined); }
+      try { await onSave(selectedIds(), state.name.trim() || undefined, state.spacedRepetition !== false); }
       finally {
         saving = false;
         if (root.isConnected) { button.textContent = 'Create deck'; updateSummary(); }

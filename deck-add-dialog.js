@@ -1,3 +1,5 @@
+import { spacedRepetitionControl } from './deck-options.js';
+
 let nextDialogId = 0;
 let activeCleanup = null;
 
@@ -38,7 +40,7 @@ function lockScroll() {
   };
 }
 
-export function openDeckAddDialog({ template, alreadyImported = false, onAll, onChoose }) {
+export function openDeckAddDialog({ template, alreadyImported = false, spacedRepetition = true, onAll, onChoose }) {
   activeCleanup?.();
   const opener = document.activeElement;
   const abort = new AbortController();
@@ -76,13 +78,14 @@ export function openDeckAddDialog({ template, alreadyImported = false, onAll, on
           <span class="deck-add-arrow">${arrow}</span>
         </button>
       </div>
+      ${spacedRepetitionControl(`${id}-spaced`, spacedRepetition)}
       <p class="deck-add-error" role="alert" hidden></p>
       <button class="deck-add-back" type="button" data-add-back>Back to preview</button>
     </section>`;
   let disposed = false;
   let pending = false;
   let backdropStarted = false;
-  const buttons = [...dialog.querySelectorAll('button')];
+  const buttons = [...dialog.querySelectorAll('button, input')];
   const initialDisabled = new Map(buttons.map(button => [button, button.disabled]));
   const allLabel = dialog.querySelector('[data-add-all-label]');
   const error = dialog.querySelector('.deck-add-error');
@@ -114,7 +117,7 @@ export function openDeckAddDialog({ template, alreadyImported = false, onAll, on
     setPending(true);
     let message = 'We couldn’t add this deck. Please try again.';
     try {
-      const added = await onAll();
+      const added = await onAll(dialog.querySelector('input[type="checkbox"]').checked);
       if (disposed) return;
       if (added === true) { cleanup(); return; }
     } catch (failure) {
@@ -144,8 +147,9 @@ export function openDeckAddDialog({ template, alreadyImported = false, onAll, on
     const choice = button.dataset.addChoice;
     if (choice === 'all') { void addAll(); return; }
     if (choice === 'random' || choice === 'manual') {
+      const enabled = dialog.querySelector('input[type="checkbox"]').checked;
       cleanup();
-      onChoose(choice);
+      onChoose(choice, enabled);
     }
   });
   listen('cancel', event => {

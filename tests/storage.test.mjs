@@ -6,6 +6,20 @@ const LEGACY = 'jenechka-cards-v1';
 const FALLBACK = 'jenechka-cards-store-v2';
 const decks = (name = 'My words') => [{ id: 'deck-1', name, source: 'English', target: 'Türkçe', cards: [{ id: 'card-1', front: "It's fine", back: 'Sorun değil' }] }];
 const savedRecord = collection => ({ format: 'jenechka-cards-store', version: 1, revision: 'revision-initial', decks: collection });
+const progressedDecks = () => [{
+  ...decks()[0],
+  spacedRepetition: false,
+  history: [{
+    id: 'session-1', startedAt: '2026-10-30T12:00:00.000Z', completedAt: '2026-10-30T12:00:10.000Z',
+    mode: 'mixed', kind: 'spaced', cardCount: 1, questionCount: 2, attempts: 3, againCount: 1,
+    firstPassGood: 1, durationMs: 10000, newCards: 1, reviewCards: 0,
+  }],
+  cards: [{ ...decks()[0].cards[0], srs: {
+    stage: 'learning', dueAt: '2026-10-30T12:10:10.000Z', intervalDays: 0, ease: 2.3,
+    repetitions: 0, lapses: 1, reviews: 1, lastReviewedAt: '2026-10-30T12:00:10.000Z',
+    introducedAt: '2026-10-30T12:00:10.000Z',
+  } }],
+}];
 
 function localStorageMock(entries = {}) {
   const values = new Map(Object.entries(entries));
@@ -241,4 +255,111 @@ test('normal IndexedDB saving does not require Web Locks or localStorage', async
   assert.equal(store.backend, 'indexeddb');
   await store.save(decks());
   assert.deepEqual(database.value.decks, decks());
+});
+
+test('opening a version-1 database atomically upgrades its record and revision without changing legacy deck shape', async t => {
+  const original = savedRecord(decks());
+  const { database } = environment(t, { database: indexedDBMock(original) });
+  let release;
+  database.commitGate = new Promise(resolve => { release = resolve; });
+  let resolved = false;
+  const opening = openDeckStore().then(store => { resolved = true; return store; });
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(resolved, false);
+  assert.deepEqual(database.value, original);
+  release();
+  const store = await opening;
+  assert.equal(store.backend, 'indexeddb');
+  assert.deepEqual(store.decks, decks());
+  assert.equal(database.value.version, 2);
+  assert.notEqual(database.value.revision, original.revision);
+  assert.equal(database.commits, 1);
+  await openDeckStore();
+  assert.equal(database.commits, 1, 'An already upgraded record does not rewrite its revision on every launch.');
+});
+
+test('failed version upgrade preserves the readable primary collection and never creates an empty fallback', async t => {
+  const original = savedRecord(decks());
+  const database = indexedDBMock(original);
+  database.failNextCommit = new DOMException('Full', 'QuotaExceededError');
+  const { storage } = environment(t, { database });
+  const store = await openDeckStore();
+  assert.equal(store.backend, 'memory');
+  assert.deepEqual(store.decks, decks());
+  assert.deepEqual(database.value, original);
+  assert.equal(storage.getItem(FALLBACK), null);
+  assert.match(store.warning, /original data has been preserved/);
+  await assert.rejects(store.save(progressedDecks()), error => error.code === 'STORAGE_UNAVAILABLE');
+});
+
+test('version-1 localStorage upgrades under the fallback lock and progress survives later launches', async t => {
+  const original = savedRecord(decks());
+  const { storage } = environment(t, { database: null, storage: localStorageMock({ [FALLBACK]: JSON.stringify(original) }) });
+  const store = await openDeckStore();
+  const upgraded = JSON.parse(storage.getItem(FALLBACK));
+  assert.equal(store.backend, 'localstorage');
+  assert.equal(upgraded.version, 2);
+  assert.notEqual(upgraded.revision, original.revision);
+  assert.deepEqual(upgraded.decks, decks());
+  await store.save(progressedDecks());
+  assert.deepEqual((await openDeckStore()).decks, progressedDecks());
+  assert.equal(JSON.parse(storage.getItem(FALLBACK)).version, 2);
+});
+
+test('failed localStorage schema upgrade leaves its complete original record intact', async t => {
+  const original = JSON.stringify(savedRecord(decks()));
+  const storage = localStorageMock({ [FALLBACK]: original });
+  storage.failWrites = true;
+  environment(t, { database: null, storage });
+  const store = await openDeckStore();
+  assert.equal(store.backend, 'memory');
+  assert.deepEqual(store.decks, decks());
+  assert.equal(storage.getItem(FALLBACK), original);
+});
+
+test('completed history and schedules persist together and a stale editor cannot erase them', async t => {
+  const { database } = environment(t, { database: indexedDBMock(savedRecord(decks())) });
+  const study = await openDeckStore();
+  const staleEditor = await openDeckStore();
+  await study.save(progressedDecks());
+  await assert.rejects(staleEditor.save(decks('Edited in an older tab')), error => error.code === 'DATA_CHANGED');
+  assert.equal(database.value.version, 2);
+  assert.deepEqual(database.value.decks, progressedDecks());
+  const reopened = await openDeckStore();
+  assert.deepEqual(reopened.decks, progressedDecks());
+});
+
+test('a quota failure cannot commit history without its schedule or a schedule without history', async t => {
+  const { database } = environment(t);
+  const store = await openDeckStore();
+  await store.save(decks());
+  database.failNextCommit = new DOMException('Full', 'QuotaExceededError');
+  await assert.rejects(store.save(progressedDecks()), error => error.code === 'QUOTA_EXCEEDED');
+  assert.deepEqual(database.value.decks, decks());
+  assert.deepEqual(store.decks, decks());
+});
+
+test('malformed progress in persisted data is preserved read-only rather than silently stripped', async t => {
+  const invalid = progressedDecks();
+  invalid[0].history[0].attempts = 1;
+  const original = { ...savedRecord(invalid), version: 2 };
+  const { database } = environment(t, { database: indexedDBMock(original) });
+  const store = await openDeckStore();
+  assert.equal(store.backend, 'memory');
+  assert.match(store.warning, /preserved/);
+  assert.deepEqual(database.value, original);
+  await assert.rejects(store.save(decks()), error => error.code === 'STORAGE_UNAVAILABLE');
+});
+
+test('recovery snapshots preserve completed sessions and schedules when the database is temporarily unavailable', async t => {
+  const { database, storage } = environment(t);
+  const store = await openDeckStore();
+  await store.save(progressedDecks());
+  const recovery = JSON.parse(storage.getItem('jenechka-cards-recovery-v2'));
+  assert.equal(recovery.version, 2);
+  assert.deepEqual(recovery.decks, progressedDecks());
+  database.failOpen = true;
+  const recovered = await openDeckStore();
+  assert.equal(recovered.backend, 'memory');
+  assert.deepEqual(recovered.decks, progressedDecks());
 });
