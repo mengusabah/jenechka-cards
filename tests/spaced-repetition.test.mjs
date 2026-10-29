@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { createStudySession, rateStudyCard } from '../study.js';
 import { isSpacedEnabled, getDeckSchedule, selectStudyCards, completeStudyDeck } from '../spaced-repetition.js';
 import { validateDecks, makeBackup, parseBackup } from '../data.js';
+import { fsrs, createEmptyCard, Rating, State } from '../vendor/ts-fsrs-5.4.2.mjs';
 
 const DAY = 86400000;
 const NOW = Date.parse('2026-10-30T12:00:00Z');
@@ -17,10 +18,41 @@ const reviewed = (id, overrides = {}) => ({ ...fresh(id), srs: {
 } });
 const good = (session) => { session.flipped = true; return rateStudyCard(session, 'good'); };
 const again = (session) => { session.flipped = true; return rateStudyCard(session, 'again'); };
+const referenceEngine = () => fsrs({
+  request_retention: 0.9, maximum_interval: 36500, enable_fuzz: false,
+  enable_short_term: true, learning_steps: ['10m'], relearning_steps: ['10m'],
+});
+
+function assertMemoryMatches(schedule, expected) {
+  assert.equal(schedule.algorithm, 'fsrs-6');
+  assert.equal(schedule.profile, 'fsrs6-default-90-v1');
+  assert.equal(schedule.stability, expected.stability);
+  assert.equal(schedule.difficulty, expected.difficulty);
+  assert.equal(schedule.state, expected.state);
+  assert.equal(schedule.stage, expected.state === State.Review ? 'review' : 'learning');
+  assert.equal(schedule.intervalDays, expected.scheduled_days);
+  assert.equal(schedule.learningSteps, expected.learning_steps);
+  assert.equal(schedule.elapsedDays, expected.elapsed_days);
+  assert.equal(schedule.dueAt, expected.due.toISOString());
+  assert.equal(schedule.lastReviewedAt, expected.last_review.toISOString());
+}
+
+function finishRated(deck, rating, { start = NOW, end = start + 10000, mode = 'forward', id = 'rated', retries = 1 } = {}) {
+  let now = start;
+  const session = createStudySession(selectStudyCards(deck, start), mode, () => 1 - Number.EPSILON, { now: () => now, kind: 'spaced' });
+  if (rating === Rating.Again) {
+    // Mixed failures can happen on the reverse side after a clean forward answer.
+    if (mode === 'mixed') good(session);
+    for (let count = 0; count < retries; count++) again(session);
+  }
+  now = end;
+  while (session.queue.length) good(session);
+  return { session, deck: completeStudyDeck(deck, session, { id, durationMs: end - start }) };
+}
 
 function finish(deck, { start = NOW, end = start + 10000, mode = 'forward', kind = 'spaced', id = 'session', cards } = {}) {
   let now = start;
-  const session = createStudySession(cards ?? selectStudyCards(deck, start), mode, () => 1 - Number.EPSILON, { now: () => now, kind });
+  const session = createStudySession(cards ?? (kind === 'practice' ? deck.cards : selectStudyCards(deck, start)), mode, () => 1 - Number.EPSILON, { now: () => now, kind });
   now = end;
   while (session.queue.length) good(session);
   return { session, deck: completeStudyDeck(deck, session, { id, durationMs: end - start }) };
@@ -101,30 +133,87 @@ test('new allowance uses the local calendar date across midnight and daylight-sa
   assert.deepEqual(JSON.parse(result), [19, 19, 20]);
 });
 
-test('clean successful reviews advance through 1 day, 6 days, then ease multiplication with a 365-day cap', () => {
+test('FSRS reviews match the official engine across mixed retries, learning, late reviews, and relearning', () => {
+  const engine = referenceEngine();
+  let expected = createEmptyCard(new Date(NOW));
   let deck = deckOf(fresh('one'));
-  let result = finish(deck);
-  deck = result.deck;
-  assert.deepEqual(deck.cards[0].srs, {
-    stage: 'review', dueAt: iso(NOW + 10000 + DAY), intervalDays: 1, ease: 2.5,
-    repetitions: 1, lapses: 0, reviews: 1,
-    introducedAt: iso(NOW + 10000), lastReviewedAt: iso(NOW + 10000),
+  const steps = [
+    { rating: Rating.Again, mode: 'mixed', retries: 3, late: 0 },
+    { rating: Rating.Again, mode: 'forward', retries: 2, late: 0 },
+    { rating: Rating.Good, mode: 'mixed', late: 0 },
+    { rating: Rating.Good, mode: 'reverse', late: 0 },
+    { rating: Rating.Good, mode: 'mixed', late: 9 * DAY },
+    { rating: Rating.Again, mode: 'mixed', retries: 4, late: 3 * DAY },
+    { rating: Rating.Good, mode: 'forward', late: 0 },
+    { rating: Rating.Good, mode: 'mixed', late: 2 * DAY },
+  ];
+  const log = [];
+  let introduction;
+  for (const [index, step] of steps.entries()) {
+    const start = expected.due.getTime() + step.late;
+    const end = start + 10000;
+    expected = engine.repeat(expected, new Date(end))[step.rating].card;
+    const before = structuredClone(deck);
+    const result = finishRated(deck, step.rating, { ...step, start, end, id: `fsrs-${index}` });
+    assert.deepEqual(deck, before, 'committing a completed review must not mutate its source deck');
+    deck = result.deck;
+    const schedule = deck.cards[0].srs;
+    assertMemoryMatches(schedule, expected);
+    introduction ??= iso(end);
+    log.push({ at: iso(end), rating: step.rating });
+    assert.equal(schedule.introducedAt, introduction);
+    assert.equal(schedule.reviews, index + 1, 'retries and mixed directions must not inflate FSRS reviews');
+    assert.deepEqual(schedule.reviewLog, log);
+    assert.equal(schedule.reviewLogComplete, true);
+    assert.equal(Object.hasOwn(schedule, 'ease'), false);
+    assert.equal(Object.hasOwn(schedule, 'repetitions'), false);
+    assert.deepEqual(validateDecks([deck]), [deck]);
+  }
+});
+
+test('a clean new card uses the FSRS default two-day interval and subsequent reviews remain model-derived', () => {
+  const engine = referenceEngine();
+  let expected = createEmptyCard(new Date(NOW));
+  let deck = deckOf(fresh('one'));
+  for (let index = 0; index < 5; index++) {
+    const start = expected.due.getTime();
+    const end = start + 10000;
+    expected = engine.repeat(expected, new Date(end))[Rating.Good].card;
+    deck = finish(deck, { start, end, id: `clean-${index}` }).deck;
+    assertMemoryMatches(deck.cards[0].srs, expected);
+    if (!index) assert.equal(deck.cards[0].srs.intervalDays, 2);
+  }
+  assert.equal(deck.cards[0].srs.reviews, 5);
+  assert.equal(deck.cards[0].srs.reviewLog.length, 5);
+});
+
+test('legacy progress keeps its current due date until a completed review and migrates without invented logs', () => {
+  const legacy = reviewed('legacy', {
+    intervalDays: 38, ease: 2.3, repetitions: 4, reviews: 8, lapses: 2,
+    introducedAt: iso(NOW - 150 * DAY), lastReviewedAt: iso(NOW - 38 * DAY), dueAt: iso(NOW + 1000),
   });
-  const introduction = deck.cards[0].srs.introducedAt;
-  result = finish(deck, { start: Date.parse(deck.cards[0].srs.dueAt), id: 'two' });
-  deck = result.deck;
-  assert.equal(deck.cards[0].srs.intervalDays, 6);
-  assert.equal(deck.cards[0].srs.repetitions, 2);
-  result = finish(deck, { start: Date.parse(deck.cards[0].srs.dueAt), id: 'three' });
-  deck = result.deck;
-  assert.equal(deck.cards[0].srs.intervalDays, 15);
-  assert.equal(deck.cards[0].srs.repetitions, 3);
-  assert.equal(deck.cards[0].srs.reviews, 3);
-  assert.equal(deck.cards[0].srs.introducedAt, introduction);
-  const long = deckOf(reviewed('long', { intervalDays: 300, repetitions: 8, ease: 2.9 }));
-  assert.equal(finish(long).deck.cards[0].srs.intervalDays, 365);
-  const fractional = deckOf(reviewed('fractional', { intervalDays: 7, repetitions: 3, ease: 2.3 }));
-  assert.equal(finish(fractional).deck.cards[0].srs.intervalDays, 17);
+  const original = deckOf(legacy);
+  const snapshot = structuredClone(original);
+  assert.equal(selectStudyCards(original, NOW).length, 0);
+  assert.equal(getDeckSchedule(original, NOW).nextDueAt, iso(NOW + 1000));
+  assert.deepEqual(original, snapshot);
+  const result = finish(original, { start: NOW + 1000, id: 'migration' });
+  const schedule = result.deck.cards[0].srs;
+  assert.deepEqual(original, snapshot);
+  assert.equal(schedule.algorithm, 'fsrs-6');
+  assert.equal(schedule.introducedAt, legacy.srs.introducedAt);
+  assert.equal(schedule.reviews, 9);
+  assert.equal(schedule.lapses, 2);
+  assert.equal(schedule.reviewLogComplete, false);
+  assert.deepEqual(schedule.reviewLog, [{ at: iso(NOW + 11000), rating: Rating.Good }]);
+  assert.ok(schedule.stability > 0);
+  assert.ok(schedule.difficulty >= 1 && schedule.difficulty <= 10);
+  assert.ok(Date.parse(schedule.dueAt) > Date.parse(schedule.lastReviewedAt));
+  const next = finish(result.deck, { start: Date.parse(schedule.dueAt), id: 'migration-followup' }).deck;
+  assert.equal(next.cards[0].srs.reviewLogComplete, false);
+  assert.equal(next.cards[0].srs.reviewLog.length, 2);
+  assert.equal(next.cards[0].srs.reviews, 10);
+  assert.deepEqual(validateDecks([next]), [next]);
 });
 
 test('one or many Again ratings in either mixed direction produce one card-level lapse only after completion', () => {
@@ -140,11 +229,17 @@ test('one or many Again ratings in either mixed direction produce one card-level
   time += 30000;
   good(session);
   const updated = completeStudyDeck(deck, session, { id: 'lapse', durationMs: 18000 });
-  assert.deepEqual(updated.cards[0].srs, {
-    stage: 'learning', dueAt: iso(time + 600000), intervalDays: 0, ease: 2.3,
-    repetitions: 0, lapses: 1, reviews: 2,
-    introducedAt: iso(NOW - DAY), lastReviewedAt: iso(time),
-  });
+  const schedule = updated.cards[0].srs;
+  assert.equal(schedule.stage, 'learning');
+  assert.equal(schedule.state, State.Relearning);
+  assert.equal(schedule.dueAt, iso(time + 600000));
+  assert.equal(schedule.intervalDays, 0);
+  assert.equal(schedule.lapses, 1);
+  assert.equal(schedule.reviews, 2);
+  assert.equal(schedule.introducedAt, iso(NOW - DAY));
+  assert.equal(schedule.lastReviewedAt, iso(time));
+  assert.equal(schedule.reviewLogComplete, false);
+  assert.deepEqual(schedule.reviewLog, [{ at: iso(time), rating: Rating.Again }]);
   assert.deepEqual(updated.history[0], {
     id: 'lapse', startedAt: iso(NOW), completedAt: iso(time), mode: 'mixed', kind: 'spaced',
     cardCount: 1, questionCount: 2, attempts: 4, againCount: 2, firstPassGood: 1,
@@ -152,30 +247,35 @@ test('one or many Again ratings in either mixed direction produce one card-level
   });
   assert.deepEqual(deck, snapshot);
   const next = finish(updated, { start: time + 600000, id: 'relearn' }).deck;
-  assert.equal(next.cards[0].srs.intervalDays, 1);
-  assert.equal(next.cards[0].srs.repetitions, 1);
+  assert.ok(next.cards[0].srs.intervalDays >= 1);
   assert.equal(next.cards[0].srs.stage, 'review');
-  assert.equal(next.cards[0].srs.ease, 2.3);
+  assert.equal(next.cards[0].srs.state, State.Review);
   assert.equal(next.cards[0].srs.lapses, 1);
+  assert.equal(next.cards[0].srs.reviews, 3);
+  assert.deepEqual(next.cards[0].srs.reviewLog, [
+    { at: iso(time), rating: Rating.Again },
+    { at: iso(time + 600000 + 10000), rating: Rating.Good },
+  ]);
 });
 
-test('lapse ease never drops below 1.3 and new-card lapse consumes the daily introduction allowance', () => {
-  const deck = deckOf(fresh('new'), reviewed('low', { ease: 1.3 }));
-  const session = createStudySession(deck.cards, 'forward', () => 1 - Number.EPSILON, { now: NOW, kind: 'spaced' });
-  again(session);
-  again(session);
-  while (session.queue.length) good(session);
-  const updated = completeStudyDeck(deck, session, { id: 'failed' });
-  assert.equal(updated.cards[0].srs.stage, 'learning');
-  assert.equal(updated.cards[0].srs.introducedAt, iso(NOW));
-  assert.equal(updated.cards[1].srs.ease, 1.3);
+test('new-card Again uses a ten-minute learning step and consumes only one daily introduction', () => {
+  const deck = deckOf(fresh('new'));
+  const { deck: updated } = finishRated(deck, Rating.Again, { start: NOW, end: NOW, mode: 'mixed', retries: 3 });
+  const schedule = updated.cards[0].srs;
+  assert.equal(schedule.stage, 'learning');
+  assert.equal(schedule.state, State.Learning);
+  assert.equal(schedule.dueAt, iso(NOW + 600000));
+  assert.equal(schedule.introducedAt, iso(NOW));
+  assert.equal(schedule.reviews, 1);
+  assert.deepEqual(schedule.reviewLog, [{ at: iso(NOW), rating: Rating.Again }]);
   assert.equal(updated.history[0].newCards, 1);
-  assert.equal(updated.history[0].reviewCards, 1);
+  assert.equal(updated.history[0].reviewCards, 0);
   assert.equal(getDeckSchedule(deckOf(...updated.cards, ...Array.from({ length: 30 }, (_, i) => fresh(i))), NOW).newAvailable, 19);
 });
 
 test('practice adds immutable history without changing any schedule or introducing cards', () => {
-  const deck = deckOf(fresh('new'), reviewed('review'));
+  const scheduled = finish(deckOf(fresh('review')), { id: 'introduced' }).deck.cards[0];
+  const deck = deckOf(fresh('new'), scheduled);
   const snapshot = structuredClone(deck);
   const result = finish(deck, { kind: 'practice', mode: 'mixed' });
   assert.notEqual(result.deck, deck);
@@ -241,6 +341,58 @@ test('concurrent schedule changes and removed cards are preserved at completion'
   assert.equal(updated.cards[0], changed);
   assert.equal(updated.cards[1].srs.reviews, 2);
   assert.equal(updated.history[0].cardCount, 3);
+});
+
+test('concurrent FSRS memory or review-log changes cannot be overwritten by an older completed session', () => {
+  const introduced = finish(deckOf(fresh('one')), { id: 'initial' }).deck;
+  const start = Date.parse(introduced.cards[0].srs.dueAt);
+  const { session } = finish(introduced, { start, id: 'pending' });
+  const schedule = introduced.cards[0].srs;
+  const changes = [
+    { stability: schedule.stability + 0.1 },
+    { difficulty: Math.min(10, schedule.difficulty + 0.1) },
+    { learningSteps: schedule.learningSteps + 1 },
+    { elapsedDays: schedule.elapsedDays + 1 },
+    { reviewLogComplete: false },
+    { reviewLog: [{ ...schedule.reviewLog[0], rating: Rating.Again }] },
+  ];
+  for (const change of changes) {
+    const changed = { ...introduced.cards[0], srs: { ...schedule, ...change } };
+    const current = { ...introduced, cards: [changed] };
+    const updated = completeStudyDeck(current, session, { id: 'concurrent-fsrs' });
+    assert.equal(updated.cards[0], changed, `must preserve newer FSRS field ${Object.keys(change)[0]}`);
+    assert.equal(updated.history.length, 2);
+  }
+});
+
+test('the starting review-log snapshot is detached from mutable current card memory', () => {
+  const deck = finish(deckOf(fresh('one')), { id: 'initial' }).deck;
+  const start = Date.parse(deck.cards[0].srs.dueAt);
+  const session = createStudySession(deck.cards, 'forward', () => 0, { now: start, kind: 'spaced' });
+  deck.cards[0].srs.reviewLog[0].rating = Rating.Again;
+  good(session);
+  const snapshot = structuredClone(deck.cards[0]);
+  const updated = completeStudyDeck(deck, session, { id: 'stale-log' });
+  assert.deepEqual(updated.cards[0], snapshot);
+  assert.equal(updated.cards[0].srs.reviews, 1);
+});
+
+test('malformed completion metrics cannot append history or memory observations', () => {
+  const original = finish(deckOf(fresh('one')), { id: 'initial' }).deck;
+  const start = Date.parse(original.cards[0].srs.dueAt);
+  for (const corrupt of [
+    (session) => { session.attempts++; },
+    (session) => { session.againCount++; },
+    (session) => { session.firstPassGood++; },
+    (session) => { session.cardResults[0].attempts++; },
+    (session) => { session.cardResults[0].directions.forward.completed = false; },
+  ]) {
+    const { session } = finish(original, { start });
+    corrupt(session);
+    const snapshot = structuredClone(original);
+    assert.equal(completeStudyDeck(original, session, { id: 'invalid' }), original);
+    assert.deepEqual(original, snapshot);
+  }
 });
 
 test('history durations are finite foreground time bounded by wall duration, and IDs are required', () => {

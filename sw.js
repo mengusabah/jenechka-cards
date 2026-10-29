@@ -1,5 +1,5 @@
 /* Bump this version whenever any app-shell file changes. */
-const VERSION = '2026.10.30.2';
+const VERSION = '2026.10.30.3';
 const SCOPE = self.registration.scope;
 const CACHE_PREFIX = `jenechka-cards-shell:${encodeURIComponent(SCOPE)}:`;
 const CACHE_NAME = `${CACHE_PREFIX}${VERSION}`;
@@ -18,6 +18,8 @@ const ASSET_URLS = [
   'deck-options.js',
   'study.js',
   'spaced-repetition.js',
+  'fsrs-scheduler.js',
+  'vendor/ts-fsrs-5.4.2.mjs',
   'stats.js',
   'welcome.js',
   'manifest.webmanifest',

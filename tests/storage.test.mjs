@@ -20,6 +20,16 @@ const progressedDecks = () => [{
     introducedAt: '2026-10-30T12:00:10.000Z',
   } }],
 }];
+const fsrsDecks = () => [{
+  ...progressedDecks()[0],
+  cards: [{ ...decks()[0].cards[0], srs: {
+    algorithm: 'fsrs-6', profile: 'fsrs6-default-90-v1', stage: 'learning',
+    dueAt: '2026-10-30T12:10:10.000Z', intervalDays: 0, lapses: 1, reviews: 1,
+    lastReviewedAt: '2026-10-30T12:00:10.000Z', introducedAt: '2026-10-30T12:00:10.000Z',
+    stability: 0.40255, difficulty: 7.2102, state: 1, learningSteps: 0, elapsedDays: 0,
+    reviewLogComplete: true, reviewLog: [{ at: '2026-10-30T12:00:10.000Z', rating: 1 }],
+  } }],
+}];
 
 function localStorageMock(entries = {}) {
   const values = new Map(Object.entries(entries));
@@ -271,7 +281,7 @@ test('opening a version-1 database atomically upgrades its record and revision w
   const store = await opening;
   assert.equal(store.backend, 'indexeddb');
   assert.deepEqual(store.decks, decks());
-  assert.equal(database.value.version, 2);
+  assert.equal(database.value.version, 3);
   assert.notEqual(database.value.revision, original.revision);
   assert.equal(database.commits, 1);
   await openDeckStore();
@@ -298,12 +308,12 @@ test('version-1 localStorage upgrades under the fallback lock and progress survi
   const store = await openDeckStore();
   const upgraded = JSON.parse(storage.getItem(FALLBACK));
   assert.equal(store.backend, 'localstorage');
-  assert.equal(upgraded.version, 2);
+  assert.equal(upgraded.version, 3);
   assert.notEqual(upgraded.revision, original.revision);
   assert.deepEqual(upgraded.decks, decks());
   await store.save(progressedDecks());
   assert.deepEqual((await openDeckStore()).decks, progressedDecks());
-  assert.equal(JSON.parse(storage.getItem(FALLBACK)).version, 2);
+  assert.equal(JSON.parse(storage.getItem(FALLBACK)).version, 3);
 });
 
 test('failed localStorage schema upgrade leaves its complete original record intact', async t => {
@@ -323,7 +333,7 @@ test('completed history and schedules persist together and a stale editor cannot
   const staleEditor = await openDeckStore();
   await study.save(progressedDecks());
   await assert.rejects(staleEditor.save(decks('Edited in an older tab')), error => error.code === 'DATA_CHANGED');
-  assert.equal(database.value.version, 2);
+  assert.equal(database.value.version, 3);
   assert.deepEqual(database.value.decks, progressedDecks());
   const reopened = await openDeckStore();
   assert.deepEqual(reopened.decks, progressedDecks());
@@ -356,10 +366,112 @@ test('recovery snapshots preserve completed sessions and schedules when the data
   const store = await openDeckStore();
   await store.save(progressedDecks());
   const recovery = JSON.parse(storage.getItem('jenechka-cards-recovery-v2'));
-  assert.equal(recovery.version, 2);
+  assert.equal(recovery.version, 3);
   assert.deepEqual(recovery.decks, progressedDecks());
   database.failOpen = true;
   const recovered = await openDeckStore();
   assert.equal(recovered.backend, 'memory');
   assert.deepEqual(recovered.decks, progressedDecks());
+});
+
+test('version-2 IndexedDB upgrades atomically without rescheduling cards or changing completed history', async t => {
+  const original = { ...savedRecord(progressedDecks()), version: 2 };
+  const originalSchedule = JSON.stringify(original.decks[0].cards[0].srs);
+  const originalHistory = JSON.stringify(original.decks[0].history);
+  const { database, storage } = environment(t, { database: indexedDBMock(original) });
+  let release;
+  database.commitGate = new Promise(resolve => { release = resolve; });
+  let resolved = false;
+  const opening = openDeckStore().then(store => { resolved = true; return store; });
+  await new Promise(resolve => setImmediate(resolve));
+  assert.equal(resolved, false);
+  assert.deepEqual(database.value, original);
+  release();
+  const store = await opening;
+  assert.equal(store.backend, 'indexeddb');
+  assert.equal(database.value.version, 3);
+  assert.notEqual(database.value.revision, original.revision);
+  assert.deepEqual(store.decks, original.decks);
+  assert.deepEqual(database.value.decks, original.decks);
+  assert.equal(JSON.stringify(database.value.decks[0].cards[0].srs), originalSchedule);
+  assert.equal(JSON.stringify(database.value.decks[0].history), originalHistory);
+  assert.equal(JSON.parse(storage.getItem('jenechka-cards-recovery-v2')).version, 3);
+  await openDeckStore();
+  assert.equal(database.commits, 1);
+});
+
+test('version-2 fallback upgrades under its lock and preserves legacy progress until it is explicitly replaced', async t => {
+  const original = { ...savedRecord(progressedDecks()), version: 2 };
+  const { storage, database } = environment(t, { storage: localStorageMock({ [FALLBACK]: JSON.stringify(original) }) });
+  const store = await openDeckStore();
+  const upgraded = JSON.parse(storage.getItem(FALLBACK));
+  assert.equal(store.backend, 'localstorage');
+  assert.equal(upgraded.version, 3);
+  assert.notEqual(upgraded.revision, original.revision);
+  assert.deepEqual(upgraded.decks, original.decks);
+  assert.equal(JSON.stringify(upgraded.decks[0].cards[0].srs), JSON.stringify(original.decks[0].cards[0].srs));
+  assert.equal(JSON.stringify(upgraded.decks[0].history), JSON.stringify(original.decks[0].history));
+  assert.equal(database.opens, 0);
+  await store.save(fsrsDecks());
+  assert.deepEqual((await openDeckStore()).decks, fsrsDecks());
+});
+
+test('failed version-2 upgrades preserve original schedules and history in either storage backend', async t => {
+  const original = { ...savedRecord(progressedDecks()), version: 2 };
+  const database = indexedDBMock(original);
+  database.failNextCommit = new DOMException('Full', 'QuotaExceededError');
+  const { storage } = environment(t, { database });
+  const failed = await openDeckStore();
+  assert.equal(failed.backend, 'memory');
+  assert.deepEqual(failed.decks, original.decks);
+  assert.deepEqual(database.value, original);
+  assert.equal(storage.getItem(FALLBACK), null);
+  const raw = JSON.stringify(original);
+  const fallback = localStorageMock({ [FALLBACK]: raw });
+  fallback.failWrites = true;
+  globalThis.localStorage = fallback;
+  const fallbackFailed = await openDeckStore();
+  assert.equal(fallbackFailed.backend, 'memory');
+  assert.deepEqual(fallbackFailed.decks, original.decks);
+  assert.equal(fallback.getItem(FALLBACK), raw);
+});
+
+test('FSRS memory and logs commit with session history, survive reopening, and recover read-only', async t => {
+  const { database, storage } = environment(t);
+  const store = await openDeckStore();
+  await store.save(fsrsDecks());
+  assert.equal(database.value.version, 3);
+  assert.deepEqual(database.value.decks, fsrsDecks());
+  assert.deepEqual((await openDeckStore()).decks, fsrsDecks());
+  const recovery = JSON.parse(storage.getItem('jenechka-cards-recovery-v2'));
+  assert.deepEqual(recovery.decks, fsrsDecks());
+  database.failOpen = true;
+  const recovered = await openDeckStore();
+  assert.equal(recovered.backend, 'memory');
+  assert.deepEqual(recovered.decks, fsrsDecks());
+  await assert.rejects(recovered.save(decks()), error => error.code === 'STORAGE_UNAVAILABLE');
+});
+
+test('failed FSRS saves and stale tabs cannot strip previously committed memory or logs', async t => {
+  const { database } = environment(t);
+  const store = await openDeckStore();
+  await store.save(progressedDecks());
+  const staleEditor = await openDeckStore();
+  database.failNextCommit = new DOMException('Full', 'QuotaExceededError');
+  await assert.rejects(store.save(fsrsDecks()), error => error.code === 'QUOTA_EXCEEDED');
+  assert.deepEqual(database.value.decks, progressedDecks());
+  assert.deepEqual(store.decks, progressedDecks());
+  await store.save(fsrsDecks());
+  await assert.rejects(staleEditor.save(progressedDecks()), error => error.code === 'DATA_CHANGED');
+  assert.deepEqual(database.value.decks, fsrsDecks());
+});
+
+test('malformed FSRS and future schedule algorithms remain untouched in primary storage', async t => {
+  const original = { ...savedRecord(fsrsDecks()), version: 3 };
+  original.decks[0].cards[0].srs.algorithm = 'fsrs-7';
+  const { database } = environment(t, { database: indexedDBMock(original) });
+  const store = await openDeckStore();
+  assert.equal(store.backend, 'memory');
+  assert.deepEqual(database.value, original);
+  assert.match(store.warning, /preserved/);
 });

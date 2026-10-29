@@ -1,5 +1,5 @@
-const DAY_MS = 24 * 60 * 60 * 1000;
-const LEARNING_DELAY_MS = 10 * 60 * 1000;
+import { scheduleFSRSCard } from './fsrs-scheduler.js';
+
 const DAILY_NEW_LIMIT = 20;
 const SESSION_LIMIT = 50;
 
@@ -80,38 +80,11 @@ function finished(session) {
 
 function sameSchedule(left, right) {
   if (!left || !right) return !left && !right;
-  return ['stage', 'dueAt', 'intervalDays', 'ease', 'repetitions', 'lapses', 'reviews', 'lastReviewedAt', 'introducedAt']
-    .every((key) => left[key] === right[key]);
-}
-
-function scheduleCard(card, result, completedAt, completedTime) {
-  const previous = card.srs;
-  const ease = previous?.ease ?? 2.5;
-  const lapse = result.againCount > 0;
-  // SM-2-inspired, binary-rating adaptation, implemented here: a completed
-  // Algorithm reference: https://super-memory.org/archive/english/ol/sm2.htm
-  // clean first/second review gets 1/6 days; later intervals multiply by ease.
-  // Mixed directions form one review: any Again is one lapse for that card.
-  // Failed cards enter a ten-minute learning step, not an immediate long gap.
-  const increment = (value = 0) => Math.min(Number.MAX_SAFE_INTEGER, value + 1);
-  const repetitions = lapse ? 0 : previous?.stage === 'review' ? increment(previous.repetitions) : 1;
-  const intervalDays = lapse ? 0 : repetitions === 1 ? 1 : repetitions === 2 ? 6
-    : Math.min(365, Math.max(1, Math.ceil(previous.intervalDays * ease)));
-  const delay = lapse ? LEARNING_DELAY_MS : intervalDays * DAY_MS;
-  return {
-    ...card,
-    srs: {
-      stage: lapse ? 'learning' : 'review',
-      dueAt: new Date(completedTime + delay).toISOString(),
-      intervalDays,
-      ease: Math.max(1.3, Math.min(3, lapse ? Number((ease - 0.2).toFixed(2)) : ease)),
-      repetitions,
-      lapses: lapse ? increment(previous?.lapses) : (previous?.lapses ?? 0),
-      reviews: increment(previous?.reviews),
-      lastReviewedAt: completedAt,
-      introducedAt: previous?.introducedAt ?? completedAt,
-    },
-  };
+  const fields = Object.keys(left);
+  return fields.length === Object.keys(right).length && fields.every(key => key === 'reviewLog'
+    ? Array.isArray(right.reviewLog) && left.reviewLog.length === right.reviewLog.length
+      && left.reviewLog.every((entry, index) => entry.at === right.reviewLog[index].at && entry.rating === right.reviewLog[index].rating)
+    : left[key] === right[key]);
 }
 
 export function completeStudyDeck(deck, session, { id, completedAt, durationMs = 0 } = {}) {
@@ -146,7 +119,7 @@ export function completeStudyDeck(deck, session, { id, completedAt, durationMs =
         if (newRemaining <= 0) continue;
         newRemaining--;
       }
-      updates.set(card.id, scheduleCard(card, result, end, completedTime));
+      updates.set(card.id, { ...card, srs: scheduleFSRSCard(card.srs, result, end) });
     }
     cards = deck.cards.map((card) => updates.get(card.id) ?? card);
   }

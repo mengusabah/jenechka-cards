@@ -119,7 +119,7 @@ test('precache and offline navigation work from the GitHub Pages subdirectory', 
   const sw = worker();
   await sw.dispatch('install');
   assert.equal(sw.skipped, 0, 'install must not replace an active worker');
-  assert.equal(sw.fetched.length, 22);
+  assert.equal(sw.fetched.length, 24);
   assert.ok(sw.fetched.every(({ url, cache }) => url.startsWith(scope) && cache === 'reload'));
   sw.offline = true;
   const before = sw.fetched.length;
@@ -129,7 +129,7 @@ test('precache and offline navigation work from the GitHub Pages subdirectory', 
     assert.equal(await response.text(), `release:${scope}index.html`);
   }
   for (const path of [
-    'styles.css', 'stats.css', 'app.js', 'data.js', 'languages.js', 'prebuilt.js', 'preview.js', 'deck-builder.js', 'deck-add-dialog.js', 'deck-options.js', 'study.js', 'spaced-repetition.js', 'stats.js', 'welcome.js', 'icons/welcome-mascot.png',
+    'styles.css', 'stats.css', 'app.js', 'data.js', 'languages.js', 'prebuilt.js', 'preview.js', 'deck-builder.js', 'deck-add-dialog.js', 'deck-options.js', 'study.js', 'spaced-repetition.js', 'fsrs-scheduler.js', 'vendor/ts-fsrs-5.4.2.mjs', 'stats.js', 'welcome.js', 'icons/welcome-mascot.png',
     'icons/favicon-64.png', 'icons/icon-192.png', 'icons/icon-512.png',
     'icons/maskable-512.png', 'icons/apple-touch-icon.png',
   ]) {

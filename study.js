@@ -26,7 +26,7 @@ export function createStudySession(cards, mode, random = Math.random, { now = Da
     const result = {
       cardId: card.id,
       isNew: !card.srs,
-      initialSrs: card.srs ? { ...card.srs } : null,
+      initialSrs: card.srs ? JSON.parse(JSON.stringify(card.srs)) : null,
       questionCount: directions.length,
       attempts: 0,
       againCount: 0,

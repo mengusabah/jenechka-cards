@@ -1,8 +1,9 @@
 // All user data stays on this device. A successful save means the transaction
 // committed; callers must keep their previous state until this promise resolves.
 export const MAX_BACKUP_BYTES = 10 * 1024 * 1024;
-export const LIMITS = Object.freeze({ decks: 2000, cards: 100000, history: 100000, name: 1000, language: 200, side: 100000 });
-const SCHEMA_VERSION = 2;
+export const LIMITS = Object.freeze({ decks: 2000, cards: 100000, history: 100000, reviewLogs: 100000, name: 1000, language: 200, side: 100000 });
+const SCHEMA_VERSION = 3;
+const SUPPORTED_SCHEMA_VERSIONS = [1, 2, SCHEMA_VERSION];
 const LEGACY_KEY = 'jenechka-cards-v1';
 const STORAGE_KEY = 'jenechka-cards-store-v2';
 const BACKEND_KEY = 'jenechka-cards-backend-v2';
@@ -75,6 +76,12 @@ function timestamp(value, label) {
 
 function validateSchedule(value, label) {
   object(value, `${label} schedule`);
+  if (Object.hasOwn(value, 'algorithm')) return validateFsrsSchedule(value, label);
+  // A missing algorithm identifies an unchanged legacy schedule. Never strip
+  // FSRS memory or logs from malformed/future records and treat them as legacy.
+  for (const field of ['profile', 'stability', 'difficulty', 'state', 'learningSteps', 'elapsedDays', 'reviewLogComplete', 'reviewLog']) {
+    if (Object.hasOwn(value, field)) throw failure(`${label} FSRS schedule must identify its algorithm.`);
+  }
   if (!['learning', 'review'].includes(value.stage)) throw failure(`${label} schedule stage must be learning or review.`);
   const schedule = {
     stage: value.stage,
@@ -89,6 +96,58 @@ function validateSchedule(value, label) {
   };
   if (Date.parse(schedule.introducedAt) > Date.parse(schedule.lastReviewedAt) || Date.parse(schedule.lastReviewedAt) > Date.parse(schedule.dueAt)) {
     throw failure(`${label} schedule dates must follow introduction, last review, then next review.`);
+  }
+  return schedule;
+}
+
+function validateFsrsSchedule(value, label) {
+  if (value.algorithm !== 'fsrs-6') throw failure(`${label} schedule algorithm is not supported.`);
+  if (value.profile !== 'fsrs6-default-90-v1') throw failure(`${label} FSRS profile is not supported.`);
+  if (Object.hasOwn(value, 'ease') || Object.hasOwn(value, 'repetitions')) throw failure(`${label} FSRS schedule cannot contain legacy scheduling fields.`);
+  if (![1, 2, 3].includes(value.state)) throw failure(`${label} FSRS state must be learning, review, or relearning.`);
+  if (value.stage !== (value.state === 2 ? 'review' : 'learning')) throw failure(`${label} FSRS state and schedule stage must agree.`);
+  if (typeof value.reviewLogComplete !== 'boolean') throw failure(`${label} FSRS review log completeness must be true or false.`);
+  if (!Array.isArray(value.reviewLog) || !value.reviewLog.length) throw failure(`${label} FSRS review log must contain its completed reviews.`);
+  if (value.reviewLog.length > LIMITS.reviewLogs) throw failure(`A collection can contain at most ${LIMITS.reviewLogs.toLocaleString('en-US')} card review records. Export your progress before removing old entries.`);
+  const schedule = {
+    algorithm: value.algorithm,
+    profile: value.profile,
+    stage: value.stage,
+    dueAt: timestamp(value.dueAt, `${label} due date`),
+    intervalDays: integer(value.intervalDays, value.state === 2 ? 1 : 0, value.state === 2 ? 36500 : 0, `${label} review interval`),
+    lapses: integer(value.lapses, 0, Number.MAX_SAFE_INTEGER, `${label} lapses`),
+    reviews: integer(value.reviews, 1, Number.MAX_SAFE_INTEGER, `${label} reviews`),
+    lastReviewedAt: timestamp(value.lastReviewedAt, `${label} last review date`),
+    introducedAt: timestamp(value.introducedAt, `${label} introduction date`),
+    stability: finiteNumber(value.stability, 0.001, 36500, `${label} memory stability`),
+    difficulty: finiteNumber(value.difficulty, 1, 10, `${label} memory difficulty`),
+    state: value.state,
+    // This profile has exactly one ten-minute learning/relearning step. An
+    // out-of-range index would make FSRS skip that step on the next review.
+    learningSteps: integer(value.learningSteps, 0, 0, `${label} learning steps`),
+    elapsedDays: integer(value.elapsedDays, 0, Number.MAX_SAFE_INTEGER, `${label} elapsed days`),
+    reviewLogComplete: value.reviewLogComplete,
+    reviewLog: value.reviewLog.map((entry, index) => {
+      const entryLabel = `${label}, card review ${index + 1}`;
+      object(entry, entryLabel);
+      if (![1, 3].includes(entry.rating)) throw failure(`${entryLabel} rating must be Again or Good.`);
+      return { at: timestamp(entry.at, `${entryLabel} date`), rating: entry.rating };
+    }),
+  };
+  const introducedAt = Date.parse(schedule.introducedAt);
+  const lastReviewedAt = Date.parse(schedule.lastReviewedAt);
+  if (introducedAt > lastReviewedAt || lastReviewedAt > Date.parse(schedule.dueAt)) {
+    throw failure(`${label} schedule dates must follow introduction, last review, then next review.`);
+  }
+  let previousAt = introducedAt;
+  for (const entry of schedule.reviewLog) {
+    const at = Date.parse(entry.at);
+    if (at < previousAt || at > lastReviewedAt) throw failure(`${label} FSRS review log dates must follow introduction and chronological review order.`);
+    previousAt = at;
+  }
+  if (previousAt !== lastReviewedAt) throw failure(`${label} FSRS review log must end at its last review date.`);
+  if (schedule.reviewLog.length > schedule.reviews || (schedule.reviewLogComplete && schedule.reviewLog.length !== schedule.reviews)) {
+    throw failure(`${label} FSRS review log length must match its recorded review count.`);
   }
   return schedule;
 }
@@ -150,6 +209,7 @@ export function validateDecks(value) {
   const deckIds = new Set();
   let totalCards = 0;
   let totalHistory = 0;
+  let totalReviewLogs = 0;
   const decks = value.map((deck, index) => {
     const label = `Deck ${index + 1}`;
     object(deck, label);
@@ -180,11 +240,14 @@ export function validateDecks(value) {
         const cardId = id(card.id, `${cardLabel} ID`);
         if (cardIds.has(cardId)) throw failure(`${cardLabel} has a duplicate card ID.`);
         cardIds.add(cardId);
+        const schedule = card.srs === undefined ? undefined : validateSchedule(card.srs, cardLabel);
+        totalReviewLogs += schedule?.reviewLog?.length || 0;
+        if (totalReviewLogs > LIMITS.reviewLogs) throw failure(`A collection can contain at most ${LIMITS.reviewLogs.toLocaleString('en-US')} card review records. Export your progress before removing old entries.`);
         return {
           id: cardId,
           front: textField(card.front, LIMITS.side, `${cardLabel} front`),
           back: textField(card.back, LIMITS.side, `${cardLabel} back`),
-          ...(card.srs === undefined ? {} : { srs: validateSchedule(card.srs, cardLabel) }),
+          ...(schedule === undefined ? {} : { srs: schedule }),
         };
       }),
     };
@@ -244,7 +307,7 @@ export function parseBackup(text) {
   catch { throw failure('This file is not valid JSON. Choose a Jenechka Cards backup.'); }
   if (Array.isArray(value)) return validateDecks(value);
   object(value, 'Backup');
-  if (value.format !== 'jenechka-cards' || ![1, SCHEMA_VERSION].includes(value.version)) throw failure('This backup format or version is not supported.');
+  if (value.format !== 'jenechka-cards' || !SUPPORTED_SCHEMA_VERSIONS.includes(value.version)) throw failure('This backup format or version is not supported.');
   timestamp(value.exportedAt, 'The backup export date');
   return validateDecks(value.decks);
 }
@@ -288,7 +351,7 @@ function record(decks) {
 
 function validateRecord(value) {
   object(value, 'Stored collection');
-  if (value.format !== 'jenechka-cards-store' || ![1, SCHEMA_VERSION].includes(value.version) || typeof value.revision !== 'string' || !SAFE_ID.test(value.revision)) {
+  if (value.format !== 'jenechka-cards-store' || !SUPPORTED_SCHEMA_VERSIONS.includes(value.version) || typeof value.revision !== 'string' || !SAFE_ID.test(value.revision)) {
     throw failure('The saved collection format is invalid.', 'CORRUPT_STORAGE');
   }
   return { ...value, decks: validateDecks(value.decks) };
@@ -446,8 +509,8 @@ async function localStore(databaseError) {
     const initial = await globalThis.navigator.locks.request(LOCK_NAME, () => {
       const current = readLocal();
       if (current.value?.version === SCHEMA_VERSION) return current.value;
-      // Upgrade under the same lock used for saves. Version-1 app windows
-      // reject this record before they can discard newly introduced progress.
+      // Upgrade under the same lock used for saves. Older app windows reject
+      // this record before they can discard newly introduced progress.
       const next = record(current.value?.decks || current.legacyDecks);
       current.storage.setItem(STORAGE_KEY, JSON.stringify(next));
       // The fallback record itself also identifies the selected backend if

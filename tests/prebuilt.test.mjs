@@ -476,7 +476,7 @@ test('imports copy templates, retain attribution through versioned backup, and p
   assert.equal(hasImported([custom, imported], template), true);
   assert.throws(() => importTemplate(template, [custom, imported]), /already in My Decks/);
   const backup = makeBackup([custom, imported]);
-  assert.equal(backup.version, 2);
+  assert.equal(backup.version, 3);
   assert.deepEqual(parseBackup(JSON.stringify(backup)), [custom, imported]);
   const withoutImported = [custom, imported].filter(deck => deck.id !== imported.id);
   const fresh = importTemplate(template, withoutImported);

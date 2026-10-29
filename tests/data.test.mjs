@@ -23,12 +23,21 @@ const progressedDeck = (changes = {}) => deck({
   cards: [{ ...deck().cards[0], srs: schedule() }],
   ...changes,
 });
+const fsrsSchedule = (changes = {}) => ({
+  algorithm: 'fsrs-6', profile: 'fsrs6-default-90-v1', stage: 'review',
+  dueAt: '2026-11-03T12:00:01.500Z', intervalDays: 4, lapses: 0, reviews: 1,
+  lastReviewedAt: '2026-10-30T12:00:01.500Z', introducedAt: '2026-10-30T12:00:01.500Z',
+  stability: 3.173, difficulty: 5.282, state: 2, learningSteps: 0, elapsedDays: 0,
+  reviewLogComplete: true, reviewLog: [{ at: '2026-10-30T12:00:01.500Z', rating: 3 }],
+  ...changes,
+});
+const fsrsDeck = (changes = {}) => progressedDeck({ cards: [{ ...deck().cards[0], srs: fsrsSchedule(changes) }] });
 
 test('versioned and legacy backups round-trip Unicode, apostrophes, and plain HTML text', () => {
   const decks = [deck({ cards: [{ id: 'card-1', front: "<script>alert('hello')</script>", back: 'İstanbul, العربية, 日本語 🧠\nNext line' }] })];
   const backup = makeBackup(decks);
   assert.equal(backup.format, 'jenechka-cards');
-  assert.equal(backup.version, 2);
+  assert.equal(backup.version, 3);
   assert.ok(Number.isFinite(Date.parse(backup.exportedAt)));
   assert.deepEqual(parseBackup(JSON.stringify(backup)), decks);
   assert.deepEqual(parseBackup(JSON.stringify(decks)), decks);
@@ -56,7 +65,7 @@ test('empty collections and zero-card decks remain valid', () => {
 test('malformed JSON, unsupported versions, missing fields, and invalid types reject the whole backup', () => {
   for (const input of ['{', 'null', '42', '"decks"', '{}']) assert.throws(() => parseBackup(input));
   assert.throws(() => parseBackup(23));
-  for (const change of [{ format: 'another-app' }, { version: 3 }, { version: '1' }, { exportedAt: 'not-a-date' }, { exportedAt: undefined }, { decks: {} }]) {
+  for (const change of [{ format: 'another-app' }, { version: 4 }, { version: '1' }, { exportedAt: 'not-a-date' }, { exportedAt: undefined }, { decks: {} }]) {
     assert.throws(() => parseBackup(JSON.stringify({ ...makeBackup([deck()]), ...change })));
   }
   for (const change of [{ name: '' }, { name: '\n  ' }, { source: 3 }, { target: null }, { cards: null }, { cards: [{}] }, { cards: [{ id: 'a', front: '', back: 'x' }] }, { cards: [{ id: 'a', front: 'x', back: '\t' }] }]) {
@@ -140,13 +149,104 @@ test('version-2 backups preserve schedules, completed sessions, and disabled spa
   const completed = session({ mode: 'mixed', questionCount: 2, attempts: 3, againCount: 1, firstPassGood: 1 });
   const source = [progressedDeck({ spacedRepetition: false, history: [completed] })];
   const backup = makeBackup(source);
-  assert.equal(backup.version, 2);
+  assert.equal(backup.version, 3);
+  assert.deepEqual(parseBackup(JSON.stringify({ ...backup, version: 2 })), source);
   assert.deepEqual(parseBackup(JSON.stringify(backup, null, 2)), source);
   const canonical = validateDecks(source);
   canonical[0].history[0].againCount = 9;
   canonical[0].cards[0].srs.ease = 1.3;
   assert.equal(source[0].history[0].againCount, 1);
   assert.equal(source[0].cards[0].srs.ease, 2.5);
+});
+
+test('version-3 backups round-trip FSRS memory and review logs without changing legacy schedules', () => {
+  const source = [fsrsDeck(), progressedDeck({ id: 'legacy-deck' })];
+  const original = structuredClone(source);
+  const backup = makeBackup(source);
+  assert.equal(backup.version, 3);
+  assert.deepEqual(parseBackup(JSON.stringify(backup, null, 2)), source);
+  const canonical = validateDecks(source);
+  canonical[0].cards[0].srs.reviewLog[0].rating = 1;
+  canonical[0].cards[0].srs.stability = 1;
+  assert.deepEqual(source, original);
+  assert.deepEqual(backup.decks[1], source[1]);
+});
+
+test('FSRS validates memory, state, profile, review count, and all required fields', () => {
+  const invalid = [
+    { algorithm: 'fsrs-7' }, { algorithm: null }, { profile: 'other' }, { profile: undefined },
+    { stage: 'learning' }, { state: 0 }, { state: 4 }, { state: '2' },
+    { intervalDays: -1 }, { intervalDays: 0 }, { intervalDays: 0.5 }, { intervalDays: 36501 },
+    { state: 1, stage: 'learning', intervalDays: 1 }, { state: 3, stage: 'learning', intervalDays: 1 },
+    { stability: 0 }, { stability: 36501 }, { stability: NaN }, { stability: Infinity }, { stability: '3' },
+    { difficulty: 0.99 }, { difficulty: 10.01 }, { difficulty: Infinity }, { difficulty: undefined },
+    { learningSteps: -1 }, { learningSteps: 0.5 }, { learningSteps: 1 }, { learningSteps: Number.MAX_SAFE_INTEGER },
+    { state: 1, stage: 'learning', intervalDays: 0, learningSteps: 1 },
+    { state: 3, stage: 'learning', intervalDays: 0, learningSteps: 1 },
+    { elapsedDays: -1 }, { elapsedDays: 0.1 },
+    { reviews: 0 }, { reviews: 2 }, { reviews: Number.MAX_SAFE_INTEGER + 1 }, { lapses: -1 },
+    { reviewLogComplete: 'true' }, { reviewLogComplete: undefined },
+    { reviewLog: undefined }, { reviewLog: null }, { reviewLog: [] }, { reviewLog: {} },
+    { reviewLog: [null] }, { reviewLog: [{ at: '2026-10-30T12:00:01.500Z', rating: 2 }] },
+    { reviewLog: [{ at: '2026-10-30T12:00:01.500Z', rating: 4 }] },
+    { reviewLog: [{ at: '2026-10-30T12:00:01.500Z', rating: '3' }] },
+    { reviewLog: [{ at: 'not-a-date', rating: 3 }] }, { ease: 2.5 }, { repetitions: 1 },
+  ];
+  for (const change of invalid) assert.throws(() => validateDecks([fsrsDeck(change)]), undefined, JSON.stringify(change));
+  assert.doesNotThrow(() => validateDecks([fsrsDeck({ state: 1, stage: 'learning', intervalDays: 0, stability: 0.001, difficulty: 1 })]));
+  assert.doesNotThrow(() => validateDecks([fsrsDeck({ state: 3, stage: 'learning', intervalDays: 0, stability: 36500, difficulty: 10 })]));
+});
+
+test('FSRS logs stay chronological from introduction through the last review and preserve incomplete legacy history', () => {
+  const previous = '2026-10-30T12:00:01.500Z';
+  const later = '2026-11-02T12:00:01.500Z';
+  const history = [{ at: previous, rating: 3 }, { at: later, rating: 1 }];
+  const valid = { reviews: 2, lastReviewedAt: later, reviewLog: history };
+  assert.deepEqual(validateDecks([fsrsDeck(valid)])[0].cards[0].srs.reviewLog, history);
+  const invalid = [
+    { ...valid, reviewLog: history.toReversed() },
+    { ...valid, reviewLog: [{ at: '2026-10-29T12:00:00.000Z', rating: 3 }, history[1]] },
+    { ...valid, reviewLog: [history[0], { at: '2026-11-03T12:00:00.000Z', rating: 1 }] },
+    { lastReviewedAt: later },
+    { introducedAt: later },
+    { dueAt: '2026-10-29T12:00:00.000Z' },
+    { reviews: 1, reviewLogComplete: false, reviewLog: [history[0], history[0]] },
+  ];
+  for (const change of invalid) assert.throws(() => validateDecks([fsrsDeck(change)]));
+  const converted = fsrsDeck({ reviews: Number.MAX_SAFE_INTEGER, lapses: Number.MAX_SAFE_INTEGER, reviewLogComplete: false });
+  assert.deepEqual(validateDecks([converted]), [converted]);
+  assert.doesNotThrow(() => validateDecks([fsrsDeck({ reviewLog: [{ at: '2026-10-30T15:00:01.500+03:00', rating: 3 }] })]));
+  assert.doesNotThrow(() => validateDecks([fsrsDeck({ reviews: 2, reviewLog: [history[0], history[0]] })]));
+});
+
+test('FSRS fields without an algorithm are never silently discarded as a legacy schedule', () => {
+  for (const [field, value] of Object.entries(fsrsSchedule())) {
+    if (!['profile', 'stability', 'difficulty', 'state', 'learningSteps', 'elapsedDays', 'reviewLogComplete', 'reviewLog'].includes(field)) continue;
+    const source = progressedDeck({ cards: [{ ...deck().cards[0], srs: schedule({ [field]: value }) }] });
+    assert.throws(() => validateDecks([source]), /identify its algorithm/);
+  }
+});
+
+test('card review log count limits reject excess on a card or across a collection without truncating', () => {
+  const entry = fsrsSchedule().reviewLog[0];
+  const excess = fsrsDeck({ reviews: LIMITS.reviewLogs + 1, reviewLog: Array(LIMITS.reviewLogs + 1).fill(entry) });
+  assert.throws(() => validateDecks([excess]), /card review records/);
+  const half = fsrsDeck({ reviews: Math.ceil(LIMITS.reviewLogs / 2) + 1, reviewLog: Array(Math.ceil(LIMITS.reviewLogs / 2) + 1).fill(entry) });
+  assert.throws(() => validateDecks([half, { ...half, id: 'second' }]), /card review records/);
+  assert.equal(half.cards[0].srs.reviewLog.length, 50001);
+});
+
+test('import deduplication preserves divergent FSRS memory or logs instead of merging away progress', () => {
+  const existing = [fsrsDeck()];
+  assert.equal(mergeDecks(existing, [fsrsDeck()]).skipped, 1);
+  for (const change of [{ stability: 4 }, { difficulty: 6 }, { reviewLogComplete: false }, { reviewLog: [{ at: '2026-10-30T12:00:01.500Z', rating: 1 }] }]) {
+    const source = fsrsDeck(change);
+    const merged = mergeDecks(existing, [source]);
+    assert.equal(merged.added, 1);
+    assert.deepEqual(merged.decks[0], existing[0]);
+    assert.deepEqual(merged.decks[1].cards[0].srs, source.cards[0].srs);
+    assert.notEqual(merged.decks[1].id, existing[0].id);
+  }
 });
 
 test('historical counts are independent of the current editable deck size', () => {
